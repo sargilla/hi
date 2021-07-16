@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ee417aa07a5161f1596f3ddac69289d",
+    "content-hash": "76a2a5411a5d2631a2bafc913de5aef3",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -2986,6 +2986,42 @@
                 "preset"
             ],
             "time": "2021-07-16T11:03:45+00:00"
+        },
+        {
+            "name": "sigma/noticias",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:3tter/sigma-noticias.git",
+                "reference": "d5ba73eaf8da3cb52a57ff4f27b2874b828423e4"
+            },
+            "type": "laravel",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sigma\\Noticias\\NoticiasServiceProvider"
+                    ],
+                    "aliases": {
+                        "Noticias": "Sigma\\Noticias\\NoticiasFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sigma\\Noticias\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Santiago Argilla",
+                    "email": "sargilla@gmail.com"
+                }
+            ],
+            "description": "Gestor de Noticias de Estudio Rompecabezas Framework",
+            "time": "2021-07-16T14:48:44+00:00"
         },
         {
             "name": "sigma/paginas",
@@ -8499,6 +8535,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "sigma/flatlab": 20,
+        "sigma/noticias": 20,
         "sigma/paginas": 20
     },
     "prefer-stable": true,

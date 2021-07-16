@@ -17,3 +17,4 @@ Vue.use(ToggleButton)
 
 // Vue.component('menus', require('./componentes/Menus.vue'));
 // Vue.component('configuraciones', require('./componentes/Configuraciones.vue'));
+Vue.component('noticias', require('./components/Noticias.vue'));

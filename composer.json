@@ -12,6 +12,7 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "sigma/flatlab": "dev-master",
+        "sigma/noticias": "dev-master",
         "sigma/paginas": "dev-master"
     },
     "require-dev": {
