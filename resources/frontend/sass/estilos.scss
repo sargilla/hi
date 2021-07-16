@@ -1,0 +1,134 @@
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+//$blue: #0040FF;
+$blue: #007BFF;
+
+[v-cloak] > * { display:none; }
+
+
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #333;
+    a {
+        color: $blue;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        #menu {
+            nav {
+                padding-left: 0;
+                a {
+                    color: #fff;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    margin-left: .5rem;
+                    margin-right: .5rem;
+                    &:hover {
+                        background-color: #fff;
+                        color: $blue;
+                    }
+                    &.dropdown-item {
+                        color:#212529;
+                        &:hover {
+                            color: #007BFF;
+                        }
+                    }
+
+                    li:first-child a {
+                        margin-left: 0;
+                    };
+                }
+            }
+        }
+    }
+
+    #main {
+
+    }
+
+    footer {
+
+    }
+}
+.nav-item {
+    margin-right: 10px !important;
+}
+a.dropdown-item:hover, .nav-link:hover, a.dropdown:hover, a.dropdown-item:focus, .nav-item.active {
+    background: $primary !important;
+    color: white !important;
+}
+.dropdown-menu {
+    padding: 0;
+    li:hover {
+        background: #f5f5f5 !important;
+    }
+    li a{
+        padding: 13px;
+    }
+    li a:hover {
+        background: none !important;
+        color: black !important;
+    }
+}
+
+.bg-facebook {
+    background: #3b5998 ;
+    i {
+        font-size: 22px;
+    }
+}
+.bg-twitter {
+    background: #00acee ;
+    i {
+        font-size: 22px;
+    }
+}
+.bg-instagram {
+    background: #3f729b  ;
+    i {
+        font-size: 22px;
+    }
+}
+.bg-whatsapp {
+    background: #25d366;
+    i {
+        font-size: 22px;
+    }
+}
+
+// Dropdown multilevel
+.dropdown-toggle.active-dropdown::after {
+    transform: rotate(-90deg);
+}
+
+.container {
+    padding: 0;
+    max-width:  767px;
+}
+@media (min-width:768px)
+{
+    .container {
+        max-width: 991px;
+    }
+}
+@media(min-width: 992px) {
+    .container {
+        max-width: 1199px;
+    }
+    .effect-card{
+        transition: all .2s;
+    }
+    .contenedor-effect-card:hover .effect-card{
+       transform: translateY(-15px);
+    }
+}
+@media (min-width:1200px)
+{
+    .container {
+        max-width: 4064px;
+    }
+}

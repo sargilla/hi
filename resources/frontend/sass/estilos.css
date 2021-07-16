@@ -1,0 +1,80 @@
+[v-cloak] > * {
+  display: none;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #333;
+}
+
+body a {
+  color: #007BFF;
+}
+
+body header {
+  background-color: #333;
+  color: #fff;
+}
+
+body header #menu nav {
+  padding-left: 0;
+}
+
+body header #menu nav a {
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+body header #menu nav a:hover {
+  background-color: #fff;
+  color: #007BFF;
+}
+
+body header #menu nav a.dropdown-item {
+  color: #212529;
+}
+
+body header #menu nav a.dropdown-item:hover {
+  color: #007BFF;
+}
+
+body header #menu nav a li:first-child a {
+  margin-left: 0;
+}
+
+.bg-facebook {
+  background: #3b5998;
+}
+
+.bg-facebook i {
+  font-size: 22px;
+}
+
+.bg-twitter {
+  background: #00acee;
+}
+
+.bg-twitter i {
+  font-size: 22px;
+}
+
+.bg-instagram {
+  background: #3f729b;
+}
+
+.bg-instagram i {
+  font-size: 22px;
+}
+
+.bg-whatsapp {
+  background: #25d366;
+}
+
+.bg-whatsapp i {
+  font-size: 22px;
+}
+/*# sourceMappingURL=estilos.css.map */
