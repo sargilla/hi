@@ -1,0 +1,35 @@
+#datos_impacto
+{
+    h2 
+    {
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+        color: #004F71 !important;
+    }
+    h3
+    {
+        color: #004F71 !important;
+        font-size: 1.25rem !important;
+        font-weight: 400 !important;
+    }
+    .border-datos
+    {
+        font-size: 1.5rem !important;
+        color: #1B74AF !important;
+        border: solid 6px #E35205 !important;
+        box-shadow: 0 0 0px 4px rgb(184, 184, 184);
+        position: relative;
+        width: 150px;
+        height: 150px;
+        div
+        {
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            width: 100%;
+            border: solid 6px rgb(184, 184, 184) !important;
+        }
+    }
+}

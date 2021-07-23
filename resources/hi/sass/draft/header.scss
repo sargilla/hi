@@ -1,0 +1,171 @@
+header
+{   
+    bottom:0 !important;
+    padding: 0 !important;
+    z-index: 1 !important;
+    .collapse 
+    {
+        position: absolute;
+        top: -286px;
+        background: #fff !important;
+        width: 100%;
+        left:0;
+        padding: 10px;
+        text-align: center;
+    }
+    .navbar-toggler 
+    {
+        font-size: 1.8em !important;
+    }
+    .navbar-toggler-icon
+    {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(27,116,175)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }   
+    .navbar-nav a
+    {
+        font-size: 1rem;
+        line-height: 33px;     
+        font-weight: bold;
+        color: #1B74AF !important;
+    }
+    
+    input:focus 
+    {
+        box-shadow: unset !important;    
+    }
+    .navbar-filtro
+    {
+        display: none;
+    }
+    .skip-main 
+    {
+        left: -999px;
+        position: absolute;
+        top: 20px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        z-index: -999;
+        color: rgb(19, 100, 177);
+        background-color: white;
+    }
+
+    button .fa-times
+    {
+        font-size:2.8rem;
+    }
+    #logo-mobile
+    {
+        border-bottom: solid 4px  #004F71 ;
+    }
+}
+
+@media screen and (min-width:576px)
+{
+  
+}
+
+@media screen and (min-width:768px)
+{
+    .position-md-static
+        {
+           position: static !important;
+        }
+    header 
+    {
+        
+        .collapse 
+        {
+            position: static !important;
+            background: unset !important;
+            padding: unset !important;
+            width: unset !important;
+            text-align: left !important;
+        }
+        .navbar 
+        {
+            box-shadow: 0 0 6px 6px #b3b1b1ea, 0 0 2px 17px #EEEEEE;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+        }
+    }
+   
+}
+
+@media screen and (min-width:992px)
+{
+    header
+    {
+        .navbar-nav a
+        {
+            font-size: 1.1rem !important;
+        }
+        #div-search:hover, .outline
+        {
+            outline: solid 2px #1B74AF !important;
+        }
+        li:hover, .navbar a:focus-visible
+        {
+                outline: solid 2px #1B74AF !important;
+                text-decoration: underline !important;
+        }
+        li:hover
+        {
+            color: #1B74AF !important;
+        }
+        .skip-main:focus
+        {
+            left: 0;
+            top: auto;
+            width: 10%;
+            height: auto;
+            padding: 8px;
+            font-size: 14px;
+            outline: 2px solid rgb(19, 100, 177);
+            text-align: center;
+            z-index: 2000;
+        }
+        .navbar-filtro
+        {
+            width: 100%;
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            background: #004F71 !important;
+            padding: 10px 5px;
+            li 
+            {
+                list-style-type: none !important;
+            }
+            li button 
+            {
+                font-weight: bold;
+                background: unset !important;
+                border: unset !important;
+                i 
+                {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .navbar-filtro li:hover, button:focus
+        {
+            outline: solid 2px #fff !important;
+            text-decoration: none !important;
+        }
+    }
+   
+}
+
+@media screen and (min-width:1200px)
+{
+    header 
+    {
+        .navbar-nav a
+        {
+            font-size: 1.5rem !important;
+        }
+    }
+   
+}

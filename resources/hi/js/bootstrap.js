@@ -35,3 +35,5 @@ try {
 	window.moment = require( 'moment' );
 
 } catch (e) {}
+
+require('./draft/header.js');

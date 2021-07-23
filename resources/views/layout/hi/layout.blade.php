@@ -5,7 +5,7 @@
 @show
 <body>
     <div id="app">
-        <header>
+        <header id="header">
             @include('plantilla::_header')
         </header>
         @yield('main-content')

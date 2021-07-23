@@ -1,11 +1,8 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 //
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
-// Estilos Plantilla
-@import './estilos.scss';
 
 //Toastr
 @import "~toastr/toastr";
@@ -15,3 +12,7 @@
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
+
+
+// Estilos Plantilla
+@import './estilos.scss';

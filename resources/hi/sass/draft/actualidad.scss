@@ -1,0 +1,30 @@
+#actualidad 
+{       
+        background-color: #EEEEEE !important;
+        h2 
+        {
+            font-size: 1.5rem !important;
+            font-weight: bold !important;
+            color: #004F71 !important;
+        }
+        h3
+        {
+            color: #004F71 !important;
+            font-size: 1.25rem !important;
+            font-weight: bold !important;
+        }
+        p 
+        {
+            color: #004F71 !important;
+            border-bottom: solid 2px #004F71;
+        }
+        img 
+        {
+            cursor: pointer;
+        }
+        #div-actualidad a:focus,#div-actualidad  a:hover
+        {
+            outline: solid 2px #1B74AF !important;
+            text-decoration: underline !important;
+        }
+}

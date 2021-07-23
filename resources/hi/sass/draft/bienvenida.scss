@@ -1,0 +1,55 @@
+#bienvenida 
+{
+    h1
+    {
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        color: #004F71 !important;
+        line-height: 0.8 !important;
+    }
+    p 
+    {
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        color: #1B74AF !important;
+    }
+    #div-video a 
+    {
+        color: #004F71 !important;
+        text-decoration: underline !important;
+    }
+    #div-video a:focus, #div-video a:hover
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    .rounded
+    {
+        border-radius: 15px !important;
+    }
+}
+
+@media screen and (min-width:992px)
+{
+    #bienvenida 
+    {
+        h1
+        {
+        font-size: 4rem !important;  
+        } 
+    }
+}
+@media screen and (min-width:1200px)
+{
+    #bienvenida 
+    {
+        h1
+        {
+            font-size: 5rem !important;    
+        }
+        p 
+        {
+            font-size: 1.2rem !important;
+        }
+    }   
+}

@@ -1994,6 +1994,8 @@ try {
   window.moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 } catch (e) {}
 
+__webpack_require__(/*! ./draft/header.js */ "./resources/hi/js/draft/header.js");
+
 /***/ }),
 
 /***/ "./resources/hi/js/components.js":
@@ -2017,6 +2019,34 @@ files.keys().map(function (key) {
 Vue.component('multiselect', (vue_multiselect__WEBPACK_IMPORTED_MODULE_0___default()));
 
 Vue.use((vue_js_toggle_button__WEBPACK_IMPORTED_MODULE_1___default()));
+
+/***/ }),
+
+/***/ "./resources/hi/js/draft/header.js":
+/*!*****************************************!*\
+  !*** ./resources/hi/js/draft/header.js ***!
+  \*****************************************/
+/***/ (() => {
+
+$(document).ready(function () {
+  $('#boton-menu').click(function () {
+    $('.navbar').toggleClass('bg-primary');
+    $(this).toggleClass('text-white');
+    $(this).toggleClass('text-primary');
+    $(this).toggleClass('mt-3');
+    $('.navbar-toggler-icon').toggleClass('d-none');
+    $('.fa-times').toggleClass('d-none');
+  });
+  $('body').keyup(function (event) {
+    if (event.key == 'Tab') {
+      if (event.target.getAttribute('id') == "buscador") {
+        $('#div-search').addClass('outline');
+      } else {
+        $('#div-search').removeClass('outline');
+      }
+    }
+  });
+});
 
 /***/ }),
 
