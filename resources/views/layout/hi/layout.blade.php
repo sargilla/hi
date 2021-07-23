@@ -8,7 +8,10 @@
         <header id="header">
             @include('plantilla::_header')
         </header>
-        @yield('main-content')
+        <main>
+            @yield('main-content')
+        </main>
+       
         @include('plantilla::_footer')
     </div>
   	@section('scripts')
