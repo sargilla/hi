@@ -9,7 +9,9 @@
             @include('plantilla::_header')
         </header>
         <main>
-            @yield('main-content')
+            <section>
+                @yield('main-content')
+            </section>     
         </main>
        
         @include('plantilla::_footer')

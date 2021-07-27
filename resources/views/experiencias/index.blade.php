@@ -1,9 +1,17 @@
-<article id="actualidad"  class="pt-5 pb-lg-5">
-    <h2 class="text-center mb-5">
-        Actualidad
-    </h2>
-    <div class="container pb-5 pb-lg-0">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="div-actualidad">
+@extends('plantilla::layout')
+@section('main-content')
+<article id="expIndex">          
+    <div class="container py-5 px-lg-3">
+      <div class="mb-4">
+        <h1 class="text-primary">
+            Experiencias
+        </h1>
+        <small>
+            Pagina Principal > 
+            <a href="" class="p-2">Experiencias</a>
+        </small>
+      </div>
+        <div class="row row-cols-2 row-cols-md-3">
             <div class="col mb-4">
               <div class="card">
                   <a href="">
@@ -11,9 +19,8 @@
                         <img src="/images/familia.jpg" class="card-img-top" alt="...">
                       </figure>
                   </a>       
-                <div class="card-body p-0">
-                    <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                    <h3>Lorem ipsum</h3>
+                <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
                 </div>
               </div>
             </div>
@@ -24,9 +31,8 @@
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
                         </figure>
                     </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                  <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
                   </div>
                 </div>
               </div>
@@ -37,9 +43,8 @@
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
                         </figure>
                     </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                  <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
                   </div>
                 </div>
               </div>
@@ -50,9 +55,8 @@
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
                         </figure>
                     </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                  <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
                   </div>
                 </div>
               </div>
@@ -63,17 +67,12 @@
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
                         </figure>
                     </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                  <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
                   </div>
                 </div>
               </div>
-          </div>
-        <div class="text-center mt-2 mt-lg-5">   
-            <a href="" class="btn btn-purple px-5 ">
-                Ver todas las notas
-            </a>
-        </div>
+            </div>
     </div>
 </article>
+@endsection

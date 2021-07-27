@@ -1,0 +1,118 @@
+#expShowHV, 
+#expIndexHV
+{
+    h1,h2
+    {
+        font-weight: bold;
+    }
+    h2
+    {
+        color: #004F71 !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    .card
+    {
+        background: unset !important;
+        border: 0;
+        h5
+        {
+            color: #004F71 !important;
+            font-size: 1.25rem !important;
+            font-weight: bold !important;
+        }
+        p 
+        {
+            color: #004F71 !important;
+            border-bottom: solid 2px #004F71;
+        }
+    }
+}
+#expIndexHV{
+    h1,h2
+    {
+        color: #004F71 !important;
+    }
+}
+#expSearchHV
+{
+    h1,h2,h3
+    {
+        font-weight: bold !important;
+    }
+    background-color: #6A2A5B !important;
+    .container 
+    {    
+        color: #fff !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    h5
+    {       
+        font-size: 1.25rem !important;
+        font-weight: bold !important;
+    }
+    #expRes p:first-child 
+    {
+        
+        border-bottom: solid 2px #fff !important;
+    }
+    #expRes img 
+    {
+        border-bottom: solid 4px #fff !important;
+        border-right:  solid 4px #fff !important;
+    }
+    .border
+    {
+        border: unset !important;
+        border-bottom: solid 2px #fff !important;
+    }
+}
+#expPI 
+{
+    h1 
+    {
+        font-weight: bold !important;
+    }
+    #practicas h3
+    {
+        color: #004F71 !important;
+        font-weight: bold !important;
+    }
+    p,h2 
+    {
+        color:#1B74AF !important; 
+    }
+}
+#expIndex
+{
+    h1,h5
+    {
+        color: #004F71 !important;
+        font-weight: bold !important;
+    }
+
+    h3,p 
+    {
+        color:#1B74AF !important; 
+    }
+
+}
+#expIndex
+{
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    .card
+    {
+        border: solid 2px#1B74AF !important;
+    }
+}

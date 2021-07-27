@@ -16415,6 +16415,10 @@ img {
   cursor: pointer;
 }
 
+.bg-light {
+  background-color: #EEEEEE !important;
+}
+
 header {
   bottom: 0 !important;
   padding: 0 !important;
@@ -16638,6 +16642,81 @@ footer .border-md {
   outline: solid 2px #1B74AF !important;
   text-decoration: underline !important;
 }
+#actualidad #div-actualidad .card {
+  background: unset !important;
+  border: 0;
+}
+
+#mas-noticias h3 {
+  color: #004F71 !important;
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+#mas-noticias p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+#mas-noticias .card {
+  background: unset !important;
+  border: 0;
+}
+
+#actualidadIndex h1, #actualidadIndex h2 {
+  color: #004F71 !important;
+}
+
+#actualidadShow h1, #actualidadShow h2,
+#actualidadIndex h1,
+#actualidadIndex h2 {
+  font-weight: bold !important;
+}
+#actualidadShow h2,
+#actualidadIndex h2 {
+  color: #004F71 !important;
+}
+#actualidadShow a:focus, #actualidadShow a:hover,
+#actualidadIndex a:focus,
+#actualidadIndex a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#actualidadShow .card,
+#actualidadIndex .card {
+  background: unset !important;
+  border: 0;
+}
+#actualidadShow .card h5,
+#actualidadIndex .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+#actualidadShow .card p,
+#actualidadIndex .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+
+#actualidadSearch h1 {
+  font-weight: bold !important;
+}
+#actualidadSearch a:focus, #actualidadSearch a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#actualidadSearch h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+#actualidadSearch p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+#actualidadSearch .border {
+  border: unset !important;
+  border-bottom: solid 2px #004F71 !important;
+}
 
 #bienvenida h1 {
   font-size: 2.5rem !important;
@@ -16673,5 +16752,208 @@ footer .border-md {
   }
   #bienvenida p {
     font-size: 1.2rem !important;
+  }
+}
+#eventosIndex h1, #eventosIndex h2,
+#eventosShow h1,
+#eventosShow h2,
+#eventosSearch h1,
+#eventosSearch h2 {
+  font-weight: bold;
+}
+#eventosIndex h2,
+#eventosShow h2,
+#eventosSearch h2 {
+  color: #004F71 !important;
+}
+#eventosIndex a:focus, #eventosIndex a:hover,
+#eventosShow a:focus,
+#eventosShow a:hover,
+#eventosSearch a:focus,
+#eventosSearch a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#eventosIndex .card,
+#eventosShow .card,
+#eventosSearch .card {
+  background: unset !important;
+  border: 0 !important;
+}
+#eventosIndex .card figure,
+#eventosShow .card figure,
+#eventosSearch .card figure {
+  border: 10px solid #004F71 !important;
+}
+#eventosIndex .card .card-body,
+#eventosShow .card .card-body,
+#eventosSearch .card .card-body {
+  background-color: #EEEEEE !important;
+}
+#eventosIndex .card p, #eventosIndex .card h5,
+#eventosShow .card p,
+#eventosShow .card h5,
+#eventosSearch .card p,
+#eventosSearch .card h5 {
+  color: #1B74AF !important;
+}
+#eventosIndex .card h5 a,
+#eventosShow .card h5 a,
+#eventosSearch .card h5 a {
+  text-decoration: underline !important;
+}
+
+#eventosIndex h1 {
+  color: #004F71 !important;
+}
+
+#eventosShow #expositores p {
+  color: #1B74AF !important;
+}
+
+#expShowHV h1, #expShowHV h2,
+#expIndexHV h1,
+#expIndexHV h2 {
+  font-weight: bold;
+}
+#expShowHV h2,
+#expIndexHV h2 {
+  color: #004F71 !important;
+}
+#expShowHV a:focus, #expShowHV a:hover,
+#expIndexHV a:focus,
+#expIndexHV a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#expShowHV .card,
+#expIndexHV .card {
+  background: unset !important;
+  border: 0;
+}
+#expShowHV .card h5,
+#expIndexHV .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+#expShowHV .card p,
+#expIndexHV .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+
+#expIndexHV h1, #expIndexHV h2 {
+  color: #004F71 !important;
+}
+
+#expSearchHV {
+  background-color: #6A2A5B !important;
+}
+#expSearchHV h1, #expSearchHV h2, #expSearchHV h3 {
+  font-weight: bold !important;
+}
+#expSearchHV .container {
+  color: #fff !important;
+}
+#expSearchHV a:focus, #expSearchHV a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#expSearchHV h5 {
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+}
+#expSearchHV #expRes p:first-child {
+  border-bottom: solid 2px #fff !important;
+}
+#expSearchHV #expRes img {
+  border-bottom: solid 4px #fff !important;
+  border-right: solid 4px #fff !important;
+}
+#expSearchHV .border {
+  border: unset !important;
+  border-bottom: solid 2px #fff !important;
+}
+
+#expPI h1 {
+  font-weight: bold !important;
+}
+#expPI #practicas h3 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+#expPI p, #expPI h2 {
+  color: #1B74AF !important;
+}
+
+#expIndex h1, #expIndex h5 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+#expIndex h3, #expIndex p {
+  color: #1B74AF !important;
+}
+
+#expIndex a:focus, #expIndex a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#expIndex .card {
+  border: solid 2px #1B74AF !important;
+}
+
+#recursosIndex h1, #recursosIndex h2 {
+  font-weight: bold !important;
+}
+#recursosIndex a:focus, #recursosIndex a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#recursosIndex h2, #recursosIndex p, #recursosIndex h5, #recursosIndex h1 {
+  color: #004F71 !important;
+}
+#recursosIndex #tematicas h5 {
+  color: #080707 !important;
+}
+
+#recursosDD h1, #recursosDD h2, #recursosDD h5, #recursosDD #titulo, #recursosGO h1, #recursosGO h2, #recursosGO h5, #recursosGO #titulo {
+  font-weight: bold !important;
+}
+#recursosDD a:focus, #recursosDD a:hover, #recursosGO a:focus, #recursosGO a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
+#recursosDD h3, #recursosDD p, #recursosDD h5, #recursosGO h3, #recursosGO p, #recursosGO h5 {
+  color: #004F71 !important;
+}
+#recursosDD #docRec, #recursosGO #docRec {
+  background-color: #E35205 !important;
+}
+#recursosDD #docRec h2, #recursosDD #docRec p, #recursosDD #docRec h5, #recursosGO #docRec h2, #recursosGO #docRec p, #recursosGO #docRec h5 {
+  color: #fff !important;
+}
+#recursosDD #docRec a, #recursosGO #docRec a {
+  text-decoration: underline !important;
+}
+#recursosDD #referencia, #recursosGO #referencia {
+  background-color: #5BC2E7 !important;
+}
+#recursosDD #referencia h5, #recursosGO #referencia h5 {
+  color: #004F71 !important;
+}
+#recursosDD #referencia a, #recursosGO #referencia a {
+  color: #080707 !important;
+  text-decoration: underline !important;
+}
+
+@media screen and (min-width: 992px) {
+  #recursosDD #docRec {
+    color: #fff !important;
+    background-color: #E35205 !important;
+  }
+  #recursosDD #docRec .border-dr {
+    border-bottom: unset !important;
+    border-right: solid 2px #fff !important;
   }
 }

@@ -1,9 +1,41 @@
-<article id="actualidad"  class="pt-5 pb-lg-5">
-    <h2 class="text-center mb-5">
-        Actualidad
-    </h2>
-    <div class="container pb-5 pb-lg-0">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="div-actualidad">
+@extends('plantilla::layout')
+@section('main-content')
+<article id="actualidadIndex">   
+    <div class="container py-5">
+          <h1 class="text-primary">
+            Actualidad
+        </h1>
+        <small>
+            Pagina Principal > 
+            <a href="" class="p-2">Actualidad</a>
+        </small>
+        <p class="mt-2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
+        </p>
+        </div>      
+    <div class="bg-primary">
+      <div class="container py-5 px-5 px-sm-1">
+          <p class="text-white">
+            Desde aqui podras filtrar notas por paises y por fecha
+        </p>
+        <form action="" method="GET" class="form-inline mr-3">
+            @csrf 
+            <select name="" id="" class="form-control mb-3 mr-3 mb-md-0">
+                <option value="">Todas las fechas</option>
+            </select>
+            <select name="" id="" class="form-control mb-3 mr-3 mb-md-0">
+                <option value="">Todas los paises</option>
+            </select>
+            <select name="" id="" class="form-control mb-3 mr-3 mb-md-0">
+                <option value="">Tematicas</option>
+            </select>
+            <button class="mb-3 mb-md-0 btn btn-purple px-5" type="submit">Filtrar</button>
+        </form>
+      </div>
+       
+    </div>
+    <div class="container py-5 px-lg-3">
+        <div class="row row-cols-2 row-cols-md-3">
             <div class="col mb-4">
               <div class="card">
                   <a href="">
@@ -12,8 +44,8 @@
                       </figure>
                   </a>       
                 <div class="card-body p-0">
-                    <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                    <h3>Lorem ipsum</h3>
+                    <p class="card-text my-1">Pais</p>
+                    <h2>Lorem ipsum</h2>
                 </div>
               </div>
             </div>
@@ -25,8 +57,8 @@
                         </figure>
                     </a>       
                   <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                      <p class="card-text my-1">Pais</p>
+                      <h2>Lorem ipsum</h2>
                   </div>
                 </div>
               </div>
@@ -38,8 +70,8 @@
                         </figure>
                     </a>       
                   <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                      <p class="card-text my-1">Pais</p>
+                      <h2>Lorem ipsum</h2>
                   </div>
                 </div>
               </div>
@@ -51,8 +83,8 @@
                         </figure>
                     </a>       
                   <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                      <p class="card-text my-1">Pais</p>
+                      <h2>Lorem ipsum</h2>
                   </div>
                 </div>
               </div>
@@ -64,16 +96,12 @@
                         </figure>
                     </a>       
                   <div class="card-body p-0">
-                      <p class="card-text my-1 border-bottom border-primary">Pais</p>
-                      <h3>Lorem ipsum</h3>
+                      <p class="card-text my-1">Pais</p>
+                      <h2>Lorem ipsum</h2>
                   </div>
                 </div>
               </div>
-          </div>
-        <div class="text-center mt-2 mt-lg-5">   
-            <a href="" class="btn btn-purple px-5 ">
-                Ver todas las notas
-            </a>
-        </div>
+            </div>
     </div>
 </article>
+@endsection

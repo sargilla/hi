@@ -1,0 +1,51 @@
+#eventosIndex, 
+#eventosShow, 
+#eventosSearch
+{
+    h1,h2
+    {
+        font-weight: bold;
+       
+    }
+    h2 
+    {
+        color: #004F71 !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    .card
+    {
+        background: unset !important;
+        border: 0 !important;
+        figure 
+        {
+            border: 10px solid #004F71 !important;
+        }
+        .card-body
+        {
+            background-color: #EEEEEE !important;
+        }
+        p,h5 
+        {
+            color: #1B74AF !important;
+        }
+        h5 a{
+            text-decoration: underline !important;
+        }
+    }
+}
+#eventosIndex{
+    h1{
+        color: #004F71 !important; 
+    }
+}
+#eventosShow
+{
+    #expositores p
+    {
+        color: #1B74AF !important; 
+    }
+}

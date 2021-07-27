@@ -27,4 +27,98 @@
             outline: solid 2px #1B74AF !important;
             text-decoration: underline !important;
         }
+        #div-actualidad .card
+        {
+            background: unset !important;
+            border: 0;
+        }
+}
+#mas-noticias
+{
+    h3
+    {
+        color: #004F71 !important;
+        font-size: 1.25rem !important;
+        font-weight: bold !important;
+    }
+    p 
+    {
+        color: #004F71 !important;
+        border-bottom: solid 2px #004F71;
+    }
+    .card
+    {
+        background: unset !important;
+        border: 0;
+    }
+   
+}
+#actualidadIndex
+{
+    h1,h2
+    {
+        color: #004F71 !important;
+    }
+}
+#actualidadShow, 
+#actualidadIndex
+{
+    h1,h2
+    {
+        font-weight: bold !important;
+    }
+    h2 
+    {
+        color: #004F71 !important; 
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    .card
+    {
+        background: unset !important;
+        border: 0;
+        h5
+        {
+            color: #004F71 !important;
+            font-size: 1.25rem !important;
+            font-weight: bold !important;
+        }
+        p 
+        {
+            color: #004F71 !important;
+            border-bottom: solid 2px #004F71;
+        }
+    }
+}
+
+#actualidadSearch
+{
+    h1
+    {
+        font-weight: bold !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+    h5
+    {
+        color: #004F71 !important;
+        font-size: 1.25rem !important;
+        font-weight: bold !important;
+    }
+    p 
+    {
+        color: #004F71 !important;
+        border-bottom: solid 2px #004F71;
+    }
+    .border
+    {
+        border: unset !important;
+        border-bottom: solid 2px #004F71 !important;
+    }
 }

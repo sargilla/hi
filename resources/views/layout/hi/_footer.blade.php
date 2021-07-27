@@ -78,9 +78,9 @@
             </div>
             <div class="col-md-6 col-lg-2 align-self-center text-center mb-5">
                 <a href="">
-                    <picture>
-                        <img src="./images/logo-hi.png" alt="" width="150px">
-                    </picture>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid" src="./images/logo-hi.png" alt="">
+                    </figure>
                 </a>    
               
             </div>
@@ -100,11 +100,12 @@
                     <span >
                         <a href="" class="p-2">Índice del sitio</a> - 
                         <a href="" class="p-2">Políticas y privacidad</a> - 
-                        <a href="" class="p-2">Indice del sitio</a>
+                        <a href="" class="p-2">Indice del sitio</a> -
+                        <a href="#header" class="p-2">Ir al Inicio</a>
                     </span>
                 </div>
             </div>   
-     <a href="#header" class="p-2">Ir al Inicio</a>
+   
     </div>
     
 </footer>
