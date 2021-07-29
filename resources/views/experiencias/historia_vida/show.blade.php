@@ -8,7 +8,9 @@
         <div class="container py-5">           
                 <div>
                     <small>
-                        Principal principal > Historia de vida > <a href="" class="p-2">Historia de muestra</a>
+                      <a href="" class="p-2 mr-1"> Principal principal </a> > 
+                      <a href="" class="p-2 mr-1">Historia de vida</a> >
+                       Historia de muestra
                     </small>
                 </div>             
                 <div>
@@ -86,12 +88,12 @@
                               <a href="">
                                   <figure class="figure mb-0">
                                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                                  </figure>
-                              </a>       
-                            <div class="card-body p-0">
+                                  </figure>      
+                            <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
                                 <h3>Lorem ipsum</h3>
                             </div>
+                        </a> 
                           </div>
                         </div>
                         <div class="col mb-4">
@@ -99,12 +101,25 @@
                                 <a href="">
                                     <figure class="figure mb-0">
                                       <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                                    </figure>
-                                </a>       
-                              <div class="card-body p-0">
+                                    </figure>                                 
+                              <div class="card-body">
                                   <p class="card-text my-1">Pais</p>
                                   <h3>Lorem ipsum</h3>
                               </div>
+                            </a> 
+                            </div>
+                          </div>
+                          <div class="col mb-4">
+                            <div class="card">
+                                <a href="">
+                                    <figure class="figure mb-0">
+                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                    </figure>     
+                              <div class="card-body">
+                                  <p class="card-text my-1">Pais</p>
+                                  <h3>Lorem ipsum</h3>
+                              </div>
+                            </a> 
                             </div>
                           </div>
                           <div class="col mb-4">
@@ -113,11 +128,12 @@
                                     <figure class="figure mb-0">
                                       <img src="/images/familia.jpg" class="card-img-top" alt="...">
                                     </figure>
-                                </a>       
-                              <div class="card-body p-0">
+                                     
+                              <div class="card-body">
                                   <p class="card-text my-1">Pais</p>
                                   <h3>Lorem ipsum</h3>
                               </div>
+                            </a> 
                             </div>
                           </div>
                           <div class="col mb-4">
@@ -126,24 +142,12 @@
                                     <figure class="figure mb-0">
                                       <img src="/images/familia.jpg" class="card-img-top" alt="...">
                                     </figure>
-                                </a>       
-                              <div class="card-body p-0">
+                                       
+                              <div class="card-body">
                                   <p class="card-text my-1">Pais</p>
                                   <h3>Lorem ipsum</h3>
                               </div>
-                            </div>
-                          </div>
-                          <div class="col mb-4">
-                            <div class="card">
-                                <a href="">
-                                    <figure class="figure mb-0">
-                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                                    </figure>
-                                </a>       
-                              <div class="card-body p-0">
-                                  <p class="card-text my-1">Pais</p>
-                                  <h3>Lorem ipsum</h3>
-                              </div>
+                            </a>
                             </div>
                           </div>
                       </div>

@@ -7,7 +7,8 @@
     }
     h2
     {
-        color: #004F71 !important;
+        color: #004F71 !important; 
+        font-size: 1.2rem !important;
     }
     a:focus, a:hover 
     {
@@ -50,7 +51,7 @@
     }
     a:focus, a:hover 
     {
-        outline: solid 2px #1B74AF !important;
+        outline: solid 2px #fff !important;
         text-decoration: underline !important;
     }
     h5
@@ -89,15 +90,23 @@
     {
         color:#1B74AF !important; 
     }
+    a:hover, a:focus 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
 }
 #expIndex
 {
-    h1,h5
+    h1,h2
     {
         color: #004F71 !important;
         font-weight: bold !important;
     }
-
+    h2 
+    {
+        font-size: 1.2rem !important;
+    }
     h3,p 
     {
         color:#1B74AF !important; 

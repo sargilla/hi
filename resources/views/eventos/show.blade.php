@@ -14,8 +14,9 @@
       <div class="p-3 p-md-5" >
           <div class="p-md-5">
                 <small>
-                    Pagina Principal > Eventos
-                    <a href="" class="p-2">Lorem Ipsum</a>
+                   <a href="" class="p-2 mr-1">Pagina Principal</a>  > 
+                   <a href="" class="p-2 mr-1">  Eventos</a>
+                   Lorem Ipsum
                 </small>
                 <div class="d-flex flex-wrap justify-content-between mt-3">
                     <p class="text-uppercase">

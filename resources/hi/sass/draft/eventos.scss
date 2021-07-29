@@ -10,6 +10,7 @@
     h2 
     {
         color: #004F71 !important;
+        font-size: 1.2rem !important;
     }
     a:focus, a:hover 
     {
@@ -28,12 +29,9 @@
         {
             background-color: #EEEEEE !important;
         }
-        p,h5 
+        p
         {
             color: #1B74AF !important;
-        }
-        h5 a{
-            text-decoration: underline !important;
         }
     }
 }

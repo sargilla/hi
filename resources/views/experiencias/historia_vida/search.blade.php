@@ -11,7 +11,7 @@
      <div class="bg-white p-3 px-lg-5">
          <div class="container">
             <small class="text-dark">
-                Principal principal > Experiencias > <a href="" class="p-2">Diagnósticos comunitarios inclusivos</a>
+                <a href="" class="p-2 mr-1"> Principal principal > </a> <a href="" class="p-2 mr-1">Experiencias </a> > Diagnósticos comunitarios inclusivo
             </small>
          </div>     
     </div> 
@@ -35,62 +35,74 @@
          <h2 class="text-center">
             Documentos de diagnósticos     
         </h2>                 
-        <div class="row mb-3 border py-5">
-            <div class="col-12 col-md-4 col-lg-3">
+        <div class="row mb-3 border py-5"> 
+            <div class="col-12 col-md-4 col-lg-3"> 
                 <a href="">
                     <figure class="figure mb-0">
                         <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
-                      </figure>
-                </a>              
+                </figure> 
+                </a>                           
             </div>
             <div class="col-12 col-md-8 col-lg-9 py-3">
                 <p class="col-md-6 p-0">Pais</p>
-                <h3>Titulo de la nota</h3>
+                <h3 class="mt-4">
+                    <a href="" class="text-white p-2">
+                        Titulo de la nota
+                    </a>
+                </h3>
                 <p class="mt-3">
                     <a href="" class="text-white p-2">
                         <i class="fas fa-arrow-right mr-2"></i>
                         Descargar el documento
                     </a>            
                 </p>
-            </div>
+            </div>     
         </div>
-        <div class="row mb-3 border py-5">
-            <div class="col-12 col-md-4 col-lg-3">
+        <div class="row mb-3 border py-5"> 
+            <div class="col-12 col-md-4 col-lg-3"> 
                 <a href="">
                     <figure class="figure mb-0">
                         <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
-                      </figure>
-                </a>              
+                </figure> 
+                </a>                         
             </div>
             <div class="col-12 col-md-8 col-lg-9 py-3">
                 <p class="col-md-6 p-0">Pais</p>
-                <h3>Titulo de la nota</h3>
+                <h3 class="mt-4">
+                    <a href="" class="text-white p-2">
+                        Titulo de la nota
+                    </a>
+                </h3>
                 <p class="mt-3">
                     <a href="" class="text-white p-2">
                         <i class="fas fa-arrow-right mr-2"></i>
                         Descargar el documento
                     </a>            
                 </p>
-            </div>
+            </div>     
         </div>
-        <div class="row mb-3 border py-5">
-            <div class="col-12 col-md-4 col-lg-3">
+        <div class="row mb-3 border py-5"> 
+            <div class="col-12 col-md-4 col-lg-3"> 
                 <a href="">
                     <figure class="figure mb-0">
                         <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
-                      </figure>
-                </a>              
+                    </figure> 
+                </a>                          
             </div>
             <div class="col-12 col-md-8 col-lg-9 py-3">
                 <p class="col-md-6 p-0">Pais</p>
-                <h3>Titulo de la nota</h3>
+                <h3 class="mt-4">
+                    <a href="" class="text-white p-2">
+                        Titulo de la nota
+                    </a>
+                </h3>
                 <p class="mt-3">
                     <a href="" class="text-white p-2">
                         <i class="fas fa-arrow-right mr-2"></i>
                         Descargar el documento
                     </a>            
                 </p>
-            </div>
+            </div>     
         </div>
      </div>
  </article>

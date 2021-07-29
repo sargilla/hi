@@ -6,8 +6,8 @@
             Actualidad
         </h1>
         <small>
-            Pagina Principal > 
-            <a href="" class="p-2">Actualidad</a>
+           <a href="" class="p-2 mr-1">Pagina Principal</a>  > 
+            Actualidad
         </small>
         <p class="mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
@@ -36,71 +36,71 @@
     </div>
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-3">
-            <div class="col mb-4">
-              <div class="card">
-                  <a href="">
-                      <figure class="figure m-0">
-                        <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                      </figure>
-                  </a>       
-                <div class="card-body p-0">
-                    <p class="card-text my-1">Pais</p>
-                    <h2>Lorem ipsum</h2>
-                </div>
-              </div>
+          <div class="col mb-4">
+            <div class="card">
+                <a href="">
+                    <figure class="figure m-0">
+                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                    </figure>         
+                    <div class="card-body">
+                        <p class="card-text my-1">Pais</p>
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                </a>  
             </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <a href="">
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1">Pais</p>
-                      <h2>Lorem ipsum</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                    <a href="">
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1">Pais</p>
-                      <h2>Lorem ipsum</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                    <a href="">
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1">Pais</p>
-                      <h2>Lorem ipsum</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                    <a href="">
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body p-0">
-                      <p class="card-text my-1">Pais</p>
-                      <h2>Lorem ipsum</h2>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+                <a href="">
+                    <figure class="figure m-0">
+                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                    </figure>         
+                    <div class="card-body">
+                        <p class="card-text my-1">Pais</p>
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                </a>  
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+                <a href="">
+                    <figure class="figure m-0">
+                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                    </figure>         
+                    <div class="card-body">
+                        <p class="card-text my-1">Pais</p>
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                </a>  
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+                <a href="">
+                    <figure class="figure m-0">
+                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                    </figure>         
+                    <div class="card-body">
+                        <p class="card-text my-1">Pais</p>
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                </a>  
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+                <a href="">
+                    <figure class="figure m-0">
+                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                    </figure>         
+                    <div class="card-body">
+                        <p class="card-text my-1">Pais</p>
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                </a>  
+            </div>
+          </div>
             </div>
     </div>
 </article>

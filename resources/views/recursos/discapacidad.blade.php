@@ -12,29 +12,32 @@
         </div>
         <div class="container py-5 px-3 p-lg-5">
             <small>
-                Pagina Principal > Recursos
-                <a href="" class="p-2">Discapacidad</a>
+               <a href=""class="p-2 mr-1">Pagina Principal </a> > 
+               <a href="" class="p-2 mr-1">Recursos</a> 
+               Discapacidad
             </small>
-            <div class="row mt-5">
-                <div class="col-12 col-md-6">
-                    <a href="">
-                        <figure class="figure mb-0">
-                            <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
-                        </figure>
-                    </a>              
+            <a href="">
+                <div class="row mt-5 py-5">
+                    <div class="col-12 col-md-6">
+                        
+                            <figure class="figure mb-0">
+                                <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                            </figure>
+                                
+                    </div>
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <p id="titulo">
+                            Esto seria una breve descripcion de la Dimension y Ambito
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
+                        </p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 mt-4 mt-md-0">
-                    <p id="titulo">
-                        Esto seria una breve descripcion de la Dimension y Ambito
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
-                    </p>
-                </div>
-            </div>
+            </a>  
         </div>
         <div id="docRec">
             <div class="container py-5 px-3">

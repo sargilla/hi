@@ -7,72 +7,82 @@
             Experiencias
         </h1>
         <small>
-            Pagina Principal > 
-            <a href="" class="p-2">Experiencias</a>
+          <a href="" class="p-2 mr-1"> Pagina Principal </a> 
+           > Experiencias
         </small>
       </div>
         <div class="row row-cols-2 row-cols-md-3">
-            <div class="col mb-4">
-              <div class="card">
+            <div class="col mb-4">     
+                <div class="card">
                   <a href="">
-                      <figure class="figure m-0">
-                        <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                      </figure>
-                  </a>       
-                <div class="card-body">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <a href="">
                         <figure class="figure m-0">
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
+                        </figure>                        
+                      <div class="card-body">
+                          <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!
+                          </h2>
+                      </div>
+                   </a>  
+                </div>     
+            </div> 
+            <div class="col mb-4">     
                 <div class="card">
-                    <a href="">
+                  <a href="">
                         <figure class="figure m-0">
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
+                        </figure>                        
+                      <div class="card-body">
+                          <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!
+                          </h2>
+                      </div>
+                  </a>  
+                </div>     
+            </div> 
+            <div class="col mb-4">     
+                  <div class="card">
                     <a href="">
+                          <figure class="figure m-0">
+                            <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                          </figure>                        
+                        <div class="card-body">
+                            <h2>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!
+                            </h2>
+                        </div>
+                    </a>  
+                  </div>     
+            </div> 
+            <div class="col mb-4">     
+                <div class="card">
+                  <a href="">
                         <figure class="figure m-0">
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
+                        </figure>                        
+                      <div class="card-body">
+                          <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!
+                          </h2>
+                      </div>
+                  </a>  
+                </div>     
+            </div> 
+            <div class="col mb-4">     
                 <div class="card">
-                    <a href="">
+                  <a href="">
                         <figure class="figure m-0">
                           <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                        </figure>
-                    </a>       
-                  <div class="card-body">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        </figure>                        
+                      <div class="card-body">
+                          <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore ea repellendus!
+                          </h2>
+                      </div>
+                  </a>  
+                </div>     
+            </div> 
+      </div>
     </div>
 </article>
 @endsection

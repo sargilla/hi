@@ -5,59 +5,70 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
-                 <div class="border-datos rounded-circle p-5">
-                     <div class="rounded-circle d-flex align-items-center justify-content-center">
-                        1250
-                     </div>                
+                <a href="" class="py-4 px-2">
+                    <div class="border-datos rounded-circle p-5">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center">
+                           1250
+                        </div>                
+                   </div>
+                    <br>
+                    <h3 class="text-center">
+                        Proyectos GIRD
+                    </h3 >
+                </a>    
+                
+            </div>
+            <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
+                <a href="" class="py-4 px-2">
+                    <div class="border-datos rounded-circle p-5">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center">
+                        98250
+                        </div>                
                 </div>
-                 <br>
-                 <h3 class="mt-3 text-center">
-                     Proyectos GIRD
-                 </h3 >
+                    <br>
+                    <h3 class="mt-3 text-center">
+                        Cantidad de beneficiarios
+                    </h3>
+                </a>
             </div>
             <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
-                <div class="border-datos rounded-circle p-5">
-                    <div class="rounded-circle d-flex align-items-center justify-content-center">
-                       98250
-                    </div>                
-               </div>
-                <br>
-                <h3 class="mt-3 text-center">
-                    Cantidad de beneficiarios
-                </h3 >
+                <a href="" class="py-4 px-2">
+                    <div class="border-datos rounded-circle p-5">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center">
+                        17090
+                        </div>                
+                    </div>
+                    <br>
+                    <h3 class="mt-3 text-center">
+                        Proyectos
+                    </h3>
+                </a>
             </div>
             <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
-                <div class="border-datos rounded-circle p-5">
-                    <div class="rounded-circle d-flex align-items-center justify-content-center">
-                       17090
-                    </div>                
-               </div>
-                <br>
-                <h3 class="mt-3 text-center">
-                    Proyectos
-                </h3 >
+                <a href="" class="py-4 px-2">
+                    <div class="border-datos rounded-circle p-5">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center">
+                        7850
+                        </div>                
+                    </div>
+                    <br>
+                    <h3 class="mt-3 text-center">
+                        Otros Datos
+                    </h3>
+                </a>
             </div>
             <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
-                <div class="border-datos rounded-circle p-5">
-                    <div class="rounded-circle d-flex align-items-center justify-content-center">
-                       7850
-                    </div>                
-               </div>
-                <br>
-                <h3 class="mt-3 text-center">
-                    Otros Datos
-                </h3 >
-            </div>
-            <div class="mb-5 mb-lg-0 col-sm-6 col-md-4 col-lg-2 d-flex flex-wrap flex-column align-items-center">
-                <div class="border-datos rounded-circle p-5">
-                    <div class="rounded-circle d-flex align-items-center justify-content-center">
-                       19050
-                    </div>                
-               </div>
-                <br>
-                <h3 class="mt-3 text-center">
-                    Otros Datos
-                </h3 >
+                <a href="" class="py-4 px-2">
+                    <div class="border-datos rounded-circle p-5">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center">
+                        19050
+                        </div>                
+                    </div>
+                    <br>
+                    <h3 class="mt-3 text-center">
+                        Otros Datos
+                    </h3>
+                </a>
             </div>
         </div>
     </div>

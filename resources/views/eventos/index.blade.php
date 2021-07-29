@@ -6,8 +6,8 @@
             Eventos
         </h1>
         <small>
-            Pagina Principal
-            <a href="" class="p-2">Eventos</a>
+          <a href="" class="p-2 mr-1">Pagina Principal</a>  
+           Eventos
         </small>
         <p class="mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
@@ -53,11 +53,11 @@
                          </small>
                         
                     </div>     
-                        <h5 class="mt-3">
+                        <h2 class="mt-3">
                             <a href="" class="p-2">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                         </a>                 
-                       </h5>
+                       </h2>
                     <div class="p-3 d-flex justify-content-between align-items-center">
                         <p class="my-auto">
                             Tema - Nivel - Sector
@@ -86,11 +86,11 @@
                          </small>
                           
                       </div>     
-                          <h5 class="mt-3">
+                          <h2 class="mt-3">
                               <a href="" class="p-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                           </a>                 
-                         </h5>
+                         </h2>
                       <div class="p-3 d-flex justify-content-between align-items-center">
                           <p class="my-auto">
                               Tema - Nivel - Sector
@@ -119,11 +119,11 @@
                          </small>
                           
                       </div>     
-                          <h5 class="mt-3">
+                          <h2 class="mt-3">
                               <a href="" class="p-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                           </a>                 
-                         </h5>
+                         </h2>
                       <div class="p-3 d-flex justify-content-between align-items-center">
                           <p class="my-auto">
                               Tema - Nivel - Sector
@@ -152,11 +152,11 @@
                          </small>
                           
                       </div>     
-                          <h5 class="mt-3">
+                          <h2 class="mt-3">
                               <a href="" class="p-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                           </a>                 
-                         </h5>
+                         </h2>
                       <div class="p-3 d-flex justify-content-between align-items-center">
                           <p class="my-auto">
                               Tema - Nivel - Sector
@@ -185,11 +185,11 @@
                          </small>
                           
                       </div>     
-                          <h5 class="mt-3">
+                          <h2 class="mt-3">
                               <a href="" class="p-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                           </a>                 
-                         </h5>
+                         </h2>
                       <div class="p-3 d-flex justify-content-between align-items-center">
                           <p class="my-auto">
                               Tema - Nivel - Sector

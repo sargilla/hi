@@ -16589,6 +16589,10 @@ footer .border-md {
     outline: solid 2px #fff !important;
   }
 }
+#datos_impacto a:focus, #datos_impacto a:hover {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
 #datos_impacto h2 {
   font-size: 1.5rem !important;
   font-weight: bold !important;
@@ -16664,6 +16668,9 @@ footer .border-md {
 #actualidadIndex h1, #actualidadIndex h2 {
   color: #004F71 !important;
 }
+#actualidadIndex h2 {
+  font-size: 1.2rem !important;
+}
 
 #actualidadShow h1, #actualidadShow h2,
 #actualidadIndex h1,
@@ -16703,6 +16710,9 @@ footer .border-md {
 #actualidadSearch a:focus, #actualidadSearch a:hover {
   outline: solid 2px #1B74AF !important;
   text-decoration: underline !important;
+}
+#actualidadSearch a:focus .border, #actualidadSearch a:hover .border {
+  border-bottom: unset !important;
 }
 #actualidadSearch h5 {
   color: #004F71 !important;
@@ -16765,6 +16775,7 @@ footer .border-md {
 #eventosShow h2,
 #eventosSearch h2 {
   color: #004F71 !important;
+  font-size: 1.2rem !important;
 }
 #eventosIndex a:focus, #eventosIndex a:hover,
 #eventosShow a:focus,
@@ -16790,17 +16801,10 @@ footer .border-md {
 #eventosSearch .card .card-body {
   background-color: #EEEEEE !important;
 }
-#eventosIndex .card p, #eventosIndex .card h5,
+#eventosIndex .card p,
 #eventosShow .card p,
-#eventosShow .card h5,
-#eventosSearch .card p,
-#eventosSearch .card h5 {
+#eventosSearch .card p {
   color: #1B74AF !important;
-}
-#eventosIndex .card h5 a,
-#eventosShow .card h5 a,
-#eventosSearch .card h5 a {
-  text-decoration: underline !important;
 }
 
 #eventosIndex h1 {
@@ -16819,6 +16823,7 @@ footer .border-md {
 #expShowHV h2,
 #expIndexHV h2 {
   color: #004F71 !important;
+  font-size: 1.2rem !important;
 }
 #expShowHV a:focus, #expShowHV a:hover,
 #expIndexHV a:focus,
@@ -16857,7 +16862,7 @@ footer .border-md {
   color: #fff !important;
 }
 #expSearchHV a:focus, #expSearchHV a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #fff !important;
   text-decoration: underline !important;
 }
 #expSearchHV h5 {
@@ -16886,10 +16891,17 @@ footer .border-md {
 #expPI p, #expPI h2 {
   color: #1B74AF !important;
 }
+#expPI a:hover, #expPI a:focus {
+  outline: solid 2px #1B74AF !important;
+  text-decoration: underline !important;
+}
 
-#expIndex h1, #expIndex h5 {
+#expIndex h1, #expIndex h2 {
   color: #004F71 !important;
   font-weight: bold !important;
+}
+#expIndex h2 {
+  font-size: 1.2rem !important;
 }
 #expIndex h3, #expIndex p {
   color: #1B74AF !important;

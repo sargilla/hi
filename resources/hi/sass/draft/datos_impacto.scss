@@ -1,5 +1,10 @@
 #datos_impacto
 {
+    a:focus,a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
     h2 
     {
         font-size: 1.5rem !important;

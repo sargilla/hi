@@ -6,8 +6,8 @@
                 Recursos
             </h1>
             <small>
-                Pagina Principal > 
-                <a href="" class="p-2">Recursos</a>
+               <a href="" class="p-2 mr-1">Pagina Principal</a>  > 
+               Recursos
             </small>
             <p class="mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
@@ -24,8 +24,8 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
                     </p>
+                </div>
             </div>
-        </div>
     </div>
     <div class="bg-light p-3 p-lg-5">
         <div class="container">
@@ -34,40 +34,40 @@
             </h2>
             <div class="row row-cols-sm-2 row-cols-md-3 mt-4 text-center">        
                 <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
+                    <a href="">
+                        <div class="card bg-light border-0">                       
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-2">
-                          <h5>Herramientas Comunitarias</h5>
-                      </div>
-                    </div>
+                                <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                            </figure>                             
+                        <div class="card-body mt-2">
+                            <h5>Herramientas Comunitarias</h5>
+                        </div>
+                        </div>
+                    </a> 
                 </div>
                 <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
+                    <a href="">
+                        <div class="card bg-light border-0">                       
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-2">
-                          <h5>Herramientas</h5>
-                      </div>
-                    </div>
+                                <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                            </figure>                             
+                        <div class="card-body mt-2">
+                            <h5>Herramientas</h5>
+                        </div>
+                        </div>
+                    </a> 
                 </div>
                 <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
+                    <a href="">
+                        <div class="card bg-light border-0">                       
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-2">
-                          <h5>Herramientas Covid</h5>
-                      </div>
-                    </div>
+                                <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                            </figure>                             
+                        <div class="card-body mt-2">
+                            <h5>Herramientas Covid</h5>
+                        </div>
+                        </div>
+                    </a> 
                 </div>
             </div>
         </div>
@@ -98,11 +98,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
+                            </figure>                           
                       <div class="card-body mt-1">
                           <h5>Reducción de riesgo de desastre</h5>
                       </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -110,11 +110,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Discapacidad</h5>
-                      </div>
+                            </figure>                    
+                            <div class="card-body mt-1">
+                                <h5>Discapacidad</h5>
+                            </div>
+                         </a> 
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -122,11 +122,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Género</h5>
-                      </div>
+                            </figure>                    
+                            <div class="card-body mt-1">
+                                <h5>Género</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -134,11 +134,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Edad</h5>
-                      </div>
+                            </figure>                         
+                            <div class="card-body mt-1">
+                                <h5>Edad</h5>
+                            </div>
+                        </a> 
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -146,11 +146,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Étnico</h5>
-                      </div>
+                            </figure>                          
+                            <div class="card-body mt-1">
+                                <h5>Étnico</h5>
+                            </div>
+                        </a> 
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -158,11 +158,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Enfoque de inclusión</h5>
-                      </div>
+                            </figure>                              
+                            <div class="card-body mt-1">
+                                <h5>Enfoque de inclusión</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -170,11 +170,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Acción humanitaria inclusiva</h5>
-                      </div>
+                            </figure>     
+                            <div class="card-body mt-1">
+                                <h5>Acción humanitaria inclusiva</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -182,11 +182,11 @@
                         <a href="">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                            </figure>
-                        </a>       
-                      <div class="card-body mt-1">
-                          <h5>Respuesta inclusiva COVID</h5>
-                      </div>
+                            </figure>   
+                            <div class="card-body mt-1">
+                                <h5>Respuesta inclusiva COVID</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
