@@ -54,9 +54,9 @@
                             </a>              
                         </div>
                         <div class="col-12 col-md-6 mt-3 mt-md-0">
-                            <h5>
+                            <h3>
                                 Convención sobre los Derechos de las Personas con Discapacidad.
-                            </h5>
+                            </h3>
                             <p class="mt-3">
                                 <a href="" class="text-white p-2">
                                     <i class="fas fa-arrow-right mr-2"></i>
@@ -74,9 +74,9 @@
                             </a>              
                         </div>
                         <div class="col-12 col-md-6 mt-3 mt-md-0">
-                            <h5>
+                            <h3>
                             OMS, 2011: Informe mundial sobre la discapacidad
-                            </h5>
+                            </h3>
                             <p class="mt-3">
                                 <a href="" class="text-white p-2">
                                     <i class="fas fa-arrow-right mr-2"></i>
@@ -120,9 +120,9 @@
                         </a>              
                     </div>
                     <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
-                        <h5>
+                        <h3>
                             Páginas web de referencia
-                        </h5>
+                        </h3>
                         <p>
                             <a href="" class="text-dark">
                                 Red de gestión inclusiva del riesgo de desastres y discapacidad de America latina y el caribe - Red GIRDD-LAC

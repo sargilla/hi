@@ -16814,6 +16814,9 @@ footer .border-md {
 #eventosShow #expositores p {
   color: #1B74AF !important;
 }
+#eventosShow h3 {
+  font-size: 1.1rem !important;
+}
 
 #expShowHV h1, #expShowHV h2,
 #expIndexHV h1,
@@ -16929,6 +16932,9 @@ footer .border-md {
   color: #080707 !important;
 }
 
+#recursosDD h2, #recursosDD h3, #recursosGO h2, #recursosGO h3 {
+  font-size: 1.1rem !important;
+}
 #recursosDD h1, #recursosDD h2, #recursosDD h5, #recursosDD #titulo, #recursosGO h1, #recursosGO h2, #recursosGO h5, #recursosGO #titulo {
   font-weight: bold !important;
 }
@@ -16942,7 +16948,7 @@ footer .border-md {
 #recursosDD #docRec, #recursosGO #docRec {
   background-color: #E35205 !important;
 }
-#recursosDD #docRec h2, #recursosDD #docRec p, #recursosDD #docRec h5, #recursosGO #docRec h2, #recursosGO #docRec p, #recursosGO #docRec h5 {
+#recursosDD #docRec h2, #recursosDD #docRec h3, #recursosDD #docRec p, #recursosDD #docRec h5, #recursosGO #docRec h2, #recursosGO #docRec h3, #recursosGO #docRec p, #recursosGO #docRec h5 {
   color: #fff !important;
 }
 #recursosDD #docRec a, #recursosGO #docRec a {

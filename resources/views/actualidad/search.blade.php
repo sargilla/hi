@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-6 col-md-8 col-lg-9 py-3">
                     <p class="col-md-6 p-0">Pais</p>
-                    <h5>Titulo de la nota</h5>
+                    <h2>Titulo de la nota</h6>
                 </div>
             </div>
         </a>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-6 col-md-8 col-lg-9 py-3">
                     <p class="col-md-6 p-0">Pais</p>
-                    <h5>Titulo de la nota</h5>
+                    <h2>Titulo de la nota</h2>
                 </div>
             </div>
         </a>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-6 col-md-8 col-lg-9 py-3">
                     <p class="col-md-6 p-0">Pais</p>
-                    <h5>Titulo de la nota</h5>
+                    <h2>Titulo de la nota</h2>
                 </div>
             </div>
         </a>

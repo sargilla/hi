@@ -34,9 +34,9 @@
                     <h2>
                         Descripcion General
                     </h2>
-                    <h5>
+                    <h3>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis molestiae provident voluptatem quibusdam sequi perspiciatis hic eum labore rerum!
-                    </h5>
+                    </h3>
                 </div>
                 <div id="expositores" class="mt-5 px-3 px-md-0">
                         <h2>
