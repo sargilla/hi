@@ -1,6 +1,6 @@
-#eventosIndex, 
-#eventosShow, 
-#eventosSearch
+.eventosIndex, 
+.eventosShow, 
+.eventosSearch
 {
     h1,h2
     {
@@ -35,13 +35,13 @@
         }
     }
 }
-#eventosIndex{
+.eventosIndex{
     h1{
         color: #004F71 !important; 
     }
     
 }
-#eventosShow
+.eventosShow
 {
     #expositores p
     {
@@ -49,5 +49,22 @@
     }
     h3{
         font-size:1.1rem !important; 
+    }
+}
+#eventosContenido,#eventosSearchContenido
+{
+    .card-body .btn-calendario 
+    {
+        border: 0 !important;
+        background: unset !important;
+    }
+    .btn-calendario:focus, .btn-calendario:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 5px #1B74AF !important;
+        text-decoration: none !important;
     }
 }

@@ -1,6 +1,6 @@
 @extends('plantilla::layout')
 @section('main-content')
- <article id="expSearchHV">
+ <article id="expSearchHV" class="expSearchHV">
      <div class="bg-primary text-white mb-0 p-3 p-lg-5">
          <div class="container">
             <h1>
@@ -10,11 +10,18 @@
     </div>  
      <div class="bg-white p-3 px-lg-5">
          <div class="container">
-            <small class="text-dark">
-                <a href="" class="p-2 mr-1"> Principal principal > </a> <a href="" class="p-2 mr-1">Experiencias </a> > Diagnósticos comunitarios inclusivo
-            </small>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-unset">
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Historia de vida</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"> Diagnósticos comunitarios inclusivos</li>
+                </ol>
+            </nav>
          </div>     
     </div> 
+ </article>
+ <article id="expSearchHVFiltro" class="expSearchHV">
     <div>
         <div class="bg-primary p-3 p-md-4 p-lg-5">
             <div class="container">
@@ -31,6 +38,8 @@
             </div>
         </div>
     </div>
+</article>
+<article id="expSearchHVDD" class="expSearchHV">
      <div class="container py-5" id="expRes">  
          <h2 class="text-center">
             Documentos de diagnósticos     

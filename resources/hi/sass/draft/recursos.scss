@@ -1,4 +1,4 @@
-#recursosIndex
+.recursosIndex
 {
     h1,h2
     {
@@ -19,7 +19,7 @@
     }
 }
 
-#recursosDD, #recursosGO
+.recursosDD, .recursosGO
 {
     h2,h3 
     {
@@ -39,7 +39,7 @@
         color: #004F71 !important;
     } 
 
-    #docRec
+    .docRec
     {   
         background-color: #E35205 !important;
         h2,h3,p,h5
@@ -68,9 +68,9 @@
 }
 @media screen and (min-width:992px)
 {
- #recursosDD
+ .recursosDD
 {
-    #docRec
+    .docRec
     {
         color: #fff !important;
         background-color: #E35205 !important;

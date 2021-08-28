@@ -1,23 +1,28 @@
 @extends('plantilla::layout')
 @section('main-content')
-    <article id="recursosDD">
+    <article id="recursosDD" class="recursosDD">
         <div class="p-5 bg-primary text-white">
             <div class="container">
                 <h1>
                     Discapacidad
                 </h1>
                 
-            </div>
-            
+            </div>         
         </div>
-        <div class="container py-5 px-3 p-lg-5">
-            <small>
-               <a href=""class="p-2 mr-1">Pagina Principal </a> > 
-               <a href="" class="p-2 mr-1">Recursos</a> 
-               Discapacidad
-            </small>
+        <div class="container p-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-unset">
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Recursos</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Discapacidad</li>
+                </ol>
+              </nav>
+        </div>
+    </article>
+    <article id="recursosDDTitulo" class="recursosDD">
+        <div class="container mt-3 py-2">
             <a href="">
-                <div class="row mt-5 py-5">
+                <div class="row">
                     <div class="col-12 col-md-6">
                         
                             <figure class="figure mb-0">
@@ -39,8 +44,10 @@
                 </div>
             </a>  
         </div>
-        <div id="docRec">
-            <div class="container py-5 px-3">
+    </article>
+    <article id="recursosDDContenido1" class="recursosDD">
+        <div class="docRec">
+            <div class="container mt-3 py-4">
                 <h2>
                     Documentos recomendados
                 </h2>
@@ -86,6 +93,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+</article> 
+<article id="recursosDDContenido2" class="recursosDD">
+    <div class="docRec">
+        <div class="container py-4">
                 <h2>
                     Marco normativo
                 </h2>
@@ -109,8 +122,10 @@
                 </p>
             </div>
         </div>
+</article>
+<article id="recursosDDReferencia" class="recursosDD">
         <div id="referencia">
-            <div class="container py-5 px-3 p-lg-5">
+            <div class="container py-4">
                 <div class="row">
                     <div class="col-12 col-sm-6">
                         <a href="">

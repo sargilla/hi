@@ -53,7 +53,14 @@
     }
    
 }
-#actualidadIndex
+#actualidadSearchContenido
+{
+    li 
+    {
+        list-style: none;
+    }
+}
+.actualidadIndex
 {
     h1,h2
     {
@@ -64,8 +71,8 @@
         font-size: 1.2rem !important;
     }
 }
-#actualidadShow, 
-#actualidadIndex
+.actualidadShow, 
+.actualidadIndex
 {
     h1,h2
     {
@@ -98,7 +105,7 @@
     }
 }
 
-#actualidadSearch
+.actualidadSearch
 {
     h1
     {

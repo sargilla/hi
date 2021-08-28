@@ -1,15 +1,23 @@
 @extends('plantilla::layout')
 @section('main-content')
- <article id="actualidadSearch">
+ <article id="actualidadSearch" class="actualidadSearch">
      <h1 class="p-5 text-center bg-primary text-white text-center">
          Resultado de busqueda
      </h1>
-     <div class="container py-5">           
-        <div class="mb-3">
-            <small>
-              <a href="" class="p-2 mr-1"> Principal principal > <a href="" class="p-2 mr-1">Actualidad</a> </a>  > Resultado de busqueda
-            </small>
-        </div>  
+     <div class="container py-5 py-lg-3">    
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-unset">
+                <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+                <li class="breadcrumb-item"><a href="#" class="p-2">Actualidad</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Resultado de busqueda</li>
+            </ol>
+        </nav>
+     </div>
+ </article>
+ <article id="actualidadSearchContenido" class="actualidadSearch">
+     <div class="container py-5 py-lg-3">      
+         <ul>  
+        <li>   
         <a href="">
             <div class="row mb-3 border py-5">
                 <div class="col-6 col-md-4 col-lg-3">
@@ -23,6 +31,8 @@
                 </div>
             </div>
         </a>
+        </li>
+        </li>
         <a href="">
             <div class="row mb-3 border py-5">
                 <div class="col-6 col-md-4 col-lg-3">
@@ -36,6 +46,8 @@
                 </div>
             </div>
         </a>
+        </li>
+        <li>
         <a href="">
             <div class="row mb-3 border py-5">
                 <div class="col-6 col-md-4 col-lg-3">
@@ -49,6 +61,9 @@
                 </div>
             </div>
         </a>
+        </li>
+        </ul>
      </div>
+     
  </article>
 @endsection

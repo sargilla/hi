@@ -1,5 +1,5 @@
-#expShowHV, 
-#expIndexHV
+.expShowHV, 
+.expIndexHV
 {
     h1,h2
     {
@@ -32,13 +32,13 @@
         }
     }
 }
-#expIndexHV{
+.expIndexHV{
     h1,h2
     {
         color: #004F71 !important;
     }
 }
-#expSearchHV
+.expSearchHV
 {
     h1,h2,h3
     {
@@ -49,9 +49,10 @@
     {    
         color: #fff !important;
     }
+   
     a:focus, a:hover 
     {
-        outline: solid 2px #fff !important;
+        outline: solid 2px #fff;
         text-decoration: underline !important;
     }
     h5
@@ -75,16 +76,30 @@
         border-bottom: solid 2px #fff !important;
     }
 }
-#expPI 
+#expSearchHV{
+    a:focus, a:hover {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
+    }
+   
+}
+.expPI 
 {
     h1 
     {
         font-weight: bold !important;
     }
-    #practicas h3
+    #practicas
     {
-        color: #004F71 !important;
+        h3 {
+            color: #004F71 !important;
         font-weight: bold !important;
+        }
+        
+        li 
+        {
+            list-style-type: none;
+        }
     }
     p,h2 
     {
@@ -96,7 +111,7 @@
         text-decoration: underline !important;
     }
 }
-#expIndex
+.expIndex
 {
     h1,h2
     {
@@ -111,17 +126,22 @@
     {
         color:#1B74AF !important; 
     }
-
-}
-#expIndex
-{
     a:focus, a:hover 
     {
-        outline: solid 2px #1B74AF !important;
+        outline: solid 5px #1B74AF !important;
         text-decoration: underline !important;
     }
     .card
     {
         border: solid 2px#1B74AF !important;
+    }
+
+}
+#exp
+{
+    a:focus, a:hover 
+    {
+        outline: solid 2px #1B74AF !important;
+        text-decoration: underline !important;
     }
 }

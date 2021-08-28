@@ -1,19 +1,23 @@
 @extends('plantilla::layout')
 @section('main-content')
-<article id="actualidadIndex">   
+<article id="actualidad" class="actualidadIndex">   
     <div class="container py-5">
           <h1 class="text-primary">
             Actualidad
         </h1>
-        <small>
-           <a href="" class="p-2 mr-1">Pagina Principal</a>  > 
-            Actualidad
-        </small>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-unset">
+            <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Actualidad</li>
+          </ol>
+        </nav>
         <p class="mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
         </p>
-        </div>      
-    <div class="bg-primary">
+      </div> 
+</article>    
+<article id="actualidadFiltro" class="actualidadIndex">
+  <div class="bg-primary">
       <div class="container py-5 px-5 px-sm-1">
           <p class="text-white">
             Desde aqui podras filtrar notas por paises y por fecha
@@ -31,9 +35,10 @@
             </select>
             <button class="mb-3 mb-md-0 btn btn-purple px-5" type="submit">Filtrar</button>
         </form>
-      </div>
-       
+      </div>    
     </div>
+</article>
+<article id="actualidadContentido" class="actualidadIndex">
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-3">
           <div class="col mb-4">

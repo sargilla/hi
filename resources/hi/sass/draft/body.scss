@@ -62,3 +62,12 @@ img
 {
     background-color: #EEEEEE !important;
 }
+.bg-unset 
+{
+    background-color: unset !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+
+    content: ">" !important;
+}

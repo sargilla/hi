@@ -1,17 +1,23 @@
 @extends('plantilla::layout')
 @section('main-content')
- <article id="recursosIndex">
+ <article id="recursos" class="recursosIndex">
      <div class="container py-5">
             <h1>
                 Recursos
             </h1>
-            <small>
-               <a href="" class="p-2 mr-1">Pagina Principal</a>  > 
-               Recursos
-            </small>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-unset">
+                  <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Recursos</li>
+                </ol>
+              </nav>
             <p class="mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
             </p>
+     </div>
+ </article>
+ <article id="recursosSecundario" class="recursosIndex">
+    <div class="container mb-5">          
             <div class="row mt-5">
                 <div class="col-12 col-sm-6">
                     <a href="">
@@ -27,8 +33,10 @@
                 </div>
             </div>
     </div>
-    <div class="bg-light p-3 p-lg-5">
-        <div class="container">
+ </article>
+ <article id="recursosCajaHerramientas" class="recursosIndex">
+    <div class="bg-light ">
+        <div class="container py-5">
             <h2>
                 Caja de herramientas
             </h2>
@@ -72,6 +80,8 @@
             </div>
         </div>
     </div>
+ </article>
+ <article id="recursosGlosario" class="recursosIndex">
     <div class="container py-5">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-8">
@@ -87,8 +97,10 @@
             </div>
         </div>       
     </div>
-    <div class="bg-light p-3 p-lg-5">
-        <div class="container">
+ </article>
+ <article id="recursosTematicas" class="recursosIndex">
+    <div class="bg-light">
+        <div class="container py-5">
             <h2>
                 Tematicas
             </h2>
@@ -192,31 +204,38 @@
             </div>
         </div>
     </div>
+ </article>
+ <article id="recursosPaises" class="recursosIndex">
     <div class="container py-5">
         <h2>
            Recursos por paises
          </h2>
         <div class="row justify-content-center col-lg-8 mx-auto">
             <div class="col-4">
-                <a href="">
+                <a href="" class="text-center">
                     <figure class="figure">
                       <img src="/images/col.png" class="figure-img img-fluid " alt="...">
-                    </figure>
+                      Colombia
+                    </figure>   
+                                   
                 </a>  
+                
             </div>
             <div class="col-4">
-                <a href="">
+                <a href="" class="text-center">
                     <figure class="figure">
                       <img src="/images/peru.png" class="figure-img img-fluid " alt="...">
-                    </figure>
+                      Peru
+                    </figure>                 
                 </a>  
             </div>
             <div class="col-4">
-                <a href="">
+                <a href="" class="text-center">
                     <figure class="figure">
                       <img src="/images/py.png" class="figure-img img-fluid " alt="...">
-                    </figure>
-                </a>  
+                      Paraguay
+                    </figure>              
+                </a>              
             </div>
         </div>       
     </div>

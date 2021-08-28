@@ -1,16 +1,21 @@
 @extends('plantilla::layout')
 @section('main-content')
-<article id="expIndex">          
-    <div class="container py-5 px-lg-3">
+<article id="exp" class="expIndex">          
+    <div class="container py-5 p-lg-3 mt-lg-3">
       <div class="mb-4">
         <h1 class="text-primary">
             Experiencias
         </h1>
-        <small>
-          <a href="" class="p-2 mr-1"> Pagina Principal </a> 
-           > Experiencias
-        </small>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-unset">
+            <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#" class="p-2">Experiencias</a></li>
+          </ol>
+        </nav>
       </div>
+</article>
+<article  id="expContenido" class="expIndex">
+  <div class="container py-5 p-lg-3">
         <div class="row row-cols-2 row-cols-md-3">
             <div class="col mb-4">     
                 <div class="card">

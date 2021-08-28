@@ -1,18 +1,22 @@
 @extends('plantilla::layout')
 @section('main-content')
-<article id="expIndexHV">   
+<article id="expHV" class="expIndexHV">   
     <div class="container py-5">
         <h1 class="text-primary">
             Historias de vida
         </h1>
-        <small>
-            <a href="" class="p-2 mr-1"> Pagina Principal </a> > 
-             Historias de vida
-        </small>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-unset">
+              <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Historia de vida</li>
+            </ol>
+          </nav>
         <p class="mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, aliquam.
         </p>
-    </div>      
+    </div>  
+</article>
+<article id="expHVFiltro" class="expIndexHV">   
     <div class="bg-primary">
       <div class="container  py-5 px-5 px-sm-1">
           <p class="text-white">
@@ -33,6 +37,8 @@
           </form>
       </div>
     </div>
+</article>
+<article id="expHVContenido" class="expIndexHV">
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-3">
             <div class="col mb-4">           
