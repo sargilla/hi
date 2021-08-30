@@ -23,8 +23,14 @@
                                 Experiencias de actores sociales y entidades gubernamentales en América Latina
                             </h2>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad debitis vitae quisquam illo sapiente ex aspernatur non, illum aperiam ab sunt odio sint eum, dignissimos voluptatem itaque ullam quaerat? Nesciunt.
-                            </p>                      
+                                La publicación “Prácticas inclusivas para la gestión del riesgo de desastres”, ha sido desarrollada por Humanity & Inclusion, Save the Children y COOPI, con el apoyo de USAID, en el marco del proyecto regional “Gestión inclusiva de riesgos de desastres: un enfoque innovador para la inclusión de los grupos de mayor riesgo”. Su objetivo es ilustrar cómo los grupos en situación de mayor vulnerabilidad participan de las intervenciones de gestión del riesgo de desastres.                               
+                            </p> 
+                            <p>
+                                El documento recoge 12 experiencias de prácticas inclusivas de gestión del riesgo de desastres identificadas de actores sociales y entidades gubernamentales en 6 países de la región latinoamericana. Por cada experiencia, se documentó el contexto, la descripción de la práctica, el impacto generado, el potencial para ser replicado, la sostenibilidad y los desafíos para el futuro. 
+                            </p>
+                            <p>
+                                Compartimos esta primera selección de prácticas, esperando que su lectura sea inspiradora ¡y estimule la difusión de un enfoque inclusivo para la gestión del riesgo de desastres!
+                            </p>                     
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <a href="" class="btn btn-purple">Descargar 12 practicas</a>

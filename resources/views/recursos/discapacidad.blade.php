@@ -11,7 +11,7 @@
         </div>
         <div class="container p-3">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-unset">
+                <ol class="breadcrumb bg-unset p-0">
                   <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Recursos</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Discapacidad</li>
@@ -26,7 +26,7 @@
                     <div class="col-12 col-md-6">
                         
                             <figure class="figure mb-0">
-                                <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                <img class="img-fluid mb-0" src="/images/d_1.jpg" alt="">
                             </figure>
                                 
                     </div>
@@ -56,7 +56,7 @@
                         <div class="col-12 col-md-6">
                             <a href="">
                                 <figure class="figure mb-0">
-                                    <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                    <img class="img-fluid mb-0" src="/images/d_2.jpg" alt="">
                                 </figure>
                             </a>              
                         </div>
@@ -76,7 +76,7 @@
                         <div class="col-12 col-md-6">
                             <a href="">
                                 <figure class="figure mb-0">
-                                    <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                    <img class="img-fluid mb-0" src="/images/d_1.jpg" alt="">
                                 </figure>
                             </a>              
                         </div>
@@ -130,7 +130,7 @@
                     <div class="col-12 col-sm-6">
                         <a href="">
                             <figure class="figure mb-0">
-                                <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                <img class="img-fluid mb-0" src="/images/d_2.jpg" alt="">
                             </figure>
                         </a>              
                     </div>

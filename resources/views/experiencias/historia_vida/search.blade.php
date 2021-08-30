@@ -11,7 +11,7 @@
      <div class="bg-white p-3 px-lg-5">
          <div class="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-unset">
+                <ol class="breadcrumb bg-unset p-0">
                   <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Historia de vida</a></li>
@@ -30,10 +30,13 @@
             </p>
             <form action="" method="GET" class="form-inline mr-3">
                 @csrf 
-                <select name="" id="" class="form-control mb-3 mr-3 mb-md-0">
-                    <option value="">Todas los paises</option>
-                </select>
-                <button class="mb-3 mb-md-0 btn btn-purple px-5" type="submit">Filtrar</button>
+                  <div class="div-group">
+                    <label for="fechas" class="text-white  justify-content-start ">Todas los paises</label>
+                      <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
+                        <option value="paises">Todas los paises</option>
+                    </select>
+                </div>
+                    <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
             </form>
             </div>
         </div>

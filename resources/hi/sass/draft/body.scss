@@ -44,11 +44,12 @@ html
     color: #fff;
     background-color: #9010BC !important;
     border-color: #9010BC !important;
-    text-decoration: none !important;     
+    text-decoration: none !important;   
+    outline: solid 2px #004F71 !important;  
 }
 .btn-purple:focus
     {
-        outline: solid 2px #1B74AF !important;
+        outline: solid 2px #004F71 !important;
     }
 i 
 {
@@ -70,4 +71,28 @@ img
 .breadcrumb-item + .breadcrumb-item::before {
 
     content: ">" !important;
+}
+
+.border-primary 
+{
+    border-color: #004F71 !important;
+}
+.fs-1-2 
+{
+    font-size: 1.2rem !important;
+}
+select:focus 
+{
+    box-shadow: unset !important;
+    outline: solid 3px #004F71 !important;
+    border: 0 !important;
+}
+
+.rounded-10
+{
+    border-radius: 10px !important;
+}
+.text-decoration-underline
+{
+    text-decoration: underline !important;
 }

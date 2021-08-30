@@ -8,7 +8,7 @@ Route::group(['middleware' => 'web', 'prefix' => config('flatlab.prefix')], func
     });
 });
 
-Route::get('/home', function(){
+Route::get('/', function(){
     return view('home.index');
 });
 
@@ -71,4 +71,4 @@ Route::prefix('experiencias')->group(function(){
 });
 
 /* Rutas Paginas */
-Route::get('/{pagina?}', 'FrontendController@index');
+/* Route::get('/{pagina?}', 'FrontendController@index'); */

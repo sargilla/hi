@@ -6,7 +6,7 @@
     }
     a:focus, a:hover 
     {
-        outline: solid 2px #1B74AF !important;
+        outline: solid 2px #004F71 !important;
         text-decoration: underline !important;
     }
     h2,p,h5,h1
@@ -64,6 +64,13 @@
             color:rgb(8, 7, 7) !important;
             text-decoration: underline !important;
         }
+    }
+}
+#recursos 
+{
+    p 
+    {
+        color:rgb(8, 7, 7) !important;
     }
 }
 @media screen and (min-width:992px)

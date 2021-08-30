@@ -15,10 +15,10 @@
                 <a class="skip-main" tabindex="0" id="contenidoPrincipal" href="">Ir al Contenido Principal</a>
             </li>
     </ul> 
-        <form class="d-none d-md-block d-lg-none col-md-12 col-lg-4 col-10 col-xl-3 mr-lg-5">
+        <form role="search" aria-label="buscador de informacion" class="d-none d-md-block d-lg-none col-md-12 col-lg-4 col-10 col-xl-3 mr-lg-5">
             <div class="d-flex align-items-center border border-default rounded px-2">
                 <i class="fas fa-search text-white fa-1x text-secondary"></i>
-                <input class="form-control w-100 border-0" type="text" placeholder="Buscar" name="keywords">
+                <input aria-label="ingrese la informacion que desea buscar" title="Escrible solo texto para realizar la busqueda" class="form-control w-100 border-0" type="text" placeholder="Buscar" name="keywords">
             </div>
         </form>  
             <a class="d-none d-md-block navbar-brand ml-lg-3 ml-xl-5 mb-lg-2" href="/">

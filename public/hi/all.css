@@ -16401,10 +16401,11 @@ html {
   background-color: #9010BC !important;
   border-color: #9010BC !important;
   text-decoration: none !important;
+  outline: solid 2px #004F71 !important;
 }
 
 .btn-purple:focus {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
 }
 
 i {
@@ -16427,10 +16428,35 @@ img {
   content: ">" !important;
 }
 
+.border-primary {
+  border-color: #004F71 !important;
+}
+
+.fs-1-2 {
+  font-size: 1.2rem !important;
+}
+
+select:focus {
+  box-shadow: unset !important;
+  outline: solid 3px #004F71 !important;
+  border: 0 !important;
+}
+
+.rounded-10 {
+  border-radius: 10px !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
 header {
   bottom: 0 !important;
   padding: 0 !important;
   z-index: 1 !important;
+}
+header a {
+  color: unset;
 }
 header .collapse {
   position: absolute;
@@ -16447,11 +16473,11 @@ header .navbar-toggler {
 header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(27,116,175)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
-header .navbar-nav a {
+header .navbar-nav .nav-link {
   font-size: 1rem;
   line-height: 33px;
   font-weight: bold;
-  color:   #1B74AF !important;
+  color: #1B74AF !important;
 }
 header input:focus {
   box-shadow: unset !important;
@@ -16490,7 +16516,7 @@ header #logo-mobile {
     text-align: left !important;
   }
   header .navbar {
-    box-shadow: 0 0 6px 6px #b3b1b1ea, 0 0 2px 17px #EEEEEE;
+    box-shadow: 0px 5px 6px #b3b1b1ea, 0px 19px 2px 17px #EEE;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
   }
@@ -16571,6 +16597,19 @@ footer .mb-4em {
 footer .border-md {
   border-bottom: solid 2px #fff !important;
 }
+footer .skip-main-up {
+  position: absolute;
+  left: -999px;
+  bottom: 50px;
+  z-index: 1030;
+  background-color: #004F71 !important;
+  color: #fff !important;
+  height: auto;
+  padding: 7px 0px;
+  width: 150px;
+  text-align: center;
+  overflow: hidden;
+}
 
 @media screen and (min-width: 768px) {
   footer .mb-4em {
@@ -16596,26 +16635,39 @@ footer .border-md {
   footer a:hover, footer a:focus-visible {
     outline: solid 2px #fff !important;
   }
+  footer .skip-main-up:focus {
+    left: -100%;
+    font-size: 14px;
+    outline: 2px solid #1364b1;
+    text-align: center;
+    z-index: 2000;
+  }
+  footer #logos a:hover, footer #logos a:focus-visible {
+    outline: solid 2px #004F71 !important;
+  }
 }
 #datos_impacto a:focus, #datos_impacto a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 #datos_impacto h2 {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   font-weight: bold !important;
   color: #004F71 !important;
 }
 #datos_impacto h3 {
-  color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 0.9rem !important;
   font-weight: 400 !important;
+}
+#datos_impacto p {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  color: #1B74AF !important;
 }
 #datos_impacto .border-datos {
   font-size: 1.5rem !important;
   color: #1B74AF !important;
   border: solid 6px #E35205 !important;
-  box-shadow: 0 0 0px 4px #b8b8b8;
   position: relative;
   width: 150px;
   height: 150px;
@@ -16627,14 +16679,17 @@ footer .border-md {
   right: 0;
   bottom: 0;
   width: 100%;
-  border: solid 6px #b8b8b8 !important;
+}
+#datos_impacto .link-di {
+  font-size: 0.9rem !important;
+  text-decoration: underline !important;
 }
 
 #actualidad {
   background-color: #EEEEEE !important;
 }
 #actualidad h2 {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   font-weight: bold !important;
   color: #004F71 !important;
 }
@@ -16645,13 +16700,13 @@ footer .border-md {
 }
 #actualidad p {
   color: #004F71 !important;
-  border-bottom: solid 2px #004F71;
 }
 #actualidad img {
+  border-radius: 10px !important;
   cursor: pointer;
 }
 #actualidad #div-actualidad a:focus, #actualidad #div-actualidad a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 #actualidad #div-actualidad .card {
@@ -16696,7 +16751,7 @@ footer .border-md {
 .actualidadShow a:focus, .actualidadShow a:hover,
 .actualidadIndex a:focus,
 .actualidadIndex a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .actualidadShow .card,
@@ -16720,7 +16775,7 @@ footer .border-md {
   font-weight: bold !important;
 }
 .actualidadSearch a:focus, .actualidadSearch a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .actualidadSearch a:focus .border, .actualidadSearch a:hover .border {
@@ -16763,9 +16818,14 @@ footer .border-md {
   border-radius: 15px !important;
 }
 
+@media screen and (min-width: 768px) {
+  #bienvenida h1 {
+    font-size: 3rem !important;
+  }
+}
 @media screen and (min-width: 992px) {
   #bienvenida h1 {
-    font-size: 4rem !important;
+    font-size: 4.7rem !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -16840,6 +16900,16 @@ footer .border-md {
 #eventosContenido a:focus, #eventosContenido a:hover, #eventosSearchContenido a:focus, #eventosSearchContenido a:hover {
   outline: solid 5px #1B74AF !important;
   text-decoration: none !important;
+}
+#eventosContenido figure, #eventosSearchContenido figure {
+  border-radius: 10px !important;
+}
+
+#eventosContenido h2 {
+  color: #004F71 !important;
+}
+#eventosContenido button {
+  border-radius: 10px !important;
 }
 
 .expShowHV h1, .expShowHV h2,
@@ -16958,7 +17028,7 @@ footer .border-md {
   font-weight: bold !important;
 }
 .recursosIndex a:focus, .recursosIndex a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .recursosIndex h2, .recursosIndex p, .recursosIndex h5, .recursosIndex h1 {
@@ -16999,6 +17069,10 @@ footer .border-md {
 .recursosDD #referencia a, .recursosGO #referencia a {
   color: #080707 !important;
   text-decoration: underline !important;
+}
+
+#recursos p {
+  color: #080707 !important;
 }
 
 @media screen and (min-width: 992px) {

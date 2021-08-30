@@ -11,7 +11,7 @@
         </div>
         <div class="container p-3">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-unset">
+                <ol class="breadcrumb bg-unset p-0">
                   <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Recursos</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Genero</li>

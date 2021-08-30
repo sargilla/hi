@@ -13,7 +13,7 @@
     </div>
     <div class="py-3 px-5">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-unset">
+            <ol class="breadcrumb bg-unset p-0">
               <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
               <li class="breadcrumb-item"><a href="#" class="p-2">Eventos</a></li>
               <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>

@@ -5,18 +5,18 @@
                 <p>
                     Este sitio web y sus contenidos son parte de un proyecto 
                     regional que promueve una gestión del riesgo con enfoque de inclusión y protección, liderado por 
-                    Humanity & inclusion en consorcio con COOPI Paraguay y Save the Children 
+                    <span lang="en">Humanity & inclusion </span> en consorcio con <abbr title="cooperazione internazionale">COOPI </abbr> y  <span lang="en">Save the Children </span> 
                     Perú
                 </p>
                 <p>
                     La Realización de este sitio web y de sus contenidos fue posible gracias al apoyo 
                     del pueblo de los Estados Unidos de América, proporcionada mediante la Oficina 
                     de Asistencia Humanitaria de la Agencia de los Estados Unidos para el 
-                    Desarrollo Internacional (USAID / BHA) y del Programa ECHO de la Unión 
+                    Desarrollo Internacional (<abbr title="">USAID </abbr> / <abbr title="">BHA</abbr> ) y del Programa <abbr title=""> ECHO </abbr> la Unión 
                     Europea. 
                     <br> 
                     El contenido aquí expresado es responsabilidad de las instituciones 
-                    imprementadoras y no necesariamente refleja las opiniones de USAID, del 
+                    imprementadoras y no necesariamente refleja las opiniones de <abbr title="">USAID </abbr>, del 
                     Gobierno de los Estados Unidos o de la Unión Europea.
                 </p>
             </div>
@@ -32,16 +32,16 @@
                             </div>
                             <div class="ml-3">
                                 <li class="mb-2">      
-                                    <a href="" class="p-2">Facebook Peru</a>
+                                    <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline">Facebook Peru</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="" class="p-2">Facebook Colombia</a>
+                                    <a href="https://www.facebook.com/Handicapinternationalcolombia" class="p-2 text-decoration-underline">Facebook Colombia</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="" class="p-2">Facebook America Latina</a>
+                                    <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/" class="p-2 text-decoration-underline">Facebook America Latina</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="" class="p-2">Facebook Cuba</a>
+                                    <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/" class="p-2 text-decoration-underline">Facebook Cuba</a>
                                 </li>
                             </div>
                         </div>
@@ -55,10 +55,10 @@
                             </div>
                             <div class="ml-3">
                                 <li class="mb-2">                
-                                    <a href="" class="p-2">Youtube Colombia</a>
+                                    <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg" class="p-2 text-decoration-underline">Youtube Colombia</a>
                                 </li>                   
                                 <li class="mb-2">
-                                    <a href="" class="p-2">Youtube Cuba</a>
+                                    <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug" class="p-2 text-decoration-underline">Youtube Cuba</a>
                                 </li>     
                             </div>                          
                 </ul>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="ml-3">
                                 <li class="mb-2">
-                                    <a href="" class="p-2">Instagram Cuba</a>                                         
+                                    <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la" class="p-2 text-decoration-underline">Instagram Cuba</a>                                         
                                 </li>  
                             </div>
                            
@@ -79,14 +79,57 @@
             <div class="col-md-6 col-lg-2 align-self-center text-center mb-5">
                 <a href="">
                     <figure class="figure">
-                        <img class="figure-img img-fluid" src="./images/logo-hi.png" alt="">
+                        <img class="figure-img img-fluid" src="./images/logo-hi.png" alt="logo de humanity and inclusion">
                     </figure>
                 </a>    
               
             </div>
         </div>   
     </div>
-    <div class="bg-white py-4">
+    <div class="bg-white" id="logos">
+        <div class="container">
+            <div class="row py-2">
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="col-6">
+                            <a href="">                     
+                                <figure>
+                                    <img src="/images/logo_1.png" alt="logo de USAID" width="100%">
+                                </figure>  
+                            </a>                    
+                        </div>
+                        <div  class="col-6">
+                            <a href="">
+                                <figure>
+                                    <img src="/images/logo_2.png" alt="logo de finanzado por la Union Europea" width="100%">
+                                </figure>
+                            </a>                     
+                        </div>
+                    </div>
+                    <div  class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-between">
+                        <div  class="col-6 col-sm-4">
+                            <a href="">
+                                <figure>
+                                    <img src="/images/logo_3.png" alt="logo de humanity and inclusion" width="100%">
+                                </figure>
+                            </a>                         
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <a href="">
+                                <figure>
+                                    <img src="/images/logo_5.png" alt="logo de cooperazione internazionale" width="100%">
+                                </figure>
+                            </a>                        
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <a href="">
+                                <figure>
+                                    <img src="/images/logo_4.png" alt="logo de save the children" width="100%">
+                                </figure>
+                            </a>                      
+                        </div>
+                    </div>
+            </div>
+        </div>
         
     </div>
     <div class="bg-dark p-4 px-md-0 py-md-3 mb-4em" id="copyright">      
@@ -97,15 +140,25 @@
                     </span>
                 </div>
                 <div class="col-12 col-lg-6 text-center my-3 my-md-2 my-lg-0">
-                    <span >
-                        <a href="" class="p-2">Índice del sitio</a> - 
-                        <a href="" class="p-2">Políticas y privacidad</a> - 
-                        <a href="" class="p-2">Indice del sitio</a> -
-                        <a href="#header" class="p-2">Ir al Inicio</a>
-                    </span>
+                    <nav>
+                       <ul class="d-flex justify-content-center">
+                            <li>
+                                <a href="" class="p-2">Índice del sitio</a> - 
+                            </li>
+                            <li>
+                                <a href="" class="p-2">Políticas y privacidad</a> -
+                            </li>
+                            <li>
+                                <a href="" class="p-2">Indice del sitio</a>
+                            </li>
+                            <li>
+                                <a class="skip-main-up" id="irAlMenuPrincipal" href="#header" class="p-2">Ir menu principal</a>  
+                            </li>                                                    
+                        </ul>                   
+                </nav>
+              
                 </div>
             </div>   
-   
     </div>
-    
+                 
 </footer>
