@@ -3,14 +3,14 @@
         background-color: #EEEEEE !important;
         h2 
         {
-            font-size: 2rem !important;
+            font-size: 2rem;
             font-weight: bold !important;
             color: #004F71 !important;
         }
         h3
         {
             color: #004F71 !important;
-            font-size: 1.25rem !important;
+            font-size: 1.25rem;
             font-weight: bold !important;
         }
         p 
@@ -38,7 +38,7 @@
     h3
     {
         color: #004F71 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
         font-weight: bold !important;
     }
     p 
@@ -68,7 +68,7 @@
     }
     h2 
     {
-        font-size: 1.2rem !important;
+        font-size: 1.2rem;
     }
 }
 .actualidadShow, 
@@ -94,7 +94,7 @@
         h5
         {
             color: #004F71 !important;
-            font-size: 1.25rem !important;
+            font-size: 1.25rem;
             font-weight: bold !important;
         }
         p 
@@ -123,7 +123,7 @@
     h5
     {
         color: #004F71 !important;
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
         font-weight: bold !important;
     }
     p 
@@ -135,5 +135,49 @@
     {
         border: unset !important;
         border-bottom: solid 2px #004F71 !important;
+    }
+}
+
+@media screen and (min-width:576px)
+{
+    #actualidadContentido
+    {
+        h2 
+        {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px)
+{
+    #actualidadContentido
+    {
+        h2 
+        {
+            font-size: 1.7rem;
+        }
+    }
+}
+@media screen and (min-width:992px)
+{
+    #actualidadContentido
+    {
+        h2 
+        {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    #actualidadContentido
+    {
+        h2 
+        {
+            font-size: 2.5rem;
+        }
     }
 }

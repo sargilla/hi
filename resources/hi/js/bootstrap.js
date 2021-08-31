@@ -37,3 +37,4 @@ try {
 } catch (e) {}
 
 require('./draft/header.js');
+window.Cookies = require('js-cookie/src/js.cookie');

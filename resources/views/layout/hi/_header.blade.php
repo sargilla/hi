@@ -6,10 +6,10 @@
 <nav class="fixed-bottom position-md-static navbar navbar-expand-md bg-white flex-wrap p-0 px-md-5 pt-md-3 p-lg-0">
     <ul class="navbar-filtro">    
             <li class="mr-3">
-                <button type="button" class="text-white p-2">Cambiar a modo oscuro <i class="fas fa-adjust"></i></button>
+                <button type="button" class="text-white p-2" id="btn-oscuro">Cambiar a modo oscuro <i class="fas fa-adjust"></i></button>
             </li>
             <li class="mr-3">
-                <button type="button" class="text-white p-2">Alternar tamaño de letra <i class="fas fa-text-height"></i></button>
+                <button type="button" class="text-white p-2" id="btn-letra">Alternar tamaño de letra <i class="fas fa-text-height"></i></button>
             </li>
             <li>
                 <a class="skip-main" tabindex="0" id="contenidoPrincipal" href="">Ir al Contenido Principal</a>

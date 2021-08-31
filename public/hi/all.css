@@ -16454,6 +16454,14 @@ select:focus {
   height: 60% !important;
 }
 
+.fs-3x {
+  font-size: 3rem !important;
+}
+
+.fs-8x {
+  font-size: 8rem !important;
+}
+
 header {
   bottom: 0 !important;
   padding: 0 !important;
@@ -16584,7 +16592,7 @@ footer li {
   list-style-type: none !important;
 }
 footer li i {
-  font-size: 0.8rem !important;
+  font-size: 0.8rem;
 }
 footer a {
   color: #fff !important;
@@ -16626,11 +16634,11 @@ footer .skip-main-up {
     border-bottom: unset !important;
   }
   footer h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
     font-weight: bold !important;
   }
   footer p {
-    font-size: 1.125rem !important;
+    font-size: 1.125rem;
     font-family: 400 !important;
   }
   footer a, footer li:hover i {
@@ -16655,21 +16663,21 @@ footer .skip-main-up {
   text-decoration: none !important;
 }
 #datos_impacto h2 {
-  font-size: 2rem !important;
+  font-size: 2rem;
   font-weight: bold !important;
   color: #004F71 !important;
 }
 #datos_impacto h3 {
-  font-size: 0.9rem !important;
+  font-size: 0.9rem;
   font-weight: 400 !important;
 }
 #datos_impacto p {
-  font-size: 0.9rem !important;
+  font-size: 0.9rem;
   font-weight: 400 !important;
   color: #1B74AF !important;
 }
 #datos_impacto .border-datos {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   color: #1B74AF !important;
   border: solid 6px #E35205 !important;
   position: relative;
@@ -16685,7 +16693,7 @@ footer .skip-main-up {
   width: 100%;
 }
 #datos_impacto .link-di {
-  font-size: 0.9rem !important;
+  font-size: 0.9rem;
   text-decoration: underline !important;
 }
 
@@ -16693,13 +16701,13 @@ footer .skip-main-up {
   background-color: #EEEEEE !important;
 }
 #actualidad h2 {
-  font-size: 2rem !important;
+  font-size: 2rem;
   font-weight: bold !important;
   color: #004F71 !important;
 }
 #actualidad h3 {
   color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 #actualidad p {
@@ -16720,7 +16728,7 @@ footer .skip-main-up {
 
 #mas-noticias h3 {
   color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 #mas-noticias p {
@@ -16740,7 +16748,7 @@ footer .skip-main-up {
   color: #004F71 !important;
 }
 .actualidadIndex h2 {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 
 .actualidadShow h1, .actualidadShow h2,
@@ -16766,7 +16774,7 @@ footer .skip-main-up {
 .actualidadShow .card h5,
 .actualidadIndex .card h5 {
   color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 .actualidadShow .card p,
@@ -16787,7 +16795,7 @@ footer .skip-main-up {
 }
 .actualidadSearch h5 {
   color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 .actualidadSearch p {
@@ -16799,14 +16807,34 @@ footer .skip-main-up {
   border-bottom: solid 2px #004F71 !important;
 }
 
+@media screen and (min-width: 576px) {
+  #actualidadContentido h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #actualidadContentido h2 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #actualidadContentido h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #actualidadContentido h2 {
+    font-size: 2.5rem;
+  }
+}
 #bienvenida h1 {
-  font-size: 2.5rem !important;
+  font-size: 2.5rem;
   font-weight: bold !important;
   color: #004F71 !important;
   line-height: 0.8 !important;
 }
 #bienvenida p {
-  font-size: 1rem !important;
+  font-size: 1rem;
   font-weight: 400 !important;
   color: #1B74AF !important;
 }
@@ -16824,20 +16852,20 @@ footer .skip-main-up {
 
 @media screen and (min-width: 768px) {
   #bienvenida h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 992px) {
   #bienvenida h1 {
-    font-size: 4.7rem !important;
+    font-size: 4.7rem;
   }
 }
 @media screen and (min-width: 1200px) {
   #bienvenida h1 {
-    font-size: 5rem !important;
+    font-size: 5rem;
   }
   #bienvenida p {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
 }
 .eventosIndex h1, .eventosIndex h2,
@@ -16851,7 +16879,7 @@ footer .skip-main-up {
 .eventosShow h2,
 .eventosSearch h2 {
   color: #004F71 !important;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 .eventosIndex a:focus, .eventosIndex a:hover,
 .eventosShow a:focus,
@@ -16891,7 +16919,7 @@ footer .skip-main-up {
   color: #1B74AF !important;
 }
 .eventosShow h3 {
-  font-size: 1.1rem !important;
+  font-size: 1.1rem;
 }
 
 #eventosContenido .card-body .btn-calendario, #eventosSearchContenido .card-body .btn-calendario {
@@ -16924,7 +16952,7 @@ footer .skip-main-up {
 .expShowHV h2,
 .expIndexHV h2 {
   color: #004F71 !important;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 .expShowHV a:focus, .expShowHV a:hover,
 .expIndexHV a:focus,
@@ -16940,7 +16968,7 @@ footer .skip-main-up {
 .expShowHV .card h5,
 .expIndexHV .card h5 {
   color: #004F71 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 .expShowHV .card p,
@@ -16971,7 +16999,7 @@ footer .skip-main-up {
   text-decoration: underline !important;
 }
 .expSearchHV h5 {
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: bold !important;
 }
 .expSearchHV #expRes p:first-child {
@@ -17014,7 +17042,7 @@ footer .skip-main-up {
   font-weight: bold !important;
 }
 .expIndex h2 {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 .expIndex h3, .expIndex p {
   color: #1B74AF !important;
@@ -17034,16 +17062,16 @@ footer .skip-main-up {
 
 @media screen and (min-width: 768px) {
   #expHVContenido h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   #expContenido h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   #expHVContenido h2 {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
 }
 .recursosIndex h1, .recursosIndex h2 {
@@ -17061,10 +17089,10 @@ footer .skip-main-up {
 }
 
 .recursosDD h2, .recursosGO h2 {
-  font-size: 2rem !important;
+  font-size: 2rem;
 }
 .recursosDD h3, .recursosGO h3 {
-  font-size: 1.1rem !important;
+  font-size: 1.1rem;
 }
 .recursosDD h1, .recursosDD h2, .recursosDD h5, .recursosDD #titulo, .recursosGO h1, .recursosGO h2, .recursosGO h5, .recursosGO #titulo {
   font-weight: bold !important;
