@@ -16648,7 +16648,7 @@ footer .skip-main-up {
 }
 #datos_impacto a:focus, #datos_impacto a:hover {
   outline: solid 2px #004F71 !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 #datos_impacto h2 {
   font-size: 2rem !important;

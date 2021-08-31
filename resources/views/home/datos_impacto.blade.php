@@ -39,27 +39,30 @@
 ?>
 <article id="datos_impacto" class="pt-5 pb-lg-5">
     <h2 class="text-center  mb-5">
-        Datos de impacto
+        ¿Por qué es necesario en enfoque de inclusión en la <abbr title="">GRD</abbr> en América latina?   
     </h2>
     <div class="container-fluid">
-        <div class="d-flex flex-wrap justify-content-xl-between align-items-strech">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
             @foreach($campos as $c)
-            <div class="col-sm-6 col-lg-4 col-xl-2 d-flex flex-column mb-5 mb-xl-0 p-xl-0">   
-                <a href="{{$c['href']}}"></a>      
-                    <h3 class="rounded-top bg-primary text-white p-2 text-center mb-0">
-                        {{$c['h3']}}
-                    </h3>
-                    <div class="bg-light py-3 flex-grow-1 ">
-                        <p class="text-center">
-                            {{$c['p']}}
-                        </p>
-                        <div class="border-datos rounded-circle p-5 mb-2 mx-auto">                
-                            {{$c['div']}}              
-                       </div>  
-                        <p class="px-2 text-decoration-underline">
-                                {{$c['a']}}
-                        </p>                     
-                    </div>                                                                           
+            <div class="col mb-4">   
+                <a href="{{$c['href']}}">
+                    <div class="card h-100 bg-light">  
+                        <div class="card-body p-0">
+                            <h3 class="rounded-top bg-primary text-white p-2 text-center mb-0">
+                                {{$c['h3']}}
+                            </h3> 
+                            <p class="text-center mt-3">
+                                    {{$c['p']}}
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-2 mx-auto">                
+                                    {{$c['div']}} 
+                            </div>               
+                            <p class="px-2 text-decoration-underline text-center mb-5">
+                                        {{$c['a']}}
+                            </p>   
+                        </div>                  
+                    </div>
+                </a>                                                                          
             </div>
             @endforeach        
         </div>
