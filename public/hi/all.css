@@ -16450,6 +16450,10 @@ select:focus {
   text-decoration: underline !important;
 }
 
+.h-60 {
+  height: 60% !important;
+}
+
 header {
   bottom: 0 !important;
   padding: 0 !important;
@@ -17031,6 +17035,10 @@ footer .skip-main-up {
 @media screen and (min-width: 768px) {
   #expHVContenido h2 {
     font-size: 2rem !important;
+  }
+
+  #expContenido h2 {
+    font-size: 1.5rem !important;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -21,8 +21,8 @@
             <div class="col mb-4">
               <a href="">     
                 <div class="card h-100 h-100">             
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                        <figure class="figure m-0 h-60">
+                          <img src="/images/familia.jpg" class="card-img-top h-100" alt="...">
                         </figure>                        
                       <div class="card-body">
                           <h2>
@@ -35,8 +35,8 @@
             <div class="col mb-4">
               <a href="">     
                 <div class="card h-100">          
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                        <figure class="figure m-0 h-60">
+                          <img src="/images/familia.jpg" class="card-img-top h-100" alt="...">
                         </figure>                        
                       <div class="card-body">
                           <h2>
@@ -49,8 +49,8 @@
             <div class="col mb-4">  
               <a href="">   
                   <div class="card h-100">                  
-                          <figure class="figure m-0">
-                            <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                          <figure class="figure m-0 h-60">
+                            <img src="/images/familia.jpg" class="card-img-top h-100" alt="...">
                           </figure>                        
                         <div class="card-body">
                             <h2>
@@ -64,8 +64,8 @@
               <a href="">  
                 <div class="card h-100">
                  
-                        <figure class="figure m-0">
-                          <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                        <figure class="figure m-0 h-60">
+                          <img src="/images/familia.jpg" class="card-img-top h-100" alt="...">
                         </figure>                        
                       <div class="card-body">
                           <h2>
