@@ -10,7 +10,7 @@
     </div>  
      <div class="bg-white p-3 px-lg-5">
          <div class="container">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="Usted esta en diagnosticos comunitarios inclusivos">
                 <ol class="breadcrumb bg-unset p-0">
                   <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>

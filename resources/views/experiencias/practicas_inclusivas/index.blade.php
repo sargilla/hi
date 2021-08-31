@@ -5,7 +5,7 @@
         Prácticas inclusivas del riesgo de desastre
     </h1>
     <div class="container mt-5">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="Usted esta en practicas inclusivas del riesgo de desastre">
             <ol class="breadcrumb bg-unset">
               <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
               <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>

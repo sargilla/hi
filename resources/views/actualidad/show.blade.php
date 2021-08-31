@@ -5,7 +5,7 @@
             Titulo de la nota
         </h1>
         <div class="container py-5 py-lg-3">           
-            <nav aria-label="breadcrumb">
+            <nav aria-label="Usted esta en actualidad lorem,ipsum dolor">
                 <ol class="breadcrumb bg-unset p-0">
                     <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                     <li class="breadcrumb-item"><a href="#" class="p-2">Actualidad</a></li>

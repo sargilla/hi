@@ -5,7 +5,7 @@
             Titulo de la Historia de vida
         </h1>
         <div class="container py-5">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="Usted esta en historia de muestra">
                 <ol class="breadcrumb bg-unset p-0">
                   <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
                   <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>
