@@ -120,7 +120,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card bg-light border-0">
-                        <a href="">
+                        <a href="/recursos/discapacidad">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                    
@@ -132,7 +132,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card bg-light border-0">
-                        <a href="">
+                        <a href="/recursos/genero">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                    

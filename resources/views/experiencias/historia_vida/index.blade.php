@@ -23,7 +23,7 @@
           <p class="text-white">
               Desde aqui podras filtrar notas por paises y por fecha
           </p>
-          <form action="" method="GET" class="form-inline mr-3">
+          <form action="/experiencias/historia_vida/search" method="GET" class="form-inline mr-3">
               @csrf 
               <div class="div-group">
                 <label for="fechas" class="text-white justify-content-start ">Fechas</label>
@@ -53,7 +53,7 @@
         <div class="row row-cols-2 row-cols-md-2">
             <div class="col mb-4">           
                 <div class="card">
-                    <a href="">
+                    <a href="/experiencias/historia_vida/show">
                           <figure class="figure m-0">
                             <img src="/images/familia.jpg" class="card-img-top" alt="...">
                           </figure>                   
@@ -66,7 +66,7 @@
             </div>
               <div class="col mb-4">           
                   <div class="card">
-                      <a href="">
+                      <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
                             </figure>                   
@@ -79,7 +79,7 @@
             </div>
               <div class="col mb-4">           
                   <div class="card">
-                      <a href="">
+                      <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
                             </figure>                   
@@ -92,7 +92,7 @@
               </div>
                 <div class="col mb-4">           
                   <div class="card">
-                      <a href="">
+                      <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
                             </figure>                   
@@ -105,7 +105,7 @@
               </div>
                 <div class="col mb-4">           
                   <div class="card">
-                      <a href="">
+                      <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top" alt="...">
                             </figure>                   

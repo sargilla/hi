@@ -22,7 +22,7 @@
             <p class="text-white">
                 Desde aqui podras filtrar eventos por paises y por fecha
             </p>
-            <form action="" method="GET" class="form-inline mr-3">
+            <form action="/eventos/search" method="GET" class="form-inline mr-3">
                 @csrf 
                 <div class="div-group">
                     <label for="fechas" class="text-white justify-content-start ">Todas las fechas</label>
@@ -51,7 +51,7 @@
   <div class="container py-5 px-lg-3">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
-                <a href="">
+                <a href="/eventos/show">
                         <div class="card">
                                 <figure class="figure m-0">
                                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
@@ -74,7 +74,7 @@
                 </a>
             </div>
             <div class="col mb-4">
-                <a href="">
+                <a href="/eventos/show">
                         <div class="card">
                                 <figure class="figure m-0">
                                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
@@ -97,7 +97,7 @@
                 </a>
             </div>
             <div class="col mb-4">
-                <a href="">
+                <a href="/eventos/show">
                         <div class="card">
                                 <figure class="figure m-0">
                                     <img src="/images/familia.jpg" class="card-img-top" alt="...">

@@ -7,7 +7,7 @@
         </h1>
         <nav aria-label="Usted esta en Actualidad">
           <ol class="breadcrumb bg-unset p-0">
-            <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+            <li class="breadcrumb-item"><a href="/" class="p-2">Pagina Principal</a></li>
             <li class="breadcrumb-item active" aria-current="page">Actualidad</li>
           </ol>
         </nav>
@@ -22,7 +22,7 @@
           <p class="text-white">
             Desde aqui podras filtrar notas por paises y por fecha
         </p>
-        <form action="" method="GET" class="form-inline mr-3 align-items-center">
+        <form action="/actualidad/search" method="GET" class="form-inline mr-3 align-items-center">
             @csrf 
             <div class="div-group">
               <label for="fechas" class="text-white justify-content-start ">Todas las fechas</label>
@@ -53,7 +53,7 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col mb-4">
           <div class="card">
-              <a href="">
+              <a href="/actualidad/show">
                   <figure class="figure m-0">
                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
                   </figure>         
@@ -66,7 +66,7 @@
         </div>
         <div class="col mb-4">
           <div class="card">
-              <a href="">
+              <a href="/actualidad/show">
                   <figure class="figure m-0">
                     <img src="/images/familia_2.jpg" class="card-img-top" alt="...">
                   </figure>         
@@ -79,7 +79,7 @@
         </div>
         <div class="col mb-4">
           <div class="card">
-              <a href="">
+              <a href="/actualidad/show">
                   <figure class="figure m-0">
                     <img src="/images/familia_2.jpg" class="card-img-top" alt="...">
                   </figure>         
@@ -92,7 +92,7 @@
         </div>
         <div class="col mb-4">
           <div class="card">
-              <a href="">
+              <a href="/actualidad/show">
                   <figure class="figure m-0">
                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
                   </figure>         

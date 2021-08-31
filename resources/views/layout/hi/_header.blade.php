@@ -35,16 +35,16 @@
                     <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Recursos</a>
+                    <a class="nav-link" href="/recursos">Recursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experiencias</a>
+                    <a class="nav-link" href="/experiencias">Experiencias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Actualidad</a>
+                    <a class="nav-link" href="/actualidad">Actualidad</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
+                    <a class="nav-link" href="/eventos">Eventos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Formación</a>
