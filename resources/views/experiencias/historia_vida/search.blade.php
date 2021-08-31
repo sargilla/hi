@@ -31,9 +31,9 @@
             <form action="" method="GET" class="form-inline mr-3">
                 @csrf 
                   <div class="div-group">
-                    <label for="fechas" class="text-white  justify-content-start ">Todas los paises</label>
+                    <label for="fechas" class="text-white  justify-content-start ">Todos los paises</label>
                       <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
-                        <option value="paises">Todas los paises</option>
+                        <option value="paises">Todos los paises</option>
                     </select>
                 </div>
                     <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>

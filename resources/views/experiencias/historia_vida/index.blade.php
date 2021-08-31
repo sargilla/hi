@@ -26,13 +26,13 @@
           <form action="" method="GET" class="form-inline mr-3">
               @csrf 
               <div class="div-group">
-                <label for="fechas" class="text-white justify-content-start ">Todas las fechas</label>
+                <label for="fechas" class="text-white justify-content-start ">Fechas</label>
                 <select name="fechas" id="" class="form-control mb-3 mr-3 mb-md-0">
                   <option value="">Fechas</option>
               </select>
               </div>
               <div class="div-group">
-                <label for="fechas" class="text-white  justify-content-start ">Todas los paises</label>
+                <label for="fechas" class="text-white  justify-content-start ">Paises</label>
                   <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
                     <option value="paises">Paises</option>
                 </select>
@@ -50,7 +50,7 @@
 </article>
 <article id="expHVContenido" class="expIndexHV">
     <div class="container py-5 px-lg-3">
-        <div class="row row-cols-2 row-cols-md-3">
+        <div class="row row-cols-2 row-cols-md-2">
             <div class="col mb-4">           
                 <div class="card">
                     <a href="">

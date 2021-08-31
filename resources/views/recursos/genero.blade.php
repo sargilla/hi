@@ -23,14 +23,14 @@
         <div class="container mt-3 py-2">
             <a href="">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 col-xl-4">
                         
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
                             </figure>
                                 
                     </div>
-                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <div class="col-12 col-md-6 col-xl-8 mt-4 mt-md-0">
                         <p id="titulo">
                             Esto seria una breve descripcion de la Dimension y Ambito
                         </p>
@@ -62,7 +62,49 @@
                         </div>
                         <div class="col-12 col-md-6 mt-3 mt-md-0">
                             <h3>
-                                Convención sobre los Derechos de las Personas con Discapacidad.
+                                Centro de capacitacion ONU Mujeres: Glosario de igualdad de Género
+                            </h3>
+                            <p class="mt-3">
+                                <a href="" class="text-white p-2">
+                                    <i class="fas fa-arrow-right mr-2"></i>
+                                  Disponible aqui
+                                </a>            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 row mb-3 mb-lg-0  mx-auto">
+                        <div class="col-12 col-md-6">
+                            <a href="">
+                                <figure class="figure mb-0">
+                                    <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                </figure>
+                            </a>              
+                        </div>
+                        <div class="col-12 col-md-6 mt-3 mt-md-0">
+                            <h3>
+                                IFRC, 2015: Invisible y silenciosa: la violencia por motivos de género en situaciones de desastre
+                            </h3>
+                            <p class="mt-3">
+                                <a href="" class="text-white p-2">
+                                    <i class="fas fa-arrow-right mr-2"></i>
+                                    Descargar el documento
+                                </a>            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between my-2 my-md-5">
+                    <div class="col-lg-6 row border-dr mb-3 mb-lg-0  mx-auto">
+                        <div class="col-12 col-md-6">
+                            <a href="">
+                                <figure class="figure mb-0">
+                                    <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                </figure>
+                            </a>              
+                        </div>
+                        <div class="col-12 col-md-6 mt-3 mt-md-0">
+                            <h3>
+                                Global Study
                             </h3>
                             <p class="mt-3">
                                 <a href="" class="text-white p-2">
@@ -82,12 +124,12 @@
                         </div>
                         <div class="col-12 col-md-6 mt-3 mt-md-0">
                             <h3>
-                            OMS, 2011: Informe mundial sobre la discapacidad
+                                 UNFPA, s/f : Desastres Naturales: Escenarios de violencia de Género
                             </h3>
                             <p class="mt-3">
                                 <a href="" class="text-white p-2">
                                     <i class="fas fa-arrow-right mr-2"></i>
-                                    Descargar el documento
+                                  Disponible aqui
                                 </a>            
                             </p>
                         </div>
@@ -125,12 +167,12 @@
 </article>
 <article id="recursosGOReferencia" class="recursosGO">
         <div id="referencia">
-            <div class="container py-4">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-6 p-0">
                         <a href="">
-                            <figure class="figure mb-0">
-                                <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                            <figure class="figure mb-0 w-100">
+                                <img class="img-fluid mb-0 w-100" src="/images/familia.jpg" alt="">
                             </figure>
                         </a>              
                     </div>

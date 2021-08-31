@@ -16949,6 +16949,10 @@ footer .skip-main-up {
   color: #004F71 !important;
 }
 
+#expHVContenido h2 {
+  font-size: 1rem;
+}
+
 .expSearchHV {
   background-color: #6A2A5B !important;
 }
@@ -17024,6 +17028,16 @@ footer .skip-main-up {
   text-decoration: underline !important;
 }
 
+@media screen and (min-width: 768px) {
+  #expHVContenido h2 {
+    font-size: 2rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #expHVContenido h2 {
+    font-size: 3rem !important;
+  }
+}
 .recursosIndex h1, .recursosIndex h2 {
   font-weight: bold !important;
 }
@@ -17038,7 +17052,10 @@ footer .skip-main-up {
   color: #080707 !important;
 }
 
-.recursosDD h2, .recursosDD h3, .recursosGO h2, .recursosGO h3 {
+.recursosDD h2, .recursosGO h2 {
+  font-size: 2rem !important;
+}
+.recursosDD h3, .recursosGO h3 {
   font-size: 1.1rem !important;
 }
 .recursosDD h1, .recursosDD h2, .recursosDD h5, .recursosDD #titulo, .recursosGO h1, .recursosGO h2, .recursosGO h5, .recursosGO #titulo {

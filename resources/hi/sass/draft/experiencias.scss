@@ -38,6 +38,13 @@
         color: #004F71 !important;
     }
 }
+#expHVContenido
+{
+    h2 
+    {
+        font-size: 1rem;
+    }
+}
 .expSearchHV
 {
     h1,h2,h3
@@ -143,5 +150,27 @@
     {
         outline: solid 2px #1B74AF !important;
         text-decoration: underline !important;
+    }
+}
+
+@media screen and (min-width:768px)
+{
+    #expHVContenido
+    {
+        h2 
+        {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    #expHVContenido
+    {
+        h2 
+        {
+            font-size: 3rem !important;
+        }
     }
 }

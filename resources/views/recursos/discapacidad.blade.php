@@ -23,14 +23,14 @@
         <div class="container mt-3 py-2">
             <a href="">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 col-xl-4">
                         
-                            <figure class="figure mb-0">
-                                <img class="img-fluid mb-0" src="/images/d_1.jpg" alt="">
+                            <figure class="figure mb-0 w-100">
+                                <img class="img-fluid mb-0 w-100" src="/images/d_1.jpg" alt="">
                             </figure>
                                 
                     </div>
-                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <div class="col-12 col-md-6 col-xl-8 mt-4 mt-md-0">
                         <p id="titulo">
                             Esto seria una breve descripcion de la Dimension y Ambito
                         </p>
@@ -125,9 +125,9 @@
 </article>
 <article id="recursosDDReferencia" class="recursosDD">
         <div id="referencia">
-            <div class="container py-4">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-6 p-0">
                         <a href="">
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0" src="/images/d_2.jpg" alt="">
