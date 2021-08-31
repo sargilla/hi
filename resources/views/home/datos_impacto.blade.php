@@ -44,7 +44,8 @@
     <div class="container-fluid">
         <div class="d-flex flex-wrap justify-content-xl-between align-items-strech">
             @foreach($campos as $c)
-            <div class="col-sm-6 col-lg-4 col-xl-2 d-flex flex-column mb-5 mb-xl-0 p-xl-0">           
+            <div class="col-sm-6 col-lg-4 col-xl-2 d-flex flex-column mb-5 mb-xl-0 p-xl-0">   
+                <a href="{{$c['href']}}"></a>      
                     <h3 class="rounded-top bg-primary text-white p-2 text-center mb-0">
                         {{$c['h3']}}
                     </h3>
@@ -55,13 +56,10 @@
                         <div class="border-datos rounded-circle p-5 mb-2 mx-auto">                
                             {{$c['div']}}              
                        </div>  
-                       <a class="text-center link-di" href="{{$c['href']}}">
-                        <p class="px-2">
-                            {{$c['a']}}
-                        </p>                
-                    </a>       
-                    </div>
-                                                                             
+                        <p class="px-2 text-decoration-underline">
+                                {{$c['a']}}
+                        </p>                     
+                    </div>                                                                           
             </div>
             @endforeach        
         </div>
