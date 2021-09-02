@@ -48,7 +48,7 @@
                 <a href="{{$c['href']}}">
                     <div class="card h-100 bg-light">  
                         <div class="card-body p-0">
-                            <h3 class="rounded-top bg-primary text-white p-2 text-center mb-0">
+                            <h3 class="rounded-top bg-primary text-white p-2 mb-0">
                                 {{$c['h3']}}
                             </h3> 
                             <p class="text-center mt-3">

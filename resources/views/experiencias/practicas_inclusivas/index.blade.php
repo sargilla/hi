@@ -51,7 +51,7 @@
                         <div class="row mb-3 py-3">            
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>           
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -67,7 +67,7 @@
                         <div class="row mb-3 py-3">
                             <div class="col-12 col-md-4 col-lg-3">         
                                     <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                     </figure>           
                             </div>
                             <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -83,7 +83,7 @@
                         <div class="row mb-3 py-3">
                             <div class="col-12 col-md-4 col-lg-3">
                                     <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                     </figure>
                                         
                             </div>
@@ -100,7 +100,7 @@
                         <div class="row mb-3 py-3">
                             <div class="col-12 col-md-4 col-lg-3">
                                     <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                     </figure>
                             </div>
                             <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -116,7 +116,7 @@
                         <div class="row mb-3 py-3">
                             <div class="col-12 col-md-4 col-lg-3">                        
                                     <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                     </figure>
                             </div>
                             <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -132,7 +132,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>            
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -148,7 +148,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">                 
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>
                                             
                                 </div>
@@ -165,7 +165,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">                        
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>              
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -181,7 +181,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>              
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -197,7 +197,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>           
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -213,7 +213,7 @@
                             <div class="row mb-3 py-3">
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                         </figure>          
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
@@ -229,7 +229,7 @@
                                 <div class="row mb-3 py-3">
                                     <div class="col-12 col-md-4 col-lg-3">
                                             <figure class="figure mb-0">
-                                                <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                                <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
                                             </figure>             
                                     </div>
                                     <div class="col-12 col-md-8 col-lg-9 py-3">                 

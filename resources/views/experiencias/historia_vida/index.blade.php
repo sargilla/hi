@@ -57,7 +57,7 @@
                 <div class="card">
                     <a href="/experiencias/historia_vida/show">
                           <figure class="figure m-0">
-                            <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                            <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                           </figure>                   
                           <div class="card-body">
                               <p class="card-text my-1">Pais</p>
@@ -70,7 +70,7 @@
                   <div class="card">
                       <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                   
                             <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
@@ -83,7 +83,7 @@
                   <div class="card">
                       <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                   
                             <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
@@ -96,7 +96,7 @@
                   <div class="card">
                       <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                   
                             <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
@@ -109,7 +109,7 @@
                   <div class="card">
                       <a href="/experiencias/historia_vida/show">
                             <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                   
                             <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
