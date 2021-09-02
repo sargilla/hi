@@ -1,10 +1,13 @@
 @extends('plantilla::layout')
 @section('main-content')
 <article id="eventos" class="eventosSearch">
-    <h1 class="p-5 text-center bg-primary text-white">
-        Resultado de busqueda
-    </h1>
-
+    <div class="bg-primary">
+        <div class="container">
+            <h1 class="py-5  text-white mt-1">
+                Resultado de busqueda
+            </h1>
+        </div>       
+     </div>  
 </article>
 <article id="eventosSearchContenido" class="eventosSearch">
     <div class="container py-5 px-lg-3">

@@ -16438,7 +16438,7 @@ img {
 
 select:focus {
   box-shadow: unset !important;
-  outline: solid 3px #004F71 !important;
+  outline: solid 2px #fff !important;
   border: 0 !important;
 }
 
@@ -16462,6 +16462,83 @@ select:focus {
   font-size: 8rem !important;
 }
 
+#actualidadFiltro .form-control:focus, #actualidadFiltro .form-control:hover,
+#eventosFiltros .form-control:focus,
+#eventosFiltros .form-control:hover,
+#expHVFiltro .form-control:focus,
+#expHVFiltro .form-control:hover,
+#expSearchHVFiltro .form-control:focus,
+#expSearchHVFiltro .form-control:hover {
+  outline: solid 2px #004F71 !important;
+}
+
+.breadcrumb-item a {
+  color: #1B74AF !important;
+}
+
+.breadcrumb-item + .active {
+  color: #000000 !important;
+}
+
+#header .menu-200 {
+  font-size: 10px !important;
+  padding: 0;
+  margin: 0;
+}
+
+#header .pd-200 {
+  padding: 5px 0 !important;
+}
+
+#header .pd-300 {
+  padding: 3px 0 !important;
+}
+
+#header .pd-400 {
+  padding: 1px 0 !important;
+}
+
+#header .pd-500 {
+  padding: 0px 0 !important;
+}
+
+.menu-top-200 {
+  top: -219px !important;
+}
+
+.menu-top-300 {
+  top: -194px !important;
+}
+
+.menu-top-400 {
+  top: -194px !important;
+}
+
+.menu-top-500 {
+  top: -181.5px !important;
+}
+
+.scale-200 {
+  transform: scale(0.7);
+}
+
+.scale-300 {
+  transform: scale(0.6, 0.5);
+}
+
+.scale-400 {
+  transform: scale(0.6, 0.5);
+}
+
+.scale-500 {
+  transform: scale(0.5, 0.4);
+}
+
+#navbarsExample04 a:focus, #navbarsExample04 a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+
 header {
   bottom: 0 !important;
   padding: 0 !important;
@@ -16472,7 +16549,7 @@ header a {
 }
 header .collapse {
   position: absolute;
-  top: -286px;
+  top: -338px;
   background: #fff !important;
   width: 100%;
   left: 0;
@@ -16497,7 +16574,7 @@ header input:focus {
 header .navbar-filtro {
   display: none;
 }
-header .skip-main {
+header #li-sm .skip-main {
   left: -999px;
   position: absolute;
   top: 20px;
@@ -16505,8 +16582,10 @@ header .skip-main {
   height: 1px;
   overflow: hidden;
   z-index: -999;
-  color: #1364b1;
-  background-color: white;
+  color: #6A2A5B;
+  background-color: #EEEEEE;
+  text-decoration: none !important;
+  outline: solid 2px #6A2A5B !important;
 }
 header button .fa-times {
   font-size: 2.8rem;
@@ -16529,8 +16608,8 @@ header #logo-mobile {
   }
   header .navbar {
     box-shadow: 0px 5px 6px #b3b1b1ea, 0px 19px 2px 17px #EEE;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16541,22 +16620,21 @@ header #logo-mobile {
     outline: solid 2px #1B74AF !important;
   }
   header li:hover, header .navbar a:focus-visible {
-    outline: solid 2px #1B74AF !important;
+    outline: solid 2px #004F71 !important;
     text-decoration: underline !important;
   }
   header li:hover {
     color: #1B74AF !important;
   }
-  header .skip-main:focus {
+  header #li-sm .skip-main:focus {
     left: 0;
     top: auto;
     width: 10%;
     height: auto;
-    padding: 8px;
     font-size: 14px;
-    outline: 2px solid #1364b1;
     text-align: center;
     z-index: 2000;
+    text-decoration: none !important;
   }
   header .navbar-filtro {
     width: 100%;
@@ -16609,18 +16687,17 @@ footer .mb-4em {
 footer .border-md {
   border-bottom: solid 2px #fff !important;
 }
-footer .skip-main-up {
+footer #li-smu .skip-main-up {
   position: absolute;
   left: -999px;
   bottom: 50px;
   z-index: 1030;
-  background-color: #004F71 !important;
-  color: #fff !important;
+  background-color: #EEEEEE !important;
   height: auto;
-  padding: 7px 0px;
   width: 150px;
   text-align: center;
   overflow: hidden;
+  color: #6A2A5B !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -16647,15 +16724,20 @@ footer .skip-main-up {
   footer a:hover, footer a:focus-visible {
     outline: solid 2px #fff !important;
   }
-  footer .skip-main-up:focus {
+  footer #li-smu .skip-main-up:focus {
     left: -100%;
     font-size: 14px;
-    outline: 2px solid #1364b1;
+    outline: 2px solid #6A2A5B !important;
     text-align: center;
     z-index: 2000;
+    text-decoration: none !important;
+    color: #6A2A5B !important;
   }
   footer #logos a:hover, footer #logos a:focus-visible {
     outline: solid 2px #004F71 !important;
+  }
+  footer #lista-rs i {
+    font-size: 1.2rem !important;
   }
 }
 #datos_impacto a:focus, #datos_impacto a:hover {
@@ -16843,7 +16925,7 @@ footer .skip-main-up {
   text-decoration: underline !important;
 }
 #bienvenida #div-video a:focus, #bienvenida #div-video a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 #bienvenida .rounded {
@@ -16886,7 +16968,7 @@ footer .skip-main-up {
 .eventosShow a:hover,
 .eventosSearch a:focus,
 .eventosSearch a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .eventosIndex .card,
@@ -16927,10 +17009,10 @@ footer .skip-main-up {
   background: unset !important;
 }
 #eventosContenido .btn-calendario:focus, #eventosContenido .btn-calendario:hover, #eventosSearchContenido .btn-calendario:focus, #eventosSearchContenido .btn-calendario:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
 }
 #eventosContenido a:focus, #eventosContenido a:hover, #eventosSearchContenido a:focus, #eventosSearchContenido a:hover {
-  outline: solid 5px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: none !important;
 }
 #eventosContenido figure, #eventosSearchContenido figure {
@@ -16957,7 +17039,7 @@ footer .skip-main-up {
 .expShowHV a:focus, .expShowHV a:hover,
 .expIndexHV a:focus,
 .expIndexHV a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .expShowHV .card,
@@ -16995,7 +17077,7 @@ footer .skip-main-up {
   color: #fff !important;
 }
 .expSearchHV a:focus, .expSearchHV a:hover {
-  outline: solid 2px #fff;
+  outline: solid 2px #004F71;
   text-decoration: underline !important;
 }
 .expSearchHV h5 {
@@ -17015,7 +17097,7 @@ footer .skip-main-up {
 }
 
 #expSearchHV a:focus, #expSearchHV a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 
@@ -17033,7 +17115,7 @@ footer .skip-main-up {
   color: #1B74AF !important;
 }
 .expPI a:hover, .expPI a:focus {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 
@@ -17048,15 +17130,15 @@ footer .skip-main-up {
   color: #1B74AF !important;
 }
 .expIndex a:focus, .expIndex a:hover {
-  outline: solid 5px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 .expIndex .card {
-  border: solid 2px #1B74AF !important;
+  border: solid 2px #004F71 !important;
 }
 
 #exp a:focus, #exp a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
 
@@ -17098,8 +17180,12 @@ footer .skip-main-up {
   font-weight: bold !important;
 }
 .recursosDD a:focus, .recursosDD a:hover, .recursosGO a:focus, .recursosGO a:hover {
-  outline: solid 2px #1B74AF !important;
+  outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
+}
+.recursosDD #titulo, .recursosGO #titulo {
+  color: #004F71 !important;
+  font-size: 1.2rem;
 }
 .recursosDD h3, .recursosDD p, .recursosDD h5, .recursosGO h3, .recursosGO p, .recursosGO h5 {
   color: #004F71 !important;

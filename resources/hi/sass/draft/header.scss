@@ -9,7 +9,7 @@ header
     .collapse 
     {
         position: absolute;
-        top: -286px;
+        top: -338px;
         background: #fff !important;
         width: 100%;
         left:0;
@@ -40,18 +40,24 @@ header
     {
         display: none;
     }
-    .skip-main 
+    #li-sm
     {
-        left: -999px;
-        position: absolute;
-        top: 20px;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        z-index: -999;
-        color: rgb(19, 100, 177);
-        background-color: white;
+        .skip-main 
+        {
+            left: -999px;
+            position: absolute;
+            top: 20px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: -999;
+            color: #6A2A5B;
+            background-color: #EEEEEE;
+            text-decoration: none !important;
+            outline: solid 2px #6A2A5B !important;
+        }
     }
+    
     
     button .fa-times
     {
@@ -88,8 +94,8 @@ header
         .navbar 
         {
             box-shadow: 0px 5px 6px #b3b1b1ea, 0px 19px 2px 17px #EEE;
-            border-bottom-right-radius: 16px;
-            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
         }
     }
    
@@ -109,25 +115,27 @@ header
         }
         li:hover, .navbar a:focus-visible
         {
-                outline: solid 2px #1B74AF !important;
+                outline: solid 2px #004F71 !important;
                 text-decoration: underline !important;
         }
         li:hover
         {
             color: #1B74AF !important;
         }
-        .skip-main:focus
-        {
-            left: 0;
-            top: auto;
-            width: 10%;
-            height: auto;
-            padding: 8px;
-            font-size: 14px;
-            outline: 2px solid rgb(19, 100, 177);
-            text-align: center;
-            z-index: 2000;
-        }
+        #li-sm{
+            .skip-main:focus
+            {
+                left: 0;
+                top: auto;
+                width: 10%;
+                height: auto;
+                font-size: 14px;
+                text-align: center;
+                z-index: 2000;
+                text-decoration: none !important;
+            }
+        }   
+       
         .navbar-filtro
         {
             width: 100%;

@@ -1,9 +1,13 @@
 @extends('plantilla::layout')
 @section('main-content')
     <article id="expShowHV" class="expShowHV">
-        <h1 class="p-5 bg-primary text-white text-center">
-            Titulo de la Historia de vida
-        </h1>
+        <div class="bg-primary">
+            <div class="container">
+                <h1 class="py-5 text-white mt-1">
+                    Titulo de la Historia de vida
+                </h1>
+            </div>  
+        </div>    
         <div class="container py-5">
             <nav aria-label="Usted esta en historia de muestra">
                 <ol class="breadcrumb bg-unset p-0">
@@ -20,7 +24,7 @@
                 <div>
                     <a href="">
                         <figure class="figure w-100 mb-0">
-                            <img class="figure-img img-fluid w-100 rounded  mb-0" src="/images/familia.jpg" alt="">
+                            <img class="figure-img img-fluid w-100 rounded-10  mb-0" src="/images/familia.jpg" alt="">
                         </figure>
                     </a>                
                 </div>
@@ -51,7 +55,7 @@
                         <div>
                             <a href="">
                                 <figure class="figure w-100 mb-0">
-                                    <img class="figure-img img-fluid w-100 rounded mb-0" src="/images/familia.jpg" alt="">
+                                    <img class="figure-img img-fluid w-100 rounded-10 mb-0" src="/images/familia.jpg" alt="">
                                 </figure>
                             </a>                  
                         </div>                          
@@ -63,7 +67,7 @@
                         <div>
                             <a href="">
                                 <figure class="figure w-100 mb-0">
-                                    <img class="figure-img img-fluid w-100 rounded mb-0" src="/images/familia.jpg" alt="">
+                                    <img class="figure-img img-fluid w-100 rounded-10 mb-0" src="/images/familia.jpg" alt="">
                                 </figure> 
                             </a>
                           
@@ -99,7 +103,7 @@
                           <div class="card">
                               <a href="">
                                   <figure class="figure mb-0">
-                                    <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                    <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                                   </figure>      
                             <div class="card-body">
                                 <p class="card-text my-1">Pais</p>
@@ -112,7 +116,7 @@
                             <div class="card">
                                 <a href="">
                                     <figure class="figure mb-0">
-                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                      <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                                     </figure>                                 
                               <div class="card-body">
                                   <p class="card-text my-1">Pais</p>
@@ -125,7 +129,7 @@
                             <div class="card">
                                 <a href="">
                                     <figure class="figure mb-0">
-                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                      <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                                     </figure>     
                               <div class="card-body">
                                   <p class="card-text my-1">Pais</p>
@@ -138,7 +142,7 @@
                             <div class="card">
                                 <a href="">
                                     <figure class="figure mb-0">
-                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                      <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                                     </figure>
                                      
                               <div class="card-body">
@@ -152,7 +156,7 @@
                             <div class="card">
                                 <a href="">
                                     <figure class="figure mb-0">
-                                      <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                                      <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                                     </figure>
                                        
                               <div class="card-body">

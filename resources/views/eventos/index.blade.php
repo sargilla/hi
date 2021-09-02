@@ -24,25 +24,27 @@
             </p>
             <form action="/eventos/search" method="GET" class="form-inline mr-3">
                 @csrf 
-                <div class="div-group">
-                    <label for="fechas" class="text-white justify-content-start ">Todas las fechas</label>
-                    <select name="fechas" id="" class="form-control mb-3 mr-3 mb-md-0">
-                      <option value="">Fechas</option>
+                <div class="div-group  col-md-4 col-lg-3">
+                    <label for="fechas" class="text-white justify-content-start ">Fechas</label>
+                    <select name="fechas" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
+                      <option value="">Todas las fechas</option>
                   </select>
                   </div>
-                  <div class="div-group">
-                    <label for="fechas" class="text-white  justify-content-start ">Todas los paises</label>
-                      <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
-                        <option value="paises">Paises</option>
+                  <div class="div-group  col-md-4 col-lg-3">
+                    <label for="fechas" class="text-white  justify-content-start ">Paises</label>
+                      <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
+                        <option value="paises">Todas los paises</option>
                     </select>
                   </div>
-                  <div class="div-group">
+                  <div class="div-group  col-md-4 col-lg-3">
                     <label for="tematicas" class="text-white  justify-content-start ">Tematicas</label>
-                      <select name="tematicas" id="" class="form-control mb-3 mr-3 mb-md-0">
+                      <select name="tematicas" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
                         <option value="">Tematicas</option>
                     </select>
                   </div>
-                    <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
+                  <div class="col-12 col-lg-3 mt-md-4">
+                    <button class="mb-3 mb-md-0 btn btn-purple my-auto col-6 col-sm-4 col-md-3 col-lg-8" type="submit">Filtrar</button>
+                  </div>       
             </form>
         </div>
     </div> 
@@ -60,7 +62,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>              
                                 </div>     
-                                    <h2 class="mt-3">               
+                                    <h2 class="mt-3 text-decoration-underline">               
                                         Lorem ipsum dolor sit amet consectetur adipisicing                
                                 </h2>
                                 <div class="p-3 d-flex justify-content-between align-items-center">
@@ -83,7 +85,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>                
                                 </div>     
-                                    <h2 class="mt-3">               
+                                    <h2 class="mt-3 text-decoration-underline">               
                                         Lorem ipsum dolor sit amet consectetur adipisicing                
                                 </h2>
                                 <div class="p-3 d-flex justify-content-between align-items-center">
@@ -106,7 +108,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>                 
                                 </div>     
-                                    <h2 class="mt-3">               
+                                    <h2 class="mt-3 text-decoration-underline">               
                                         Lorem ipsum dolor sit amet consectetur adipisicing                
                                 </h2>
                                 <div class="p-3 d-flex justify-content-between align-items-center">

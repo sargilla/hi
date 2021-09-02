@@ -1,9 +1,13 @@
 @extends('plantilla::layout')
 @section('main-content')
- <article id="actualidadSearch" class="actualidadSearch">
-     <h1 class="p-5 text-center bg-primary text-white text-center">
-         Resultado de busqueda
-     </h1>
+ <article id="actualidadSearch" class="actualidadSearch"> 
+    <div class="bg-primary">
+        <div class="container">
+            <h1 class="py-5  text-white mt-1">
+                Resultado de busqueda
+            </h1>
+        </div>       
+     </div>   
      <div class="container py-5 py-lg-3">    
         <nav aria-label="Usted esta en los resultado de busqueda de actualidad">
             <ol class="breadcrumb bg-unset p-0">

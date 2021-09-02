@@ -1,9 +1,13 @@
 @extends('plantilla::layout')
 @section('main-content')
 <article id="expPI" class="expPI">  
-    <h1 class="p-5 text-center bg-primary text-white text-center mb-0">
-        Prácticas inclusivas del riesgo de desastre
-    </h1>
+    <div class="bg-primary">
+        <div class="container">
+            <h1 class="py-5  text-white mt-1">
+                Prácticas inclusivas del riesgo de desastre
+            </h1>
+        </div>       
+     </div>  
     <div class="container mt-5">
         <nav aria-label="Usted esta en practicas inclusivas del riesgo de desastre">
             <ol class="breadcrumb bg-unset">

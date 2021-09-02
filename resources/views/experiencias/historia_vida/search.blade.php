@@ -1,7 +1,7 @@
 @extends('plantilla::layout')
 @section('main-content')
  <article id="expSearchHV" class="expSearchHV">
-     <div class="bg-primary text-white mb-0 p-3 p-lg-5">
+     <div class="bg-primary text-white mb-0 p-3 p-lg-5 mt-1">
          <div class="container">
             <h1>
                 Diagnósticos comunitarios inclusivos
@@ -30,13 +30,14 @@
             </p>
             <form action="" method="GET" class="form-inline mr-3">
                 @csrf 
-                  <div class="div-group">
-                    <label for="fechas" class="text-white  justify-content-start ">Todos los paises</label>
-                      <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
+                  <div class="div-group w-100">
+                    <label for="fechas" class="text-white  justify-content-start ">Paises</label>
+                      <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0 w-25">
                         <option value="paises">Todos los paises</option>
                     </select>
-                </div>
                     <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
+                </div>
+                    
             </form>
             </div>
         </div>

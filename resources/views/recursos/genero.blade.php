@@ -1,10 +1,10 @@
 @extends('plantilla::layout')
 @section('main-content')
     <article id="recursosGO" class="recursosGO">
-        <div class="p-5 bg-primary text-white">
+        <div class="p-5 bg-primary text-white mt-1">
             <div class="container">
                 <h1>
-                    Discapacidad
+                    Genero
                 </h1>
                 
             </div>         
@@ -21,19 +21,18 @@
     </article>
     <article id="recursosGOTitulo" class="recursosGO">
         <div class="container mt-3 py-2">
-            <a href="">
                 <div class="row">
                     <div class="col-12 col-md-6 col-xl-4">
                         
                             <figure class="figure mb-0">
-                                <img class="img-fluid mb-0" src="/images/familia.jpg" alt="">
+                                <img class="img-fluid mb-0 rounded-10" src="/images/familia.jpg" alt="">
                             </figure>
                                 
                     </div>
                     <div class="col-12 col-md-6 col-xl-8 mt-4 mt-md-0">
-                        <p id="titulo">
+                        <h2 id="titulo">
                             Esto seria una breve descripcion de la Dimension y Ambito
-                        </p>
+                        </h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
                         </p>
@@ -41,8 +40,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a deserunt quaerat delectus iusto reiciendis hic, ullam non fugiat perferendis quae possimus odio temporibus ducimus veritatis nobis sunt quibusdam esse commodi culpa sed, voluptatibus sint voluptas dignissimos. Ea, omnis expedita?
                         </p>
                     </div>
-                </div>
-            </a>  
+                </div>  
         </div>
     </article>
     <article id="recursosGOContenido1" class="recursosGO">

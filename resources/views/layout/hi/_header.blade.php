@@ -11,8 +11,8 @@
             <li class="mr-3">
                 <button type="button" class="text-white p-2" id="btn-letra">Alternar tamaño de letra <i class="fas fa-text-height"></i></button>
             </li>
-            <li>
-                <a class="skip-main" tabindex="0" id="contenidoPrincipal" href="">Ir al Contenido Principal</a>
+            <li id="li-sm">
+                <a class="skip-main py-2 px-3" tabindex="0" id="contenidoPrincipal" href="">Ir al Contenido Principal</a>
             </li>
     </ul> 
         <form role="search" aria-label="buscador de informacion" class="d-none d-md-block d-lg-none col-md-12 col-lg-4 col-10 col-xl-3 mr-lg-5">

@@ -1,7 +1,7 @@
 @extends('plantilla::layout')
 @section('main-content')
 <article id="eventos" class="eventosShow">
-    <div class="bg-primary py-5 text-white">
+    <div class="bg-primary py-5 text-white mt-1">
         <div class="container">
             <h1>
                 Lorem Ipsum

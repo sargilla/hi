@@ -25,25 +25,27 @@
           </p>
           <form action="/experiencias/historia_vida/search" method="GET" class="form-inline mr-3">
               @csrf 
-              <div class="div-group">
+              <div class="div-group  col-md-4 col-lg-3">
                 <label for="fechas" class="text-white justify-content-start ">Fechas</label>
-                <select name="fechas" id="" class="form-control mb-3 mr-3 mb-md-0">
-                  <option value="">Fechas</option>
+                <select name="fechas" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
+                  <option value="">Todas las fechas</option>
               </select>
               </div>
-              <div class="div-group">
+              <div class="div-group  col-md-4 col-lg-3">
                 <label for="fechas" class="text-white  justify-content-start ">Paises</label>
-                  <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0">
-                    <option value="paises">Paises</option>
+                  <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
+                    <option value="paises">Todas los paises</option>
                 </select>
               </div>
-              <div class="div-group">
+              <div class="div-group  col-md-4 col-lg-3">
                 <label for="tematicas" class="text-white  justify-content-start ">Tematicas</label>
-                  <select name="tematicas" id="" class="form-control mb-3 mr-3 mb-md-0">
+                  <select name="tematicas" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
                     <option value="">Tematicas</option>
                 </select>
               </div>
-                <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
+              <div class="col-12 col-lg-3 mt-md-4">
+                <button class="mb-3 mb-md-0 btn btn-purple my-auto col-6 col-sm-4 col-md-3 col-lg-8" type="submit">Filtrar</button>
+              </div>       
           </form>
       </div>
     </div>
