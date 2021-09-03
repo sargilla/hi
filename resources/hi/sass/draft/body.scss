@@ -138,6 +138,9 @@ select:focus
     }
 }
 
+@media screen and (min-width:550px)
+{
+
     #header .menu-200 
     {
         font-size: 10px !important;
@@ -196,3 +199,4 @@ select:focus
     {
         transform: scale(0.5,0.4);
     }
+}
