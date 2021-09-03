@@ -16480,6 +16480,11 @@ select:focus {
   color: #000000 !important;
 }
 
+#navbarsExample04 a:focus, #navbarsExample04 a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+
 #header .menu-200 {
   font-size: 10px !important;
   padding: 0;
@@ -16532,11 +16537,6 @@ select:focus {
 
 .scale-500 {
   transform: scale(0.5, 0.4);
-}
-
-#navbarsExample04 a:focus, #navbarsExample04 a:hover {
-  outline: solid 2px #004F71 !important;
-  text-decoration: underline !important;
 }
 
 header {
@@ -16738,6 +16738,14 @@ footer #li-smu .skip-main-up {
   }
   footer #lista-rs i {
     font-size: 1.2rem !important;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #li-smu .skip-main-up:focus {
+    left: -100% !important;
+  }
+  #li-smu .skip-main-up {
+    left: -120% !important;
   }
 }
 #datos_impacto a:focus, #datos_impacto a:hover {

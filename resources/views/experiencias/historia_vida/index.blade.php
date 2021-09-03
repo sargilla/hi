@@ -53,9 +53,10 @@
 <article id="expHVContenido" class="expIndexHV">
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-2">
+          @foreach([1,2,3,4,5] as $v)
             <div class="col mb-4">           
                 <div class="card">
-                    <a href="/experiencias/historia_vida/show">
+                    <a href="/experiencias/historia_vida/show" class="nav-link p-0">
                           <figure class="figure m-0">
                             <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                           </figure>                   
@@ -66,59 +67,8 @@
                     </a>
                 </div>             
             </div>
-              <div class="col mb-4">           
-                  <div class="card">
-                      <a href="/experiencias/historia_vida/show">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                   
-                            <div class="card-body">
-                                <p class="card-text my-1">Pais</p>
-                                <h2>Lorem ipsum</h2>
-                            </div>
-                      </a>
-                  </div>             
-            </div>
-              <div class="col mb-4">           
-                  <div class="card">
-                      <a href="/experiencias/historia_vida/show">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                   
-                            <div class="card-body">
-                                <p class="card-text my-1">Pais</p>
-                                <h2>Lorem ipsum</h2>
-                            </div>
-                      </a>
-                  </div>             
-              </div>
-                <div class="col mb-4">           
-                  <div class="card">
-                      <a href="/experiencias/historia_vida/show">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                   
-                            <div class="card-body">
-                                <p class="card-text my-1">Pais</p>
-                                <h2>Lorem ipsum</h2>
-                            </div>
-                      </a>
-                  </div>             
-              </div>
-                <div class="col mb-4">           
-                  <div class="card">
-                      <a href="/experiencias/historia_vida/show">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                   
-                            <div class="card-body">
-                                <p class="card-text my-1">Pais</p>
-                                <h2>Lorem ipsum</h2>
-                            </div>
-                      </a>
-                  </div>             
-              </div>
-          </div>
+            @endforeach
+        </div>
     </div>
 </article>
 @endsection

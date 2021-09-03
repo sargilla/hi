@@ -66,7 +66,7 @@
                     <div class="col-4 col-sm-6 col-lg-5 col-xl-6 align-self-center text-center mb-5">
                         <a href="">
                             <figure class="figure">
-                                <img class="figure-img img-fluid" src="./images/logo-hi.png" alt="logo de humanity and inclusion">
+                                <img class="figure-img img-fluid" src="/images/logo-hi.png" alt="logo de humanity and inclusion">
                             </figure>
                         </a>               
                     </div>           
@@ -75,45 +75,28 @@
     </div>
     <div class="bg-white" id="logos">
         <div class="container">
-            <div class="row py-2">
+            <div class="row py-2">            
                     <div class="col-12 col-md-6 d-flex align-items-center">
+                        @foreach([1,2] as $v)
                         <div class="col-6">
-                            <a href="">                     
+                            <a href="" class="nav-link p-0">                     
                                 <figure>
-                                    <img src="/images/logo_1.png" alt="logo de USAID" width="100%">
+                                    <img src="/images/logo_{{$v}}.png" alt="logo de USAID" width="100%">
                                 </figure>  
                             </a>                    
                         </div>
-                        <div  class="col-6">
-                            <a href="">
-                                <figure>
-                                    <img src="/images/logo_2.png" alt="logo de finanzado por la Union Europea" width="100%">
-                                </figure>
-                            </a>                     
-                        </div>
-                    </div>
+                        @endforeach
+                    </div>            
                     <div  class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-between">
+                        @foreach([3,5,4] as $v)
                         <div  class="col-6 col-sm-4">
-                            <a href="">
+                            <a href="" class="nav-link p-0">
                                 <figure>
-                                    <img src="/images/logo_3.png" alt="logo de humanity and inclusion" width="100%">
+                                    <img src="/images/logo_{{$v}}.png" alt="logo de humanity and inclusion" width="100%">
                                 </figure>
                             </a>                         
                         </div>
-                        <div class="col-6 col-sm-4">
-                            <a href="">
-                                <figure>
-                                    <img src="/images/logo_5.png" alt="logo de cooperazione internazionale" width="100%">
-                                </figure>
-                            </a>                        
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <a href="">
-                                <figure>
-                                    <img src="/images/logo_4.png" alt="logo de save the children" width="100%">
-                                </figure>
-                            </a>                      
-                        </div>
+                        @endforeach
                     </div>
             </div>
         </div>

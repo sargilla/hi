@@ -43,12 +43,12 @@
     </h2>
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
-            @foreach($campos as $c)
+            @foreach($campos as $key => $c)
             <div class="col mb-4">   
-                <a href="{{$c['href']}}">
+                <a href="{{$c['href']}}" class="nav-link p-0">
                     <div class="card h-100 bg-light">  
                         <div class="card-body p-0">
-                            <h3 class="rounded-top bg-primary text-white p-2 mb-0">
+                            <h3 class="rounded-top bg-primary text-white px-2 {{$key == 0 ? 'py-2' : 'py-3'}} mb-0 text-center">
                                 {{$c['h3']}}
                             </h3> 
                             <p class="text-center mt-3">

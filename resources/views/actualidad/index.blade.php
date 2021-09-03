@@ -53,7 +53,7 @@
     <div class="container py-5 px-lg-3">
       <div class="row">
         <div class="col-sm-7 col-md-7 mb-4">
-              <a href="/actualidad/show">
+              <a href="/actualidad/show" class="nav-link p-0">
                   <figure class="figure m-0 w-100">
                     <img src="/images/familia.jpg" class="card-img-top  rounded-10" alt="...">
                   </figure>         
@@ -64,7 +64,7 @@
               </a>  
         </div>
         <div class="col-sm-5 col-md-5 mb-4">
-              <a href="/actualidad/show">
+              <a href="/actualidad/show" class="nav-link p-0">
                   <figure class="figure m-0 w-100">
                     <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="...">
                   </figure>         
@@ -75,7 +75,7 @@
               </a>  
         </div>
         <div class="col-sm-5 col-md-5 mb-4">    
-              <a href="/actualidad/show">
+              <a href="/actualidad/show" class="nav-link p-0">
                   <figure class="figure m-0 w-100">
                     <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="...">
                   </figure>         
@@ -86,7 +86,7 @@
               </a>  
           </div>
         <div class="col-sm-7 col-md-7 mb-4">      
-              <a href="/actualidad/show">
+              <a href="/actualidad/show" class="nav-link p-0">
                   <figure class="figure m-0 w-100">
                     <img src="/images/familia.jpg" class="card-img-top  rounded-10" alt="...">
                   </figure>         

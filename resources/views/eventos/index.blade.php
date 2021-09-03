@@ -52,8 +52,9 @@
 <article id="eventosContenido" class="eventosIndex">
   <div class="container py-5 px-lg-3">
         <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-4">
-                <a href="/eventos/show">
+            @foreach([1,2,3] as $v)
+            <div class="col mb-4">             
+                <a href="/eventos/show" class="nav-link p-0">
                         <div class="card">
                                 <figure class="figure m-0">
                                     <img src="/images/familia.jpg" class="card-img-top" alt="...">
@@ -75,52 +76,7 @@
                         </div>
                 </a>
             </div>
-            <div class="col mb-4">
-                <a href="/eventos/show">
-                        <div class="card">
-                                <figure class="figure m-0">
-                                    <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                                </figure>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>                
-                                </div>     
-                                    <h2 class="mt-3 text-decoration-underline">               
-                                        Lorem ipsum dolor sit amet consectetur adipisicing                
-                                </h2>
-                                <div class="p-3 d-flex justify-content-between align-items-center">
-                                    <p class="my-auto">
-                                        Tema - Nivel - Sector
-                                    </p>
-                                    <button href="" class="btn btn-purple px-4">Inscribirse</button>
-                                </div>                 
-                            </div>
-                        </div>
-                </a>
-            </div>
-            <div class="col mb-4">
-                <a href="/eventos/show">
-                        <div class="card">
-                                <figure class="figure m-0">
-                                    <img src="/images/familia.jpg" class="card-img-top" alt="...">
-                                </figure>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>                 
-                                </div>     
-                                    <h2 class="mt-3 text-decoration-underline">               
-                                        Lorem ipsum dolor sit amet consectetur adipisicing                
-                                </h2>
-                                <div class="p-3 d-flex justify-content-between align-items-center">
-                                    <p class="my-auto">
-                                        Tema - Nivel - Sector
-                                    </p>
-                                    <button href="" class="btn btn-purple px-4">Inscribirse</button>
-                                </div>                 
-                            </div>
-                        </div>
-                </a>
-            </div>
+            @endforeach
         </div>
     </div>
 </article>

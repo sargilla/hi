@@ -1,3 +1,40 @@
+<?php 
+    $contenidos = [
+        [
+            'texto' => 'Reducción de riesgo de desastre',
+            'link' => ''
+        ],
+        [
+            'texto' => 'Discapacidad',
+            'link' => '/recursos/discapacidad'
+        ],
+        [
+            'texto' => 'Género',
+            'link' => '/recursos/genero'
+        ],
+        [
+            'texto' => 'Edad',
+            'link' => ''
+        ],
+        [
+            'texto' => 'Étnico',
+            'link' => ''
+        ],
+        [
+            'texto' => 'Enfoque de inclusión',
+            'link' => ''
+        ],
+        [
+            'texto' => 'Acción humanitaria inclusiva',
+            'link' => ''
+        ],
+        [
+            'texto' => 'Respuesta inclusiva COVID',
+            'link' => ''
+        ],
+    ]
+?>
+
 @extends('plantilla::layout')
 @section('main-content')
  <article id="recursos" class="recursosIndex">
@@ -41,43 +78,23 @@
             <h2>
                 Caja de herramientas
             </h2>
-            <div class="row row-cols-sm-2 row-cols-md-3 mt-4 text-center">        
+            <div class="row row-cols-sm-2 row-cols-md-3 mt-4 text-center">  
+                @foreach(['Herramientas Comunitarias','Herramientas','Herramientas Covid'] as $v)      
                 <div class="col mb-4">
-                    <a href="">
+                    <a href="" class="nav-link p-0">
                         <div class="card bg-light border-0">                       
                             <figure class="figure m-0">
                                 <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                             
                         <div class="card-body mt-2">
-                            <h5>Herramientas Comunitarias</h5>
+                            <h5>
+                                {{$v}}
+                            </h5>
                         </div>
                         </div>
                     </a> 
                 </div>
-                <div class="col mb-4">
-                    <a href="">
-                        <div class="card bg-light border-0">                       
-                            <figure class="figure m-0">
-                                <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                             
-                        <div class="card-body mt-2">
-                            <h5>Herramientas</h5>
-                        </div>
-                        </div>
-                    </a> 
-                </div>
-                <div class="col mb-4">
-                    <a href="">
-                        <div class="card bg-light border-0">                       
-                            <figure class="figure m-0">
-                                <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                             
-                        <div class="card-body mt-2">
-                            <h5>Herramientas Covid</h5>
-                        </div>
-                        </div>
-                    </a> 
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -106,102 +123,20 @@
                 Tematicas
             </h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mt-4 text-center" id="tematicas">        
+                @foreach($contenidos as $c)
                 <div class="col mb-4">
                     <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                           
-                      <div class="card-body mt-1">
-                          <h5>Reducción de riesgo de desastre</h5>
-                      </div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="/recursos/discapacidad">
+                        <a href="{{$c['link']}}" class="nav-link p-0">
                             <figure class="figure m-0">
                               <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                             </figure>                    
                             <div class="card-body mt-1">
-                                <h5>Discapacidad</h5>
-                            </div>
-                         </a> 
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="/recursos/genero">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                    
-                            <div class="card-body mt-1">
-                                <h5>Género</h5>
+                                <h5>{{$c['texto']}}</h5>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                         
-                            <div class="card-body mt-1">
-                                <h5>Edad</h5>
-                            </div>
-                        </a> 
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                          
-                            <div class="card-body mt-1">
-                                <h5>Étnico</h5>
-                            </div>
-                        </a> 
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>                              
-                            <div class="card-body mt-1">
-                                <h5>Enfoque de inclusión</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>     
-                            <div class="card-body mt-1">
-                                <h5>Acción humanitaria inclusiva</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card bg-light border-0">
-                        <a href="">
-                            <figure class="figure m-0">
-                              <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                            </figure>   
-                            <div class="card-body mt-1">
-                                <h5>Respuesta inclusiva COVID</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                @endforeach     
             </div>
         </div>
     </div>
@@ -213,7 +148,7 @@
          </h2>
         <div class="row justify-content-center col-lg-8 mx-auto">
             <div class="col-4">
-                <a href="" class="text-center">
+                <a href="" class="text-center nav-link p-0">
                     <figure class="figure">
                       <img src="/images/col.png" class="figure-img img-fluid " alt="bandera de colombia">
                       Colombia
@@ -223,7 +158,7 @@
                 
             </div>
             <div class="col-4">
-                <a href="" class="text-center">
+                <a href="" class="text-center nav-link p-0">
                     <figure class="figure">
                       <img src="/images/peru.png" class="figure-img img-fluid " alt="bandera de peru">
                       Peru
@@ -231,7 +166,7 @@
                 </a>  
             </div>
             <div class="col-4">
-                <a href="" class="text-center">
+                <a href="" class="text-center nav-link p-0">
                     <figure class="figure">
                       <img src="/images/py.png" class="figure-img img-fluid " alt="bandera de paraguay">
                       Paraguay

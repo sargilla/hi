@@ -116,3 +116,16 @@ footer
             }
         }       
     }
+@media screen and (min-width:1800px)
+{
+    #li-smu{
+        .skip-main-up:focus
+        {
+            left: -100% !important;                  
+        }
+        .skip-main-up
+        {
+            left:-120% !important;
+        }
+    }
+}

@@ -20,7 +20,7 @@
     </article>
     <article id="actualidadImagenCreditos" class="actualidadShow">
         <div class="container py-5 py-lg-3">  
-                <a href="">                    
+                <a href="" class="nav-link p-0">                    
                     <div class="text-center">    
                         <figure class="figure w-100 mb-3">
                             <img class="figure-img img-fluid w-100 rounded-10  mb-0" src="/images/familia.jpg" alt="">
@@ -48,7 +48,7 @@
         <div class="container py-5 py-lg-3">      
             <div class="row">
                         <div class="col-md-6">  
-                            <a href="">                    
+                            <a href=""class="nav-link p-0">                    
                                 <div class="text-center">    
                                     <figure class="figure w-100 mb-3">
                                         <img class="figure-img img-fluid w-100 rounded-10  mb-0" src="/images/familia.jpg" alt="">
@@ -58,7 +58,7 @@
                             </a> 
                         </div>
                         <div class="col-md-6">                    
-                            <a href="">                    
+                            <a href="" class="nav-link p-0">                    
                                 <div class="text-center">    
                                     <figure class="figure w-100 mb-3">
                                         <img class="figure-img img-fluid w-100 rounded-10  mb-0" src="/images/familia.jpg" alt="">
@@ -90,8 +90,9 @@
                         Más Noticias
                     </h2>
                     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="mas-noticias">
+                        @foreach([1,2,3,4,5] as $v)
                         <div class="col mb-4">
-                            <a href="">
+                            <a href="" class="nav-link p-0">
                                 <div class="card">
                                         <figure class="figure mb-0">
                                             <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
@@ -103,61 +104,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col mb-4">
-                            <a href="">
-                                <div class="card">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                                        </figure>       
-                                    <div class="card-body">
-                                        <p class="card-text my-1">Pais</p>
-                                        <h3>Lorem ipsum</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col mb-4">
-                            <a href="">
-                                <div class="card">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                                        </figure>       
-                                    <div class="card-body">
-                                        <p class="card-text my-1">Pais</p>
-                                        <h3>Lorem ipsum</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col mb-4">
-                            <a href="">
-                                <div class="card">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                                        </figure>       
-                                    <div class="card-body">
-                                        <p class="card-text my-1">Pais</p>
-                                        <h3>Lorem ipsum</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col mb-4">
-                            <a href="">
-                                <div class="card">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
-                                        </figure>       
-                                    <div class="card-body">
-                                        <p class="card-text my-1">Pais</p>
-                                        <h3>Lorem ipsum</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                      </div>
-                </div>
+                        @endforeach
+                    </div>
             </div>
-        <div>
     </article>
 @endsection

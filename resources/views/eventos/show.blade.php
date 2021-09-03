@@ -56,12 +56,10 @@
                         </h2>
                         <div>
                             <div class="d-flex align-items-center">
-                                <div class="">
-                                    <a href="">
+                                <div class="">                                
                                         <figure >
                                             <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
                                         </figure>
-                                    </a>
                                 </div>
                             <div class="ml-3">
                                 <p>
@@ -70,13 +68,11 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <div class="">
-                                <a href="">
+                            <div class="">                             
                                     <figure >
                                         <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
                                     </figure>
-                                </a>
-                                
+                                                     
                             </div>
                             <div class="ml-3">
                                 <p>

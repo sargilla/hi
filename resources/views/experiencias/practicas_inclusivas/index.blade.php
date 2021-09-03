@@ -46,8 +46,9 @@
     <div class="container py-5">    
         <div id="practicas">
             <ul>
+                @foreach([1,2,3,4,5,6,7,8,9,10,11,12] as $v)
                     <li>
-                    <a href="">
+                    <a href="" class="nav-link p-0">
                         <div class="row mb-3 py-3">            
                                 <div class="col-12 col-md-4 col-lg-3">
                                         <figure class="figure mb-0">
@@ -55,191 +56,14 @@
                                         </figure>           
                                 </div>
                                 <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
+                                    <h3>{{$v}} - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
                                     </p>
                                 </div>      
                         </div>
                     </a>
                     </li>
-                    <li>
-                    <a href="">
-                        <div class="row mb-3 py-3">
-                            <div class="col-12 col-md-4 col-lg-3">         
-                                    <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                    </figure>           
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                <h3>2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
-                    <a href="">
-                        <div class="row mb-3 py-3">
-                            <div class="col-12 col-md-4 col-lg-3">
-                                    <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                    </figure>
-                                        
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                <h3>3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>  
-                    <a href="">
-                        <div class="row mb-3 py-3">
-                            <div class="col-12 col-md-4 col-lg-3">
-                                    <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                    </figure>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                <h3>4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
-                    <a href="">
-                        <div class="row mb-3 py-3">
-                            <div class="col-12 col-md-4 col-lg-3">                        
-                                    <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                    </figure>
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                <h3>5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>            
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">                 
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>
-                                            
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>7 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">                        
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>              
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>8 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>              
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>9 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>           
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>10 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="row mb-3 py-3">
-                                <div class="col-12 col-md-4 col-lg-3">
-                                        <figure class="figure mb-0">
-                                            <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                        </figure>          
-                                </div>
-                                <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                    <h3>11 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                                <div class="row mb-3 py-3">
-                                    <div class="col-12 col-md-4 col-lg-3">
-                                            <figure class="figure mb-0">
-                                                <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded-10 mb-0" alt="...">
-                                            </figure>             
-                                    </div>
-                                    <div class="col-12 col-md-8 col-lg-9 py-3">                 
-                                        <h3>12 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iste!</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore id recusandae veritatis. Corrupti est commodi quae placeat, nam asperiores, qui illo harum tempora atque possimus quam labore natus exercitationem?
-                                        </p>
-                                    </div>
-                                </div>
-                        </a>
-                    </li>
+                @endforeach
            </ul>
         </div>
     </div>

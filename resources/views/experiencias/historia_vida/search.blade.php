@@ -47,10 +47,11 @@
      <div class="container py-5" id="expRes">  
          <h2 class="text-center">
             Documentos de diagnósticos     
-        </h2>                 
-        <div class="row mb-3 border py-5"> 
+        </h2>
+        @foreach([1,2,3] as $v)                 
+        <div class="row mb-3 border py-5">      
             <div class="col-12 col-md-4 col-lg-3"> 
-                <a href="">
+                <a href="" class="nav-link p-0">
                     <figure class="figure mb-0">
                         <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
                 </figure> 
@@ -71,52 +72,7 @@
                 </p>
             </div>     
         </div>
-        <div class="row mb-3 border py-5"> 
-            <div class="col-12 col-md-4 col-lg-3"> 
-                <a href="">
-                    <figure class="figure mb-0">
-                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
-                </figure> 
-                </a>                         
-            </div>
-            <div class="col-12 col-md-8 col-lg-9 py-3">
-                <p class="col-md-6 p-0">Pais</p>
-                <h3 class="mt-4">
-                    <a href="" class="text-white p-2">
-                        Titulo de la nota
-                    </a>
-                </h3>
-                <p class="mt-3">
-                    <a href="" class="text-white p-2">
-                        <i class="fas fa-arrow-right mr-2"></i>
-                        Descargar el documento
-                    </a>            
-                </p>
-            </div>     
-        </div>
-        <div class="row mb-3 border py-5"> 
-            <div class="col-12 col-md-4 col-lg-3"> 
-                <a href="">
-                    <figure class="figure mb-0">
-                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
-                    </figure> 
-                </a>                          
-            </div>
-            <div class="col-12 col-md-8 col-lg-9 py-3">
-                <p class="col-md-6 p-0">Pais</p>
-                <h3 class="mt-4">
-                    <a href="" class="text-white p-2">
-                        Titulo de la nota
-                    </a>
-                </h3>
-                <p class="mt-3">
-                    <a href="" class="text-white p-2">
-                        <i class="fas fa-arrow-right mr-2"></i>
-                        Descargar el documento
-                    </a>            
-                </p>
-            </div>     
-        </div>
+        @endforeach
      </div>
  </article>
 @endsection
