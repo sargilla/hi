@@ -207,7 +207,8 @@ CREATE TABLE `paginas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `paginas` (`id`, `titulo`, `slug`, `encabezado`, `contenido`, `derecha`, `izquierda`, `top_contenido`, `pie_contenido`, `pie`, `posiciones`, `settings`, `publicado`, `created_at`, `updated_at`) VALUES
-(1,	'inicio',	'inicio',	NULL,	'[{\"nombre\":\"Texto de inicio\",\"tipo\":\"titulo_texto\",\"campos\":{\"titulo\":\"Pagina inicial Estudio Rompecabezas\",\"texto\":\"Esta es la pagina inicial del paquete Paginas de Estudio Rompecabezas\"}}]',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	'2021-07-16 11:25:33',	'2021-07-16 11:25:33');
+(1,	'inicio',	'inicio',	'[]',	'[{\"nombre\":\"Bienvenida\",\"tipo\":\"titulo_texto_video\",\"campos\":{\"imagenes\":[{\"imagen\":null}],\"texto\":\"<p>Bienvenidas y bienvenidos en este espacio que promueve una gesti\\u00f3n del riesgo de desastres con enfoque de inclusi\\u00f3n, poniendo a las personas en situaci\\u00f3n de mayor vulnerabilidad en el centro de la gesti\\u00f3n del riesgo, haci\\u00e9ndolessiendo part\\u00edcipes como personas sujetas de derechos, en condiciones de igualdad, sin exclusiones ni discriminaci\\u00f3n.<\\/p><p>\\u00a1Les invitamos a sumarse a este esfuerzo para comunidades m\\u00e1s inclusivas y m\\u00e1s resilientes!<\\/p>\",\"titulo\":\"Gesti\\u00f3n inclusiva del riesgo de desastres\",\"video\":\"https:\\/\\/www.youtube.com\\/watch?v=TcDKToV5BrA\",\"texto_boton\":\"Recursos\",\"link_boton\":\"\\/\"}}]',	'[]',	'[]',	NULL,	NULL,	'[]',	'[]',	NULL,	0,	'2021-07-16 11:25:33',	'2021-09-15 19:35:15'),
+(2,	'Experiencias',	'experiencias',	'[]',	'[]',	'[]',	'[]',	NULL,	NULL,	'[]',	'[]',	NULL,	0,	'2021-09-15 19:41:44',	'2021-09-15 19:41:44');
 
 DROP TABLE IF EXISTS `password_resets`;
 CREATE TABLE `password_resets` (
@@ -321,4 +322,4 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `settings`, `activated`,
 (3,	'Hernan Cefarelli',	'hernancefarelli@gmail.com',	'$2y$10$fGLPAOpBKT2Oy.ZDEW3CPOiGJ/gLbCxR/W46TUraOSEigZYTCi0Sq',	'\"{}\"',	NULL,	NULL,	NULL,	'2021-07-16 14:05:09',	'2021-07-16 14:05:09'),
 (4,	'David Zisele',	'davidzisele2016@gmail.com',	'$2y$10$PsOwvS4XtqnVdio.PAaWLekAjX151kX9hUHLIgqf/CzxFsZKSBcUW',	'\"{}\"',	NULL,	NULL,	NULL,	'2021-07-16 14:05:09',	'2021-07-16 14:05:09');
 
--- 2021-07-16 14:51:41
+-- 2021-09-15 19:46:58
