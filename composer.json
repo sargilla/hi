@@ -64,10 +64,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
-        "eventos": {
-            "type": "path",
-            "url": "../sigma/eventos"
-        },
         "satis": {
             "type": "composer",
             "url": "https://satis.papro.com.ar/"

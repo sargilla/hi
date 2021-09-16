@@ -19,6 +19,33 @@ CREATE TABLE `configuraciones` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
+DROP TABLE IF EXISTS `eventos`;
+CREATE TABLE `eventos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tipo_id` int(10) unsigned NOT NULL,
+  `intro` text COLLATE utf8mb4_unicode_ci,
+  `contenido` text COLLATE utf8mb4_unicode_ci,
+  `imagenes` text COLLATE utf8mb4_unicode_ci,
+  `documentos` text COLLATE utf8mb4_unicode_ci,
+  `links` text COLLATE utf8mb4_unicode_ci,
+  `videos` text COLLATE utf8mb4_unicode_ci,
+  `fecha_desde` datetime DEFAULT NULL,
+  `fecha_hasta` datetime DEFAULT NULL,
+  `marcado` tinyint(1) NOT NULL DEFAULT '0',
+  `publicado` tinyint(1) NOT NULL DEFAULT '0',
+  `campos_extra` text COLLATE utf8mb4_unicode_ci,
+  `tags` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `eventos_slug_publicado_marcado_index` (`slug`,`publicado`,`marcado`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `eventos` (`id`, `titulo`, `slug`, `tipo_id`, `intro`, `contenido`, `imagenes`, `documentos`, `links`, `videos`, `fecha_desde`, `fecha_hasta`, `marcado`, `publicado`, `campos_extra`, `tags`, `created_at`, `updated_at`) VALUES
+(1,	'sdadssa dadf',	'sdadssa-dadf',	1,	NULL,	'<p>asdfasdfsf asdfsaf</p>',	'[{\"imagen\":\"JNK7gWlzDlhXi1v6oemWzn3KhVh8j1mnbMvDT0y6.jpg\"}]',	NULL,	NULL,	NULL,	NULL,	NULL,	1,	1,	NULL,	NULL,	'2021-09-16 18:19:09',	'2021-09-16 18:25:11');
+
 DROP TABLE IF EXISTS `failed_jobs`;
 CREATE TABLE `failed_jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -85,7 +112,8 @@ INSERT INTO `menus` (`id`, `padre_id`, `nombre`, `menu`, `alias`, `tipo`, `desti
 (8,	0,	'Páginas',	'admin',	'paginas',	'route',	'paginas.index',	'fas fa-sitemap',	NULL,	NULL,	6,	'gestion',	'2021-07-16 11:25:29',	'2021-07-16 11:25:29'),
 (9,	0,	'Modulos',	'admin',	'modulos',	'route',	'modulos.index',	'fas fa-cubes',	NULL,	NULL,	7,	'gestion',	'2021-07-16 11:25:29',	'2021-07-16 11:25:29'),
 (10,	0,	'Mensajes',	'admin',	'mensajes',	'route',	'mensajes.index',	'fas fa-envelope',	NULL,	NULL,	8,	'gestion',	'2021-07-16 11:25:29',	'2021-07-16 11:25:29'),
-(11,	0,	'Noticias',	'admin',	'noticias',	'route',	'noticias.index',	'fas fa-newspaper',	NULL,	NULL,	5,	'gestion',	'2021-07-16 14:37:35',	'2021-07-16 14:50:42');
+(11,	0,	'Noticias',	'admin',	'noticias',	'route',	'noticias.index',	'fas fa-newspaper',	NULL,	NULL,	5,	'gestion',	'2021-07-16 14:37:35',	'2021-07-16 14:50:42'),
+(13,	0,	'Eventos',	'admin',	'eventos',	'route',	'eventos.index',	'fas fa-newspaper',	NULL,	NULL,	6,	'gestion',	'2021-09-16 17:00:12',	'2021-09-16 17:00:12');
 
 DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE `migrations` (
@@ -111,7 +139,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (13,	'2018_11_12_122358_create_noticias_table',	3),
 (14,	'2019_10_04_143122_add_intro_to_noticias_table',	3),
 (15,	'2020_05_12_111241_add_publico_to_temas_table',	3),
-(16,	'2020_11_02_105643_add_orden_to_noticias_table',	3);
+(16,	'2020_11_02_105643_add_orden_to_noticias_table',	3),
+(17,	'2017_12_10_134932_create_tipos_table',	4),
+(18,	'2018_11_12_122358_create_eventos_table',	4),
+(19,	'2019_10_04_143122_add_intro_to_eventos_table',	4);
 
 DROP TABLE IF EXISTS `model_has_permissions`;
 CREATE TABLE `model_has_permissions` (
@@ -185,6 +216,9 @@ CREATE TABLE `noticias` (
   KEY `noticias_orden_index` (`orden`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `noticias` (`id`, `titulo`, `slug`, `tema_id`, `intro`, `contenido`, `imagenes`, `documentos`, `links`, `videos`, `fecha_desde`, `fecha_hasta`, `marcada`, `orden`, `publicada`, `campos_extra`, `tags`, `created_at`, `updated_at`) VALUES
+(2,	'asdadsasdas',	'asdadsasdas',	1,	NULL,	'<p>asdadsd</p><p>asdadsa</p><p>asda</p>',	'[{\"imagen\":\"40c3H49X3K7B9GBRAbIFAoG3NYPW4eMNYzFCGfHk.jpg\"}]',	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	1,	NULL,	NULL,	'2021-09-14 03:00:00',	'2021-09-16 14:53:10'),
+(3,	'asdad as',	'asdad-as',	1,	NULL,	'<p>asd as</p>',	'[{\"imagen\":\"5wwXqd8UsNqJ7a2w1cDvkbi4Xow5hv2GBUxt8Sld.png\"}]',	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	1,	NULL,	NULL,	'2021-09-17 03:00:00',	'2021-09-16 14:53:11');
 
 DROP TABLE IF EXISTS `paginas`;
 CREATE TABLE `paginas` (
@@ -241,7 +275,10 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 (9,	'paginas-editartitulo',	'web',	'2021-07-16 11:25:30',	'2021-07-16 11:25:30'),
 (10,	'noticias-crear',	'web',	'2021-07-16 14:37:35',	'2021-07-16 14:37:35'),
 (11,	'noticias-borrar',	'web',	'2021-07-16 14:37:35',	'2021-07-16 14:37:35'),
-(12,	'noticias-editar',	'web',	'2021-07-16 14:37:35',	'2021-07-16 14:37:35');
+(12,	'noticias-editar',	'web',	'2021-07-16 14:37:35',	'2021-07-16 14:37:35'),
+(13,	'eventos-crear',	'web',	'2021-09-16 16:46:19',	'2021-09-16 16:46:19'),
+(14,	'eventos-borrar',	'web',	'2021-09-16 16:46:20',	'2021-09-16 16:46:20'),
+(15,	'eventos-editar',	'web',	'2021-09-16 16:46:20',	'2021-09-16 16:46:20');
 
 DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles` (
@@ -279,6 +316,9 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (10,	1),
 (11,	1),
 (12,	1),
+(13,	1),
+(14,	1),
+(15,	1),
 (1,	2),
 (5,	2);
 
@@ -299,6 +339,23 @@ CREATE TABLE `temas` (
 
 INSERT INTO `temas` (`id`, `nombre`, `slug`, `descripcion`, `imagenes`, `publico`, `archivado`, `color`, `created_at`, `updated_at`) VALUES
 (1,	'General',	'general',	NULL,	NULL,	1,	0,	'#000000',	'2021-07-16 14:37:35',	'2021-07-16 14:37:35');
+
+DROP TABLE IF EXISTS `tipos`;
+CREATE TABLE `tipos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `descripcion` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imagenes` text COLLATE utf8mb4_unicode_ci,
+  `archivado` tinyint(1) NOT NULL DEFAULT '0',
+  `color` varchar(7) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '#000000',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `tipos` (`id`, `nombre`, `slug`, `descripcion`, `imagenes`, `archivado`, `color`, `created_at`, `updated_at`) VALUES
+(1,	'General',	'general',	NULL,	NULL,	0,	'#000000',	'2021-09-16 18:17:06',	'2021-09-16 18:17:06');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -322,4 +379,4 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `settings`, `activated`,
 (3,	'Hernan Cefarelli',	'hernancefarelli@gmail.com',	'$2y$10$fGLPAOpBKT2Oy.ZDEW3CPOiGJ/gLbCxR/W46TUraOSEigZYTCi0Sq',	'\"{}\"',	NULL,	NULL,	NULL,	'2021-07-16 14:05:09',	'2021-07-16 14:05:09'),
 (4,	'David Zisele',	'davidzisele2016@gmail.com',	'$2y$10$PsOwvS4XtqnVdio.PAaWLekAjX151kX9hUHLIgqf/CzxFsZKSBcUW',	'\"{}\"',	NULL,	NULL,	NULL,	'2021-07-16 14:05:09',	'2021-07-16 14:05:09');
 
--- 2021-09-15 19:46:58
+-- 2021-09-16 19:18:15
