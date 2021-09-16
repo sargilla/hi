@@ -2209,6 +2209,11 @@ datatables.net@1.10.25, datatables.net@^1.10.15:
   dependencies:
     jquery ">=1.7"
 
+date-format-parse@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/date-format-parse/-/date-format-parse-0.2.7.tgz#a2f78bca857a821785b48abedd4426c65aa7b918"
+  integrity sha512-/+lyMUKoRogMuTeOVii6lUwjbVlesN9YRYLzZT/g3TEZ3uD9QnpjResujeEqUW+OSNbT7T1+SYdyEkTcRv+KDQ==
+
 dcjqaccordion@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/dcjqaccordion/-/dcjqaccordion-2.7.1.tgz"
@@ -2642,11 +2647,6 @@ faye-websocket@^0.11.3:
   integrity sha512-CzbClwlXAuiRQAlUyfqPgvPoNKTckTPGfwZV4ZdAhVcP2lh9KUxJg2b5GkE7XbjKQ3YJnQ9z6D9ntLAlB+tP8g==
   dependencies:
     websocket-driver ">=0.5.1"
-
-fecha@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/fecha/-/fecha-2.3.3.tgz"
-  integrity sha512-lUGBnIamTAwk4znq5BcqsDaxSmZ9nDVJaij6NvRt/Tg4R69gERA+otPKbS86ROw9nxVMw2/mp1fnaiWqbs6Sdg==
 
 figures@^3.2.0:
   version "3.2.0"
@@ -5494,12 +5494,12 @@ vue-the-mask@^0.11.1:
   resolved "https://registry.yarnpkg.com/vue-the-mask/-/vue-the-mask-0.11.1.tgz"
   integrity sha512-UquSfnSWejD0zAfcD+3jJ1chUAkOAyoxya9Lxh9acCRtrlmGcAIvd0cQYraWqKenbuZJUdum+S174atv2AuEHQ==
 
-vue2-datepicker@^2.10.0:
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/vue2-datepicker/-/vue2-datepicker-2.13.4.tgz"
-  integrity sha512-a2eRLqBSRTFRJ/DVcPArXALpnICj+DTvoJGkvuZTvytO7FD3rmxbGS/DNzK1v+hDbHiOJtHwB7N8pyT1XZtWfw==
+vue2-datepicker@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/vue2-datepicker/-/vue2-datepicker-3.10.1.tgz#4e5149bb82481257183477bc6de649a43720e47a"
+  integrity sha512-AKp4Tq5LRpy4v1lc6qIXLKFfklCDgZQthoVnDCR9QvMo7AaUQv3nD9k45PVBPIF1A1vzQVcSIvhCQJfMhXmMWQ==
   dependencies:
-    fecha "^2.3.3"
+    date-format-parse "^0.2.7"
 
 vue2-transitions@0.3.0:
   version "0.3.0"

@@ -12,9 +12,4 @@ Vue.use(VModal);
 import ToggleButton from 'vue-js-toggle-button'
 Vue.use(ToggleButton)
 
-    // import VueTheMask from 'vue-the-mask'
-    // Vue.use(VueTheMask)
 
-// Vue.component('menus', require('./componentes/Menus.vue'));
-// Vue.component('configuraciones', require('./componentes/Configuraciones.vue'));
-Vue.component('noticias', require('./components/Noticias.vue'));
