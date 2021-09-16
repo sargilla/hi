@@ -33,7 +33,8 @@ return [
     'paths' => [
         public_path('upload'),
         public_path('images'),
-        public_path('storage/noticia/fotos')
+        public_path('storage/noticia/fotos'),
+        public_path('storage/eventos/fotos')
     ],
 
     /*

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08b149798bbdf92ae3dd000fb1490c36",
+    "content-hash": "89c71ab624d36f7131f3580b835ccd64",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -3258,6 +3258,44 @@
             ],
             "description": "Administra las configuraciones de laravel",
             "time": "2021-01-07T11:16:55+00:00"
+        },
+        {
+            "name": "sigma/eventos",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../sigma/eventos",
+                "reference": "046c073f564bc87a9ea3951e77f8b6d39389abff"
+            },
+            "type": "laravel",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sigma\\Eventos\\EventosServiceProvider"
+                    ],
+                    "aliases": {
+                        "Eventos": "Sigma\\Eventos\\EventosFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sigma\\Eventos\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Santiago Argilla",
+                    "email": "sargilla@gmail.com"
+                }
+            ],
+            "description": "Gestor de Eventos de Estudio Rompecabezas Framework",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "sigma/flatlab",
@@ -8944,6 +8982,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "sigma/eventos": 20,
         "sigma/flatlab": 20,
         "sigma/noticias": 20,
         "sigma/paginas": 20

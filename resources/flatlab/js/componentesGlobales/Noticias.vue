@@ -29,7 +29,6 @@
                     format="DD-MM-YYYY"
                     value-type="timestamp"
                     lang="es"
-                    :shortcuts="[]"
                 ></date-picker>
             </div>
         </div>

@@ -287,7 +287,7 @@ import texto from "./modulos/Texto.vue";
 import titulo_texto from "./modulos/TituloTexto.vue";
 import titulo_texto_imagen from "./modulos/TituloTextoImagen.vue";
 import titulo_texto_video from "./modulos/TituloTextoVideo.vue";
-import eventos from "./modulos/Eventos.vue";
+import modulo_eventos from "./modulos/ModuloEventos.vue";
 import cursos from "./modulos/Cursos.vue";
 import links_clientes from "./modulos/LinksClientes.vue";
 import carga_modulos from "./modulos/CargaModulos.vue";
@@ -312,7 +312,7 @@ export default {
         titulo_texto,
         titulo_texto_imagen,
         bloques,
-        eventos,
+        modulo_eventos,
         pasos,
         servicios,
         productos_inicio,
@@ -344,7 +344,7 @@ export default {
                 { nombre: "Contacto", value: "contacto" },
                 { nombre: "Cursos", value: "cursos" },
                 { nombre: "Documentos", value: "documentos" },
-                { nombre: "Eventos", value: "eventos" },
+                { nombre: "Eventos", value: "modulo_eventos" },
                 { nombre: "Listas", value: "listas" },
                 { nombre: "Lista con Imagen", value: "lista_con_imagen" },
                 { nombre: "Noticias", value: "modulo-noticias" },

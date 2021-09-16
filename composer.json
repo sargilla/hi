@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "estudiorompecabezas/hi",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "HI Gird.",
+    "keywords": ["Hi", "Gird"],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
@@ -11,6 +11,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
+        "sigma/eventos": "dev-master",
         "sigma/flatlab": "dev-master",
         "sigma/noticias": "dev-master",
         "sigma/paginas": "dev-master"
@@ -63,6 +64,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
+        "eventos": {
+            "type": "path",
+            "url": "../sigma/eventos"
+        },
         "satis": {
             "type": "composer",
             "url": "https://satis.papro.com.ar/"
