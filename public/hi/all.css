@@ -17246,6 +17246,24 @@ footer #li-smu .skip-main-up {
   color: #080707 !important;
 }
 
+.titulo_texto_link h1, .titulo_texto_link h2 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+.titulo_texto_link p {
+  color: #004F71 !important;
+}
+.titulo_texto_link h2 {
+  font-size: 2rem;
+}
+.titulo_texto_link h3 {
+  color: #1B74AF !important;
+}
+.titulo_texto_link a:focus, .titulo_texto_link a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+
 .bloques h1, .bloques h2 {
   font-weight: bold !important;
 }
@@ -17259,4 +17277,11 @@ footer #li-smu .skip-main-up {
 
 .bloque-texto-dark {
   color: #080707 !important;
+}
+
+.bloques_experiencias .card {
+  border: solid 2px #004F71 !important;
+}
+.bloques_experiencias h2 {
+  font-size: 1.5rem;
 }

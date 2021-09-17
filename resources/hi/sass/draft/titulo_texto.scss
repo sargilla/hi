@@ -23,3 +23,28 @@
         color:rgb(8, 7, 7) !important;
     }
 }
+.titulo_texto_link
+{
+    h1,h2
+    {
+        color: #004F71 !important;
+        font-weight: bold !important;
+    }
+    p 
+    {
+        color: #004F71 !important;
+    }
+    h2 
+    {
+        font-size: 2rem;
+    }
+    h3
+    {
+        color:#1B74AF !important; 
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+}

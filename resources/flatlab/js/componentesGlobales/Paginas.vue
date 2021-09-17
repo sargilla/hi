@@ -283,6 +283,8 @@ import listas from "./modulos/Listas.vue";
 import lista_con_imagen from "./modulos/ListaConImagen.vue";
 import slideshow from "./modulos/Slideshow.vue";
 import bloques from "./modulos/Bloques.vue";
+import bloques_banderas from "./modulos/BloquesBanderas.vue";
+import bloques_experiencias from "./modulos/BloquesExperiencias.vue";
 import texto from "./modulos/Texto.vue";
 import titulo_texto from "./modulos/TituloTexto.vue";
 import titulo_texto_imagen from "./modulos/TituloTextoImagen.vue";
@@ -297,6 +299,7 @@ import productos_inicio from "./modulos/ProductosInicio.vue";
 import noticias_inicio from "./modulos/NoticiasInicio.vue";
 import datos_impactos from "./modulos/DatosImpactos.vue";
 import imagen_texto_link from "./modulos/ImagenTextoLink.vue";
+import titulo_texto_link from "./modulos/TituloTextoLink.vue";
 export default {
     components: {
         draggable,
@@ -314,6 +317,8 @@ export default {
         titulo_texto,
         titulo_texto_imagen,
         bloques,
+        bloques_banderas,
+        bloques_experiencias,
         modulo_eventos,
         pasos,
         servicios,
@@ -322,6 +327,7 @@ export default {
         titulo_texto_video,
         datos_impactos,
         imagen_texto_link,
+        titulo_texto_link,
     },
     props: ["evento", "pagina"],
     data() {
@@ -342,6 +348,8 @@ export default {
             modulos: [
                 { nombre: "Agenda", value: "agenda" },
                 { nombre: "Bloques", value: "bloques" },
+                { nombre: "Bloques Banderas", value: "bloques_banderas" },
+                { nombre: "Bloques Experiencias", value: "bloques_experiencias" },
                 { nombre: "Call To Action", value: "call_to_action" },
                 { nombre: "Carga Módulos", value: "carga_modulos" },
                 { nombre: "Clientes", value: "links_clientes" },
@@ -361,10 +369,14 @@ export default {
                 { nombre: "Servicios", value: "servicios" },
                 { nombre: "Titulo con Texto", value: "titulo_texto" },
                 { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
-                 { nombre: "Datos Impactos", value: "datos_impactos" },
+                { nombre: "Datos Impactos", value: "datos_impactos" },
                 {
                     nombre: "Titulo con Texto e Imágen",
                     value: "titulo_texto_imagen"
+                },
+                {
+                    nombre: "Titulo con Texto y Link",
+                    value: "titulo_texto_link"
                 },
                 {
                     nombre: "Titulo con Texto y Video",

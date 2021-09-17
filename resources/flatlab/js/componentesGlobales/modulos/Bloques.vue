@@ -139,8 +139,6 @@
                 iconos: [],
                 urlSubir: route('uploadArchivoPagina'),
 			    urlBorrar: route('borrarArchivoPagina'),
-                tipos: [],
-                selectedTipo : ''
 	        }
 	    },
 	    props: ['id','nombre','campos'],
@@ -166,8 +164,6 @@
         },
         created () {
             this.user = Laravel.user;
-            this.tipos = ['Negro','Celeste'];
-            this.selectedTipo = this.tipos;
         },
 	    computed: {
 	        id_modulo: function(){
