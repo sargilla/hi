@@ -1,0 +1,20 @@
+.bloques
+{
+    h1,h2
+    {
+        font-weight: bold !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+    h2,p,h5,h1
+    {
+        color: #004F71 !important;
+    }
+}
+.bloque-texto-dark 
+{
+    color: rgb(8, 7, 7) !important;    
+}

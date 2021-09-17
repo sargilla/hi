@@ -1,0 +1,25 @@
+.titulo_texto 
+{
+    h1,h2
+    {
+        color: #004F71 !important;
+        font-weight: bold !important;
+    }
+    h2 
+    {
+        font-size: 1.2rem;
+    }
+    h3
+    {
+        color:#1B74AF !important; 
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+    p 
+    {
+        color:rgb(8, 7, 7) !important;
+    }
+}

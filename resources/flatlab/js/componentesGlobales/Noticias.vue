@@ -18,6 +18,34 @@
                 ></p>
             </div>
         </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('pais') }"
+        >
+            <label for="pais" class="col-form-label col-lg-2">Pais</label>
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.pais" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('pais')"
+                    v-text="form.errors.get('pais')"
+                ></p>
+            </div>
+        </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('links') }"
+        >
+            <label for="links" class="col-form-label col-lg-2">Links</label>
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.links" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('links')"
+                    v-text="form.errors.get('links')"
+                ></p>
+            </div>
+        </div>
         <div class="form-group row">
             <label for="created_at" class="col-form-label col-lg-2"
                 >Fecha</label
@@ -167,7 +195,9 @@ export default {
                 imagenes: [{ imagen: "" }],
                 publicada: false,
                 marcada: false,
-                created_at: ""
+                created_at: "",
+                links: "",
+                pais: "",
             }),
             fecha: "",
             temas: "",
@@ -210,6 +240,8 @@ export default {
                 this.form.id = this.noticia.id;
                 this.form.titulo = this.noticia.titulo;
                 this.form.tema_id = this.noticia.tema_id;
+                this.form.pais = this.noticia.pais;
+                this.form.links = this.noticia.links;
                 this.form.contenido = this.noticia.contenido;
                 if (this.noticia.imagenes) {
                     this.form.imagenes = this.noticia.imagenes;
@@ -228,6 +260,8 @@ export default {
             this.form.imagenes = [{ imagen: "" }];
             this.form.publicada = false;
             this.form.marcada = false;
+            this.form.pais = "";
+            this.form.links = "";
         },
         cancelar() {
             window.location.href = route("noticias.index");

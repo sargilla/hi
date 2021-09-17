@@ -295,6 +295,8 @@ import pasos from "./modulos/Pasos.vue";
 import servicios from "./modulos/Servicios.vue";
 import productos_inicio from "./modulos/ProductosInicio.vue";
 import noticias_inicio from "./modulos/NoticiasInicio.vue";
+import datos_impactos from "./modulos/DatosImpactos.vue";
+import imagen_texto_link from "./modulos/ImagenTextoLink.vue";
 export default {
     components: {
         draggable,
@@ -317,7 +319,9 @@ export default {
         servicios,
         productos_inicio,
         noticias_inicio,
-        titulo_texto_video
+        titulo_texto_video,
+        datos_impactos,
+        imagen_texto_link,
     },
     props: ["evento", "pagina"],
     data() {
@@ -356,6 +360,8 @@ export default {
                 { nombre: "Productos en Inicio", value: "productos_inicio" },
                 { nombre: "Servicios", value: "servicios" },
                 { nombre: "Titulo con Texto", value: "titulo_texto" },
+                { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
+                 { nombre: "Datos Impactos", value: "datos_impactos" },
                 {
                     nombre: "Titulo con Texto e Imágen",
                     value: "titulo_texto_imagen"

@@ -16744,25 +16744,25 @@ footer #li-smu .skip-main-up {
     left: -120% !important;
   }
 }
-#datos_impacto a:focus, #datos_impacto a:hover {
+.datos_impacto a:focus, .datos_impacto a:hover {
   outline: solid 2px #004F71 !important;
   text-decoration: none !important;
 }
-#datos_impacto h2 {
+.datos_impacto h2 {
   font-size: 2rem;
   font-weight: bold !important;
   color: #004F71 !important;
 }
-#datos_impacto h3 {
+.datos_impacto h3 {
   font-size: 0.9rem;
   font-weight: 400 !important;
 }
-#datos_impacto p {
+.datos_impacto p {
   font-size: 0.9rem;
   font-weight: 400 !important;
   color: #1B74AF !important;
 }
-#datos_impacto .border-datos {
+.datos_impacto .border-datos {
   font-size: 1.5rem;
   color: #1B74AF !important;
   border: solid 6px #E35205 !important;
@@ -16770,7 +16770,7 @@ footer #li-smu .skip-main-up {
   width: 150px;
   height: 150px;
 }
-#datos_impacto .border-datos div {
+.datos_impacto .border-datos div {
   position: absolute;
   top: 0;
   left: 0;
@@ -16778,7 +16778,7 @@ footer #li-smu .skip-main-up {
   bottom: 0;
   width: 100%;
 }
-#datos_impacto .link-di {
+.datos_impacto .link-di {
   font-size: 0.9rem;
   text-decoration: underline !important;
 }
@@ -17214,7 +17214,7 @@ footer #li-smu .skip-main-up {
   text-decoration: underline !important;
 }
 
-#recursos p {
+.recursos p {
   color: #080707 !important;
 }
 
@@ -17227,4 +17227,36 @@ footer #li-smu .skip-main-up {
     border-bottom: unset !important;
     border-right: solid 2px #fff !important;
   }
+}
+.titulo_texto h1, .titulo_texto h2 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+.titulo_texto h2 {
+  font-size: 1.2rem;
+}
+.titulo_texto h3 {
+  color: #1B74AF !important;
+}
+.titulo_texto a:focus, .titulo_texto a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.titulo_texto p {
+  color: #080707 !important;
+}
+
+.bloques h1, .bloques h2 {
+  font-weight: bold !important;
+}
+.bloques a:focus, .bloques a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.bloques h2, .bloques p, .bloques h5, .bloques h1 {
+  color: #004F71 !important;
+}
+
+.bloque-texto-dark {
+  color: #080707 !important;
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89c71ab624d36f7131f3580b835ccd64",
+    "content-hash": "2bf0a3cbb57338b2383342806413f1bc",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -3262,10 +3262,10 @@
         {
             "name": "sigma/eventos",
             "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../sigma/eventos",
-                "reference": "046c073f564bc87a9ea3951e77f8b6d39389abff"
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:3tter/sigma-eventos.git",
+                "reference": "65e3a8c5c4621c98aa7f424c00758fb0b7731a6d"
             },
             "type": "laravel",
             "extra": {
@@ -3293,9 +3293,7 @@
                 }
             ],
             "description": "Gestor de Eventos de Estudio Rompecabezas Framework",
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2021-09-16T18:36:45+00:00"
         },
         {
             "name": "sigma/flatlab",
@@ -3353,10 +3351,10 @@
         {
             "name": "sigma/noticias",
             "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../sigma/noticias",
-                "reference": "d5ba73eaf8da3cb52a57ff4f27b2874b828423e4"
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:3tter/sigma-noticias.git",
+                "reference": "dd7476768c4e7ee0f05268bc6ffa813659a5ca0b"
             },
             "type": "laravel",
             "extra": {
@@ -3384,9 +3382,7 @@
                 }
             ],
             "description": "Gestor de Noticias de Estudio Rompecabezas Framework",
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2021-09-16T17:34:32+00:00"
         },
         {
             "name": "sigma/paginas",

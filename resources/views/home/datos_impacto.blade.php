@@ -37,7 +37,7 @@
         ],
     ]
 ?>
-<article id="datos_impacto" class="pt-5 pb-lg-5">
+<article class="datos_impacto pt-5 pb-lg-5">
     <h2 class="text-center  mb-5">
         ¿Por qué es necesario en enfoque de inclusión en la <abbr title="">GRD</abbr> en América latina?   
     </h2>

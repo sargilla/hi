@@ -12,21 +12,32 @@
 
 @endforeach
 @else
-<div class="container clearfix my-5">
-    @foreach (collect($campos['modulos'])->chunk($campos['columnas']) as $chunk)
-    <div class="row">
-        @foreach($chunk as $modulo)
-        <div class="col mb-3">
-            <div class="feature-box fbox-border fbox-effect border border-black p-2 shadow bg-primary text-white">
-                <h3 class="border-bottom border-black">{{ $modulo['titulo'] }} </h3>
-                <div class="fbox-icon d-flex p-2">
-                    <a class="text-white" href="#"><i class="{{ $modulo['icono'] }} i-alt mr-2"></i></a>
-                    <p class="m-0">{{ $modulo['texto'] }} </p>
+<article class="bloques">
+    <div class="bg-light">
+        <div class="container py-5 {{$campos['color'] == 'Negro' ? 'bloque-texto-dark' : ''}}">
+            <h2>
+                {{$campos['titulo']}}
+            </h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-{{$campos['columnas']}} mt-4 text-center">
+                @foreach($campos['modulos'] as $modulo)        
+                <div class="col mb-4">  
+                    <div class="card bg-light border-0">           
+                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0">                 
+                                <figure class="figure m-0">
+                                    <img src="/images/paginas-grande/{{ $modulo['imagen'] }}" class="card-img-top rounded-10" alt="...">
+                                </figure>                             
+                            <div class="card-body mt-2">
+                                <h5>
+                                    {{$modulo['texto']}}
+                                </h5>                
+                            </div>
+                        </a>
+                    </div>                
                 </div>
+                @endforeach
             </div>
         </div>
-        @endforeach
     </div>
-    @endforeach
-</div>
+ </article>
 @endif
+

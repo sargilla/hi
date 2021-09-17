@@ -49,6 +49,26 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-group row" >
+                    <label for="titulo" class="col-md-3 col-form-label" >Titulo</label>
+                    <div class="col-md-9">
+                        <input  name="titulo"
+                                class="form-control"
+                                :value="campos.titulo"
+                                @blur="cambiaCampo($event.target.name,$event.target.value)"
+                                placeholder="Titulo">
+                    </div>
+                </div>
+                <div class="form-group row">
+                        <label class="col-lg-3 my-auto">Color Texto</label>
+                        <div class="col-md-9">
+                             <select class="form-control" v-model="campos.color">
+                                 <option disabled value="">Elija un Color</option>
+                                 <option value="negro">Negro</option>
+                                 <option value="celeste">Celeste</option>
+                             </select>
+                        </div>
+                </div>
                 <div class="form-group row">
                     <label for="modulos" class="control-label col-lg-3" >Modulos</label>
                     <div class="col-lg-9">
@@ -59,49 +79,42 @@
                             </div>
                             <div class="card-body bg-white text-dark">
                             	<div class="task-content" >
-                                    <div class="form-group">
-                                        <div class="col-lg-12 row">
-                                            <label class="col-lg-2 my-auto">Titulo</label>
-                                            <input class="form-control col-lg-10" v-model="modulo.titulo" placeholder="Titulo del módulo">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-12 row align-items-center">
-                                            <label class="col-lg-2 my-auto">Icono</label>
-                                            <div class="col-10 col-lg-9 p-0">
-                                                <multiselect
-                                                    v-model="modulo.icono"
-                                                    :options="iconos"
-                                                    :searchable="true"
-                                                    :close-on-select="true"
-                                                    :show-labels="false"
-                                                    placeholder="Elija un icono"
-                                                    deselect-label="Enter para eliminar"
-                                                    select-label="Enter para seleccionar">
-                                                    <template slot="singleLabel" slot-scope="props">
-                                                        <div class="option__desc">
-                                                            <span :class="props.option"></span> - {{ props.option }}
-                                                        </div>
-                                                    </template>
-                                                    <template slot="option" slot-scope="props">
-                                                        <div class="option__desc">
-                                                            <span :class="props.option"></span> - {{ props.option }}
-                                                        </div>
-                                                    </template>
-                                                </multiselect>
-                                            </div>
-                                            <div class="col-1 col-lg-1 text-center p-3  ">
-                                                <i class=" fa-2x text-primary"  :class="modulo.icono"></i>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="form-group m-0">
                                         <div class="col-lg-12 row">
                                             <label class="col-lg-2 my-auto">Texto</label>
-                                            <input class="form-control col-lg-10 "  v-model="modulo.texto" placeholder="Icono del módulo">
+                                            <input class="form-control col-lg-10 "  v-model="modulo.texto" placeholder="Texto del módulo">
                                         </div>
                                     </div>
                             	</div>
+                            </div>
+                            <div class="card-body bg-white text-dark">
+                            	<div class="task-content" >
+                                    <div class="form-group m-0">
+                                        <div class="col-lg-12 row">
+                                            <label class="col-lg-2 my-auto">Link</label>
+                                            <input class="form-control col-lg-10 "  v-model="modulo.link" placeholder="Link del módulo">
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="card-body bg-white text-dark">
+                            	<div class="task-content" >
+                                    <div class="form-group m-0">
+                                        <div class="col-lg-12 row">
+                                            <label for="imagen" class="control-label col-lg-2" >Imágen</label>
+                                            <div class="col-md-3 p-0">
+                                                <subir-imagen
+                                                    :urlSubir="urlSubir"
+                                                    :urlBorrar="urlBorrar"
+                                                    :imagen.sync="modulo.imagen"
+                                                    :puedoBorrar="false"
+                                                    @borrar="borrarImagen(index)"
+                                                    @update="guardarCampos()" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -124,7 +137,10 @@
                 modulos: [],
                 user: null,
                 iconos: [],
-            
+                urlSubir: route('uploadArchivoPagina'),
+			    urlBorrar: route('borrarArchivoPagina'),
+                tipos: [],
+                selectedTipo : ''
 	        }
 	    },
 	    props: ['id','nombre','campos'],
@@ -141,7 +157,7 @@
 	            this.$emit('borrar')
 	        },
 	        agregarModulo() {
-	        	this.modulos.push({titulo:'',icono: '', texto:''})
+	        	this.modulos.push({texto:'',imagen:'',link:''})
             },
             toggle(event){
                 event.classList.toggle('fa-chevron-up')
@@ -149,7 +165,9 @@
             }
         },
         created () {
-            this.user = Laravel.user
+            this.user = Laravel.user;
+            this.tipos = ['Negro','Celeste'];
+            this.selectedTipo = this.tipos;
         },
 	    computed: {
 	        id_modulo: function(){
@@ -173,7 +191,7 @@
             } else {
                this.modulos = []
             }
-            this.iconos = require('../../iconos').iconos;
+            
 	    }
 	}
 </script>

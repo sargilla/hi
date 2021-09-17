@@ -1,16 +1,30 @@
-<h2 class="text-center w-100 mb-5 bg-primary text-white p-5">Noticias Destacadas</h2>
-<div class="row m-0 p-0 col-10 col-sm-7 col-md-8 col-lg-10 mx-auto ">
-  @foreach($noticias as $noticia)
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card h-100">
-        <img class="w-100 card-img-right flex-auto d-lg-block" data-src="/images/card{{ $noticia->imagen_principal }}" alt="{{ $noticia->titulo}}" src="/images/card/{{ $noticia->imagen_principal }}" data-holder-rendered="true">
-        <div class="card-body">
-          <h5 class="card-title">{{$noticia->titulo}}</h5>
-          <p class="blog-post-meta">Publicado el {{ $noticia->created_at->format('d/m/Y') }} en  <a href="{{ $noticia->tema->path }}">{{ $noticia->tema->nombre }}</a></p>
-          <div class="card-text mb-auto">{!! $noticia->contenido_corto !!}</div>
-          <a class="btn btn-primary w-100" href="{{ $noticia->path }}">Continuar Leyendo</a>
+@inject('noticias', '\Sigma\Noticias\Noticia')
+<article id="actualidad"  class="pt-5 pb-lg-5">
+    <h2 class="text-center mb-5">
+        Actualidad
+    </h2>
+    <div class="container pb-5 pb-lg-0">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="div-actualidad">
+          @foreach($noticias->wherePublicada(true)->limit(5)->get() as $noticia)
+          <div class="col mb-4">
+            <a href="{{route('noticias', $noticia)}}" class="nav-link p-0">
+              <div class="card">            
+                  <figure class="figure m-0">
+                        <img src="/images/familia.jpg" class="card-img-top" alt="...">
+                  </figure>               
+                  <div class="card-body pt-0">
+                      <p class="card-text my-1 border-bottom border-primary">{{$noticia->pais}}</p>
+                      <h3>{{$noticia->titulo}}</h3>
+                  </div>
+              </div>
+            </a> 
+            </div>
+          @endforeach
+          </div>
+        <div class="text-center mt-2 mt-lg-5">   
+            <a href="" class="btn btn-purple px-5 ">
+                Ver todas las notas
+            </a>
         </div>
-      </div>
     </div>
-    @endforeach
-  </div>
+</article>
