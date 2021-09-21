@@ -76,4 +76,3 @@ Route::group(['prefix' => 'plantilla'],function(){
 /* Rutas Paginas */
 Route::get('/{pagina?}', 'FrontendController@index');
 
-Route::get('actualidad/{noticia}', 'ActualidadController@show')->name('actualidad.show');

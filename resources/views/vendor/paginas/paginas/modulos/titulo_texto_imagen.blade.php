@@ -1,19 +1,23 @@
-<div class="w-100 bg-primary text-center text-white shadow my-5 p-2">
-    @if (isset($campos['titulo']))
-        <h2 class="border-bottom border-black py-3">{{ $campos['titulo'] }}</h2>
-    @endif
-    @if (isset($campos['texto']))
-        <div class="pt-2">{!! $campos['texto'] !!}</div>
-    @endif
-    @if(isset($campos['imagen']))
-        <a  href="/images/original/{{ $campos['imagen'] }}" 
-            data-lightbox="{{ isset($campos['titulo']) ? $campos['titulo'] : 'galeria' }}" 
-            data-title="{{ isset($campos['titulo']) ? $campos['titulo']  : '' }}">
-                <img class="img-fluid my-3"  
-                    src="/images/paginas-grande/{{ $campos['imagen'] }}" 
-                    alt="{{ isset($campos['titulo']) ? $campos['titulo'] : 'imagen'}}">
-        </a>
-    @endif
-</div>
-
-
+<article class="estilo-2">
+    <div class="container mt-3 py-2">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">                   
+                    <figure class="figure mb-0 w-100">
+                        <img class="img-fluid mb-0 w-100 rounded-10" src="/images/paginas-grande/{{ $campos['imagen'] }}" alt="">
+                    </figure>                          
+                </div>
+                <div class="col-12 col-md-6 col-xl-8 mt-4 mt-md-0">
+                    <h2 class="titulo">
+                        {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio'}}
+                    </h2>
+                    @if(isset($campos['texto']))
+                        {!! $campos['texto'] !!}
+                    @else 
+                        <p>
+                            Texto Vacio
+                        </p>
+                    @endif
+                </div>
+            </div> 
+    </div>
+</article>

@@ -48,7 +48,16 @@
                     />
                 </div>
             </div>
-
+             <div class="form-group row">
+                        <label class="col-lg-2 my-auto">Estilo</label>
+                        <div class="col-md-10">
+                             <select class="form-control" v-model="campos.estilo">
+                                 <option disabled value="">Elija un estilo</option>
+                                 <option value="1">Estilo 1</option>
+                                 <option value="2">Estilo 2</option>
+                             </select>
+                        </div>
+                </div>
         </div>
     </section>
 </template>

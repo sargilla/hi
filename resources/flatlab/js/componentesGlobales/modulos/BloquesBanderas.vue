@@ -2,7 +2,7 @@
       <section class="card border border-primary">
         <header class="card-header bg-primary">
         	<span v-if="user.can['paginas-dragmodulos']"><i class="fas fa-arrows-alt my-handle"></i> </span>
-            {{ nombre }} [Bloques]
+            {{ nombre }} [Bloques de Banderas]
             <span class="tools pull-right">
                  <a  class="fa fa-chevron-up accordion-toggle"
                     data-toggle="collapse"

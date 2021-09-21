@@ -300,6 +300,7 @@ import noticias_inicio from "./modulos/NoticiasInicio.vue";
 import datos_impactos from "./modulos/DatosImpactos.vue";
 import imagen_texto_link from "./modulos/ImagenTextoLink.vue";
 import titulo_texto_link from "./modulos/TituloTextoLink.vue";
+import titulo_texto_links from "./modulos/TituloTextoLinks.vue";
 export default {
     components: {
         draggable,
@@ -328,6 +329,7 @@ export default {
         datos_impactos,
         imagen_texto_link,
         titulo_texto_link,
+        titulo_texto_links,
     },
     props: ["evento", "pagina"],
     data() {
@@ -369,6 +371,7 @@ export default {
                 { nombre: "Servicios", value: "servicios" },
                 { nombre: "Titulo con Texto", value: "titulo_texto" },
                 { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
+                { nombre: "Titulo con Texto y Links", value: "titulo_texto_links" },
                 { nombre: "Datos Impactos", value: "datos_impactos" },
                 {
                     nombre: "Titulo con Texto e Imágen",

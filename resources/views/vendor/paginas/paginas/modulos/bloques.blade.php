@@ -12,7 +12,8 @@
 
 @endforeach
 @else
-<article class="bloques">
+ @if($campos['estilo'] == 1)
+<article class="bloques-estilo-1">
     <div class="bg-light">
         <div class="container py-5 {{$campos['color'] == 'Negro' ? 'bloque-texto-dark' : ''}}">
             <h2>
@@ -39,5 +40,40 @@
         </div>
     </div>
  </article>
+ @else 
+ <article class="bloques-estilo-2">
+    <div class="docRec">
+        <div class="container mt-3 py-4">
+            <h2>
+                {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio'}}
+            </h2>
+            <div class="row justify-content-between my-2 my-md-5">
+                @foreach($campos['modulos'] as $key =>$modulo)  
+                <div class="col-lg-6 row mb-3 mb-lg-0 mx-auto {{$key== 0 ? 'border-dr' : ''}}">
+                    <div class="col-12 col-md-6">
+                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}">
+                            <figure class="figure mb-0">
+                                <img class="img-fluid mb-0" src="/images/d_2.jpg" alt="">
+                            </figure>
+                        </a>              
+                    </div>
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                        <h3>
+                            {{isset($modulo['texto']) ? $modulo['texto'] : 'Titulo Vacio'}}
+                        </h3>
+                        <p class="mt-3">
+                            <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                Descargar el documento
+                            </a>            
+                        </p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</article> 
+ @endif
 @endif
 

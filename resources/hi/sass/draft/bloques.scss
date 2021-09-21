@@ -1,4 +1,4 @@
-.bloques
+.bloques-estilo-1
 {
     h1,h2
     {
@@ -28,4 +28,79 @@
     {
         font-size: 1.5rem;
     }
+}
+
+.bloques-estilo-2
+{
+    h2 {
+        font-size: 2rem;
+    }
+    h3 
+    {
+        font-size: 1.1rem;
+    }
+    h1,h2,h5,.titulo
+    {
+        font-weight: bold !important;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+    .titulo 
+    {
+        color: #004F71 !important;
+        font-size: 1.2rem;
+    }
+    h3,p,h5
+    {
+        color: #004F71 !important;
+    } 
+
+    .docRec
+    {   
+        background-color: #E35205 !important;
+        h2,h3,p,h5
+        {   
+            color: #fff !important;
+        }
+        a 
+        {
+            text-decoration: underline !important;
+        }
+    }
+    #referencia 
+    {
+        background-color: #5BC2E7 !important;
+        
+        h5 
+        {
+            color: #004F71 !important;
+        }
+        a 
+        {
+            color:rgb(8, 7, 7) !important;
+            text-decoration: underline !important;
+        }
+    }
+}
+
+@media screen and (min-width:992px)
+{
+ .bloques-estilo-2
+{
+    .docRec
+    {
+        color: #fff !important;
+        background-color: #E35205 !important;
+
+        .border-dr
+        {
+            border-bottom: unset !important;
+            border-right: solid 2px #fff !important;        
+        }
+        
+    }
+}
 }

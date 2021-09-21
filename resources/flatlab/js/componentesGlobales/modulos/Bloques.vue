@@ -66,6 +66,17 @@
                                  <option disabled value="">Elija un Color</option>
                                  <option value="negro">Negro</option>
                                  <option value="celeste">Celeste</option>
+                                 <option value="blanco">Blanco</option>
+                             </select>
+                        </div>
+                </div>
+                 <div class="form-group row">
+                        <label class="col-lg-3 my-auto">Estilo</label>
+                        <div class="col-md-9">
+                             <select class="form-control" v-model="campos.estilo">
+                                 <option disabled value="">Elija un estilo</option>
+                                 <option value="1">Estilo 1</option>
+                                 <option value="2">Estilo 2</option>
                              </select>
                         </div>
                 </div>
