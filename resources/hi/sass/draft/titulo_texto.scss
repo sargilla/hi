@@ -68,7 +68,7 @@
         color: rgb(8, 7, 7) !important;
     }
 }
-.estilo-2,.imagen-titulo-link-2
+.estilo-2,.imagen-titulo-link-2,.titulo-texto-imagen
 {
     h2 {
         font-size: 2rem;
@@ -127,10 +127,37 @@
         }
     }
 }
-
+.lista-imagen-titulo-texto-1
+{
+    h1 
+    {
+        font-weight: bold !important;
+    }
+    #practicas
+    {
+        h3 {
+            color: #004F71 !important;
+        font-weight: bold !important;
+        }
+        
+        li 
+        {
+            list-style-type: none;
+        }
+    }
+    p,h2 
+    {
+        color:#1B74AF !important; 
+    }
+    a:hover, a:focus 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+}
 @media screen and (min-width:992px)
 {
- .estilo-2,.imagen-titulo-link-2
+ .estilo-2,.imagen-titulo-link-2,.titulo-texto-imagen
 {
     .docRec
     {

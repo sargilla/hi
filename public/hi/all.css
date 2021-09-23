@@ -17278,55 +17278,73 @@ footer #li-smu .skip-main-up {
   color: #080707 !important;
 }
 
-.estilo-2 h2, .imagen-titulo-link-2 h2 {
+.estilo-2 h2, .imagen-titulo-link-2 h2, .titulo-texto-imagen h2 {
   font-size: 2rem;
 }
-.estilo-2 h3, .imagen-titulo-link-2 h3 {
+.estilo-2 h3, .imagen-titulo-link-2 h3, .titulo-texto-imagen h3 {
   font-size: 1.1rem;
 }
-.estilo-2 h1, .estilo-2 h2, .estilo-2 h5, .estilo-2 .titulo, .imagen-titulo-link-2 h1, .imagen-titulo-link-2 h2, .imagen-titulo-link-2 h5, .imagen-titulo-link-2 .titulo {
+.estilo-2 h1, .estilo-2 h2, .estilo-2 h5, .estilo-2 .titulo, .imagen-titulo-link-2 h1, .imagen-titulo-link-2 h2, .imagen-titulo-link-2 h5, .imagen-titulo-link-2 .titulo, .titulo-texto-imagen h1, .titulo-texto-imagen h2, .titulo-texto-imagen h5, .titulo-texto-imagen .titulo {
   font-weight: bold !important;
 }
-.estilo-2 a:focus, .estilo-2 a:hover, .imagen-titulo-link-2 a:focus, .imagen-titulo-link-2 a:hover {
+.estilo-2 a:focus, .estilo-2 a:hover, .imagen-titulo-link-2 a:focus, .imagen-titulo-link-2 a:hover, .titulo-texto-imagen a:focus, .titulo-texto-imagen a:hover {
   outline: solid 2px #004F71 !important;
   text-decoration: underline !important;
 }
-.estilo-2 .titulo, .imagen-titulo-link-2 .titulo {
+.estilo-2 .titulo, .imagen-titulo-link-2 .titulo, .titulo-texto-imagen .titulo {
   color: #004F71 !important;
   font-size: 1.2rem;
 }
-.estilo-2 h3, .estilo-2 p, .estilo-2 h5, .imagen-titulo-link-2 h3, .imagen-titulo-link-2 p, .imagen-titulo-link-2 h5 {
+.estilo-2 h3, .estilo-2 p, .estilo-2 h5, .imagen-titulo-link-2 h3, .imagen-titulo-link-2 p, .imagen-titulo-link-2 h5, .titulo-texto-imagen h3, .titulo-texto-imagen p, .titulo-texto-imagen h5 {
   color: #004F71 !important;
 }
-.estilo-2 .docRec, .imagen-titulo-link-2 .docRec {
+.estilo-2 .docRec, .imagen-titulo-link-2 .docRec, .titulo-texto-imagen .docRec {
   background-color: #E35205 !important;
 }
-.estilo-2 .docRec h2, .estilo-2 .docRec h3, .estilo-2 .docRec p, .estilo-2 .docRec h5, .imagen-titulo-link-2 .docRec h2, .imagen-titulo-link-2 .docRec h3, .imagen-titulo-link-2 .docRec p, .imagen-titulo-link-2 .docRec h5 {
+.estilo-2 .docRec h2, .estilo-2 .docRec h3, .estilo-2 .docRec p, .estilo-2 .docRec h5, .imagen-titulo-link-2 .docRec h2, .imagen-titulo-link-2 .docRec h3, .imagen-titulo-link-2 .docRec p, .imagen-titulo-link-2 .docRec h5, .titulo-texto-imagen .docRec h2, .titulo-texto-imagen .docRec h3, .titulo-texto-imagen .docRec p, .titulo-texto-imagen .docRec h5 {
   color: #fff !important;
 }
-.estilo-2 .docRec a, .imagen-titulo-link-2 .docRec a {
+.estilo-2 .docRec a, .imagen-titulo-link-2 .docRec a, .titulo-texto-imagen .docRec a {
   text-decoration: underline !important;
 }
-.estilo-2 .referencia, .imagen-titulo-link-2 .referencia {
+.estilo-2 .referencia, .imagen-titulo-link-2 .referencia, .titulo-texto-imagen .referencia {
   background-color: #5BC2E7 !important;
 }
-.estilo-2 .referencia h5, .imagen-titulo-link-2 .referencia h5 {
+.estilo-2 .referencia h5, .imagen-titulo-link-2 .referencia h5, .titulo-texto-imagen .referencia h5 {
   color: #004F71 !important;
 }
-.estilo-2 .referencia a, .imagen-titulo-link-2 .referencia a {
+.estilo-2 .referencia a, .imagen-titulo-link-2 .referencia a, .titulo-texto-imagen .referencia a {
   color: #080707 !important;
   text-decoration: underline !important;
 }
-.estilo-2 .referencia .link-p, .imagen-titulo-link-2 .referencia .link-p {
+.estilo-2 .referencia .link-p, .imagen-titulo-link-2 .referencia .link-p, .titulo-texto-imagen .referencia .link-p {
   color: #080707 !important;
 }
 
+.lista-imagen-titulo-texto-1 h1 {
+  font-weight: bold !important;
+}
+.lista-imagen-titulo-texto-1 #practicas h3 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+.lista-imagen-titulo-texto-1 #practicas li {
+  list-style-type: none;
+}
+.lista-imagen-titulo-texto-1 p, .lista-imagen-titulo-texto-1 h2 {
+  color: #1B74AF !important;
+}
+.lista-imagen-titulo-texto-1 a:hover, .lista-imagen-titulo-texto-1 a:focus {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+
 @media screen and (min-width: 992px) {
-  .estilo-2 .docRec, .imagen-titulo-link-2 .docRec {
+  .estilo-2 .docRec, .imagen-titulo-link-2 .docRec, .titulo-texto-imagen .docRec {
     color: #fff !important;
     background-color: #E35205 !important;
   }
-  .estilo-2 .docRec .border-dr, .imagen-titulo-link-2 .docRec .border-dr {
+  .estilo-2 .docRec .border-dr, .imagen-titulo-link-2 .docRec .border-dr, .titulo-texto-imagen .docRec .border-dr {
     border-bottom: unset !important;
     border-right: solid 2px #fff !important;
   }
@@ -17351,6 +17369,8 @@ footer #li-smu .skip-main-up {
 }
 .bloques_experiencias h2 {
   font-size: 1.5rem;
+  color: #004F71 !important;
+  font-weight: bold !important;
 }
 
 .bloques-estilo-2 h2 {
@@ -17393,6 +17413,37 @@ footer #li-smu .skip-main-up {
   text-decoration: underline !important;
 }
 
+.bloques-estilo-3 h1, .bloques-estilo-3 h2 {
+  font-weight: bold;
+  color: #004F71 !important;
+}
+.bloques-estilo-3 h2 {
+  color: #004F71 !important;
+  font-size: 1.2rem;
+}
+.bloques-estilo-3 a:focus, .bloques-estilo-3 a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.bloques-estilo-3 .card {
+  background: unset !important;
+  border: 0;
+}
+.bloques-estilo-3 .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.bloques-estilo-3 .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+
+@media screen and (min-width: 768px) {
+  .bloques-estilo-3 h2 {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .bloques-estilo-2 .docRec {
     color: #fff !important;
@@ -17402,4 +17453,34 @@ footer #li-smu .skip-main-up {
     border-bottom: unset !important;
     border-right: solid 2px #fff !important;
   }
+}
+@media screen and (min-width: 1200px) {
+  .bloques-estilo-3 h2 {
+    font-size: 3rem;
+  }
+}
+.filtro h1, .filtro h2 {
+  font-weight: bold;
+  color: #004F71 !important;
+}
+.filtro h2 {
+  color: #004F71 !important;
+  font-size: 1.2rem;
+}
+.filtro a:focus, .filtro a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.filtro .card {
+  background: unset !important;
+  border: 0;
+}
+.filtro .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.filtro .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
 }

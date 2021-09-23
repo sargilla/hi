@@ -49,7 +49,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group row" >
+                <div v-if="campos.estilo != 3" class="form-group row" >
                     <label for="titulo" class="col-md-3 col-form-label" >Titulo</label>
                     <div class="col-md-9">
                         <input  name="titulo"
@@ -77,6 +77,7 @@
                                  <option disabled value="">Elija un estilo</option>
                                  <option value="1">Estilo 1</option>
                                  <option value="2">Estilo 2</option>
+                                 <option value="3">Estilo 3</option>
                              </select>
                         </div>
                 </div>
@@ -87,6 +88,17 @@
                             <div class="card-header bg-primary">
                                 {{ modulo.titulo}}
                                 <span class="tools pull-right"><button class="btn btn-danger btn-xs" @click.prevent="modulos.splice(index, 1)"><i class="fa fa-times"></i></button></span>
+                            </div>
+                            
+                             <div v-if="campos.estilo == 3" class="card-body bg-white text-dark">
+                            	<div class="task-content" >
+                                    <div class="form-group m-0">
+                                        <div class="col-lg-12 row">
+                                            <label class="col-lg-2 my-auto">Titulo</label>
+                                            <input class="form-control col-lg-10 "  v-model="modulo.titulo" placeholder="Titulo del módulo">
+                                        </div>
+                                    </div>
+                            	</div>
                             </div>
                             <div class="card-body bg-white text-dark">
                             	<div class="task-content" >
@@ -166,7 +178,7 @@
 	            this.$emit('borrar')
 	        },
 	        agregarModulo() {
-	        	this.modulos.push({texto:'',imagen:'',link:''})
+	        	this.modulos.push({texto:'',imagen:'',link:'',titulo:''})
             },
             toggle(event){
                 event.classList.toggle('fa-chevron-up')

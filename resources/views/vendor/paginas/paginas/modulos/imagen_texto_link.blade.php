@@ -4,7 +4,7 @@
             <div class="row mt-5">
                 <div class="col-12 col-sm-6">                
                         <figure class="figure mb-0">
-                            <img class="img-fluid mb-0 rounded-10" src="/images/paginas-grande/{{ $campos['imagen'] }}" alt="">
+                            <img class="img-fluid mb-0 rounded-10" src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}" alt="">
                         </figure>             
                 </div>
                 <div class="col-12 col-sm-6">
@@ -25,21 +25,28 @@
             <div class="row">
                 <div class="col-12 col-sm-6 p-0">
                     <figure class="figure mb-0 w-100">
-                        <img class="img-fluid mb-0 w-100" src="/images/paginas-grande/{{ $campos['imagen'] }}" alt="">
+                        <img class="img-fluid mb-0 w-100" src="/images/paginas-grande/{{isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg'}}" alt="">
                     </figure>             
                 </div>
                 <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
                     <h3>
                         @if(isset($campos['texto']))
                         {!! $campos['texto']!!}
+                        @else 
+                         <p>
+                             Texto Vacio
+                         </p>
                         @endif 
                     </h3>   
                     <a href="">
                             @if(isset($campos['texto_link']))
                             <p class="link-p">
-                                {{ isset($campos['texto_link']) ?$campos['texto_link'] : 'Texto Vacio'}}
+                                {{ $campos['texto_link']}}
                             </p>
-
+                            @else 
+                            <p>
+                                Texto Vacio
+                            </p>
                             @endif      
                     </a>
                 </div>

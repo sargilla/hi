@@ -57,7 +57,21 @@
                                  <option value="2">Estilo 2</option>
                              </select>
                         </div>
-                </div>
+            </div>
+            <div class="form-group row">
+                        <label class="col-lg-2 my-auto">Pagina Anterior</label>
+                        <div class="col-md-10">
+                             <select class="form-control" v-model="campos.pagina_anterior">
+                                 <option disabled value="">Elija la pagina anterior</option>
+                                 <option value="Pagina Principal">Pagina Principal</option>
+                                 <option value="Recursos">Recursos</option>
+                                 <option value="Experiencias">Experiencias</option>
+                                 <option value="Actualidad">Actualidad</option>
+                                 <option value="Eventos">Eventos</option>
+                                 <option value="Formación">Formación</option>
+                             </select>
+                        </div>
+            </div>
         </div>
     </section>
 </template>

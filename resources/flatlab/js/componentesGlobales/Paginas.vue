@@ -301,6 +301,8 @@ import datos_impactos from "./modulos/DatosImpactos.vue";
 import imagen_texto_link from "./modulos/ImagenTextoLink.vue";
 import titulo_texto_link from "./modulos/TituloTextoLink.vue";
 import titulo_texto_links from "./modulos/TituloTextoLinks.vue";
+import lista_imagen_titulo_texto from "./modulos/ListaImagenTituloTexto.vue";
+import filtro from "./modulos/Filtro.vue"
 export default {
     components: {
         draggable,
@@ -330,6 +332,8 @@ export default {
         imagen_texto_link,
         titulo_texto_link,
         titulo_texto_links,
+        lista_imagen_titulo_texto,
+        filtro
     },
     props: ["evento", "pagina"],
     data() {
@@ -357,22 +361,24 @@ export default {
                 { nombre: "Clientes", value: "links_clientes" },
                 { nombre: "Contacto", value: "contacto" },
                 { nombre: "Cursos", value: "cursos" },
+                { nombre: "Datos Impactos", value: "datos_impactos" },
                 { nombre: "Documentos", value: "documentos" },
                 { nombre: "Eventos", value: "modulo_eventos" },
-                { nombre: "Listas", value: "listas" },
+                { nombre: "Filtro", value: "filtro" },
+                { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
                 { nombre: "Lista con Imagen", value: "lista_con_imagen" },
+                { nombre: "Lista con Imagen Titulo Texto", value: "lista_imagen_titulo_texto" },
+                { nombre: "Listas", value: "listas" },
                 { nombre: "Noticias", value: "modulo-noticias" },
                 { nombre: "Noticias en Inicio", value: "noticias_inicio" },
-                { nombre: "Slideshow", value: "slideshow" },
-                { nombre: "Tarjetas Rotativas", value: "rotate_cards" },
-                { nombre: "Texto", value: "texto" },
                 { nombre: "Pasos", value: "pasos" },
                 { nombre: "Productos en Inicio", value: "productos_inicio" },
                 { nombre: "Servicios", value: "servicios" },
+                { nombre: "Slideshow", value: "slideshow" },
+                { nombre: "Tarjetas Rotativas", value: "rotate_cards" },
+                { nombre: "Texto", value: "texto" },                           
                 { nombre: "Titulo con Texto", value: "titulo_texto" },
-                { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
-                { nombre: "Titulo con Texto y Links", value: "titulo_texto_links" },
-                { nombre: "Datos Impactos", value: "datos_impactos" },
+                { nombre: "Titulo con Texto y Links", value: "titulo_texto_links" },                              
                 {
                     nombre: "Titulo con Texto e Imágen",
                     value: "titulo_texto_imagen"

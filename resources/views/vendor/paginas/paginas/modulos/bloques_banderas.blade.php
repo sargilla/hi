@@ -1,4 +1,4 @@
-<article class="bloques">
+<article class="bloques-estilo-1">
     <div class="container py-5">
         <h2>
            {{$campos['titulo']}}

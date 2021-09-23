@@ -2,9 +2,15 @@
     <div class="docRec">
         <div class="container py-4">
                 <h2>
-                    {{$campos['titulo']}}
+                    {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio'}}
                 </h2>
+                @if(isset($campos['text']))
                 {!! $campos['texto']!!}
+                @else 
+                <p>
+                    Texto Vacio
+                </p>
+                @endif
                 <div class="mt-2">
                     @foreach($campos['modulos'] as $modulo)
                         <p>

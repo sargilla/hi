@@ -27,6 +27,8 @@
     h2 
     {
         font-size: 1.5rem;
+        color: #004F71 !important;
+        font-weight: bold !important;
     }
 }
 
@@ -85,7 +87,51 @@
         }
     }
 }
+.bloques-estilo-3
+{
+    h1,h2
+    {
+        font-weight: bold;
+        color: #004F71 !important;
+    }
+    h2
+    {
+        color: #004F71 !important; 
+        font-size: 1.2rem;
+    }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
+    .card
+    {
+        background: unset !important;
+        border: 0;
+        h5
+        {
+            color: #004F71 !important;
+            font-size: 1.25rem;
+            font-weight: bold !important;
+        }
+        p 
+        {
+            color: #004F71 !important;
+            border-bottom: solid 2px #004F71;
+        }
+    }
+}
 
+@media screen and (min-width:768px)
+{
+    .bloques-estilo-3
+    {
+        h2 
+        {
+            font-size: 2rem;
+        }
+    }
+}
 @media screen and (min-width:992px)
 {
  .bloques-estilo-2
@@ -103,4 +149,14 @@
         
     }
 }
+}
+@media screen and (min-width:1200px)
+{
+    .bloques-estilo-3
+    {
+        h2 
+        {
+            font-size: 3rem;
+        }
+    }
 }
