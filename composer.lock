@@ -3354,7 +3354,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:3tter/sigma-noticias.git",
-                "reference": "dd7476768c4e7ee0f05268bc6ffa813659a5ca0b"
+                "reference": "be6005833ac2da96e9ee3fd85aae089d037d4738"
             },
             "type": "laravel",
             "extra": {
@@ -3382,7 +3382,7 @@
                 }
             ],
             "description": "Gestor de Noticias de Estudio Rompecabezas Framework",
-            "time": "2021-09-16T17:34:32+00:00"
+            "time": "2021-09-23T14:10:31+00:00"
         },
         {
             "name": "sigma/paginas",

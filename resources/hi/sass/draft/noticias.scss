@@ -1,0 +1,38 @@
+.noticias-3
+{
+    background-color: #6A2A5B !important;
+    h1,h2,h3
+    {
+        font-weight: bold !important;
+    }  
+    .container 
+    {    
+        color: #fff !important;
+    }
+   
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71;
+        text-decoration: underline !important;
+    }
+    h5
+    {       
+        font-size: 1.25rem;
+        font-weight: bold !important;
+    }
+    .expRes p:first-child 
+    {
+        
+        border-bottom: solid 2px #fff !important;
+    }
+    .expRes img 
+    {
+        border-bottom: solid 4px #fff !important;
+        border-right:  solid 4px #fff !important;
+    }
+    .border
+    {
+        border: unset !important;
+        border-bottom: solid 2px #fff !important;
+    }
+}

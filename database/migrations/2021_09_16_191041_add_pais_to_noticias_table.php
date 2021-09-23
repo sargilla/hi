@@ -14,7 +14,7 @@ class AddPaisToNoticiasTable extends Migration
     public function up()
     {
         Schema::table('noticias', function (Blueprint $table) {
-            $table->string('pais')->default('Pais');
+            $table->string('pais')->default('Pais')->nullable();
         });
     }
 

@@ -17372,6 +17372,10 @@ footer #li-smu .skip-main-up {
   color: #004F71 !important;
   font-weight: bold !important;
 }
+.bloques_experiencias a:focus, .bloques_experiencias a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
 
 .bloques-estilo-2 h2 {
   font-size: 2rem;
@@ -17483,4 +17487,33 @@ footer #li-smu .skip-main-up {
 .filtro .card p {
   color: #004F71 !important;
   border-bottom: solid 2px #004F71;
+}
+
+.noticias-3 {
+  background-color: #6A2A5B !important;
+}
+.noticias-3 h1, .noticias-3 h2, .noticias-3 h3 {
+  font-weight: bold !important;
+}
+.noticias-3 .container {
+  color: #fff !important;
+}
+.noticias-3 a:focus, .noticias-3 a:hover {
+  outline: solid 2px #004F71;
+  text-decoration: underline !important;
+}
+.noticias-3 h5 {
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.noticias-3 .expRes p:first-child {
+  border-bottom: solid 2px #fff !important;
+}
+.noticias-3 .expRes img {
+  border-bottom: solid 4px #fff !important;
+  border-right: solid 4px #fff !important;
+}
+.noticias-3 .border {
+  border: unset !important;
+  border-bottom: solid 2px #fff !important;
 }

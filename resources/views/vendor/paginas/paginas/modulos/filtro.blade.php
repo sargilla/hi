@@ -1,6 +1,6 @@
 @if(isset($campos['estilo']))
     @if($campos['estilo'] == 1)
-        <article class="expIndexHV">   
+        <article class="filtro">   
             <div class="bg-primary">
             <div class="container  py-5 px-5 px-sm-1">
                 <p class="text-white">
@@ -34,7 +34,28 @@
             </div>
         </article>
     @else 
-
+    <article class="filtro">
+        <div>
+            <div class="bg-primary p-3 p-md-4 p-lg-5">
+                <div class="container">
+                <p class="text-white">
+                    Busqueda por pais
+                </p>
+                <form action="" method="GET" class="form-inline mr-3">
+                    @csrf 
+                      <div class="div-group w-100">
+                        <label for="fechas" class="text-white  justify-content-start ">Paises</label>
+                          <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0 w-25">
+                            <option value="paises">Todos los paises</option>
+                        </select>
+                        <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
+                    </div>
+                        
+                </form>
+                </div>
+            </div>
+        </div>
+    </article>
     @endif
 @else 
     <div class="alert alert-warning">

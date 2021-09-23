@@ -2,7 +2,7 @@
     <section class="card border border-primary">
         <header class="card-header bg-primary">
             <span v-if="user.can['paginas-dragmodulos']"><i class="fas fa-arrows-alt my-handle"></i> </span>
-            {{ nombre }} [Modulo de Noticias de Inicio]
+            {{ nombre }} [Modulo de Noticias por categoria]
             <span class="tools pull-right">
                 <a  class="fa fa-chevron-up accordion-toggle"
                     data-toggle="collapse"
@@ -28,7 +28,27 @@
                             @blur="cambiaNombre($event.target.value)" placeholder="Nombre">
                 </div>
             </div>
-
+             <div class="form-group row" >
+                <label for="categoria" class="col-md-2 col-form-label" >Categoria</label>
+                <div class="col-md-10">
+                    <input  name="categoria"
+                            class="form-control"
+                            :value="campos.categoria"
+                            @blur="cambiaCampo($event.target.name,$event.target.value)"
+                            placeholder="Categoria">
+                </div>
+            </div>
+             <div class="form-group row">
+                        <label class="col-lg-2 my-auto">Estilo</label>
+                        <div class="col-md-10">
+                             <select class="form-control" v-model="campos.estilo">
+                                 <option disabled value="">Elija un estilo</option>
+                                 <option value="1">Tipo Lista</option>
+                                 <option value="2">Tipo Bloque</option>
+                                 <option value="3">Tipo Lista con fondo violeta</option>
+                             </select>
+                        </div>
+            </div>
         </div>
     </section>
 </template>
