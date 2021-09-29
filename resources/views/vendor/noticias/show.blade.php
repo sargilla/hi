@@ -24,8 +24,6 @@
 @endsection
 @section('main-content')
 
-<div id="main">
-    <div class="container">
         @if (! empty($noticia->id)) 
             @include('noticias::partials.noticia')
         @else 
@@ -35,6 +33,4 @@
                 @include('noticias::partials.noticias_sin_temas')
             @endif
         @endif
-    </div>
-</div>
 @endsection

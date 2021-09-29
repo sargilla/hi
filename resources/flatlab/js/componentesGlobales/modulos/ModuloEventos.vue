@@ -37,7 +37,7 @@
                     />
                 </div>
             </div>
-            <div class="form-group row">
+           <!--  <div class="form-group row">
                 <label for="columnas" class="control-label col-lg-3 my-auto"
                     >Columnas</label
                 >
@@ -133,7 +133,7 @@
                         ></option>
                     </select>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

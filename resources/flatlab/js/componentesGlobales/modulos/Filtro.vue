@@ -43,12 +43,22 @@
                         <div class="col-md-10">
                              <select class="form-control" v-model="campos.estilo">
                                  <option disabled value="">Elija un estilo</option>
-                                 <option value="1">Estilo 1</option>
-                                 <option value="2">Estilo 2</option>
+                                 <option value="1">Fechas,Tematicas,Paises</option>
+                                 <option value="2">Paises</option>
                              </select>
                         </div>
             </div>
-    
+             <div class="form-group row">
+                        <label class="col-lg-2 my-auto">Busqueda</label>
+                        <div class="col-md-10">
+                             <select class="form-control" v-model="campos.busqueda">
+                                 <option disabled value="">Elija lo que buscara</option>
+                                 <option value="actualidad">Actualidad</option>
+                                 <option value="eventos">Eventos</option>
+                                 <option value="experiencias">Experiencias</option>
+                             </select>
+                        </div>
+            </div>
         </div>
     </section>
 </template>

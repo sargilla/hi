@@ -21,18 +21,18 @@
  <article id="actualidadSearchContenido" class="actualidadSearch">
      <div class="container py-5 py-lg-3">      
          <ul>  
-             @foreach([1,2,3] as $v) 
+             @foreach($busqueda as $b) 
                 <li>   
                     <a href="" class="nav-link p-0">
                         <div class="row mb-3 border py-5">
                             <div class="col-6 col-md-4 col-lg-3">
                                     <figure class="figure mb-0">
-                                        <img src="/images/familia.jpg" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                        <img src="/images/paginas-grande/{{$b->imagen_principal != 'no-imagen.jpg' ? $b->imagen_principal : 'familia.jpg' }}" class="figure-img img-fluid w-100 rounded mb-0" alt="...">
                                     </figure>             
                             </div>
                             <div class="col-6 col-md-8 col-lg-9 py-3">
-                                <p class="col-md-6 p-0">Pais</p>
-                                <h2>Titulo de la nota</h6>
+                                <p class="col-md-6 p-0">{{$b->pais}}</p>
+                                <h2>{{$b->titulo}}</h6>
                             </div>
                         </div>
                     </a>

@@ -46,6 +46,7 @@
                                  <option value="1">Tipo Lista</option>
                                  <option value="2">Tipo Bloque</option>
                                  <option value="3">Tipo Lista con fondo violeta</option>
+                                 <option value="4">Tipo Bloque de imagenes sin altura definida</option>
                              </select>
                         </div>
             </div>

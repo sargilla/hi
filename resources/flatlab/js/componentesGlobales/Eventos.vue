@@ -18,6 +18,48 @@
                 ></p>
             </div>
         </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('pais') }"
+        >
+            <label for="pais" class="col-form-label col-lg-2">Pais</label>
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.pais" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('pais')"
+                    v-text="form.errors.get('pais')"
+                ></p>
+            </div>
+        </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('nivel') }"
+        >
+            <label for="nivel" class="col-form-label col-lg-2">Nivel</label>
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.nivel" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('nivel')"
+                    v-text="form.errors.get('nivel')"
+                ></p>
+            </div>
+        </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('sector') }"
+        >
+            <label for="sector" class="col-form-label col-lg-2">Sector</label>
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.sector" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('sector')"
+                    v-text="form.errors.get('sector')"
+                ></p>
+            </div>
+        </div>
         <div class="form-group row">
             <label for="tipo" class="control-label col-lg-2">Tipo</label>
             <div class="col-lg-10">
@@ -45,7 +87,7 @@
                     name="fecha_desde"
                     v-model="fecha_desde"
                     type="datetime"
-                    format="DD-MM-YYYY hh:mm"
+                    format="DD-MM-YYYY HH:mm"
                     value-type="timestamp"
                     lang="es"
                     :minute-step="5"
@@ -60,7 +102,7 @@
                     name="fecha_hasta"
                     v-model="fecha_hasta"
                     type="datetime"
-                    format="DD-MM-YYYY hh:mm"
+                    format="DD-MM-YYYY HH:mm"
                     value-type="timestamp"
                     lang="es"
                     :minute-step="5"
@@ -214,7 +256,11 @@ export default {
                 contenido: "",
                 imagenes: [{ imagen: "" }],
                 publicado: false,
-                marcado: false
+                marcado: false,
+                pais: '',
+                nivel: '',
+                sector: '',
+                
             }),
             fecha_desde: "",
             fecha_hasta: "",
@@ -274,6 +320,9 @@ export default {
             }
             this.form.publicado = this.evento.publicado;
             this.form.marcado = this.evento.marcado;
+            this.form.pais = this.evento.pais;
+            this.form.nivel = this.evento.nivel;
+             this.form.sector = this.evento.sector;
         },
         borrarForm() {
             this.form.id = "";
@@ -283,6 +332,9 @@ export default {
             this.form.imagenes = [{ imagen: "" }];
             this.form.publicado = false;
             this.form.marcado = false;
+            this.form.pais =  "";
+            this.form.nivel = "";
+            this.form.sector = "";
         },
         cancelar() {
             window.location.href = route("eventos.index");
@@ -318,12 +370,12 @@ export default {
         },
         fecha_desde: function(val) {
             this.form.fecha_desde = val
-                ? moment(val).format("YYYY-MM-DD hh:mm")
+                ? moment(val).format("YYYY-MM-DD HH:mm")
                 : "";
         },
         fecha_hasta: function(val) {
             this.form.fecha_hasta = val
-                ? moment(val).format("YYYY-MM-DD hh:mm")
+                ? moment(val).format("YYYY-MM-DD HH:mm")
                 : "";
         }
     }
