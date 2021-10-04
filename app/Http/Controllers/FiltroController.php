@@ -20,34 +20,60 @@ class FiltroController extends Controller
                    $busqueda = Noticia::delTema(request()->busqueda)->get();          
             } else 
             {
+                $busqueda = '';
                 if(isset(request()->fecha))
                 {
                     $busqueda = Noticia::where('fecha_desde',request()->fecha);   
                 }
                 if(isset(request()->pais))
                 {
-                    $busqueda = Noticia::where('pais',request()->pais);  
+                    if($busqueda != '')
+                    {
+                        $busqueda->where('pais',request()->pais);  
+                    }else{
+                        $busqueda = Noticia::where('pais',request()->pais);   
+                    }
+                    
                 }
                 if(isset(request()->tematica))
                 {
-                    $busqueda = Noticia::where('tema_id',request()->tematica);  
+                    if($busqueda != '')
+                    {
+                        $busqueda->where('tema_id',request()->tematica);  
+                    }else{
+                        $busqueda = Noticia::where('tema_id',request()->tematica);   
+                    }
                 }
                 $busqueda = $busqueda->get();
             }
          }
          if(request()->busqueda == "eventos")
          {      
+                $busqueda = '';
                 if(isset(request()->fecha))
                 {
                     $busqueda = Evento::where('fecha_desde',request()->fecha);   
                 }
                 if(isset(request()->pais))
                 {
-                    $busqueda = Evento::where('pais',request()->pais);  
+                    if($busqueda != '')
+                    {
+                        $busqueda->where('pais',request()->pais);  
+                    } else 
+                    {
+                        $busqueda = Evento::where('pais',request()->pais);  
+                    }           
                 }
                 if(isset(request()->tematica))
                 {
-                    $busqueda = Evento::where('tipo_id',request()->tematica);  
+                    if($busqueda != '')
+                    {
+                        $busqueda->where('tipo_id',request()->tematica); 
+                    }else 
+                    {
+                        $busqueda = Evento::where('tipo_id',request()->tematica); 
+                    }
+                     
                 }
                 $busqueda = $busqueda->get();
          }

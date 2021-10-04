@@ -23,7 +23,10 @@
                     <div class="div-group  col-md-4 col-lg-3">
                         <label for="pais" class="text-white  justify-content-start ">Paises</label>
                         <select name="pais" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
-                            <option value="paises">Todas los paises</option>
+                            <option value="">Todas los paises</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="peruy">Peru</option>                      
                         </select>
                     </div>
                     <div class="div-group  col-md-4 col-lg-3">
