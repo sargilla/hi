@@ -30,6 +30,11 @@
         color: #004F71 !important;
         font-weight: bold !important;
     }
+    a:focus, a:hover 
+    {
+        outline: solid 2px #004F71 !important;
+        text-decoration: underline !important;
+    }
 }
 
 .bloques-estilo-2

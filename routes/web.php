@@ -73,6 +73,8 @@ Route::group(['prefix' => 'plantilla'],function(){
     });
 });
 
+Route::get('/filtro', 'FiltroController@search')->name('filtro');
+
 /* Rutas Paginas */
 Route::get('/{pagina?}', 'FrontendController@index');
 

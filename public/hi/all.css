@@ -17372,6 +17372,10 @@ footer #li-smu .skip-main-up {
   color: #004F71 !important;
   font-weight: bold !important;
 }
+.bloques_experiencias a:focus, .bloques_experiencias a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
 
 .bloques-estilo-2 h2 {
   font-size: 2rem;
@@ -17483,4 +17487,166 @@ footer #li-smu .skip-main-up {
 .filtro .card p {
   color: #004F71 !important;
   border-bottom: solid 2px #004F71;
+}
+
+.noticias-3 {
+  background-color: #6A2A5B !important;
+}
+.noticias-3 h1, .noticias-3 h2, .noticias-3 h3 {
+  font-weight: bold !important;
+}
+.noticias-3 .container {
+  color: #fff !important;
+}
+.noticias-3 a:focus, .noticias-3 a:hover {
+  outline: solid 2px #004F71;
+  text-decoration: underline !important;
+}
+.noticias-3 h5 {
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.noticias-3 .expRes p:first-child {
+  border-bottom: solid 2px #fff !important;
+}
+.noticias-3 .expRes img {
+  border-bottom: solid 4px #fff !important;
+  border-right: solid 4px #fff !important;
+}
+.noticias-3 .border {
+  border: unset !important;
+  border-bottom: solid 2px #fff !important;
+}
+
+.noticias-1 {
+  background-color: #EEEEEE !important;
+}
+.noticias-1 h2 {
+  font-size: 2rem;
+  font-weight: bold !important;
+  color: #004F71 !important;
+}
+.noticias-1 h3 {
+  color: #004F71 !important;
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.noticias-1 p {
+  color: #004F71 !important;
+}
+.noticias-1 img {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.noticias-1 .div-focus a:focus, .noticias-1 .div-focus a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.noticias-1 .div-focus .card {
+  background: unset !important;
+  border: 0;
+}
+
+.noticias-2 h1, .noticias-2 h2 {
+  font-weight: bold;
+  color: #004F71 !important;
+}
+.noticias-2 h2 {
+  color: #004F71 !important;
+  font-size: 1.3rem;
+}
+.noticias-2 a:focus, .noticias-2 a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.noticias-2 .card {
+  background: unset !important;
+  border: 0;
+}
+.noticias-2 .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.noticias-2 .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+
+.noticias-4 h1, .noticias-4 h2 {
+  color: #004F71 !important;
+  font-weight: bold !important;
+}
+.noticias-4 h2 {
+  font-size: 1.2rem;
+  color: #004F71 !important;
+}
+.noticias-4 a:focus, .noticias-4 a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.noticias-4 .card {
+  background: unset !important;
+  border: 0;
+}
+.noticias-4 .card h5 {
+  color: #004F71 !important;
+  font-size: 1.25rem;
+  font-weight: bold !important;
+}
+.noticias-4 .card p {
+  color: #004F71 !important;
+  border-bottom: solid 2px #004F71;
+}
+
+.eventos h1, .eventos h2 {
+  font-weight: bold;
+}
+.eventos h1 {
+  color: #004F71 !important;
+}
+.eventos h2 {
+  color: #004F71 !important;
+  font-size: 1.2rem;
+}
+.eventos a:focus, .eventos a:hover {
+  outline: solid 2px #004F71 !important;
+  text-decoration: underline !important;
+}
+.eventos .card {
+  background: unset !important;
+  border: 0 !important;
+}
+.eventos .card figure {
+  border: 10px solid #004F71 !important;
+}
+.eventos .card .card-body {
+  background-color: #EEEEEE !important;
+}
+.eventos .card p {
+  color: #1B74AF !important;
+}
+
+@media screen and (min-width: 768px) {
+  .noticias-2 h2 {
+    font-size: 2rem;
+  }
+
+  .noticias-4 h2 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .noticias-4 h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .noticias-2 h2 {
+    font-size: 3rem;
+  }
+
+  .noticias-4 h2 {
+    font-size: 2.5rem;
+  }
 }
