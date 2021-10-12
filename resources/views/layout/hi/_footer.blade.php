@@ -1,4 +1,4 @@
-<footer class="bg-primary text-white">
+<footer role="contentinfo" class="bg-primary text-white">
     <div class="container-fluid py-4">
         <div class="row justify-content-between">
             <div class="col-lg-6 border-md py-5 py-lg-2 py-xl-2 px-lg-3 px-xl-5">
@@ -24,21 +24,21 @@
                 <h2 class="align-self-center col-12 col-md-11 col-lg-12 mx-auto">
                     Redes sociales
                 </h2>
-                    <ul class="col-8 col-sm-6 col-lg-7 col-xl-6 px-md-5 px-lg-0" id="lista-rs">
+                    
                         <li class="d-flex flex-wrap align-items-start mb-4">
                             <i class="fab fa-facebook-f border-2x border-white p-2"></i> 
                             <ul>
                                 <li class="mb-2">      
-                                    <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline">Facebook Peru</a>
+                                    <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline" aria-label="Ir a Facebook Perú, abre en una nueva ventana">Facebook Perú</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="https://www.facebook.com/Handicapinternationalcolombia" class="p-2 text-decoration-underline">Facebook Colombia</a>
+                                    <a href="https://www.facebook.com/Handicapinternationalcolombia" class="p-2 text-decoration-underline"aria-label="Ir a Facebook Colombia, abre en una nueva ventana" >Facebook Colombia</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/" class="p-2 text-decoration-underline">Facebook America Latina</a>
+                                    <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/" class="p-2 text-decoration-underline" aria-label="Ir a Facebook América Latina, abre en una nueva ventana">Facebook América Latina</a>
                                 </li>
                                 <li class="mb-2"> 
-                                    <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/" class="p-2 text-decoration-underline">Facebook Cuba</a>
+                                    <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/" class="p-2 text-decoration-underline" aria-label="Ir a Facebook Cuba, abre en una nueva ventana">Facebook Cuba</a>
                                 </li>
                             </ul>
                         </li>
@@ -46,10 +46,10 @@
                             <i class="fas fa-play border-2x border-white p-2"></i>
                             <ul>
                                 <li class="mb-2">                
-                                    <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg" class="p-2 text-decoration-underline">Youtube Colombia</a>
+                                    <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg" class="p-2 text-decoration-underline" aria-label="Ir a Youtube Colombia, abre en una nueva ventana">Youtube Colombia</a>
                                 </li>                   
                                 <li class="mb-2">
-                                    <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug" class="p-2 text-decoration-underline">Youtube Cuba</a>
+                                    <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug" class="p-2 text-decoration-underline"aria-label="Ir a Youtube Cuba, abre en una nueva ventana">Youtube Cuba</a>
                                 </li> 
                             </ul>
                         </li>
@@ -57,18 +57,18 @@
                             <i class="fab fa-instagram border-2x border-white p-2"></i> 
                             <ul>
                                 <li class="mb-2">
-                                    <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la" class="p-2 text-decoration-underline">Instagram Cuba</a>                                         
+                                    <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la" class="p-2 text-decoration-underline" aria-label="Ir a Instagram Cuba, abre en una nueva ventana">Instagram Cuba</a>                                         
                                 </li>   
                             </ul>
                          
                         </li>
-                    </ul>
+                    
                     <div class="col-4 col-sm-6 col-lg-5 col-xl-6 align-self-center text-center mb-5">
-                        <a href="">
+
                             <figure class="figure">
-                                <img class="figure-img img-fluid" src="/images/logo-hi.png" alt="logo de humanity and inclusion">
+                                <img class="figure-img img-fluid" src="/images/logo-hi.png" alt="">
                             </figure>
-                        </a>               
+                                    
                     </div>           
             </div>   
      </div>
