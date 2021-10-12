@@ -39,7 +39,8 @@
             @forelse($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->get() as $noticia)
             <div class="col mb-4">
                 <div class="card">
-                    <a href="{{route('noticias', $noticia->tema,$noticia)}}" class="nav-link p-0">
+                    <a href="{{route('noticias', ['tema'=>$noticia->tema,'noticia'=>$noticia->slug]) }}"
+                        class="nav-link p-0">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
                                 class="card-img-top rounded-10" alt="">
