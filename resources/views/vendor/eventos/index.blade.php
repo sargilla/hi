@@ -5,49 +5,53 @@
 
 @section('breadcrumbs')
 <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="/gestion"><i class="fa fa-home"></i> </a></li>
-		<li class="breadcrumb-item active" aria-current="page">{{ __('eventos::eventos.eventos') }}</li>
-	</ol>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/gestion"><i class="fa fa-home"></i> </a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ __('eventos::eventos.eventos') }}</li>
+    </ol>
 </nav>
 @endsection
 
 @section('main-content')
 <section class="card">
-	<header class="card-header">
-		{{ __('eventos::eventos.eventos') }}
-	</header>
-	<div class="card-body">
-		<a href="{{ route('eventos.create')}}" class="btn btn-shadow btn-primary"><i class="fa fa-plus"></i>
-			{{ __('eventos::eventos.agregar_evento') }}</a>
-		<div class="adv-table table-responsive">
-			<table class="display compact nowrap table table-bordered " id="eventos">
-				<thead>
-					<tr>
-						<th>Fecha</th>
-						<th>Titulo</th>
-						<th>Sección</th>
-						<th>Marcado</th>
-						<th>Publicado</th>
-						<th>Acciones</th>
-					</tr>
-				</thead>
-			</table>
-		</div>
-	</div>
+    <header class="card-header">
+        {{ __('eventos::eventos.eventos') }}
+    </header>
+    <div class="card-body">
+        <a href="{{ route('eventos.create')}}" class="btn btn-shadow btn-primary"><i class="fa fa-plus"></i>
+            {{ __('eventos::eventos.agregar_evento') }}</a>
+        <div class="adv-table table-responsive">
+            <table class="display compact nowrap table table-bordered " id="eventos">
+                <thead>
+                    <tr>
+                        <th width="125">Desde</th>
+                        <th width="125">Hasta</th>
+                        <th>Titulo</th>
+                        <th>Sección</th>
+                        <th>Pais</th>
+                        <th>Marcado</th>
+                        <th>Publicado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 </section>
 @include('flatlab::helpers.modal',['accion'=>'borrar','titulo'=>'Borrar Evento','mensaje'=>'Está seguro que quiere
 borrar este evento?'])
 @endsection
 @push('extra_scripts')
 <script type="text/javascript">
-	$(document).ready(function() {
+    $(document).ready(function() {
 	    eventos = $('#eventos').DataTable({
 	        "ajax": "{{ route('getEventos') }}",
 	        "columns": [
-	            {data: 'created_at', name: 'eventos.created_at'},
+	            {data: 'fecha_desde', name: 'eventos.fecha_desde', className: "text-center nowrap"},
+	            {data: 'fecha_hasta', name: 'eventos.fecha_hasta', className: "text-center nowrap"},
 	            {data: 'titulo', name: 'eventos.titulo'},
 	            {data: 'tipo.nombre', name: 'tipo.nombre', className: "text-center"},
+	            {data: 'pais', name: 'pais', className: "text-center"},
 	            {data: 'marcado', name: 'eventos.marcado', className: "text-center"},
 	            {data: 'publicado', name: 'eventos.publicado', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}
@@ -82,12 +86,12 @@ borrar este evento?'])
         		$('.confirma').one('click', function(){
 					axios.delete(route('eventos.destroy', slug))
 						.then(()=>{
-							$('#borrar').modal('hide');         		
-		            		eventos.draw(false);    
+							$('#borrar').modal('hide');
+		            		eventos.draw(false);
 		            		toastr.success('Se borró el evento!')
 						})
     			});
-        	}     	
+        	}
    		})
     });
 </script>

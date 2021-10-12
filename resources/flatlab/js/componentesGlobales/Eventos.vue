@@ -211,7 +211,7 @@
                     class="btn btn-primary"
                     @click.prevent="agregarExpositor"
                 >
-                    Agregar otro expositor
+                    Agregar expositor
                 </button>
             </div>
         </div>
