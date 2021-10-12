@@ -34,9 +34,9 @@
                                     class="card-img-top rounded-10" alt="">
                             </figure>
                             <div class="card-body mt-2">
-                                <h5>
+                                <h3>
                                     {{$modulo['texto']}}
-                                </h5>
+                                </h3>
                             </div>
                         </a>
                     </div>
