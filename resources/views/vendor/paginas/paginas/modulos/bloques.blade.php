@@ -31,7 +31,7 @@
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0">
                             <figure class="figure m-0">
                                 <img src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
-                                    class="card-img-top rounded-10" alt="...">
+                                    class="card-img-top rounded-10" alt="">
                             </figure>
                             <div class="card-body mt-2">
                                 <h5>
@@ -73,7 +73,7 @@
                         </h3>
                         <p class="mt-3">
                             <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
-                                aria-label="{{$modulo['link_description'] ??    ''}}">
+                                aria-label="{{$modulo['link_description'] ?? ''}}">
                                 <i class="fas fa-arrow-right mr-2"></i>
                                 Descargar el documento
                             </a>
@@ -96,7 +96,7 @@
                     <a href="" class="nav-link p-0">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
-                                class="card-img-top rounded-10" alt="...">
+                                class="card-img-top rounded-10" alt="">
                         </figure>
                         <div class="card-body">
                             <p class="card-text my-1">
