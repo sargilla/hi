@@ -88,7 +88,6 @@
                     v-model="fecha_desde"
                     type="datetime"
                     format="DD-MM-YYYY HH:mm"
-                    value-type="timestamp"
                     lang="es"
                     :minute-step="5"
                     confirm
@@ -103,7 +102,6 @@
                     v-model="fecha_hasta"
                     type="datetime"
                     format="DD-MM-YYYY HH:mm"
-                    value-type="timestamp"
                     lang="es"
                     :minute-step="5"
                     confirm
@@ -297,7 +295,9 @@ export default {
                 pais: "",
                 nivel: "",
                 sector: "",
-                expositores: [{ nombre: "", titulo: "" }]
+                expositores: [{ nombre: "", titulo: "" }],
+                fecha_desde: "",
+                fecha_hasta: ""
             }),
             fecha_desde: "",
             fecha_hasta: "",
@@ -332,6 +332,9 @@ export default {
             this.form.expositores.splice(index, 1);
         },
         onSubmit() {
+            this.form.expositores = this.form.expositores.filter(
+                expositor => expositor.nombre != ""
+            );
             if (this.accion == "editar") {
                 this.form
                     .patch(route("eventos.update", this.evento.slug))
@@ -366,7 +369,15 @@ export default {
             this.form.pais = this.evento.pais;
             this.form.nivel = this.evento.nivel;
             this.form.sector = this.evento.sector;
-            this.form.expositores = this.evento.expositores ?? [];
+            this.form.expositores = this.evento.expositores ?? [
+                { nombre: "", titulo: "" }
+            ];
+            this.fecha_desde = this.evento.fecha_desde
+                ? new Date(this.evento.fecha_desde)
+                : "";
+            this.fecha_hasta = this.evento.fecha_hasta
+                ? new Date(this.evento.fecha_hasta)
+                : "";
         },
         borrarForm() {
             this.form.id = "";
@@ -394,6 +405,11 @@ export default {
                 .get(route("getTipos"))
                 .then(respuesta => {
                     this.tipos = respuesta.data;
+                    if (this.form.tipo_id) {
+                        this.selectedTipo = this.tipos.find(
+                            tipo => (tipo.id = this.form.tipo_id)
+                        );
+                    }
                 })
                 .catch(error => console.log(error.response.data));
         }

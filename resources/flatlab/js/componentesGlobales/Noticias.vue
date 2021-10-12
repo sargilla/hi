@@ -55,7 +55,6 @@
                     v-model="fecha"
                     type="date"
                     format="DD-MM-YYYY"
-                    value-type="timestamp"
                     lang="es"
                 ></date-picker>
             </div>
@@ -197,7 +196,7 @@ export default {
                 marcada: false,
                 created_at: "",
                 links: "",
-                pais: "",
+                pais: ""
             }),
             fecha: "",
             temas: "",
