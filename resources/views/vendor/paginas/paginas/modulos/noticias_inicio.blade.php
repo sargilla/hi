@@ -13,7 +13,7 @@
                     <div class="card">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                                class="card-img-top" alt="...">
+                                class="card-img-top" alt="">
                         </figure>
                         <div class="card-body pt-0">
                             <p class="card-text my-1 border-bottom border-primary">{{$noticia->pais}}</p>
@@ -42,7 +42,7 @@
                     <a href="{{route('noticias', $noticia->tema,$noticia)}}" class="nav-link p-0">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                                class="card-img-top rounded-10" alt="...">
+                                class="card-img-top rounded-10" alt="">
                         </figure>
                         <div class="card-body">
                             <p class="card-text my-1">
@@ -75,7 +75,7 @@
             <div class="col-12 col-md-4 col-lg-3">
                 <figure class="figure mb-0">
                     <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                        class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                        class="figure-img img-fluid w-100 rounded mb-0" alt="">
                 </figure>
             </div>
             <div class="col-12 col-md-8 col-lg-9 py-3">
@@ -112,7 +112,7 @@
                     class="nav-link p-0">
                     <figure class="figure m-0 w-100">
                         <img src="/images/paginas-grande/{{$chunkNoticia->first()->imagen_principal != 'no-imagen.jpg' ? $chunkNoticia->first()->imagen_principal : 'familia.jpg' }}"
-                            class="card-img-top  rounded-10" alt="...">
+                            class="card-img-top  rounded-10" alt="">
                     </figure>
                     <div class="card-body">
                         <p class="card-text my-1 border-bottom border-primary w-50">Pais</p>
@@ -125,7 +125,7 @@
                 <a href="{{route('noticias',['tema'=>$chunkNoticia->get(1)->tema,'noticia'=>$chunkNoticia->get(1)])}}"
                     class="nav-link p-0">
                     <figure class="figure m-0 w-100">
-                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="...">
+                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="">
                     </figure>
                     <div class="card-body">
                         <p class="card-text my-1 border-bottom border-primary w-75">Pais</p>
@@ -138,7 +138,7 @@
                 <a href="{{route('noticias',['tema'=>$chunkNoticia->get(2)->tema,'noticia'=>$chunkNoticia->get(2)])}}"
                     class="nav-link p-0">
                     <figure class="figure m-0 w-100">
-                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="...">
+                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="">
                     </figure>
                     <div class="card-body">
                         <p class="card-text my-1 border-bottom border-primary w-75">Pais</p>
@@ -151,7 +151,7 @@
                 <a href="{{route('noticias',['tema'=>$chunkNoticia->get(3)->tema,'noticia'=>$chunkNoticia->get(3)])}}"
                     class="nav-link p-0">
                     <figure class="figure m-0 w-100">
-                        <img src="/images/familia.jpg" class="card-img-top  rounded-10" alt="...">
+                        <img src="/images/familia.jpg" class="card-img-top  rounded-10" alt="">
                     </figure>
                     <div class="card-body">
                         <p class="card-text my-1 border-bottom border-primary w-50">Pais</p>

@@ -24,9 +24,6 @@
                 class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-{{$campos['columnas']}} mt-4 text-center">
                 @foreach($campos['modulos'] as $modulo)
                 <div class="col mb-4">
-                    {{-- @php
-                    dd($modulo)
-                    @endphp --}}
                     <div class="card bg-light border-0">
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0">
                             <figure class="figure m-0">
