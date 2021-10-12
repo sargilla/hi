@@ -1,48 +1,41 @@
-.datos_impacto
-{
-    a:focus,a:hover 
-    {
-        outline: solid 2px #004F71 !important;
+.datos_impacto {
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: none !important;
     }
-    h2 
-    {
+    h2 {
         font-size: 2rem;
         font-weight: bold !important;
-        color: #004F71 !important;
+        color: #004f71 !important;
     }
-    h3
-    {
-        font-size: 0.90rem;
-        font-weight: 400 !important;
+    h3 {
+        font-size: 1rem;
+        font-weight: 600 !important;
     }
-    p 
-    {
-        font-size: 0.90rem;
-        font-weight: 400 !important;
-        color: #1B74AF !important;
+    p {
+        font-size: 1rem;
+        font-weight: 600 !important;
+        color: #1b74af !important;
     }
-    .border-datos
-    {
+    .border-datos {
         font-size: 1.5rem;
-        color: #1B74AF !important;
-        border: solid 6px #E35205 !important;
+        color: #1b74af !important;
+        border: solid 6px #e35205 !important;
         position: relative;
         width: 150px;
         height: 150px;
-        div
-        {
+        div {
             position: absolute;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
         }
     }
-    .link-di
-    {
-        font-size: 0.90rem;
+    .link-di {
+        font-size: 0.9rem;
         text-decoration: underline !important;
     }
 }

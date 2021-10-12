@@ -1,66 +1,51 @@
-#bienvenida 
-{
-    h1
-    {
+#bienvenida {
+    h1 {
         font-size: 2.5rem;
         font-weight: bold !important;
-        color: #004F71 !important;
+        color: #004f71 !important;
         line-height: 0.8 !important;
     }
-    p 
-    {
+    p {
         font-size: 1rem;
         font-weight: 400 !important;
-        color: #1B74AF !important;
+        color: #1b74af !important;
     }
-    #div-video a 
-    {
-        color: #004F71 !important;
+    #div-video a {
+        color: #004f71 !important;
         text-decoration: underline !important;
     }
-    #div-video a:focus, #div-video a:hover
-    {
-        outline: solid 2px #004F71 !important;
+    #div-video a:focus,
+    #div-video a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
-    .rounded
-    {
+    .rounded {
         border-radius: 15px !important;
     }
 }
 
-@media screen and (min-width:768px)
-{
-    #bienvenida 
-    {
-        h1
-        {
-        font-size: 3rem;  
-        } 
+@media screen and (min-width: 768px) {
+    #bienvenida {
+        h1 {
+            font-size: 3rem;
+        }
     }
 }
 
-@media screen and (min-width:992px)
-{
-    #bienvenida 
-    {
-        h1
-        {
-        font-size: 4.7rem;  
-        } 
+@media screen and (min-width: 992px) {
+    #bienvenida {
+        h1 {
+            font-size: 4.7rem;
+        }
     }
 }
-@media screen and (min-width:1200px)
-{
-    #bienvenida 
-    {
-        h1
-        {
-            font-size: 5rem;    
+@media screen and (min-width: 1200px) {
+    #bienvenida {
+        h1 {
+            font-size: 5rem;
         }
-        p 
-        {
+        p {
             font-size: 1.2rem;
         }
-    }   
+    }
 }

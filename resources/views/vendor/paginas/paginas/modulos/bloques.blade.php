@@ -54,7 +54,8 @@
                 @foreach($campos['modulos'] as $key =>$modulo)
                 <div class="col-lg-6 row mb-3 mx-auto {{$key % 2 == 0 ? 'border-dr' : ''}}">
                     <div class="col-12 col-md-6">
-                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}">
+                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}"
+                            aria-label="{{$modulo['link_description'] ??    ''}}">
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0"
                                     src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
@@ -67,7 +68,8 @@
                             {{isset($modulo['texto']) ? $modulo['texto'] : 'Titulo Vacio'}}
                         </h3>
                         <p class="mt-3">
-                            <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2">
+                            <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
+                                aria-label="{{$modulo['link_description'] ??    ''}}">
                                 <i class="fas fa-arrow-right mr-2"></i>
                                 Descargar el documento
                             </a>

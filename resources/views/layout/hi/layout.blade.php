@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 @section('htmlheader')
-    @include('plantilla::_htmlheader')
+@include('plantilla::_htmlheader')
 @show
+
 <body>
     <div id="app">
         <header id="header">
             @include('plantilla::_header')
         </header>
-        <main id="cprincipal">
+        <main id="cprincipal" aria-label="contenido principal">
             <section>
                 @yield('main-content')
-            </section>     
+            </section>
         </main>
-       
+
         @include('plantilla::_footer')
     </div>
-  	@section('scripts')
-        @include('plantilla::_scripts')
+    @section('scripts')
+    @include('plantilla::_scripts')
     @show
 </body>
+
 </html>
