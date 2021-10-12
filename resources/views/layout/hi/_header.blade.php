@@ -37,8 +37,8 @@
         class="d-md-none py-3 d-flex align-items-center justify-content-center text-primary text-uppercase w-100 navbar-toggler"
         type="button" data-toggle="collapse" data-target="#menuhi" aria-controls="menuhi" aria-expanded="false"
         aria-label="Menu de navegación " tabindex="0">
-        <i class="d-none fas fa-times text-white mr-2"></i>
-        <span class="navbar-toggler-icon" aria-label="cerrar"></span> menu
+        <i class="d-none fas fa-times text-white mr-2" aria-label="cerrar menu principal"></i>
+        <span class="navbar-toggler-icon"></span> menu
     </button>
     <nav class="collapse navbar-collapse" id="menuhi">
         <ul class="navbar-nav mx-lg-auto" role="menubar">
