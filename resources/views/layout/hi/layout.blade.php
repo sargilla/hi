@@ -8,7 +8,7 @@
         <header id="header">
             @include('plantilla::_header')
         </header>
-        <main>
+        <main id="cprincipal">
             <section>
                 @yield('main-content')
             </section>     
