@@ -41,24 +41,24 @@
         <span class="navbar-toggler-icon" aria-label="cerrar"></span> menu
     </button>
     <nav class="collapse navbar-collapse" id="menuhi">
-        <ul class="navbar-nav mx-lg-auto">
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="/">Inicio</a>
+        <ul class="navbar-nav mx-lg-auto" role="menubar">
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="/">Inicio</a>
             </li>
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="/recursos">Recursos</a>
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="/recursos">Recursos</a>
             </li>
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="/experiencias">Experiencias</a>
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="/experiencias">Experiencias</a>
             </li>
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="/actualidad">Actualidad</a>
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="/actualidad">Actualidad</a>
             </li>
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="/eventos">Eventos</a>
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="/eventos">Eventos</a>
             </li>
-            <li role='menuitem' class="nav-item">
-                <a class="nav-link" href="#">Formación</a>
+            <li role="none" class="nav-item">
+                <a role='menuitem' class="nav-link" href="#">Formación</a>
             </li>
         </ul>
         <form class="mx-auto mx-md-0 p-0 d-block d-md-none d-lg-flex ml-lg-auto col-6 col-md-12 col-lg-4 mr-md-0">
@@ -67,7 +67,6 @@
                 <input role="search" aria-label="ingrese la informacion que desea buscar" id="buscador"
                     class="form-control w-100 border-0" type="text" placeholder="Buscar" name="keywords">
             </div>
-
         </form>
     </nav>
 </div>
