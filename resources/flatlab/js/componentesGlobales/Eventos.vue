@@ -180,6 +180,43 @@
                 </div>
             </div>
         </div>
+        <div class="form-group row mb-5">
+            <label for="expositores" class="col-form-label col-lg-2"
+                >Expositores</label
+            >
+            <div class="col-lg-10 row">
+                <div
+                    class="col-md-4 form-group d-flex flex-column align-items-lg-center"
+                    v-for="(expositor, index) in form.expositores"
+                    :key="index"
+                >
+                    <input
+                        class="form-control mb-2"
+                        v-model="expositor.nombre"
+                        placeholder="Nombre del Expositor"
+                    />
+                    <input
+                        class="form-control mb-2"
+                        v-model="expositor.titulo"
+                        placeholder="Titulo del Expositor"
+                    />
+                    <button
+                        class="btn btn-xs btn-danger"
+                        @click.prevent="borrarExpositor(index)"
+                    >
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="offset-lg-2  col-lg-10">
+                <button
+                    class="btn btn-primary"
+                    @click.prevent="agregarExpositor"
+                >
+                    Agregar otro expositor
+                </button>
+            </div>
+        </div>
         <div class="form-group row">
             <div class="offset-lg-2 col-lg-10">
                 <input
@@ -257,10 +294,10 @@ export default {
                 imagenes: [{ imagen: "" }],
                 publicado: false,
                 marcado: false,
-                pais: '',
-                nivel: '',
-                sector: '',
-                
+                pais: "",
+                nivel: "",
+                sector: "",
+                expositores: [{ nombre: "", titulo: "" }]
             }),
             fecha_desde: "",
             fecha_hasta: "",
@@ -287,6 +324,12 @@ export default {
         },
         borrarImagen(index) {
             this.form.imagenes.splice(index, 1);
+        },
+        agregarExpositor() {
+            this.form.expositores.push({ nombre: "", titulo: "" });
+        },
+        borrarExpositor(index) {
+            this.form.expositores.splice(index, 1);
         },
         onSubmit() {
             if (this.accion == "editar") {
@@ -322,7 +365,8 @@ export default {
             this.form.marcado = this.evento.marcado;
             this.form.pais = this.evento.pais;
             this.form.nivel = this.evento.nivel;
-             this.form.sector = this.evento.sector;
+            this.form.sector = this.evento.sector;
+            this.form.expositores = this.evento.expositores ?? [];
         },
         borrarForm() {
             this.form.id = "";
@@ -332,9 +376,10 @@ export default {
             this.form.imagenes = [{ imagen: "" }];
             this.form.publicado = false;
             this.form.marcado = false;
-            this.form.pais =  "";
+            this.form.pais = "";
             this.form.nivel = "";
             this.form.sector = "";
+            this.form.expositores = [];
         },
         cancelar() {
             window.location.href = route("eventos.index");
