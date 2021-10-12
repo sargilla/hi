@@ -36,7 +36,7 @@
     <button id="boton-menu"
         class="d-md-none py-3 d-flex align-items-center justify-content-center text-primary text-uppercase w-100 navbar-toggler"
         type="button" data-toggle="collapse" data-target="#menuhi" aria-controls="menuhi" aria-expanded="false"
-        aria-label="Menu de navegación ">
+        aria-label="Menu de navegación " tabindex="0">
         <i class="d-none fas fa-times text-white mr-2"></i>
         <span class="navbar-toggler-icon" aria-label="cerrar"></span> menu
     </button>
@@ -69,4 +69,5 @@
             </div>
         </form>
     </nav>
+
 </div>

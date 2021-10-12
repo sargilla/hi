@@ -29,4 +29,7 @@ $(function() {
         return false;
     } );
 
+    document.getElementById('buscador').onblur = ()=>{
+        document.getElementById('boton-menu').focus();
+    }
 });
