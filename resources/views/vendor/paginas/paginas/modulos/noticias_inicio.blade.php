@@ -36,7 +36,7 @@
 <article class="noticias-2">
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-2">
-            @forelse($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->get() as $noticia)
+            @forelse($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->latest()->get() as $noticia)
             <div class="col mb-4">
                 <div class="card">
                     <a href="{{route('noticias', ['tema'=>$noticia->tema,'noticia'=>$noticia->slug]) }}"
@@ -105,10 +105,10 @@
 @if($campos['estilo'] == 4)
 <article class="noticias-4">
     <div class="container py-5 px-lg-3">
+        @forelse ($noticias->delTema($campos['categoria'])->publicadas()->get()->chunk(2) as $chunkNoticia)
         <div class="row">
-            @forelse($noticias->delTema($campos['categoria'])->publicadas()->get()->chunk(4) as $chunkNoticia)
-            <div class="col-sm-7 col-md-7 mb-4">
-
+            @foreach ($chunkNoticia as $noticia)
+            <div class="col-md-{{($loop->parent->index % 2 XOR $loop->index) ? '5':'7'}} mb-4">
                 <a href="{{route('noticias',['tema'=>$chunkNoticia->first()->tema,'noticia'=>$chunkNoticia->first()])}}"
                     class="nav-link p-0">
                     <figure class="figure m-0 w-100">
@@ -116,60 +116,21 @@
                             class="card-img-top  rounded-10" alt="">
                     </figure>
                     <div class="card-body">
-                        <p class="card-text my-1 border-bottom border-primary w-50">Pais</p>
+                        <p
+                            class="card-text my-1 border-bottom border-primary w-{{($loop->parent->index % 2 XOR $loop->index) ? '50':'75'}}">
+                            {{ $noticia->pais }}</p>
                         <h2>{{$chunkNoticia->first()->titulo}}</h2>
                     </div>
                 </a>
             </div>
-            @if($chunkNoticia->get(1))
-            <div class="col-sm-5 col-md-5 mb-4">
-                <a href="{{route('noticias',['tema'=>$chunkNoticia->get(1)->tema,'noticia'=>$chunkNoticia->get(1)])}}"
-                    class="nav-link p-0">
-                    <figure class="figure m-0 w-100">
-                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="">
-                    </figure>
-                    <div class="card-body">
-                        <p class="card-text my-1 border-bottom border-primary w-75">Pais</p>
-                        <h2>{{$chunkNoticia->get(1)->titulo}}</h2>
-                    </div>
-                </a>
-            </div>
-            @if($chunkNoticia->get(2))
-            <div class="col-sm-5 col-md-5 mb-4">
-                <a href="{{route('noticias',['tema'=>$chunkNoticia->get(2)->tema,'noticia'=>$chunkNoticia->get(2)])}}"
-                    class="nav-link p-0">
-                    <figure class="figure m-0 w-100">
-                        <img src="/images/familia_2.jpg" class="card-img-top  rounded-10" alt="">
-                    </figure>
-                    <div class="card-body">
-                        <p class="card-text my-1 border-bottom border-primary w-75">Pais</p>
-                        <h2>{{$chunkNoticia->get(2)->titulo}}</h2>
-                    </div>
-                </a>
-            </div>
-            @if($chunkNoticia->get(3))
-            <div class="col-sm-7 col-md-7 mb-4">
-                <a href="{{route('noticias',['tema'=>$chunkNoticia->get(3)->tema,'noticia'=>$chunkNoticia->get(3)])}}"
-                    class="nav-link p-0">
-                    <figure class="figure m-0 w-100">
-                        <img src="/images/familia.jpg" class="card-img-top  rounded-10" alt="">
-                    </figure>
-                    <div class="card-body">
-                        <p class="card-text my-1 border-bottom border-primary w-50">Pais</p>
-                        <h2>{{$chunkNoticia->get(3)->titulo}}</h2>
-                    </div>
-                </a>
-            </div>
-            @endif
-            @endif
-            @endif
-            @empty
-            <div class="alert alert-warning mx-auto">
-                SIN NOTICIAS
-            </div>
-            @endforelse
-
+            @endforeach
         </div>
+
+        @empty
+        <div class="alert alert-warning mx-auto">
+            SIN NOTICIAS
+        </div>
+        @endforelse
     </div>
 </article>
 @endif

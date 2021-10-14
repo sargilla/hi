@@ -16,8 +16,8 @@
 
 @section('main-content')
 {{-- <ul class="breadcrumb">
-	<li><a href="/gestion"><i class="fa fa-home"></i> </a></li>
-	<li class="active">{{ __('noticias::noticias.noticias') }}</li>
+    <li><a href="/gestion"><i class="fa fa-home"></i> </a></li>
+    <li class="active">{{ __('noticias::noticias.noticias') }}</li>
 </ul> --}}
 <section class="card">
     <header class="card-header ">
@@ -33,6 +33,7 @@
                         <th>Fecha</th>
                         <th>Titulo</th>
                         <th>Sección</th>
+                        <th>País</th>
                         <th>Marcada</th>
                         <th>Publicada</th>
                         <th>Acciones</th>
@@ -55,6 +56,7 @@ borrar esta noticia?'])
 	            {data: 'created_at', name: 'noticias.created_at'},
 	            {data: 'titulo', name: 'noticias.titulo'},
 	            {data: 'tema.nombre', name: 'tema.nombre', className: "text-center"},
+	            {data: 'pais', name: 'pais', className: "text-center"},
 	            {data: 'marcada', name: 'noticias.marcada', className: "text-center"},
 	            {data: 'publicada', name: 'noticias.publicada', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}
