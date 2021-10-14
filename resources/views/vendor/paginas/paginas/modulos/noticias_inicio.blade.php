@@ -8,8 +8,7 @@
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 div-focus">
             @foreach($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->get() as $noticia)
             <div class="col mb-4">
-                <a href="{{route('noticias', ['tema'=>$noticia->tema,'noticia'=> $noticia->slug])}}"
-                    class="nav-link p-0">
+                <a href="/{{ $noticia->tema->slug }}/{{ $noticia->slug }}" class="nav-link p-0">
                     <div class="card">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
@@ -39,8 +38,7 @@
             @forelse($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->latest()->get() as $noticia)
             <div class="col mb-4">
                 <div class="card">
-                    <a href="{{route('noticias', ['tema'=>$noticia->tema,'noticia'=>$noticia->slug]) }}"
-                        class="nav-link p-0">
+                    <a href="/{{ $noticia->tema->slug }}/{{ $noticia->slug }}" class="nav-link p-0">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
                                 class="card-img-top rounded-10" alt="">
@@ -109,7 +107,7 @@
         <div class="row">
             @foreach ($chunkNoticia as $noticia)
             <div class="col-md-{{($loop->parent->index % 2 XOR $loop->index) ? '5':'7'}} mb-4">
-                <a href="{{route('noticias',['tema'=>$noticia->tema,'noticia'=>$noticia->slug])}}" class="nav-link p-0">
+                <a href="/{{ $noticia->tema->slug }}/{{ $noticia->slug }}" class="nav-link p-0">
                     <figure class="figure m-0 w-100">
                         <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
                             class="card-img-top  rounded-10" alt="{{$noticia->titulo}}">

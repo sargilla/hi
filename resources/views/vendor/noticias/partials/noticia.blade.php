@@ -90,17 +90,17 @@
             Más de {{ $noticia->tema->nombre }}
         </h2>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="mas-noticias">
-            @foreach($noticias->inRandomOrder()->limit(5)->get() as $noticia)
+            @foreach($noticias->inRandomOrder()->limit(5)->get() as $not)
             <div class="col mb-4">
-                <a href="" class="nav-link p-0">
+                <a href="/{{$noticia->tema->slug}}/{{ $not->slug}}" class="nav-link p-0">
                     <div class="card">
                         <figure class="figure mb-0">
-                            <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
+                            <img src="/images/paginas-grande/{{$not->imagen_principal != 'no-imagen.jpg' ? $not->imagen_principal : 'familia.jpg' }}"
                                 class="card-img-top rounded-10" alt="...">
                         </figure>
                         <div class="card-body">
-                            <p class="card-text my-1">{{$noticia->pais?? 'Pais'}}</p>
-                            <h3>{{$noticia->titulo?? 'Titulo Vacio'}}</h3>
+                            <p class="card-text my-1">{{$not->pais?? 'Pais'}}</p>
+                            <h3>{{$not->titulo?? 'Titulo Vacio'}}</h3>
                         </div>
                     </div>
                 </a>

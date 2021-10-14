@@ -58,7 +58,7 @@
                 <a role='menuitem' class="nav-link" href="/eventos">Eventos</a>
             </li>
             <li role="none" class="nav-item">
-                <a role='menuitem' class="nav-link" href="#">Formación</a>
+                <a role='menuitem' class="nav-link" href="/formacion">Formación</a>
             </li>
         </ul>
         <form class="mx-auto mx-md-0 p-0 d-block d-md-none d-lg-flex ml-lg-auto col-6 col-md-12 col-lg-4 mr-md-0">
