@@ -25,9 +25,9 @@
                 <figure class="figure w-100 mb-3">
                     <img class="figure-img img-fluid w-100 rounded-10  mb-0"
                         src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                        alt="">
+                        alt="{{$noticia->imagenes[0]['alt'] ?? ''}}">
                 </figure>
-                <span class="p-2 text-primary">Creditos de la imagen</span>
+                <span class="p-2 text-primary">{{$noticia->imagenes[0]['creditos'] ?? ''}}</span>
             </div>
         </a>
         <div class="mt-4">

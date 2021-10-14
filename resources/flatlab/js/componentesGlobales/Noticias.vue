@@ -104,7 +104,11 @@
                     :urlSubir="urlSubir"
                     :urlBorrar="urlBorrar"
                     :imagen.sync="item.imagen"
+                    :alt.sync="item.alt"
+                    :creditos.sync="item.creditos"
                     :puedoBorrar="puedoBorrarImagen"
+                    :activar_alt="true"
+                    :activar_creditos="true"
                     @borrar="borrarImagen(index)"
                     @update="guardarCambios"
                 />
@@ -191,7 +195,7 @@ export default {
                 titulo: "",
                 tema_id: "",
                 contenido: "",
-                imagenes: [{ imagen: "" }],
+                imagenes: [{ imagen: "", alt: "", creditos: "" }],
                 publicada: false,
                 marcada: false,
                 created_at: "",

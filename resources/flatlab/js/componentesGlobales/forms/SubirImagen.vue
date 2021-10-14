@@ -35,6 +35,22 @@ this.form.imagenes.splice(index, 1) }, COMPUTED computed: { puedoBorrarImagen()
                 alt=""
             />
         </div>
+        <div class="form-group" v-if="activar_creditos">
+            <input
+                type="text"
+                class="form-control"
+                v-model="creditos_data"
+                placeholder="Creditos"
+            />
+        </div>
+        <div class="form-group" v-if="activar_alt">
+            <input
+                type="text"
+                class="form-control"
+                v-model="alt_data"
+                placeholder="Texto Alt"
+            />
+        </div>
         <div class="d-flex justify-content-between mt-1">
             <span class="btn btn-warning btn-xs" v-if="cargando"
                 ><i class="fa fa-refresh fa-spin"></i> Cargando</span
@@ -59,11 +75,22 @@ this.form.imagenes.splice(index, 1) }, COMPUTED computed: { puedoBorrarImagen()
 </template>
 <script>
 export default {
-    props: ["imagen", "urlSubir", "urlBorrar", "puedoBorrar"],
+    props: {
+        imagen: {},
+        urlSubir: {},
+        urlBorrar: {},
+        puedoBorrar: {},
+        creditos: { default: "" },
+        alt: { default: "" },
+        activar_alt: { default: false },
+        activar_creditos: { default: false }
+    },
     data() {
         return {
             image: "",
             nombre: "",
+            creditos_data: "",
+            alt_data: "",
             cargando: false
         };
     },
@@ -134,10 +161,22 @@ export default {
         if (this.imagen) {
             this.image = "/images/subir-imagen/" + this.imagen;
         }
+        if (this.alt) {
+            this.alt_data = this.alt;
+        }
+        if (this.creditos) {
+            this.creditos_data = this.creditos;
+        }
     },
     watch: {
         imagen: function(data) {
             this.image = "/images/subir-imagen/" + data;
+        },
+        creditos_data: function(data) {
+            this.$emit("update:creditos", data);
+        },
+        alt_data: function(data) {
+            this.$emit("update:alt", data);
         }
     }
 };
