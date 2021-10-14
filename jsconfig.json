@@ -1,0 +1,7 @@
+{
+    "include": [
+        "./resources/fkatkab/js/**/*",
+        "./resources/hi/js/**/*",
+
+    ]
+}

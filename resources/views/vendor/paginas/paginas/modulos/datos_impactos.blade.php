@@ -7,7 +7,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
             @foreach($campos['modulos'] as $key => $modulo)
             <div class="col mb-4">
-                <a href="{{$modulo['link']}}" class="nav-link p-0 h-100">
+                <a href="{{$modulo['link']}}" class="nav-link p-0 h-100" target="blank">
                     <div class="card h-100 bg-light">
                         <div class="card-body p-0">
                             <h3

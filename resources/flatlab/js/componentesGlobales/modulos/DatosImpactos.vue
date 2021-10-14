@@ -146,6 +146,18 @@
                                 <div class="form-group">
                                     <div class="col-lg-12 row">
                                         <label class="col-lg-2 my-auto"
+                                            >Descripcion del link</label
+                                        >
+                                        <input
+                                            class="form-control col-lg-10 "
+                                            v-model="modulo.link_description"
+                                            placeholder="Descripción del link"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-12 row">
+                                        <label class="col-lg-2 my-auto"
                                             >Porcentaje</label
                                         >
                                         <input
