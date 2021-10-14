@@ -6,7 +6,7 @@
                 <figure class="figure mb-0">
                     <img class="img-fluid mb-0 rounded-10"
                         src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
-                        alt="">
+                        alt="{{ $campos['alt_imagen'] ?? ''}}">
                 </figure>
             </div>
             <div class="col-12 col-sm-6">
@@ -17,7 +17,8 @@
                     DESCARGAR PDF:<a class="btn btn-purple px-5"
                         href="{{isset($campos['link']) ? $campos['link'] : '#'}}"
                         title="{{isset($campos['texto_link']) ? $campos['texto_link'] : 'Falta escribir el texto'}}"
-                        aria-label="descargar guia en pdf abre en una nueva ventana">{{isset($campos['texto_link']) ? $campos['texto_link'] : 'Falta escribir el texto'}}</a>
+                        aria-label="{{ $campos['link_description'] ?? ''}}">{{isset($campos['texto_link']) ?
+                        $campos['texto_link'] : 'Falta escribir el texto'}}</a>
                 </p>
             </div>
         </div>
@@ -32,7 +33,7 @@
                     <figure class="figure mb-0 w-100">
                         <img class="img-fluid mb-0 w-100"
                             src="/images/paginas-grande/{{isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg'}}"
-                            alt="">
+                            alt="{{ $campos['alt_image'] ?? ''}}">
                     </figure>
                 </div>
                 <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
@@ -45,7 +46,7 @@
                         </p>
                         @endif
                     </h3>
-                    <a href="">
+                    <a href="{{$campos['link'] ?? ''}}" aria-label="{{ $campos['link_description'] ?? ''}}">
                         @if(isset($campos['texto_link']))
                         <p class="link-p">
                             {{ $campos['texto_link']}}

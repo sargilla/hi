@@ -52,14 +52,14 @@
                 {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio'}}
             </h2>
             <div class="row justify-content-between my-2 my-md-5">
-                @foreach($campos['modulos'] as $key =>$modulo)
+                @foreach($campos['modulos'] as $key => $modulo)
                 <div class="col-lg-6 row mb-3 mx-auto {{$key % 2 == 0 ? 'border-dr' : ''}}">
                     <div class="col-12 col-md-6">
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}"
                             aria-label="{{$modulo['link_description'] ??    ''}}">
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0"
-                                    src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
+                                    src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
                                     alt="">
                             </figure>
                         </a>

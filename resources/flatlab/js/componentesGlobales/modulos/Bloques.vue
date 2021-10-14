@@ -224,6 +224,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div
+                                    class="form-group mt-3 row align-items-center"
+                                >
+                                    <label
+                                        for="alt_imagen"
+                                        class="control-label col-lg-2 mb-0"
+                                        >Alt imagen</label
+                                    >
+                                    <div class="col-md-6">
+                                        <input
+                                            id="alt_imagen"
+                                            name="alt_imagen"
+                                            class="form-control"
+                                            v-model="modulo.alt_imagen"
+                                            placeholder="Alt de la imagen"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
