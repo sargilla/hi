@@ -75,6 +75,10 @@ Route::group(['prefix' => 'plantilla'],function(){
 
 Route::get('/filtro', 'FiltroController@search')->name('filtro');
 
+
+Route::get('actualidad/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
+Route::get('historias-de-vida/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
+
 /* Rutas Paginas */
 Route::get('/{pagina?}', 'FrontendController@index');
 

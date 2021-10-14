@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Sigma\Paginas\Pagina;
 use Carbon\Carbon;
 use App\Http\Requests;
+use Sigma\Paginas\Pagina;
+use Sigma\Noticias\Noticia;
 use Illuminate\Http\Request;
 use Sargilla\Toastr\Facades\Toastr;
 
@@ -33,5 +34,9 @@ class FrontendController extends Controller
         $pagina = Pagina::whereSlug($pagina)->firstOrFail();
         return view('paginas::paginas.pagina',compact('pagina'));
     }
-   
+
+    public function showNoticia(Noticia $noticia){
+        $tema = $noticia->tema;
+        return view('noticias::show', compact(['tema','noticia']));
+    }
 }

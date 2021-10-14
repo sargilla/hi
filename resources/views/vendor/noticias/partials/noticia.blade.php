@@ -11,8 +11,8 @@
         <nav aria-label="Usted esta en historia de muestra">
             <ol class="breadcrumb bg-unset p-0">
                 <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
-                <li class="breadcrumb-item"><a href="#" class="p-2">Experiencias</a></li>
-                <li class="breadcrumb-item"><a href="#" class="p-2">Historia de vida</a></li>
+                <li class="breadcrumb-item"><a href="/{{ $noticia->tema->slug }}" class="p-2">{{
+                        $noticia->tema->nombre }}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ $noticia->titulo }}</li>
             </ol>
         </nav>
@@ -36,7 +36,7 @@
     </div>
     </div>
 </article>
-<article id="expShowHVCredito2" class="expShowHV">
+{{-- <article id="expShowHVCredito2" class="expShowHV">
     <div class="container py-5 py-lg-3">
         <div class="row">
             @if(isset($noticia->imagenes[1]))
@@ -83,7 +83,7 @@
             {!! $noticia->contenido !!}
         </div>
     </div>
-</article>
+</article> --}}
 <article class="expShowHV">
     <div class="container py-5 py-lg-3">
         <h2 class="text-primary my-5">
