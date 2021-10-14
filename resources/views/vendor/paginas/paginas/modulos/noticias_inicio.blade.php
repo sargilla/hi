@@ -111,7 +111,7 @@
             <div class="col-md-{{($loop->parent->index % 2 XOR $loop->index) ? '5':'7'}} mb-4">
                 <a href="{{route('noticias',['tema'=>$noticia->tema,'noticia'=>$noticia->slug])}}" class="nav-link p-0">
                     <figure class="figure m-0 w-100">
-                        <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $nooticia->imagen_principal : 'familia.jpg' }}"
+                        <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
                             class="card-img-top  rounded-10" alt="{{$noticia->titulo}}">
                     </figure>
                     <div class="card-body">
