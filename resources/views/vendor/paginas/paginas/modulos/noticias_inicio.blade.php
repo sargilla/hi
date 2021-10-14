@@ -109,17 +109,16 @@
         <div class="row">
             @foreach ($chunkNoticia as $noticia)
             <div class="col-md-{{($loop->parent->index % 2 XOR $loop->index) ? '5':'7'}} mb-4">
-                <a href="{{route('noticias',['tema'=>$chunkNoticia->first()->tema,'noticia'=>$chunkNoticia->first()])}}"
-                    class="nav-link p-0">
+                <a href="{{route('noticias',['tema'=>$noticia->tema,'noticia'=>$noticia->slug])}}" class="nav-link p-0">
                     <figure class="figure m-0 w-100">
-                        <img src="/images/paginas-grande/{{$chunkNoticia->first()->imagen_principal != 'no-imagen.jpg' ? $chunkNoticia->first()->imagen_principal : 'familia.jpg' }}"
-                            class="card-img-top  rounded-10" alt="">
+                        <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $nooticia->imagen_principal : 'familia.jpg' }}"
+                            class="card-img-top  rounded-10" alt="{{$noticia->titulo}}">
                     </figure>
                     <div class="card-body">
                         <p
                             class="card-text my-1 border-bottom border-primary w-{{($loop->parent->index % 2 XOR $loop->index) ? '50':'75'}}">
                             {{ $noticia->pais }}</p>
-                        <h2>{{$chunkNoticia->first()->titulo}}</h2>
+                        <h2>{{$noticia->titulo}}</h2>
                     </div>
                 </a>
             </div>
