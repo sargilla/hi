@@ -25,10 +25,11 @@
                 @foreach($campos['modulos'] as $modulo)
                 <div class="col mb-4">
                     <div class="card bg-light border-0">
-                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0">
+                        <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0"
+                            aria-label="{{$modulo['link_description'] ?? ''}}">
                             <figure class="figure m-0">
                                 <img src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
-                                    class="card-img-top rounded-10" alt="{{ $modulo['alt_image'] ?? '' }}">
+                                    class="card-img-top rounded-10" alt="{{ $modulo['alt_imagen'] ?? '' }}">
                             </figure>
                             <div class="card-body mt-2">
                                 <h3>
@@ -60,7 +61,7 @@
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0"
                                     src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
-                                    alt="{{ $modulo['alt_image'] ?? '' }}">
+                                    alt="{{ $modulo['alt_imagen'] ?? '' }}">
                             </figure>
                         </a>
                     </div>
@@ -93,7 +94,7 @@
                     <a href="" class="nav-link p-0">
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
-                                class="card-img-top rounded-10" alt="{{ $modulo['alt_image'] ?? '' }}">
+                                class="card-img-top rounded-10" alt="{{ $modulo['alt_imagen'] ?? '' }}">
                         </figure>
                         <div class="card-body">
                             <p class="card-text my-1">
