@@ -38,9 +38,11 @@
     <div class="container p-3">
         <nav aria-label="Usted esta en {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio' }}">
             <ol class="breadcrumb bg-unset p-0 mt-lg-4">
-                <li class="breadcrumb-item"><a href="#" class="p-2">Página Principal</a></li>
+                <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
                 @if(isset($campos['pagina_anterior']))
-                <li class="breadcrumb-item"><a href="#" class="p-2">{{isset($campos['pagina_anterior'])?
+                <li class="breadcrumb-item"><a
+                        href="{{ isset($campos['pagina_anterior']) ? Str::slug($campos['pagina_anterior']) : '/'}}"
+                        class="p-2">{{isset($campos['pagina_anterior'])?
                         $campos['pagina_anterior'] : 'Esta Vacio'}}</a></li>
                 @endif
                 <li class="breadcrumb-item active" aria-current="page">{{isset($campos['titulo']) ? $campos['titulo'] :
