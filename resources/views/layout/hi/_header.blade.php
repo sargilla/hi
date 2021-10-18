@@ -61,11 +61,12 @@
                 <a role='menuitem' class="nav-link" href="/formacion">Formación</a>
             </li>
         </ul>
-        <form class="mx-auto mx-md-0 p-0 d-block d-md-none d-lg-flex ml-lg-auto col-6 col-md-12 col-lg-4 mr-md-0">
+        <form class="mx-auto mx-md-0 p-0 d-block d-md-none d-lg-flex ml-lg-auto col-6 col-md-12 col-lg-4 mr-md-0"
+            action="{{ route('buscar') }}" method="get">
             <div id="div-search" class="d-flex align-items-center border border-default rounded px-2">
                 <i class="fas fa-search text-white fa-1x text-secondary"></i>
                 <input role="search" aria-label="ingrese la informacion que desea buscar" id="buscador"
-                    class="form-control w-100 border-0" type="text" placeholder="Buscar" name="keywords">
+                    class="form-control w-100 border-0" type="text" placeholder="Buscar" name="busqueda">
             </div>
         </form>
     </nav>

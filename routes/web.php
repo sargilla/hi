@@ -74,7 +74,7 @@ Route::group(['prefix' => 'plantilla'],function(){
 });
 
 Route::get('/filtro', 'FiltroController@search')->name('filtro');
-
+Route::get('buscar', 'FrontendController@buscar')->name('buscar');
 
 Route::get('actualidad/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
 Route::get('historias-de-vida/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
