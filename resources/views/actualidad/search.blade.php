@@ -1,19 +1,22 @@
 @extends('plantilla::layout')
+@section('header_title')
+{{ config('app.name') }} Búsqueda en actualidad
+@endsection
 @section('main-content')
 <article id="actualidadSearch" class="actualidadSearch">
     <div class="bg-primary">
         <div class="container">
             <h1 class="py-5  text-white mt-1">
-                Resultado de busqueda
+                Resultado de búsqueda
             </h1>
         </div>
     </div>
     <div class="container py-5 py-lg-3">
-        <nav aria-label="Usted esta en los resultado de busqueda de actualidad">
+        <nav aria-label="Usted esta en los resultados de búsqueda de actualidad">
             <ol class="breadcrumb bg-unset p-0">
                 <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
                 <li class="breadcrumb-item"><a href="/actualidad" class="p-2">Actualidad</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Resultado de busqueda</li>
+                <li class="breadcrumb-item active" aria-current="page">Resultado de búsqueda</li>
             </ol>
         </nav>
     </div>
