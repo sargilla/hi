@@ -10,7 +10,7 @@
     <div class="container py-5">
         <nav aria-label="Usted esta en historia de muestra">
             <ol class="breadcrumb bg-unset p-0">
-                <li class="breadcrumb-item"><a href="#" class="p-2">Pagina Principal</a></li>
+                <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
                 <li class="breadcrumb-item"><a href="/{{ $noticia->tema->slug }}" class="p-2">{{
                         $noticia->tema->nombre }}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ $noticia->titulo }}</li>
