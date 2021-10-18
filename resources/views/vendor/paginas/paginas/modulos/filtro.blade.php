@@ -12,7 +12,6 @@
                 {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio' }}
             </p>
             <form action="{{route('filtro')}}" method="GET" class="form-inline mr-3">
-                @csrf
                 <input type="hidden" name="busqueda" value="{{$campos['busqueda']}}">
                 <div class="div-group  col-md-4 col-lg-3">
                     <label for="fecha" class="text-white justify-content-start ">Fechas</label>
@@ -26,7 +25,7 @@
                         <option value="">Todas los paises</option>
                         <option value="colombia">Colombia</option>
                         <option value="paraguay">Paraguay</option>
-                        <option value="peruy">Peru</option>
+                        <option value="perú">Perú</option>
                     </select>
                 </div>
                 <div class="div-group  col-md-4 col-lg-3">
@@ -55,7 +54,7 @@
                     Busqueda por pais
                 </p>
                 <form action="{{route('filtro')}}" method="GET" class="form-inline mr-3">
-                    @csrf
+
                     <div class="div-group w-100">
                         <label for="pais" class="text-white  justify-content-start ">Paises</label>
                         <select name="pais" id="" class="form-control mb-3 mr-3 mb-md-0 w-25">
