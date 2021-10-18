@@ -7,7 +7,7 @@
     <div class="bg-primary">
         <div class="container">
             <h1 class="py-5  text-white mt-1">
-                Resultado de búsqueda
+                Resultado de búsqueda de actualidad
             </h1>
         </div>
     </div>
@@ -16,7 +16,7 @@
             <ol class="breadcrumb bg-unset p-0">
                 <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
                 <li class="breadcrumb-item"><a href="/actualidad" class="p-2">Actualidad</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Resultado de búsqueda</li>
+                <li class="breadcrumb-item active" aria-current="page">Resultado de búsqueda de actualidad</li>
             </ol>
         </nav>
     </div>
