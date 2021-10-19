@@ -32,19 +32,19 @@
                         <ul>
                             <li class="mb-2">
                                 <a href="https://www.facebook.com/HumanityInclusionPeru/"
-                                    class="p-2 text-decoration-underline">Facebook Peru</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Facebook Peru</a>
                             </li>
                             <li class="mb-2">
                                 <a href="https://www.facebook.com/Handicapinternationalcolombia"
-                                    class="p-2 text-decoration-underline">Facebook Colombia</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Facebook Colombia</a>
                             </li>
                             <li class="mb-2">
                                 <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/"
-                                    class="p-2 text-decoration-underline">Facebook America Latina</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Facebook America Latina</a>
                             </li>
                             <li class="mb-2">
                                 <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/"
-                                    class="p-2 text-decoration-underline">Facebook Cuba</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Facebook Cuba</a>
                             </li>
                         </ul>
                     </li>
@@ -53,11 +53,11 @@
                         <ul>
                             <li class="mb-2">
                                 <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg"
-                                    class="p-2 text-decoration-underline">Youtube Colombia</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Youtube Colombia</a>
                             </li>
                             <li class="mb-2">
                                 <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug"
-                                    class="p-2 text-decoration-underline">Youtube Cuba</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Youtube Cuba</a>
                             </li>
                         </ul>
                     </li>
@@ -66,7 +66,7 @@
                         <ul>
                             <li class="mb-2">
                                 <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la"
-                                    class="p-2 text-decoration-underline">Instagram Cuba</a>
+                                    class="p-2 text-decoration-underline" target="_blank">Instagram Cuba</a>
                             </li>
                         </ul>
 
@@ -123,13 +123,13 @@
                 <nav>
                     <ul class="d-flex justify-content-center">
                         <li>
-                            <a href="" class="p-2">Índice del sitio</a> -
+                            <a href="/" class="p-2">Índice del sitio</a> -
                         </li>
                         <li>
-                            <a href="" class="p-2">Políticas y privacidad</a> -
+                            <a href="/politicas-de-privacidad" class="p-2">Políticas y privacidad</a> -
                         </li>
                         <li>
-                            <a href="" class="p-2">Accesibilidad</a>
+                            <a href="/accesibilidad" class="p-2">Accesibilidad</a>
                         </li>
                         <li id="li-smu">
                             <a class="skip-main-up py-2 px-4" id="irAlMenuPrincipal" href="#header">Ir al menu
