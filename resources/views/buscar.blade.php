@@ -27,7 +27,7 @@
         <ul>
             @forelse($noticias as $noticia)
             <li>
-                <a href="" class="nav-link p-0">
+                <a href="/{{ $noticia->tema->slug }}/{{ $noticia->slug }}" class="nav-link p-0">
                     <div class="row mb-3 border py-5">
                         <div class="col-6 col-md-4 col-lg-3">
                             <figure class="figure mb-0">
@@ -56,7 +56,7 @@
         <ul>
             @forelse($eventos as $evento)
             <li>
-                <a href="" class="nav-link p-0">
+                <a href="{{ $evento->path }}" class="nav-link p-0">
                     <div class="row mb-3 border py-5">
                         <div class="col-6 col-md-4 col-lg-3">
                             <figure class="figure mb-0">
@@ -83,7 +83,7 @@
         <ul>
             @forelse($paginas as $pagina)
             <li>
-                <a href="" class="nav-link p-0">
+                <a href="/{{ $pagina->slug }}" class="nav-link p-0">
                     <div class="col-6 col-md-8 col-lg-9">
                         <h4>{{$pagina->titulo}}</h4>
                     </div>
