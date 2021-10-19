@@ -125,8 +125,8 @@ $(function() {
     $(window).on('resize',function(){
 
         let zoom = Math.round(window.devicePixelRatio * 100)
-
-        if(zoom >=200)
+        let width =  window.screen.width
+        if(zoom >=200 && width > 450)
         {
 
             $('#menuhi').addClass('rounded-10');
@@ -219,8 +219,8 @@ $(function() {
     });
 
     let zoom = Math.round(window.devicePixelRatio * 100)
-
-        if(zoom >=200)
+    let width =  window.screen.width
+        if(zoom >=200 && width > 450)
         {
 
             $('#menuhi').addClass('rounded-10');
