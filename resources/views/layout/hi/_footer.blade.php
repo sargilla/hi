@@ -126,7 +126,7 @@
                             <a href="/" class="p-2">Índice del sitio</a> -
                         </li>
                         <li>
-                            <a href="/politicas-de-privacidad" class="p-2">Políticas y privacidad</a> -
+                            <a href="/politicas-y-privacidad" class="p-2">Políticas y privacidad</a> -
                         </li>
                         <li>
                             <a href="/accesibilidad" class="p-2">Accesibilidad</a>
