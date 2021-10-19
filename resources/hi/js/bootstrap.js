@@ -8,23 +8,23 @@ try {
 
     require('bootstrap');
 
-    window.Vue = require('vue');
+    // window.Vue = require('vue');
 
-	window.axios = require('axios');
+	// window.axios = require('axios');
 
-	window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+	// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-	let token = document.head.querySelector('meta[name="csrf-token"]');
+	// let token = document.head.querySelector('meta[name="csrf-token"]');
 
-	if (token) {
-	    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
-	} else {
-	    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-	}
-	
-	
+	// if (token) {
+	//     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+	// } else {
+	//     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+	// }
+
+
     window.$.scrollTo = require('jquery.scrollto');
-   
+
     window.niceScroll = require('jquery.nicescroll');
 
 	window.toastr = require('toastr');
@@ -34,7 +34,7 @@ try {
 
 	window.moment = require( 'moment' );
 
+    window.Cookies = require('js-cookie/src/js.cookie');
 } catch (e) {}
 
-require('./draft/header.js');
-window.Cookies = require('js-cookie/src/js.cookie');
+

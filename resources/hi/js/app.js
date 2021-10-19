@@ -1,5 +1,5 @@
 require('./bootstrap');
-require('./components');
+// require('./components');
 require('./plugins');
 
 // import store from "./store";
