@@ -1,8 +1,8 @@
 {
-    "/flatlab/all.js": "/flatlab/all.js",
-    "/hi/all.js": "/hi/all.js",
-    "/flatlab/all.css": "/flatlab/all.css",
-    "/hi/all.css": "/hi/all.css",
-    "/js/html5shiv.js": "/js/html5shiv.js",
-    "/js/respond.min.js": "/js/respond.min.js"
+    "/flatlab/all.js": "/flatlab/all.js?id=ef59ff2fc2096646467d",
+    "/hi/all.js": "/hi/all.js?id=55a8cf9392f0b04cc7d8",
+    "/flatlab/all.css": "/flatlab/all.css?id=6192cdd3f4f7763b5562",
+    "/hi/all.css": "/hi/all.css?id=6a9bb66eb34af7907237",
+    "/js/html5shiv.js": "/js/html5shiv.js?id=edadcd38965def795be6",
+    "/js/respond.min.js": "/js/respond.min.js?id=3d604d23c558df5849af"
 }
