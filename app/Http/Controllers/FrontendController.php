@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use App\Http\Requests;
+use Sigma\Eventos\Evento;
 use Sigma\Paginas\Pagina;
 use Sigma\Noticias\Noticia;
 use Illuminate\Http\Request;
@@ -43,23 +44,15 @@ class FrontendController extends Controller
 
      public function buscar(){
         $busqueda = request()->busqueda;
+
         if(strlen($busqueda) < 3){
             Toastr::warning('Debe ingresar una búsqueda de al menos 3 caracteres')->push();
             return redirect('/');
         }
-        $noticias = [];
-        $paginas = [];
-        $eventos =[];
-        // $productos = Producto::where('nombre', 'like', "%".request()->busqueda."%")->orWhere('descripcion', 'like', "%".$busqueda."%")->orWhere('codigo', 'like', "%".$busqueda."%");
-        // $marcas = $productos->pluck('marca')->filter()->unique()->sort();
-        // $etiquetas = config('productos.tags') ? Tag::deLosProductos($productos->pluck('id'))->get() : $productos->pluck('etiqueta')->filter()->unique()->sort();
-        // // dd($productos->publicados()->get());
-        // $productos = $productos->publicados()->filtrar($filtro);
-        // if(config('productos.pagination')){
-        //     $productos = $productos->paginate(config('productos.pagination_per_page'));
-        // } else {
-        //     $productos = $productos->get();
-        // }
+
+        $noticias = Noticia::where('titulo', 'like', "%" . $busqueda."%")->orWhere('contenido', 'like', "%" . $busqueda."%")->get();
+        $paginas = Pagina::where('titulo', 'like', "%" . $busqueda."%")->orWhere('contenido', 'like', "%" . $busqueda."%")->get();
+        $eventos = Evento::where('titulo', 'like', "%" . $busqueda."%")->orWhere('contenido', 'like', "%" . $busqueda."%")->get();
 
         return view('buscar', compact('noticias','paginas','eventos'));
     }
