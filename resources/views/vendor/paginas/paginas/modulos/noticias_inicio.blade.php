@@ -24,7 +24,7 @@
             @endforeach
         </div>
         <div class="text-center mt-2 mt-lg-5">
-            <a href="" class="btn btn-purple px-5 ">
+            <a href="/{{$campos['categoria']}}" class="btn btn-purple px-5 ">
                 Ver todas las notas
             </a>
         </div>
