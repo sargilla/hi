@@ -19,7 +19,7 @@
             <div class="mt-5 mt-md-0 col-md-5" id="div-video">
                 @if (isset($campos['video']))
                 <video ref="video" class="video-js vjs-fill vjs-fluid w-100" controls preload="auto"
-                    poster="/images/poster/{{ $campos['poster'] ?? ''}}" aria-label="{{$campos['video_alt'] ?? ''}}">
+                    poster="/images/poster/{{ $campos['poster'] ?? ''}}" aria-label="{{$campos['video_alt'] ?? 'gs'}}">
                     <source src="/storage/paginas/videos/{{$campos['video']}}" type="video/mp4" />
                 </video>
                 @endif

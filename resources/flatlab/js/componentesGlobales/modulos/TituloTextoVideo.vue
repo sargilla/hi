@@ -76,7 +76,9 @@
                 <label for="video" class="col-md-2 col-form-label">Video</label>
                 <div class="col-md-10">
                     <div v-if="campos.video" class="col-md-12 row">
-                        <div class="col-md-6">
+                        <div
+                            class="col-md-6 d-flex flex-column align-items-center"
+                        >
                             <video
                                 ref="video"
                                 class="video-js vjs-fill vjs-fluid"
@@ -91,6 +93,13 @@
                                     type="video/mp4"
                                 />
                             </video>
+
+                            <button
+                                class="btn btn-primary btn-xs my-3"
+                                @click="borrarVideo"
+                            >
+                                Cambiar Video
+                            </button>
                         </div>
                         <div class="col-md-6 mb-2 text-center">
                             <img
@@ -324,6 +333,10 @@ export default {
                 ia[i] = byteString.charCodeAt(i);
             }
             return new Blob([ia], { type: mimeString });
+        },
+        borrarVideo() {
+            this.cambiaCampo("video", "");
+            this.cambiaCampo("poster", "");
         }
     },
     computed: {
