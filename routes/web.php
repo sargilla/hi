@@ -79,6 +79,8 @@ Route::get('buscar', 'FrontendController@buscar')->name('buscar');
 Route::get('actualidad/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
 Route::get('historias-de-vida/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
 
+Route::post('/uploadVideo', 'FrontendController@uploadArchivo')->name('videos.upload');
+
 /* Rutas Paginas */
 Route::get('/{pagina?}', 'FrontendController@index');
 

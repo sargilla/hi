@@ -10,6 +10,7 @@ use Sigma\Noticias\Noticia;
 use Illuminate\Http\Request;
 use App\Filtros\ProductosFiltrar;
 use Sargilla\Toastr\Facades\Toastr;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * Class HomeController
@@ -42,7 +43,7 @@ class FrontendController extends Controller
         return view('noticias::show', compact(['tema','noticia']));
     }
 
-     public function buscar(){
+    public function buscar(){
         $busqueda = request()->busqueda;
 
         if(strlen($busqueda) < 3){
@@ -55,5 +56,32 @@ class FrontendController extends Controller
         $eventos = Evento::where('titulo', 'like', "%" . $busqueda."%")->orWhere('contenido', 'like', "%" . $busqueda."%")->get();
 
         return view('buscar', compact('noticias','paginas','eventos'));
+    }
+
+    public function uploadArchivo()
+    {
+        $validator = Validator::make(request()->all(), [
+            'archivo' => 'required|file|mimetypes:video/mp4,video/avi,video/mpeg,video/quicktime|max:2000000'
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 403);
+        } else {
+            $archivo = request()->archivo->store('/public/paginas/videos');
+            return response()->json(['errors' => false, 'mensaje' => 'Archivo subido correctamente', 'archivo' => basename($archivo)], 201);
+        }
+    }
+
+    public function uploadPoster()
+    {
+        // $validator = Validator::make(request()->all(), [
+        //     'archivo' => 'required|file|mimetypes:video/mp4,video/avi,video/mpeg,video/quicktime|max:200000'
+        // ]);
+        // if ($validator->fails()) {
+        //     return response()->json(['errors' => $validator->errors()], 403);
+        // } else {
+
+            $archivo = request()->archivo->store('/public/posters');
+            return response()->json(['errors' => false, 'mensaje' => 'Archivo subido correctamente', 'archivo' => basename($archivo)], 201);
+        // }
     }
 }

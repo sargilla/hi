@@ -34,7 +34,8 @@ return [
         public_path('upload'),
         public_path('images'),
         public_path('storage/noticia/fotos'),
-        public_path('storage/eventos/fotos')
+        public_path('storage/eventos/fotos'),
+        public_path('storage/paginas')
     ],
 
     /*
@@ -57,6 +58,8 @@ return [
         'small' => 'Intervention\Image\Templates\Small',
         'medium' => 'Intervention\Image\Templates\Medium',
         'large' => 'Intervention\Image\Templates\Large',
+        'poster' => 'App\ImagesFilters\Poster',
+        'mini-poster' => 'App\ImagesFilters\MiniPoster'
     ],
 
     /*

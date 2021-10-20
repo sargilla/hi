@@ -35,6 +35,11 @@ try {
 	window.moment = require( 'moment' );
 
     window.Cookies = require('js-cookie/src/js.cookie');
+
+
+
 } catch (e) {}
 
 
+import vjs from 'video.js';
+window.videojs = vjs;

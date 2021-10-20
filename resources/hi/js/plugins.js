@@ -128,7 +128,6 @@ $(function() {
         let width =  window.screen.width
         if(zoom >=200 && width > 450)
         {
-
             $('#menuhi').addClass('rounded-10');
             $('#menuhi').addClass('mx-auto');
             $('#menuhi input').addClass('w-100');

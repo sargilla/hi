@@ -1,5 +1,5 @@
 // Fonts
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 
 // Bootstrap
 @import "./css/bootstrap.css";
@@ -7,17 +7,15 @@
 // Bootstrap Reset
 @import "./css/bootstrap-reset.css";
 // Font awesome
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 
-
-
+@import "~video.js";
 
 // FlatLab Style
 @import "./css/style.css";
-
 
 // Sidebar
 @import "./css/slidebars.css";
@@ -26,9 +24,6 @@
 @import "./css/style-responsive.css";
 @import "./css/table-responsive.css";
 
-
-
-
 // Datatables Flatlab
 @import "./css/datatables.css";
 
@@ -36,6 +31,6 @@
 @import "~toastr/build/toastr.css";
 
 // Vue Multilect
-@import '~vue-multiselect/dist/vue-multiselect.min.css';
+@import "~vue-multiselect/dist/vue-multiselect.min.css";
 
 @import "./css/custom.css";

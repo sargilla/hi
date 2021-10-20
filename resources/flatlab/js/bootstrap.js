@@ -103,3 +103,5 @@ window.Form = Form;
 window.makeid = require('./makeid');
 window.route = require('./route');
 
+import vjs from 'video.js';
+window.videojs = vjs;
