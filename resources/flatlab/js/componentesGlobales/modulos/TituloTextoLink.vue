@@ -103,6 +103,15 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-lg-2 my-auto">Destino</label>
+                <div class="col-md-10">
+                    <select class="form-control" v-model="campos.target">
+                        <option value="">Misma Ventana</option>
+                        <option value="_blank">Ventana Nueva</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="link" class="col-md-2 col-form-label"
                     >Descripción del Link</label
                 >
@@ -156,6 +165,13 @@ export default {
         id_modulo_shooter: function() {
             return "#modulo" + this.id;
         }
+    },
+    mounted() {
+        let campos = this.campos;
+        if (!campos.target) {
+            campos.target = "";
+        }
+        this.$emit("update:campos", campos);
     }
 };
 </script>

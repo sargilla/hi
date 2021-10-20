@@ -11,7 +11,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <a href="{{isset($campos['link']) ? $campos['link'] : '#'}}" class="btn btn-purple px-4"
-                    aria-label="{{ $campos['link_description'] ?? ''}}">{{isset($campos['texto_link']) ?
+                    aria-label="{{ $campos['link_description'] ?? ''}}"
+                    target="{{ $campos['target'] ?? ''}}">{{isset($campos['texto_link']) ?
                     $campos['texto_link'] : 'Texto Vacio'}}</a>
             </div>
         </div>
