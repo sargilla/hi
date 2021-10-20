@@ -87,10 +87,10 @@
 <article class="expShowHV">
     <div class="container py-5 py-lg-3">
         <h2 class="text-primary my-5">
-            Más de {{ $noticia->tema->nombre }}
+            Más notas de {{ $noticia->tema->nombre }}
         </h2>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5" id="mas-noticias">
-            @foreach($noticias->inRandomOrder()->limit(5)->get() as $not)
+            @foreach($noticias->delTema($noticia->tema->slug)->inRandomOrder()->limit(5)->get() as $not)
             <div class="col mb-4">
                 <a href="/{{$noticia->tema->slug}}/{{ $not->slug}}" class="nav-link p-0">
                     <div class="card">
