@@ -12,12 +12,23 @@
     h3 {
         font-size: 1rem;
         font-weight: 600 !important;
+        align-items: center;
+        min-height: 4.5rem;
+        display: flex;
+        justify-content: center;
     }
     p {
+        &.texto {
+            min-height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         font-size: 1rem;
         font-weight: 600 !important;
         color: #1b74af !important;
     }
+
     .border-datos {
         font-size: 1.5rem;
         color: #1b74af !important;

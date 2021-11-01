@@ -14,14 +14,14 @@
                                 class="rounded-top bg-primary text-white px-2 {{$key == 0 ? 'py-2' : 'py-3'}} mb-0 text-center">
                                 {{$modulo['titulo']}}
                             </h3>
-                            <p class="text-center mt-3">
+                            <p class="texto text-center my-3 mx-2">
                                 {{$modulo['texto']}}
                             </p>
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-2 mx-auto">
+                                class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-2 mx-auto grow-1">
                                 {{$modulo['porcentaje']}}
                             </div>
-                            <p class="px-2 text-decoration-underline text-center mb-5">
+                            <p class="px-2 text-decoration-underline text-center mb-3">
                                 {{$modulo['texto_link']}}
                             </p>
                         </div>
