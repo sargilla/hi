@@ -94,7 +94,14 @@ a:focus {
 
 .form-signin .checkbox {
     margin-bottom: 14px;
+    display: flex;
+    align-items: center;
 }
+.form-signin .form-group input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
 .form-signin .checkbox {
     font-weight: normal;
     color: #b6b6b6;

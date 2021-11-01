@@ -82,6 +82,7 @@
             <div class="col-lg-10">
                 <editor
                     name="contenido"
+                    tipo="basico"
                     :contenido.sync="form.contenido"
                 ></editor>
                 <p
