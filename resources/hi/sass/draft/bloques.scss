@@ -9,15 +9,16 @@
     }
     a,
     a:link,
-    a:focus,
-    a:hover,
     a:visited {
-        outline: solid 2px #004f71 !important;
-        text-decoration: underline !important;
-        color: #004f71;
         span {
             text-decoration: underline;
+            color: #004f71;
         }
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
     }
     h2,
     p,
