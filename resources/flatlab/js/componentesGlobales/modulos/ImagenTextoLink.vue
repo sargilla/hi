@@ -4,7 +4,7 @@
             <span v-if="user.can['paginas-dragmodulos']"
                 ><i class="fa fa-arrows-alt my-handle"></i>
             </span>
-            {{ nombre }} [Modulo con Imagen, Texto e Link]
+            {{ nombre }} [Modulo con Imagen, Texto y Link]
             <span class="tools pull-right">
                 <a
                     class="fa fa-chevron-up accordion-toggle"
