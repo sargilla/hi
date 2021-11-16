@@ -1,6 +1,6 @@
 <article class="bloques-estilo-1">
     <div class="container py-5">
-        <h2>
+        <h2 class="mb-5">
             {{$campos['titulo']}}
         </h2>
         <div class="row justify-content-center col-lg-8 mx-auto">
@@ -11,7 +11,8 @@
                     <figure class="figure">
                         <img src="/images/paginas-grande/{{ $modulo['imagen'] }}" class="figure-img img-fluid "
                             alt="{{ $modulo['alt_image'] ?? ''}}">
-                        {{isset($modulo['texto']) ? $modulo['texto'] : ''}}
+                        <span>{{isset($modulo['texto']) ? $modulo['texto'] :
+                            ''}}</span>
                     </figure>
 
                 </a>

@@ -5,11 +5,19 @@
     }
     h3 {
         font-size: 1.25rem;
+        text-decoration: underline;
     }
+    a,
+    a:link,
     a:focus,
-    a:hover {
+    a:hover,
+    a:visited {
         outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
+        color: #004f71;
+        span {
+            text-decoration: underline;
+        }
     }
     h2,
     p,

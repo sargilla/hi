@@ -27,50 +27,42 @@
                     Redes sociales
                 </h2>
                 <ul class="col-8 col-sm-6 col-lg-7 col-xl-6 px-md-5 px-lg-0" id="lista-rs">
-                    <li class="d-flex flex-wrap align-items-start mb-4">
-                        <i class="fab fa-facebook-f border-2x border-white p-2"></i>
-                        <ul>
-                            <li class="mb-2">
-                                <a href="https://www.facebook.com/HumanityInclusionPeru/"
-                                    class="p-2 text-decoration-underline" target="_blank">Facebook Peru</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="https://www.facebook.com/Handicapinternationalcolombia"
-                                    class="p-2 text-decoration-underline" target="_blank">Facebook Colombia</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/"
-                                    class="p-2 text-decoration-underline" target="_blank">Facebook America Latina</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/"
-                                    class="p-2 text-decoration-underline" target="_blank">Facebook Cuba</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="d-flex flex-wrap align-items-start mb-4">
-                        <i class="fas fa-play border-2x border-white p-2"></i>
-                        <ul>
-                            <li class="mb-2">
-                                <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg"
-                                    class="p-2 text-decoration-underline" target="_blank">Youtube Colombia</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug"
-                                    class="p-2 text-decoration-underline" target="_blank">Youtube Cuba</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="d-flex flex-wrap align-items-start">
-                        <i class="fab fa-instagram border-2x border-white p-2"></i>
-                        <ul>
-                            <li class="mb-2">
-                                <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la"
-                                    class="p-2 text-decoration-underline" target="_blank">Instagram Cuba</a>
-                            </li>
-                        </ul>
+                    <i class="fab fa-facebook-f pt-3 "></i>
+                    <li class="mb-2">
 
+                        <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline"
+                            target="_blank"> Facebook Peru</a>
                     </li>
+                    <li class="mb-2">
+                        <a href="https://www.facebook.com/Handicapinternationalcolombia"
+                            class="p-2 text-decoration-underline" target="_blank">
+                            Facebook Colombia</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/"
+                            class="p-2 text-decoration-underline" target="_blank">
+                            Facebook America Latina</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/"
+                            class="p-2 text-decoration-underline" target="_blank">
+                            Facebook Cuba</a>
+                    </li>
+                    <i class="fas fa-play pt-3"></i>
+                    <li class="mb-2">
+                        <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg"
+                            class="p-2 text-decoration-underline" target="_blank">Youtube Colombia</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug"
+                            class="p-2 text-decoration-underline" target="_blank">Youtube Cuba</a>
+                    </li>
+                    <i class="fab fa-instagram pt-3"></i>
+                    <li class="mb-2">
+                        <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la"
+                            class="p-2 text-decoration-underline" target="_blank">Instagram Cuba</a>
+                    </li>
+
                 </ul>
                 <div class="col-4 col-sm-6 col-lg-5 col-xl-6 align-self-center text-center mb-5">
                     <a href="">
@@ -87,30 +79,51 @@
         <div class="container">
             <div class="row py-2">
                 <div class="col-12 col-md-6 d-flex align-items-center">
-                    @foreach([1,2] as $v)
                     <div class="col-6">
-                        <a href="" class="nav-link p-0">
+                        <a href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
+                            class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
                             <figure>
-                                <img src="/images/logo_{{$v}}.png" alt="logo de USAID" width="100%">
+                                <img src="/images/logo_1.png" alt="" width="100%">
                             </figure>
                         </a>
                     </div>
-                    @endforeach
+                    <div class="col-6">
+                        <a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
+                            aria-label="Ir a la unión europea, abre en una nueva ventana" target="_blank">
+                            <figure>
+                                <img src="/images/logo_2.png" alt="" width="100%">
+                            </figure>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-between">
-                    @foreach([3,5,4] as $v)
                     <div class="col-6 col-sm-4">
-                        <a href="" class="nav-link p-0">
+                        <a href="https://hi.org/" class="nav-link p-0"
+                            aria-label="Ir a Humanity and Inclusion, abre en una nueva ventana" target="_blank">
                             <figure>
-                                <img src="/images/logo_{{$v}}.png" alt="logo de humanity and inclusion" width="100%">
+                                <img src="/images/logo_3.png" alt="" width="100%">
                             </figure>
                         </a>
                     </div>
-                    @endforeach
+                    <div class="col-6 col-sm-4">
+                        <a href="https://coopi.org/en" class="nav-link p-0"
+                            aria-label="Ir a Cooperazione Internazionale, abre en una nueva ventana" target="_blank">
+                            <figure>
+                                <img src="/images/logo_5.png" alt="" width="100%">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <a href="https://www.savethechildren.org.pe/" class="nav-link p-0"
+                            aria-label="Ir a Save the children, abre en una nueva ventana" target="_blank">
+                            <figure>
+                                <img src="/images/logo_4.png" alt="" width="100%">
+                            </figure>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
     <div class="bg-dark p-4 px-md-0 py-md-3 mb-4em" id="copyright">
         <div class="d-md-flex flex-wrap justify-content-between">
@@ -137,9 +150,7 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </div>
-
 </footer>
