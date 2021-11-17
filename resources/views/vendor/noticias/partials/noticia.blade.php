@@ -20,16 +20,36 @@
 </article>
 <article id="expShowHVCredito1" class="expShowHV">
     <div class="container py-5 py-lg-3">
-        <a href="" class="nav-link p-0">
-            <div class="text-center">
-                <figure class="figure w-100 mb-3">
-                    <img class="figure-img img-fluid w-100 rounded-10  mb-0"
-                        src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                        alt="{{$noticia->imagenes[0]['alt'] ?? ''}}">
-                </figure>
-                <span class="p-2 text-primary">{{$noticia->imagenes[0]['creditos'] ?? ''}}</span>
+        <div class="card card-raised card-carousel">
+            <div id="carouselNoticia" class="carousel slide" data-ride="carousel" data-interval="3000">
+                @if (count($noticia->imagenes) > 1)
+                <ol class="carousel-indicators">
+                    @foreach ($noticia->imagenes as $item)
+                    <li data-target="#carouselNoticia" data-slide-to="{{$loop->index}}" class="active"></li>
+                    @endforeach
+                </ol>
+                @endif
+                <div class="carousel-inner">
+                    @foreach ($noticia->imagenes as $item)
+                    <div class="carousel-item {{ !$loop->index ? 'active' : ''}}">
+                        <img class="d-block w-100" src="/images/paginas-grande/{{ $item['imagen'] ?? '' }}"
+                            alt="{{ $noticia->titulo . ' - ' . $loop->index}}">
+                    </div>
+                    @endforeach
+
+                </div>
+                @if (count($noticia->imagenes) > 1)
+                <a class="carousel-control-prev" href="#carouselNoticia" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselNoticia" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+                @endif
             </div>
-        </a>
+        </div>
         <div class="mt-4">
             {!! $noticia->contenido !!}
         </div>

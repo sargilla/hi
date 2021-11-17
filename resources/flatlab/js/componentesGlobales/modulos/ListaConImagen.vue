@@ -265,13 +265,9 @@
                                                     >
                                                         <span
                                                             class="fas fa-check"
-                                                            v-if="
-                                                                item.link_target
-                                                            "
                                                         ></span>
                                                         <span
                                                             class="fas fa-times"
-                                                            v-else
                                                         ></span>
                                                     </label>
                                                     <label

@@ -60,7 +60,8 @@ borrar esta noticia?'])
 	            {data: 'marcada', name: 'noticias.marcada', className: "text-center"},
 	            {data: 'publicada', name: 'noticias.publicada', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}
-	        ]
+	        ],
+            "order": [[ 0, "desc" ]]
 		}).on('click', '.acciones button', function (e) {
 			e.preventDefault();
 			var accion = $(this).data("action")

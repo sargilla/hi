@@ -6618,7 +6618,7 @@ header.blue-bg .search:focus {
     display: inline-block;
 }
 
-/* .form-group
+.form-group
     input[type="checkbox"]:checked
     + .btn-group
     > label
@@ -6631,7 +6631,7 @@ header.blue-bg .search:focus {
     > label
     span:last-child {
     display: none;
-} */
+}
 
 .fileinput-button {
     position: relative;
