@@ -57,7 +57,7 @@
                 <div class="col-lg-6 row mb-3  {{$key % 2 == 0 ? 'border-dr' : ''}}">
                     <div class="col-12 col-md-6">
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}"
-                            aria-label="{{$modulo['link_description'] ??    ''}}">
+                            aria-label="{{$modulo['link_description'] ??    ''}}" target="_blank">
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0"
                                     src="/images/bloques/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
@@ -71,7 +71,7 @@
                         </h3>
                         <p class="mt-3">
                             <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
-                                aria-label="{{$modulo['link_description'] ?? ''}}">
+                                aria-label="{{$modulo['link_description'] ?? ''}}" target="_blank">
                                 <i class="fas fa-arrow-right mr-2"></i>
                                 Descargar el documento
                             </a>

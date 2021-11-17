@@ -15,7 +15,7 @@
                 @foreach($campos['modulos'] as $modulo)
                 <p>
                     <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white py-2"
-                        aria-label="{{ $modulo['link_description'] ?? ''}}">
+                        aria-label="{{ $modulo['link_description'] ?? ''}}" target="_blank">
                         {{isset($modulo['texto']) ? $modulo['texto'] : 'Texto Vacio'}}
                     </a>
                 </p>
