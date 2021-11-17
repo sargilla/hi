@@ -93,7 +93,7 @@
                 <div class="card">
                     <a href="" class="nav-link p-0">
                         <figure class="figure m-0">
-                            <img src="/images/paginas-grande/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
+                            <img src="/images/bloques/{{ isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg' }}"
                                 class="card-img-top rounded-10" alt="{{ $modulo['alt_imagen'] ?? '' }}">
                         </figure>
                         <div class="card-body">
