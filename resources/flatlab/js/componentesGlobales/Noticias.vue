@@ -62,7 +62,26 @@
         <div class="form-group row">
             <label for="tema" class="col-form-label col-lg-2">Tema</label>
             <div class="col-lg-10">
-                <select name="tema" class="form-control" v-model="form.tema_id">
+                <multiselect
+                    v-model="selectedTema"
+                    :taggable="true"
+                    @tag="addTema"
+                    label="nombre"
+                    :options="temas"
+                    :searchable="true"
+                    :close-on-select="true"
+                    placeholder="Elija un tema para la noticia"
+                    deselect-label="Enter para eliminar"
+                    select-label="Enter para seleccionar"
+                    @select="form.errors.clear()"
+                    v-if="user && user.can['temas-agregar']"
+                ></multiselect>
+                <select
+                    name="tema"
+                    class="form-control"
+                    v-model="form.tema_id"
+                    v-else
+                >
                     <option
                         v-for="(tema, index) in temas"
                         :value="tema.id"
@@ -204,9 +223,11 @@ export default {
                 pais: ""
             }),
             fecha: "",
-            temas: "",
+            temas: [],
+            selectedTema: "",
             urlSubir: route("uploadArchivoNoticia"),
-            urlBorrar: route("borrarArchivoNoticia")
+            urlBorrar: route("borrarArchivoNoticia"),
+            user: Laravel.user
         };
     },
 
@@ -282,6 +303,15 @@ export default {
                     this.temas = respuesta.data;
                 })
                 .catch(error => console.log(error.response.data));
+        },
+        addTema(tema) {
+            axios
+                .post(route("temas.store"), { nombre: tema })
+                .then(response => {
+                    this.temas.push(response.data);
+                    this.selectedTema = response.data;
+                })
+                .catch(errors => console.log(errors));
         }
     },
     computed: {
