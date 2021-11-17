@@ -60,7 +60,8 @@ return [
         'large' => 'Intervention\Image\Templates\Large',
         'poster' => 'App\ImagesFilters\Poster',
         'mini-poster' => 'App\ImagesFilters\MiniPoster',
-        'bloques' => 'App\ImagesFilters\Bloques'
+        'bloques' => 'App\ImagesFilters\Bloques',
+        'grande' => 'App\ImagesFilters\Grande'
     ],
 
     /*

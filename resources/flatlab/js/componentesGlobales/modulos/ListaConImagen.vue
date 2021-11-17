@@ -70,6 +70,22 @@
                     </div>
                 </div>
             </div>
+            <div class="form-group row">
+                <label for="alt_imagen" class="control-label col-lg-3 my-auto"
+                    >ALt de la Imágen</label
+                >
+                <div class="col-lg-9">
+                    <input
+                        name="alt_imagen"
+                        class="form-control"
+                        :value="campos.alt_imagen"
+                        @blur="
+                            cambiaCampo($event.target.name, $event.target.value)
+                        "
+                        placeholder="Alt de la imágen"
+                    />
+                </div>
+            </div>
             <!-- <div class="form-group">
                 <label for="link" class="control-label col-lg-3" >Link del Menu</label>
                 <div class="col-lg-9">

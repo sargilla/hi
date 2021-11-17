@@ -6,7 +6,7 @@
                     <figure class="figure mb-0 w-100">
                         <img class="img-fluid mb-0 w-100"
                             src="/images/paginas-grande/{{isset($campos['imagen']) ? $campos['imagen'] : 'familia.jpg'}}"
-                            alt="{{ $campos['alt_image'] ?? ''}}">
+                            alt="{{ $campos['alt_imagen'] ?? ''}}">
                     </figure>
                 </div>
                 <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
