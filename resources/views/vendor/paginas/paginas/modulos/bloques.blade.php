@@ -54,7 +54,7 @@
             </h2>
             <div class="row justify-content-between my-2 my-md-5">
                 @foreach($campos['modulos'] as $key => $modulo)
-                <div class="col-lg-6 row mb-3 mx-auto {{$key % 2 == 0 ? 'border-dr' : ''}}">
+                <div class="col-lg-6 row mb-3  {{$key % 2 == 0 ? 'border-dr' : ''}}">
                     <div class="col-12 col-md-6">
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}"
                             aria-label="{{$modulo['link_description'] ??    ''}}">
