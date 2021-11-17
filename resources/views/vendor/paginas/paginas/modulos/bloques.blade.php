@@ -28,7 +28,7 @@
                         <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="nav-link p-0"
                             aria-label="{{$modulo['link_description'] ?? ''}}">
                             <figure class="figure m-0">
-                                <img src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
+                                <img src="/images/bloques/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
                                     class="card-img-top rounded-10" alt="{{ $modulo['alt_imagen'] ?? '' }}">
                             </figure>
                             <div class="card-body mt-2">
@@ -60,7 +60,7 @@
                             aria-label="{{$modulo['link_description'] ??    ''}}">
                             <figure class="figure mb-0">
                                 <img class="img-fluid mb-0"
-                                    src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
+                                    src="/images/bloques/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
                                     alt="{{ $modulo['alt_imagen'] ?? '' }}">
                             </figure>
                         </a>
