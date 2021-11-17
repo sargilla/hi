@@ -185,6 +185,22 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="transcripcion_link" class="col-md-2 col-form-label"
+                    >Link a transcripción</label
+                >
+                <div class="col-md-10">
+                    <input
+                        name="transcripcion_link"
+                        class="form-control"
+                        :value="campos.transcripcion_link"
+                        @blur="
+                            cambiaCampo($event.target.name, $event.target.value)
+                        "
+                        placeholder="Link a transcripción"
+                    />
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="texto_boton" class="control-label col-lg-2 my-auto"
                     >Texto del Botón</label
                 >
