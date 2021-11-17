@@ -7,7 +7,7 @@
                     aria-label="{{$modulo['link_description'] ?? ''}}">
                     <div class="card h-100 h-100">
                         <figure class="figure m-0 h-60">
-                            <img src="/images/paginas-grande/{{ $modulo['imagen'] }}" class="card-img-top h-100"
+                            <img src="/images/bloques/{{ $modulo['imagen'] }}" class="card-img-top h-100"
                                 alt="{{ $modulo['alt_image'] ?? '' }}">
                         </figure>
                         <div class="card-body">

@@ -59,7 +59,8 @@ return [
         'medium' => 'Intervention\Image\Templates\Medium',
         'large' => 'Intervention\Image\Templates\Large',
         'poster' => 'App\ImagesFilters\Poster',
-        'mini-poster' => 'App\ImagesFilters\MiniPoster'
+        'mini-poster' => 'App\ImagesFilters\MiniPoster',
+        'bloques' => 'App\ImagesFilters\Bloques'
     ],
 
     /*
