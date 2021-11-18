@@ -17,17 +17,6 @@
         display: flex;
         justify-content: center;
     }
-    // p {
-    //     &.texto {
-    //         min-height: 4rem;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-    //     font-size: 1rem;
-    //     font-weight: 600 !important;
-    //     color: #1b74af !important;
-    // }
 
     .border-datos {
         font-size: 1.5rem;
@@ -45,8 +34,20 @@
             width: 100%;
         }
     }
+
     .link-di {
         font-size: 0.9rem;
         text-decoration: underline !important;
+    }
+
+    .card {
+        border: 1px solid #1b74af;
+        border-radius: 0.6rem;
+        p {
+            min-height: 7.5rem;
+            color: #fff;
+            text-align: center;
+            text-decoration: underline;
+        }
     }
 }

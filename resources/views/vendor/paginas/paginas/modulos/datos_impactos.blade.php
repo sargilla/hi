@@ -43,14 +43,13 @@
             <div class="col mb-4">
                 <a href="{{$modulo['link'] ?? ''}}" class="nav-link p-0 h-100" target="blank"
                     aria-label="{{$modulo['link_description'] ?? ''}}">
-                    <div class="card h-100" style="border:1px solid #1b74af;border-radius:.6rem;">
+                    <div class="card h-100">
                         <div class="my-4">
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-4 mx-auto grow-1 text-bold">
+                                class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-4 mx-auto text-bold">
                                 {{$modulo['porcentaje']}}
                             </div>
-                            <p class="bg-primary text-white p-4 text-decoration-underline text-center mb-3 d-flex align-items-center"
-                                style="min-height: 10rem">
+                            <p class="bg-primary p-4 mb-3 d-flex align-items-center">
                                 {{$modulo['texto_link']}}
                             </p>
                         </div>
