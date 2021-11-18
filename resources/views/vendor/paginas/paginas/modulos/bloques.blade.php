@@ -20,7 +20,7 @@
         <div class="row mb-3 border py-5">
             <div class="col-12 col-md-4 col-lg-3">
                 <figure class="figure mb-0">
-                    <img src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
+                    <img src="/images/bloques/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
                         class="figure-img img-fluid w-100 rounded mb-0" alt="{{ $modulo['alt_imagen'] ?? '' }}">
                 </figure>
             </div>
