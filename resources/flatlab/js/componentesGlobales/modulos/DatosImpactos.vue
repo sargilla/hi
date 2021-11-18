@@ -61,7 +61,7 @@
                     >Titulo Principal</label
                 >
                 <div class="col-lg-9">
-                    <input
+                    <!-- <input
                         name="nombre"
                         class="form-control"
                         v-model="campos.titulo_principal"
@@ -69,8 +69,14 @@
                             cambiaCampo($event.target.name, $event.target.value)
                         "
                         placeholder="Titulo Principal"
+                    /> -->
+                    <editor
+                        :contenido.sync="campos.titulo_principal"
+                        tipo="basico"
+                        @blur="
+                            cambiaCampo($event.target.name, $event.target.value)
+                        "
                     />
-                    <!-- <editor :contenido.sync="campos.titulo_principal" @blur="cambiaCampo($event.target.name,$event.target.value)"/> -->
                 </div>
             </div>
             <div class="form-group row">
@@ -95,7 +101,7 @@
                         </div>
                         <div class="card-body bg-white text-dark">
                             <div class="task-content">
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <div class="col-lg-12 row">
                                         <label class="col-lg-2 my-auto"
                                             >Titulo</label
@@ -118,7 +124,7 @@
                                             placeholder="Icono del módulo"
                                         />
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <div class="col-lg-12 row">
                                         <label class="col-lg-2 my-auto"

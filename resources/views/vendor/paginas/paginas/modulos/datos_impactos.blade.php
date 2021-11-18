@@ -1,4 +1,4 @@
-<article class="datos_impacto pt-5 pb-lg-5">
+{{-- <article class="datos_impacto pt-5 pb-lg-5">
     <div class="text-center mb-5">
         <h2>{{$campos['titulo_principal'] }}</h2>
     </div>
@@ -22,6 +22,35 @@
                                 {{$modulo['porcentaje']}}
                             </div>
                             <p class="px-2 text-decoration-underline text-center mb-3">
+                                {{$modulo['texto_link']}}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</article> --}}
+
+<article class="datos_impacto pt-5 pb-lg-5">
+    <div class="text-center mb-5">
+        <h2>{!!$campos['titulo_principal'] !!}</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
+            @foreach($campos['modulos'] as $key => $modulo)
+            <div class="col mb-4">
+                <a href="{{$modulo['link'] ?? ''}}" class="nav-link p-0 h-100" target="blank"
+                    aria-label="{{$modulo['link_description'] ?? ''}}">
+                    <div class="card h-100" style="border:1px solid #1b74af;border-radius:.6rem;">
+                        <div class="my-4">
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center border-datos rounded-circle p-5 mb-4 mx-auto grow-1 text-bold">
+                                {{$modulo['porcentaje']}}
+                            </div>
+                            <p class="bg-primary text-white p-4 text-decoration-underline text-center mb-3 d-flex align-items-center"
+                                style="min-height: 10rem">
                                 {{$modulo['texto_link']}}
                             </p>
                         </div>
