@@ -207,6 +207,22 @@
                             <div class="task-content">
                                 <div class="form-group m-0">
                                     <div class="col-lg-12 row">
+                                        <label class="col-lg-2 my-auto"
+                                            >País</label
+                                        >
+                                        <input
+                                            class="form-control col-lg-10 "
+                                            v-model="modulo.pais"
+                                            placeholder="Pais (opcional)"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-white text-dark">
+                            <div class="task-content">
+                                <div class="form-group m-0">
+                                    <div class="col-lg-12 row">
                                         <label
                                             for="imagen"
                                             class="control-label col-lg-2"

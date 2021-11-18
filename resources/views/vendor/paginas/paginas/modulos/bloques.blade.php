@@ -1,6 +1,6 @@
 @if ($campos['columnas'] == 1)
 @foreach (collect($campos['modulos']) as $modulo)
-<div class="widget clearfix ">
+{{-- <div class="widget clearfix ">
     <div class="feature-box fbox-border fbox-effect bg-primary text-white shadow">
         <h3>{{ $modulo['titulo'] }}</h3>
         <div class="fbox-icon">
@@ -9,7 +9,41 @@
             </a>
         </div>
     </div>
-</div>
+</div> --}}
+@if($campos['estilo'] == 2)
+<article class="noticias-3">
+    <div class="container py-5 expRes">
+        <h2 class="text-center">
+            Documentos de diagnósticos
+        </h2>
+        @foreach($campos['modulos'] as $modulo)
+        <div class="row mb-3 border py-5">
+            <div class="col-12 col-md-4 col-lg-3">
+                <figure class="figure mb-0">
+                    <img src="/images/paginas-grande/{{ isset($modulo['imagen']) ? $modulo['imagen'] : 'familia.jpg' }}"
+                        class="figure-img img-fluid w-100 rounded mb-0" alt="{{ $modulo['alt_imagen'] ?? '' }}">
+                </figure>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9 py-3">
+                <p class="col-md-6 p-0">
+                    {{ $modulo['pais'] ?? ''}}
+                </p>
+                <h3 class="mt-4">
+                    {{$modulo['texto']}}
+                </h3>
+                <p class="mt-3">
+                    <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
+                        aria-label="{{$modulo['link_description'] ?? ''}}">
+                        <i class="fas fa-arrow-right mr-2"></i>
+                        Descargar el documento
+                    </a>
+                </p>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</article>
+@endif
 @endforeach
 @else
 @if(isset($campos['estilo']))
