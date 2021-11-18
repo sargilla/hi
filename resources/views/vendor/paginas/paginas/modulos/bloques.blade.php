@@ -4,8 +4,9 @@
     <div class="feature-box fbox-border fbox-effect bg-primary text-white shadow">
         <h3>{{ $modulo['titulo'] }}</h3>
         <div class="fbox-icon">
-            <a class="text-white" href="#"><i class="{{ $modulo['icono'] }} i-alt"></i></a>
-            <p>{{ $modulo['texto'] }}</p>
+            <a class="text-white" href="#">
+                <p>{{ $modulo['texto'] ?? '' }}</p>
+            </a>
         </div>
     </div>
 </div>
