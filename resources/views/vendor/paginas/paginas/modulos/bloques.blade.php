@@ -1,15 +1,4 @@
 @if ($campos['columnas'] == 1)
-@foreach (collect($campos['modulos']) as $modulo)
-{{-- <div class="widget clearfix ">
-    <div class="feature-box fbox-border fbox-effect bg-primary text-white shadow">
-        <h3>{{ $modulo['titulo'] }}</h3>
-        <div class="fbox-icon">
-            <a class="text-white" href="#">
-                <p>{{ $modulo['texto'] ?? '' }}</p>
-            </a>
-        </div>
-    </div>
-</div> --}}
 @if($campos['estilo'] == 2)
 <article class="noticias-3">
     <div class="container py-5 expRes">
@@ -33,7 +22,7 @@
                 </h3>
                 <p class="mt-3">
                     <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
-                        aria-label="{{$modulo['link_description'] ?? ''}}">
+                        aria-label="{{$modulo['link_description'] ?? ''}}" target="_blank">
                         <i class="fas fa-arrow-right mr-2"></i>
                         Descargar el documento
                     </a>
@@ -44,7 +33,6 @@
     </div>
 </article>
 @endif
-@endforeach
 @else
 @if(isset($campos['estilo']))
 @if($campos['estilo'] == 1)

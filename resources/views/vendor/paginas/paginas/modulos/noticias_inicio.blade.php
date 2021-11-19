@@ -122,7 +122,6 @@
             </div>
             @endforeach
         </div>
-
         @empty
         <div class="alert alert-warning mx-auto">
             SIN NOTICIAS
