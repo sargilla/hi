@@ -110,13 +110,9 @@ export default {
             this.$emit("update:contenido", this.editorData);
         },
         updateContenido() {
+            console.log("hola " + this.contenido + " chau");
             this.editorData = this.contenido;
         }
-        // UploadAdapter(editor) {
-        //     editor.plugins.get( 'FileRepository' ).createUploadAdapter = (loader) => {
-        //         return new UploadAdapter( loader, this.route);
-        //     };
-        // },
     },
     created() {
         this.updateContenido();

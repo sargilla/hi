@@ -330,6 +330,16 @@ export default {
     watch: {
         fecha: function(val) {
             this.form.created_at = moment(val).format("YYYY-MM-DD");
+        },
+        selectedTema: function(value) {
+            this.form.tema_id = value.id;
+        },
+        temas: function(val) {
+            if (this.noticia) {
+                this.selectedTema = val.find(
+                    tema => tema.id == this.noticia.tema_id
+                );
+            }
         }
     }
 };
