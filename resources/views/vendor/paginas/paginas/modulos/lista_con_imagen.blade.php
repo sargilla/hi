@@ -10,7 +10,7 @@
                     </figure>
                 </div>
                 <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
-                    <h3>
+                    <h2>
                         @if(isset($campos['titulo']))
                         {!! $campos['titulo']!!}
                         @else
@@ -18,7 +18,7 @@
                             Texto Vacio
                         </p>
                         @endif
-                    </h3>
+                    </h2>
                     @foreach ($campos['items'] as $item)
                     <a href="{{$item['link'] ?? ''}}" aria-label="{{ $item['link_description'] ?? ''}}"
                         target="{{ $item['link_target'] ? '_blank' : ''}}">

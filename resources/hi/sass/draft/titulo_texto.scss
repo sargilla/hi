@@ -1,176 +1,162 @@
-.estilo-1
-{
-    h1,h2
-    {
-        color: #004F71 !important;
+.estilo-1 {
+    h1,
+    h2 {
+        color: #004f71 !important;
         font-weight: bold !important;
     }
-    h2 
-    {
+    h2 {
         font-size: 1.2rem;
     }
-    h3
-    {
-        color:#1B74AF !important; 
+    h3 {
+        color: #1b74af !important;
     }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
-    p 
-    {
-        color:rgb(8, 7, 7) !important;
-    }
-}
-.titulo_texto_link
-{
-    h1,h2
-    {
-        color: #004F71 !important;
-        font-weight: bold !important;
-    }
-    p 
-    {
-        color: #004F71 !important;
-    }
-    h2 
-    {
-        font-size: 2rem;
-    }
-    h3
-    {
-        color:#1B74AF !important; 
-    }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
-        text-decoration: underline !important;
-    }
-}
-.imagen-titulo-link-1
-{
-    h1,h2
-    {
-        font-weight: bold !important;
-    }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
-        text-decoration: underline !important;
-    }
-    h2,p,h5,h1
-    {
-        color: #004F71 !important;
-    }
-    #tematicas h5 
-    {
+    p {
         color: rgb(8, 7, 7) !important;
     }
 }
-.estilo-2,.imagen-titulo-link-2,.titulo-texto-imagen
-{
+.titulo_texto_link {
+    h1,
+    h2 {
+        color: #004f71 !important;
+        font-weight: bold !important;
+    }
+    p {
+        color: #004f71 !important;
+    }
     h2 {
         font-size: 2rem;
     }
-    h3 
-    {
-        font-size: 1.1rem;
+    h3 {
+        color: #1b74af !important;
     }
-    h1,h2,h5,.titulo
-    {
-        font-weight: bold !important;
-    }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
-    .titulo 
-    {
-        color: #004F71 !important;
+}
+.imagen-titulo-link-1 {
+    h1,
+    h2 {
+        font-weight: bold !important;
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
+    }
+    h2,
+    p,
+    h5,
+    h1 {
+        color: #004f71 !important;
+    }
+    #tematicas h5 {
+        color: rgb(8, 7, 7) !important;
+    }
+}
+.estilo-2,
+.imagen-titulo-link-2,
+.titulo-texto-imagen {
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    h1,
+    h2,
+    h5,
+    .titulo {
+        font-weight: bold !important;
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
+    }
+    .titulo {
+        color: #004f71 !important;
         font-size: 1.2rem;
     }
-    h3,p,h5
-    {
-        color: #004F71 !important;
-    } 
+    h3,
+    p,
+    h5 {
+        color: #004f71 !important;
+    }
 
-    .docRec
-    {   
-        background-color: #E35205 !important;
-        h2,h3,p,h5
-        {   
+    .docRec {
+        background-color: #e35205 !important;
+        h2,
+        h3,
+        p,
+        h5 {
             color: #fff !important;
         }
-        a 
-        {
+        a {
             text-decoration: underline !important;
         }
     }
-    .referencia 
-    {
-        background-color: #5BC2E7 !important;
-        
-        h5 
-        {
-            color: #004F71 !important;
+    .referencia {
+        background-color: #5bc2e7 !important;
+
+        h5 {
+            color: #004f71 !important;
         }
-        a 
-        {
-            color:rgb(8, 7, 7) !important;
+        a {
+            color: rgb(8, 7, 7) !important;
             text-decoration: underline !important;
         }
-        .link-p
-        {
-            color:rgb(8, 7, 7) !important;
+        .link-p {
+            color: rgb(8, 7, 7) !important;
         }
     }
 }
-.lista-imagen-titulo-texto-1
-{
-    h1 
-    {
+.lista-imagen-titulo-texto-1 {
+    h1 {
         font-weight: bold !important;
     }
-    #practicas
-    {
-        h3 {
-            color: #004F71 !important;
-        font-weight: bold !important;
+    #practicas {
+        h3,
+        a,
+        a:link,
+        a:visited,
+        a:hover {
+            color: #004f71 !important;
+            font-weight: bold !important;
         }
-        
-        li 
-        {
+
+        li {
             list-style-type: none;
         }
     }
-    p,h2 
-    {
-        color:#1B74AF !important; 
+    p,
+    h2 {
+        color: #1b74af !important;
     }
-    a:hover, a:focus 
-    {
-        outline: solid 2px #004F71 !important;
+    a:hover,
+    a:focus {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
 }
-@media screen and (min-width:992px)
-{
- .estilo-2,.imagen-titulo-link-2,.titulo-texto-imagen
-{
-    .docRec
-    {
-        color: #fff !important;
-        background-color: #E35205 !important;
+@media screen and (min-width: 992px) {
+    .estilo-2,
+    .imagen-titulo-link-2,
+    .titulo-texto-imagen {
+        .docRec {
+            color: #fff !important;
+            background-color: #e35205 !important;
 
-        .border-dr
-        {
-            border-bottom: unset !important;
-            border-right: solid 2px #fff !important;        
+            .border-dr {
+                border-bottom: unset !important;
+                border-right: solid 2px #fff !important;
+            }
         }
-        
     }
 }
-}
-
