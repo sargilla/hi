@@ -16,7 +16,7 @@
                 <p>
                     DESCARGAR PDF:
                 </p>
-                <p>
+                <p class="text-center">
 
                     <a class="btn btn-purple px-5" href="{{isset($campos['link']) ? $campos['link'] : '#'}}"
                         title="{{isset($campos['texto_link']) ? $campos['texto_link'] : 'Falta escribir el texto'}}"
