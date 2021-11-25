@@ -17,7 +17,8 @@
                     DESCARGAR PDF:<a class="btn btn-purple px-5"
                         href="{{isset($campos['link']) ? $campos['link'] : '#'}}"
                         title="{{isset($campos['texto_link']) ? $campos['texto_link'] : 'Falta escribir el texto'}}"
-                        aria-label="{{ $campos['link_description'] ?? ''}}">{{isset($campos['texto_link']) ?
+                        aria-label="{{ $campos['link_description'] ?? ''}}"
+                        target="{{ $campos['target'] ?? ''}}">{{isset($campos['texto_link']) ?
                         $campos['texto_link'] : 'Falta escribir el texto'}}</a>
                 </p>
             </div>
@@ -36,6 +37,7 @@
                             alt="{{ $campos['alt_image'] ?? ''}}">
                     </figure>
                 </div>
+
                 <div class="col-12 col-sm-6 py-lg-4 mt-3 mt-sm-0">
                     <h3>
                         @if(isset($campos['texto']))
@@ -46,7 +48,8 @@
                         </p>
                         @endif
                     </h3>
-                    <a href="{{$campos['link'] ?? ''}}" aria-label="{{ $campos['link_description'] ?? ''}}">
+                    <a href="{{$campos['link'] ?? ''}}" aria-label="{{ $campos['link_description'] ?? ''}}"
+                        target="{{ $campos['target'] ?? ''}}">
                         @if(isset($campos['texto_link']))
                         <p class="link-p">
                             {{ $campos['texto_link']}}
