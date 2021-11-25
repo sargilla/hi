@@ -1,223 +1,180 @@
-.noticias-3
-{
-    background-color: #6A2A5B !important;
-    h1,h2,h3
-    {
+.noticias-3 {
+    background-color: #6a2a5b !important;
+    h1,
+    h2,
+    h3 {
         font-weight: bold !important;
-    }  
-    .container 
-    {    
+    }
+    .container {
         color: #fff !important;
     }
-   
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71;
+
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71;
         text-decoration: underline !important;
     }
-    h5
-    {       
+    h5 {
         font-size: 1.25rem;
         font-weight: bold !important;
     }
-    .expRes p:first-child 
-    {
-        
+    .expRes p:first-child {
         border-bottom: solid 2px #fff !important;
     }
-    .expRes img 
-    {
-        border-bottom: solid 4px #fff !important;
-        border-right:  solid 4px #fff !important;
+    .expRes img {
+        // border-bottom: solid 4px #fff !important;
+        // border-right:  solid 4px #fff !important;
     }
-    .border
-    {
+    .border {
         border: unset !important;
         border-bottom: solid 2px #fff !important;
     }
 }
-.noticias-1
-{       
-        background-color: #EEEEEE !important;
-        h2 
-        {
-            font-size: 2rem;
-            font-weight: bold !important;
-            color: #004F71 !important;
-        }
-        h3
-        {
-            color: #004F71 !important;
-            font-size: 1.25rem;
-            font-weight: bold !important;
-        }
-        p 
-        {
-            color: #004F71 !important;         
-        }
-        img 
-        {
-            border-radius: 10px !important;
-            cursor: pointer;
-        }
-        .div-focus a:focus,.div-focus a:hover
-        {
-            outline: solid 2px #004F71 !important;
-            text-decoration: underline !important;
-        }
-        .div-focus .card
-        {
-            background: unset !important;
-            border: 0;
-        }
-}
-.noticias-2
-{
-    h1,h2
-    {
-        font-weight: bold;
-        color: #004F71 !important;
+.noticias-1 {
+    background-color: #eeeeee !important;
+    h2 {
+        font-size: 2rem;
+        font-weight: bold !important;
+        color: #004f71 !important;
     }
-    h2
-    {
-        color: #004F71 !important; 
-        font-size: 1.3rem;
-        
-    }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
-        text-decoration: underline !important;
-    }
-    .card
-    {
-        background: unset !important;
-        border: 0;
-        h5
-        {
-            color: #004F71 !important;
-            font-size: 1.25rem;
-            font-weight: bold !important;
-        }
-        p 
-        {
-            color: #004F71 !important;
-            border-bottom: solid 2px #004F71;
-        }
-    }
-}
-.noticias-4
-{
-    h1,h2
-    {
-        color: #004F71 !important;
+    h3 {
+        color: #004f71 !important;
+        font-size: 1.25rem;
         font-weight: bold !important;
     }
-    h2 
-    {
-        font-size: 1.2rem;
-        color: #004F71 !important; 
+    p {
+        color: #004f71 !important;
     }
-    a:focus, a:hover 
-    {
-        outline: solid 2px #004F71 !important;
+    img {
+        border-radius: 10px !important;
+        cursor: pointer;
+    }
+    .div-focus a:focus,
+    .div-focus a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
-    .card
-    {
+    .div-focus .card {
         background: unset !important;
         border: 0;
-        h5
-        {
-            color: #004F71 !important;
+    }
+}
+.noticias-2 {
+    h1,
+    h2 {
+        font-weight: bold;
+        color: #004f71 !important;
+    }
+    h2 {
+        color: #004f71 !important;
+        font-size: 1.3rem;
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
+    }
+    .card {
+        background: unset !important;
+        border: 0;
+        h5 {
+            color: #004f71 !important;
             font-size: 1.25rem;
             font-weight: bold !important;
         }
-        p 
-        {
-            color: #004F71 !important;
-            border-bottom: solid 2px #004F71;
+        p {
+            color: #004f71 !important;
+            border-bottom: solid 2px #004f71;
         }
     }
 }
-.eventos
-{
-        h1,h2
-        {
-            font-weight: bold;
-           
+.noticias-4 {
+    h1,
+    h2 {
+        color: #004f71 !important;
+        font-weight: bold !important;
+    }
+    h2 {
+        font-size: 1.2rem;
+        color: #004f71 !important;
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
+    }
+    .card {
+        background: unset !important;
+        border: 0;
+        h5 {
+            color: #004f71 !important;
+            font-size: 1.25rem;
+            font-weight: bold !important;
         }
-        h1 {
-            color: #004F71 !important; 
+        p {
+            color: #004f71 !important;
+            border-bottom: solid 2px #004f71;
         }
-        h2 
-        {
-            color: #004F71 !important;
-            font-size: 1.2rem;
-        }
-        a:focus, a:hover 
-        {
-            outline: solid 2px #004F71 !important;
-            text-decoration: underline !important;
-        }
-        .card
-        {
-            background: unset !important;
-            border: 0 !important;
-            figure 
-            {
-                border: 10px solid #004F71 !important;
-            }
-            .card-body
-            {
-                background-color: #EEEEEE !important;
-            }
-            p
-            {
-                color: #1B74AF !important;
-            }
-        }
+    }
 }
-@media screen and (min-width:768px)
-{
-    .noticias-2
-    {
-        h2 
-        {
+.eventos {
+    h1,
+    h2 {
+        font-weight: bold;
+    }
+    h1 {
+        color: #004f71 !important;
+    }
+    h2 {
+        color: #004f71 !important;
+        font-size: 1.2rem;
+    }
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
+        text-decoration: underline !important;
+    }
+    .card {
+        background: unset !important;
+        border: 0 !important;
+        figure {
+            border: 10px solid #004f71 !important;
+        }
+        .card-body {
+            background-color: #eeeeee !important;
+        }
+        p {
+            color: #1b74af !important;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .noticias-2 {
+        h2 {
             font-size: 2rem;
         }
     }
-    .noticias-4
-    {
-        h2 
-        {
+    .noticias-4 {
+        h2 {
             font-size: 1.7rem;
         }
     }
 }
-@media screen and (min-width:992px)
-{
-    .noticias-4
-    {
-        h2 
-        {
+@media screen and (min-width: 992px) {
+    .noticias-4 {
+        h2 {
             font-size: 2rem;
         }
     }
 }
-@media screen and (min-width:1200px)
-{
-    .noticias-2
-    {
-        h2 
-        {
+@media screen and (min-width: 1200px) {
+    .noticias-2 {
+        h2 {
             font-size: 3rem;
         }
     }
-    .noticias-4
-    {
-        h2 
-        {
+    .noticias-4 {
+        h2 {
             font-size: 2.5rem;
         }
     }
