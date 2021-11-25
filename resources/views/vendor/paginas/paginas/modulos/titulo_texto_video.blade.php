@@ -16,7 +16,7 @@
                 </div>
                 @endif
             </div>
-            <div class="mt-5 mt-md-0 col-md-5" id="div-video">
+            <div class="mt-5 mt-md-0 col-md-5 pt-2" id="div-video">
                 @if (isset($campos['video']))
                 <video ref="video" class="video-js vjs-fill vjs-fluid w-100" controls preload="auto"
                     poster="/images/poster/{{ $campos['poster'] ?? ''}}" aria-label="{{$campos['video_alt'] ?? 'gs'}}">
