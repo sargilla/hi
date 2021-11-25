@@ -14,8 +14,11 @@
                 {!! $campos['texto']!!}
                 @endif
                 <p>
-                    DESCARGAR PDF:<a class="btn btn-purple px-5"
-                        href="{{isset($campos['link']) ? $campos['link'] : '#'}}"
+                    DESCARGAR PDF:
+                </p>
+                <p>
+
+                    <a class="btn btn-purple px-5" href="{{isset($campos['link']) ? $campos['link'] : '#'}}"
                         title="{{isset($campos['texto_link']) ? $campos['texto_link'] : 'Falta escribir el texto'}}"
                         aria-label="{{ $campos['link_description'] ?? ''}}"
                         target="{{ $campos['target'] ?? ''}}">{{isset($campos['texto_link']) ?
