@@ -2,8 +2,8 @@
 @if($campos['estilo'] == 2)
 <article class="noticias-3">
     <div class="container py-5 expRes">
-        <h2 class="">
-            {{$modulo['titulo']??''}}
+        <h2>
+            {{$campos['titulo']??''}}
         </h2>
         @foreach($campos['modulos'] as $modulo)
         <div class="row mb-3 border py-5">
