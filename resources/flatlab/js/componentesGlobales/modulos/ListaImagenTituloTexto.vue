@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body bg-white text-dark">
+                        <!-- <div class="card-body bg-white text-dark">
                             <div class="task-content">
                                 <div class="form-group m-0">
                                     <div class="col-lg-12 row">
@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="card-body bg-white text-dark">
                             <div class="task-content">
                                 <div class="form-group m-0">
