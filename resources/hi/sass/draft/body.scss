@@ -29,10 +29,11 @@ html {
         a{
         color: #5FE6E6 !important;
         }
-        a:visited{
-            color: #78785A !important;
-            }
+
     }
+    a:visited{
+        color: #78785A !important;
+        }
     .breadcrumb-item a , .breadcrumb-item + .active{
         color: unset !important;
     }
@@ -45,13 +46,33 @@ html {
     h1,h2,h3,h4,h5{
         color: #50d0a0 !important;
     }
-}
+    header
+        {.navbar
+            {
+                box-shadow: unset !important;
+                border-bottom-right-radius: unset !important;
+                border-bottom-left-radius: unset !important;
+                margin-top: 0 !important;
+                padding: 0 !important;
+            }
+            #logo-mobile {
+                border-bottom: 0;
+            }
+
+        }
+    .eventosShow
+            {
+                a:visited {
+                    color: #f0f0f0 !important;
+                }
+            }
+    }
 #main {
     padding: 0 !important;
 }
 .btn-purple {
-    color: #fff !important;
-    background-color: #6a2a5b;
+    color: #fff;
+    background-color: #6a2a5b !important;
     border-color: #6a2a5b;
     font-weight: bold;
     text-decoration: none !important;

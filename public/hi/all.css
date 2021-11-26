@@ -18192,7 +18192,7 @@ html {
 .bg-dark footer a, .bg-dark header a {
   color: #5FE6E6 !important;
 }
-.bg-dark footer a:visited, .bg-dark header a:visited {
+.bg-dark a:visited {
   color: #78785A !important;
 }
 .bg-dark .breadcrumb-item a, .bg-dark .breadcrumb-item + .active {
@@ -18207,14 +18207,27 @@ html {
 .bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5 {
   color: #50d0a0 !important;
 }
+.bg-dark header .navbar {
+  box-shadow: unset !important;
+  border-bottom-right-radius: unset !important;
+  border-bottom-left-radius: unset !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+.bg-dark header #logo-mobile {
+  border-bottom: 0;
+}
+.bg-dark .eventosShow a:visited {
+  color: #f0f0f0 !important;
+}
 
 #main {
   padding: 0 !important;
 }
 
 .btn-purple {
-  color: #fff !important;
-  background-color: #6a2a5b;
+  color: #fff;
+  background-color: #6a2a5b !important;
   border-color: #6a2a5b;
   font-weight: bold;
   text-decoration: none !important;
@@ -18486,7 +18499,7 @@ header .navbar a:focus-visible {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    background: #004f71 !important;
+    background: #004f71;
     padding-top: 2px;
   }
   header nav .navbar-filtro li {
@@ -18673,12 +18686,12 @@ footer #li-smu .skip-main-up {
 }
 
 #mas-noticias h3 {
-  color: #004f71 !important;
+  color: #004f71;
   font-size: 1.25rem;
   font-weight: bold !important;
 }
 #mas-noticias p {
-  color: #004f71 !important;
+  color: #004f71;
   border-bottom: solid 2px #004f71;
 }
 #mas-noticias .card {
@@ -18841,7 +18854,7 @@ footer #li-smu .skip-main-up {
 .eventosIndex h2,
 .eventosShow h2,
 .eventosSearch h2 {
-  color: #004F71 !important;
+  color: #004F71;
   font-size: 1.2rem;
 }
 .eventosIndex a:focus, .eventosIndex a:hover,
@@ -18866,20 +18879,20 @@ footer #li-smu .skip-main-up {
 .eventosIndex .card .card-body,
 .eventosShow .card .card-body,
 .eventosSearch .card .card-body {
-  background-color: #EEEEEE !important;
+  background-color: #EEEEEE;
 }
 .eventosIndex .card p,
 .eventosShow .card p,
 .eventosSearch .card p {
-  color: #1B74AF !important;
+  color: #1B74AF;
 }
 
 .eventosIndex h1 {
-  color: #004F71 !important;
+  color: #004F71;
 }
 
 .eventosShow #expositores p {
-  color: #1B74AF !important;
+  color: #1B74AF;
 }
 .eventosShow h3 {
   font-size: 1.1rem;
@@ -18914,7 +18927,7 @@ footer #li-smu .skip-main-up {
 }
 .expShowHV h2,
 .expIndexHV h2 {
-  color: #004F71 !important;
+  color: #004F71;
   font-size: 1.2rem;
 }
 .expShowHV a:focus, .expShowHV a:hover,
@@ -18930,13 +18943,13 @@ footer #li-smu .skip-main-up {
 }
 .expShowHV .card h5,
 .expIndexHV .card h5 {
-  color: #004F71 !important;
+  color: #004F71;
   font-size: 1.25rem;
   font-weight: bold !important;
 }
 .expShowHV .card p,
 .expIndexHV .card p {
-  color: #004F71 !important;
+  color: #004F71;
   border-bottom: solid 2px #004F71;
 }
 
@@ -19268,7 +19281,7 @@ footer #li-smu .skip-main-up {
 .lista-imagen-titulo-texto-1 #practicas a:link,
 .lista-imagen-titulo-texto-1 #practicas a:visited,
 .lista-imagen-titulo-texto-1 #practicas a:hover {
-  color: #004f71 !important;
+  color: #004f71;
   font-weight: bold !important;
 }
 .lista-imagen-titulo-texto-1 #practicas li {
@@ -19276,7 +19289,7 @@ footer #li-smu .skip-main-up {
 }
 .lista-imagen-titulo-texto-1 p,
 .lista-imagen-titulo-texto-1 h2 {
-  color: #1b74af !important;
+  color: #1b74af;
 }
 .lista-imagen-titulo-texto-1 a:hover,
 .lista-imagen-titulo-texto-1 a:focus {
@@ -19467,7 +19480,7 @@ footer #li-smu .skip-main-up {
 }
 
 .noticias-3 {
-  background-color: #6a2a5b !important;
+  background-color: #6a2a5b;
 }
 .noticias-3 h1,
 .noticias-3 h2,
@@ -19508,7 +19521,7 @@ footer #li-smu .skip-main-up {
   font-weight: bold !important;
 }
 .noticias-1 p {
-  color: #004f71 !important;
+  color: #004f71;
 }
 .noticias-1 img {
   border-radius: 10px !important;
@@ -19543,12 +19556,12 @@ footer #li-smu .skip-main-up {
   border: 0;
 }
 .noticias-2 .card h5 {
-  color: #004f71 !important;
+  color: #004f71;
   font-size: 1.25rem;
   font-weight: bold !important;
 }
 .noticias-2 .card p {
-  color: #004f71 !important;
+  color: #004f71;
   border-bottom: solid 2px #004f71;
 }
 

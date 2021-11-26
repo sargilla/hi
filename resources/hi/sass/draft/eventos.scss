@@ -1,18 +1,18 @@
-.eventosIndex, 
-.eventosShow, 
+.eventosIndex,
+.eventosShow,
 .eventosSearch
 {
     h1,h2
     {
         font-weight: bold;
-       
+
     }
-    h2 
+    h2
     {
-        color: #004F71 !important;
+        color: #004F71;
         font-size: 1.2rem;
     }
-    a:focus, a:hover 
+    a:focus, a:hover
     {
         outline: solid 2px #004F71 !important;
         text-decoration: underline !important;
@@ -21,64 +21,64 @@
     {
         background: unset !important;
         border: 0 !important;
-        figure 
+        figure
         {
             border: 10px solid #004F71 !important;
         }
         .card-body
         {
-            background-color: #EEEEEE !important;
+            background-color: #EEEEEE;
         }
         p
         {
-            color: #1B74AF !important;
+            color: #1B74AF;
         }
     }
 }
 .eventosIndex{
     h1{
-        color: #004F71 !important; 
+        color: #004F71;
     }
-    
+
 }
 .eventosShow
 {
     #expositores p
     {
-        color: #1B74AF !important; 
+        color: #1B74AF;
     }
     h3{
-        font-size:1.1rem; 
+        font-size:1.1rem;
     }
 }
 #eventosContenido,#eventosSearchContenido
 {
-    .card-body .btn-calendario 
+    .card-body .btn-calendario
     {
         border: 0 !important;
         background: unset !important;
     }
-    .btn-calendario:focus, .btn-calendario:hover 
+    .btn-calendario:focus, .btn-calendario:hover
     {
         outline: solid 2px #004F71 !important;
     }
-    a:focus, a:hover 
+    a:focus, a:hover
     {
         outline: solid 2px #004F71 !important;
         text-decoration: none !important;
     }
-    figure 
+    figure
     {
         border-radius: 10px !important;
     }
 }
 #eventosContenido
 {
-    h2 
+    h2
     {
         color: #004F71 !important;
     }
-    button 
+    button
     {
     border-radius: 10px !important;
     }
