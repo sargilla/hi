@@ -1,14 +1,14 @@
 .estilo-1 {
     h1,
     h2 {
-        color: #004f71 !important;
+        color: #004f71;
         font-weight: bold !important;
     }
     h2 {
         font-size: 1.2rem;
     }
     h3 {
-        color: #1b74af !important;
+        color: #1b74af;
     }
     a:focus,
     a:hover {
@@ -16,23 +16,23 @@
         text-decoration: underline !important;
     }
     p {
-        color: rgb(8, 7, 7) !important;
+        color: rgb(8, 7, 7);
     }
 }
 .titulo_texto_link {
     h1,
     h2 {
-        color: #004f71 !important;
+        color: #004f71;
         font-weight: bold !important;
     }
     p {
-        color: #004f71 !important;
+        color: #004f71;
     }
     h2 {
         font-size: 2rem;
     }
     h3 {
-        color: #1b74af !important;
+        color: #1b74af;
     }
     a:focus,
     a:hover {
@@ -54,7 +54,7 @@
     p,
     h5,
     h1 {
-        color: #004f71 !important;
+        color: #004f71;
     }
     #tematicas h5 {
         color: rgb(8, 7, 7) !important;
@@ -81,17 +81,17 @@
         text-decoration: underline !important;
     }
     .titulo {
-        color: #004f71 !important;
+        color: #004f71;
         font-size: 1.2rem;
     }
     h3,
     p,
     h5 {
-        color: #004f71 !important;
+        color: #004f71;
     }
 
     .docRec {
-        background-color: #e35205 !important;
+        background-color: #e35205;
         h2,
         h3,
         p,
@@ -103,17 +103,17 @@
         }
     }
     .referencia {
-        background-color: #5bc2e7 !important;
+        background-color: #5bc2e7;
 
         h5 {
-            color: #004f71 !important;
+            color: #004f71;
         }
         a {
-            color: rgb(8, 7, 7) !important;
+            color: rgb(8, 7, 7);
             text-decoration: underline !important;
         }
         .link-p {
-            color: rgb(8, 7, 7) !important;
+            color: rgb(8, 7, 7);
         }
     }
 }
@@ -151,7 +151,7 @@
     .titulo-texto-imagen {
         .docRec {
             color: #fff !important;
-            background-color: #e35205 !important;
+            background-color: #e35205;
 
             .border-dr {
                 border-bottom: unset !important;
