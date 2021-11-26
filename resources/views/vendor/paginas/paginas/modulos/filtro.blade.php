@@ -28,7 +28,7 @@
                         <option value="perú">Perú</option>
                     </select>
                 </div>
-                <div class="div-group  col-md-4 col-lg-3">
+                {{-- <div class="div-group  col-md-4 col-lg-3">
                     <label for="tematica" class="text-white  justify-content-start ">Tematicas</label>
                     <select name="tematica" id="tematica" class="form-control mb-3 mr-3 mb-md-0 w-100">
                         <option value="">Tematicas</option>
@@ -36,7 +36,7 @@
                         <option value="{{$object->id}}">{{$object->nombre}}</option>
                         @endforeach
                     </select>
-                </div>
+                </div> --}}
                 <div class="col-12 col-lg-3 mt-md-4">
                     <button class="mb-3 mb-md-0 btn btn-purple my-auto col-6 col-sm-4 col-md-3 col-lg-8"
                         type="submit">Filtrar</button>

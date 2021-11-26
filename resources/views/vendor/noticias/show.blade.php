@@ -1,9 +1,9 @@
 @extends('plantilla::layout')
 @section('header_title')
 @if (! empty($noticia->id))
-{{ config('app.name') }} {{ $noticia->tema->nombre }} {{ $noticia->titulo }}
+{{ $noticia->titulo }} {{ $noticia->tema->nombre }} {{ config('app.name') }}
 @else
-{{ config('app.name') }} Noticias
+Noticias {{ config('app.name') }}
 @endif
 
 @endsection

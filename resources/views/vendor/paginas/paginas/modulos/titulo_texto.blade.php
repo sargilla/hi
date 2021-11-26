@@ -8,6 +8,7 @@
         <nav aria-label="Usted esta en {{isset($campos['titulo']) ? $campos['titulo'] : 'Titulo Vacio' }}">
             <ol class="breadcrumb bg-unset p-0">
                 @if(isset($campos['pagina_anterior']) && $campos['pagina_anterior'] != 'Pagina Principal')
+                <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
                 <li class="breadcrumb-item"><a href="/{{ Str::slug($campos['pagina_anterior'])}}"
                         class="p-2">{{isset($campos['pagina_anterior'])?
                         $campos['pagina_anterior'] : 'Esta Vacio'}}</a></li>

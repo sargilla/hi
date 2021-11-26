@@ -18735,6 +18735,9 @@ footer #li-smu .skip-main-up {
 .actualidadSearch h1 {
   font-weight: bold !important;
 }
+.actualidadSearch a {
+  color: #004f71;
+}
 .actualidadSearch a:focus,
 .actualidadSearch a:hover {
   outline: solid 2px #004f71 !important;

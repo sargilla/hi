@@ -1,6 +1,6 @@
 @extends('plantilla::layout')
 @section('header_title')
-{{ config('app.name') }} {{ ucfirst($pagina->titulo) }}
+{{ ucfirst($pagina->titulo) }} {{ config('app.name') }}
 @endsection
 @section('main-content')
 @if ($pagina->encabezado)
