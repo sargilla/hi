@@ -15,8 +15,12 @@
                 <input type="hidden" name="busqueda" value="{{$campos['busqueda']}}">
                 <div class="div-group  col-md-4 col-lg-3">
                     <label for="fecha" class="text-white justify-content-start ">Fechas</label>
+
                     <select name="fecha" id="fecha" class="form-control mb-3 mr-3 mb-md-0 w-100">
                         <option value="">Todas las fechas</option>
+                        @foreach (range(date('Y')-5,date('Y')) as $item)
+                        <option value="{{$item}}">{{$item}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="div-group  col-md-4 col-lg-3">

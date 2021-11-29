@@ -32,7 +32,7 @@
                 ></p>
             </div>
         </div>
-        <div
+        <!-- <div
             class="form-group row"
             :class="{ 'is-invalid': form.errors.has('links') }"
         >
@@ -45,7 +45,7 @@
                     v-text="form.errors.get('links')"
                 ></p>
             </div>
-        </div>
+        </div> -->
         <div class="form-group row">
             <label for="created_at" class="col-form-label col-lg-2"
                 >Fecha</label

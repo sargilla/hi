@@ -1,22 +1,23 @@
 @extends('plantilla::layout')
 @section('header_title')
-{{ config('app.name') }} Búsqueda en actualidad
+{{ config('app.name') }} Resultados de búsqueda de experiencias
 @endsection
 @section('main-content')
 <article id="actualidadSearch" class="actualidadSearch">
     <div class="bg-primary">
         <div class="container">
             <h1 class="py-5  text-white mt-1">
-                Resultado de búsqueda de actualidad
+                Resultado de busqueda
             </h1>
         </div>
     </div>
     <div class="container py-5 py-lg-3">
-        <nav aria-label="Usted esta en los resultados de búsqueda de actualidad">
+        <nav aria-label="Usted esta en los resultados de búsqueda en experiencias">
             <ol class="breadcrumb bg-unset p-0">
                 <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
-                <li class="breadcrumb-item"><a href="/actualidad" class="p-2">Actualidad</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Resultado de búsqueda de actualidad</li>
+                <li class="breadcrumb-item"><a href="/experiencias" class="p-2">Experiencias</a></li>
+                <li class="breadcrumb-item"><a href="/historias-de-vida" class="p-2">Historias de Vida</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Resultado de búsqueda de Historias de Vida</li>
             </ol>
         </nav>
     </div>
@@ -35,7 +36,7 @@
                             </figure>
                         </div>
                         <div class="col-6 col-md-8 col-lg-9 py-3">
-                            <p class="col-md-6 p-0">{{$b->pais}}</p>
+                            <p class="col-md-6 p-0">{{$b->pais?? 'Pais'}}</p>
                             <h2>{{$b->titulo}}</h6>
                         </div>
                     </div>
