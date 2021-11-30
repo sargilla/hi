@@ -1,131 +1,104 @@
-footer 
-{
-    li
-    {
+footer {
+    li {
         list-style-type: none !important;
     }
-    li i 
-    {
+    li i {
         font-size: 0.8rem;
     }
-   a 
-   {
+    a {
         color: #fff !important;
-   }
-    #copyright
-    {
-        a 
-        {
+    }
+    #copyright {
+        background-color: #000;
+        a {
             text-decoration: underline !important;
         }
-        
     }
-    .border-2x
-    {
+    .border-2x {
         border: solid 2px;
     }
-    .mb-4em
-    {
+    .mb-4em {
         margin-bottom: 4em !important;
     }
-    .border-md 
-    {
+    .border-md {
         border-bottom: solid 2px #fff !important;
     }
-    #li-smu
-    {
-        .skip-main-up 
-    {
-        position: absolute;
-        left: -999px;
-        bottom: 50px;
-        z-index: 1030;
-        background-color: #EEEEEE !important;
-        height: auto;
-        width: 150px;
-        text-align: center;
-        overflow: hidden;
-        color: #6A2A5B !important;
+    #li-smu {
+        .skip-main-up {
+            position: absolute;
+            left: -999px;
+            bottom: 50px;
+            z-index: 1030;
+            background-color: #eeeeee !important;
+            height: auto;
+            width: 150px;
+            text-align: center;
+            overflow: hidden;
+            color: #6a2a5b !important;
+        }
     }
-    }
-    
 }
-    @media screen and (min-width:768px)
-    {
-        footer 
-        {
-            .mb-4em
-            {
-                margin-bottom: 0em !important;
+@media screen and (min-width: 768px) {
+    footer {
+        .mb-4em {
+            margin-bottom: 0em !important;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    footer {
+        .border-md {
+            border-right: solid 2px #fff !important;
+            border-bottom: unset !important;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold !important;
+        }
+        p {
+            font-size: 1.125rem;
+            font-family: 400 !important;
+        }
+        a,
+        li:hover i {
+            color: #fff !important;
+        }
+        a:hover,
+        a:focus-visible {
+            outline: solid 2px #fff !important;
+        }
+        #li-smu {
+            .skip-main-up:focus {
+                left: -100%;
+                font-size: 14px;
+                outline: 2px solid #6a2a5b !important;
+                text-align: center;
+                z-index: 2000;
+                text-decoration: none !important;
+                color: #6a2a5b !important;
+            }
+        }
+
+        #logos {
+            a:hover,
+            a:focus-visible {
+                outline: solid 2px #004f71 !important;
+            }
+        }
+        #lista-rs {
+            i {
+                font-size: 1.2rem !important;
             }
         }
     }
-    @media screen and (min-width:992px)
-    {
-       footer 
-        {
-            .border-md 
-            {
-                border-right: solid 2px #fff !important;
-                border-bottom: unset !important;
-            }
-            h2
-            {
-                font-size: 1.5rem;
-                font-weight: bold !important;
-            }
-            p
-            {
-                font-size: 1.125rem;
-                font-family: 400 !important;
-            }   
-            a,li:hover i
-            {
-                color: #fff !important;
-            }     
-            a:hover, a:focus-visible
-            {
-                outline: solid 2px #fff !important;
-            } 
-            #li-smu{
-                .skip-main-up:focus
-                {
-                    left: -100%;        
-                    font-size: 14px;
-                    outline: 2px solid #6A2A5B !important;
-                    text-align: center;
-                    z-index: 2000;
-                    text-decoration: none !important;
-                    color:  #6A2A5B !important;
-                }
-            }
-           
-            #logos 
-            {
-                a:hover, a:focus-visible
-                {
-                    outline: solid 2px #004F71 !important;
-                }
-            }
-            #lista-rs
-            {
-                i 
-                {
-                    font-size: 1.2rem !important;
-                }
-            }
-        }       
-    }
-@media screen and (min-width:1800px)
-{
-    #li-smu{
-        .skip-main-up:focus
-        {
-            left: -100% !important;                  
+}
+@media screen and (min-width: 1800px) {
+    #li-smu {
+        .skip-main-up:focus {
+            left: -100% !important;
         }
-        .skip-main-up
-        {
-            left:-120% !important;
+        .skip-main-up {
+            left: -120% !important;
         }
     }
 }
