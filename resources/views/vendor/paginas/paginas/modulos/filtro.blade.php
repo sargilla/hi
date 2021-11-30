@@ -48,9 +48,11 @@
                         {{-- <label for="pais" class="text-white  justify-content-start ">Paises</label> --}}
                         <select name="pais" id="pais" class="form-control mb-3 mr-3 mb-md-0 w-25">
                             <option value="">Todos los paises</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="paraguay">Paraguay</option>
-                            <option value="perú">Perú</option>
+                            <option value="colombia" {{request()->pais == 'colombia' ? 'selected' :''}}>Colombia
+                            </option>
+                            <option value="paraguay" {{request()->pais == 'paraguay' ? 'selected' :''}}>Paraguay
+                            </option>
+                            <option value="perú" {{request()->pais == 'perú' ? 'selected' :''}}>Perú</option>
                         </select>
                         <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
                     </div>
