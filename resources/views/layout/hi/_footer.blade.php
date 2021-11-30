@@ -27,7 +27,7 @@
                     Redes sociales
                 </h2>
                 <ul class="col-8 col-sm-6 col-lg-7 col-xl-6 px-md-5 px-lg-0" id="lista-rs">
-                    <i class="fab fa-facebook-f pt-3 "></i>
+                    <i class="fab fa-facebook-f py-3 "></i>
                     <li class="mb-2">
 
                         <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline"
@@ -48,7 +48,7 @@
                             class="p-2 text-decoration-underline" target="_blank">
                             Facebook Cuba</a>
                     </li>
-                    <i class="fas fa-play pt-3"></i>
+                    <i class="fas fa-play py-3"></i>
                     <li class="mb-2">
                         <a href="https://www.youtube.com/channel/UC5gL04rHxQ0iuN3_cFcVuBg"
                             class="p-2 text-decoration-underline" target="_blank">Youtube Colombia</a>
@@ -57,7 +57,7 @@
                         <a href="https://www.youtube.com/channel/UCDpSpt75YbDD3nV3TQTE4ug"
                             class="p-2 text-decoration-underline" target="_blank">Youtube Cuba</a>
                     </li>
-                    <i class="fab fa-instagram pt-3"></i>
+                    <i class="fab fa-instagram py-3"></i>
                     <li class="mb-2">
                         <a href="https://www.instagram.com/internationalhandicapcolombia/?hl=es-la"
                             class="p-2 text-decoration-underline" target="_blank">Instagram Cuba</a>
