@@ -43,7 +43,7 @@
             </div>
             @empty
             <div class="alert alert-warning mx-auto">
-                SIN EVENTOS
+                No hay eventos de momento
             </div>
             @endforelse
         </div>
