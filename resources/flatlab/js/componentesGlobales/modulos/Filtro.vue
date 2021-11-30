@@ -62,7 +62,7 @@
                 <div class="col-md-10">
                     <select class="form-control" v-model="campos.estilo">
                         <option disabled value="">Elija un estilo</option>
-                        <option value="1">Fechas,Tematicas,Paises</option>
+                        <option value="1">Fechas y Paises</option>
                         <option value="2">Paises</option>
                     </select>
                 </div>
@@ -73,11 +73,12 @@
                     <select class="form-control" v-model="campos.busqueda">
                         <option disabled value="">Elija lo que buscara</option>
                         <option value="eventos">Eventos</option>
+                        <option value="bloques">Modulo Bloques</option>
                         <option
                             :value="tema.slug"
                             v-for="(tema, index) in temas"
                             :key="index"
-                            >{{ tema.nombre }}</option
+                            >Tema {{ tema.nombre }}</option
                         >
                     </select>
                 </div>

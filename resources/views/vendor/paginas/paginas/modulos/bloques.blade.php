@@ -1,3 +1,10 @@
+@if(request()->pais)
+@php
+$campos['modulos'] = array_filter($campos['modulos'], function($modulo){
+return stristr($modulo['pais'],request()->pais);
+});
+@endphp
+@endif
 @if ($campos['columnas'] == 1)
 @if($campos['estilo'] == 2)
 <article class="noticias-3">

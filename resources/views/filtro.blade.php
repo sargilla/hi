@@ -7,7 +7,7 @@
     <div class="bg-primary">
         <div class="container">
             <h1 class="py-5  text-white mt-1">
-                Resultados para {{$tema->nombre}}
+                Resultados para {{$tema->nombre ?? ""}}
             </h1>
         </div>
     </div>
