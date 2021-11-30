@@ -28,7 +28,9 @@
                         <th width="125">Hasta</th>
                         <th>Titulo</th>
                         <th>Sección</th>
-                        <th>Pais</th>
+                        <th>País</th>
+                        <th>Nivel</th>
+                        <th>Sector</th>
                         <th>Marcado</th>
                         <th>Publicado</th>
                         <th>Acciones</th>
@@ -50,8 +52,10 @@ borrar este evento?'])
 	            {data: 'fecha_desde', name: 'eventos.fecha_desde', className: "text-center nowrap"},
 	            {data: 'fecha_hasta', name: 'eventos.fecha_hasta', className: "text-center nowrap"},
 	            {data: 'titulo', name: 'eventos.titulo'},
-	            {data: 'tipo.nombre', name: 'tipo.nombre', className: "text-center"},
-	            {data: 'pais', name: 'pais', className: "text-center"},
+	            {data: 'tipo.nombre', name: 'tipo.nombre', className: "text-center nowrap"},
+	            {data: 'pais', name: 'pais', className: "text-center nowrap"},
+	            {data: 'nivel', name: 'eventos.nivel', className: "text-center nowrap"},
+	            {data: 'sector', name: 'eventos.sector', className: "text-center nowrap"},
 	            {data: 'marcado', name: 'eventos.marcado', className: "text-center"},
 	            {data: 'publicado', name: 'eventos.publicado', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}

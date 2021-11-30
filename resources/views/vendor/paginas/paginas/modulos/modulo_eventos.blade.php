@@ -12,17 +12,30 @@
                         </figure>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
-                                <small class="card-text my-1 text-uppercase">dia 2 de febrero, 16:00 horas</small>
+                                <small class="card-text my-1 text-uppercase">{{ $evento->fecha_desde->format('l j \de F
+                                    \de Y')
+                                    }} {{ $evento->fecha_desde->format('h:i') != '00:00' ?
+                                    'a las ' . $evento->fecha_desde->format('h:i') . ' horas' :''}}</small>
                             </div>
                             <h2 class="mt-3 text-decoration-underline">
                                 {{$evento->titulo}}
                             </h2>
                             <div class="p-3 d-flex justify-content-between align-items-center">
                                 <p class="my-auto">
-                                    {{$evento->tipo->nombre}} - {{$evento->nivel?? 'Nivel'}} -
-                                    {{$evento->sector?? 'Sector'}}
+                                    @if ($evento->tipo->nombre != 'General')
+                                    {{$evento->tipo->nombre}}
+                                    @endif
+                                    @if ($evento->nivel && $evento->tipo->nombre != 'General')
+                                    - {{$evento->nivel }}
+                                    @else
+                                    {{$evento->nivel }}
+                                    @endif
+                                    @if ($evento->sector)
+                                    - {{$evento->sector }}
+                                    @endif
                                 </p>
-                                <button href="" class="btn btn-purple px-4">Inscribirse</button>
+                                <button href="" class="btn btn-purple px-4"
+                                    aria-label="Inscribirse a {{ $evento->titulo }}">Inscribirse</button>
                             </div>
                         </div>
                     </div>

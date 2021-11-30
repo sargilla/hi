@@ -215,7 +215,7 @@
                 </button>
             </div>
         </div>
-        <div class="form-group row">
+        <!-- <div class="form-group row">
             <div class="offset-lg-2 col-lg-10">
                 <input
                     id="marcado"
@@ -233,7 +233,7 @@
                     >
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="form-group row">
             <div class="offset-lg-2 col-lg-10">
                 <input
@@ -405,9 +405,9 @@ export default {
                 .get(route("getTipos"))
                 .then(respuesta => {
                     this.tipos = respuesta.data;
-                    if (this.form.tipo_id) {
+                    if (this.evento) {
                         this.selectedTipo = this.tipos.find(
-                            tipo => (tipo.id = this.form.tipo_id)
+                            tipo => tipo.id == this.evento.tipo_id
                         );
                     }
                 })
