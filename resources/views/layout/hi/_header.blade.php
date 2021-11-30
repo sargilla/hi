@@ -1,6 +1,6 @@
 <div class="text-center" id="logo-mobile">
     <a class="d-md-none navbar-brand ml-lg-5" href="/">
-        <img src="/images/logo.png" alt="Ir a la pagina de inicio" width="150px">
+        <img src="/images/logo.svg" alt="Ir a la pagina de inicio" width="150px" height="96px">
     </a>
 </div>
 <div class="fixed-bottom position-md-static navbar navbar-expand-md bg-white flex-wrap p-0 px-md-5 pt-md-3 p-lg-0">
@@ -31,7 +31,7 @@
         </div>
     </form>
     <a class="d-none d-md-block navbar-brand ml-lg-3 ml-xl-5 mb-lg-2" href="/">
-        <img src="/images/logo.png" alt="Ir a la pagina de inicio" width="150px">
+        <img src="/images/logo.svg" alt="Ir a la pagina de inicio" width="150px" height="96px">
     </a>
     <button id="boton-menu"
         class="d-md-none py-3 d-flex align-items-center justify-content-center text-primary text-uppercase w-100 navbar-toggler"

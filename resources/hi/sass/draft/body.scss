@@ -19,54 +19,57 @@ html {
     color: #1b74af !important;
 }
 .bg-dark {
-
-    *{
-
+    * {
         background-color: #292929 !important;
         color: #f0f0f0 !important;
     }
-    footer,header {
-        a{
-        color: #5FE6E6 !important;
+    footer,
+    header {
+        a {
+            color: #5fe6e6 !important;
         }
-
     }
-    a:visited{
-        color: #78785A !important;
-        }
-    .breadcrumb-item a , .breadcrumb-item + .active{
+    .btn-purple {
+        color: #fff !important;
+    }
+    a:visited {
+        color: #78785a !important;
+    }
+    .breadcrumb-item a,
+    .breadcrumb-item + .active {
         color: unset !important;
     }
     .bloques-estilo-1 {
         background-color: #292929 !important;
     }
-    .bg-light{
+    .bg-light {
         background-color: unset !important;
     }
-    h1,h2,h3,h4,h5{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         color: #50d0a0 !important;
     }
-    header
-        {.navbar
-            {
-                box-shadow: unset !important;
-                border-bottom-right-radius: unset !important;
-                border-bottom-left-radius: unset !important;
-                margin-top: 0 !important;
-                padding: 0 !important;
-            }
-            #logo-mobile {
-                border-bottom: 0;
-            }
-
+    header {
+        .navbar {
+            box-shadow: unset !important;
+            border-bottom-right-radius: unset !important;
+            border-bottom-left-radius: unset !important;
+            margin-top: 0 !important;
+            padding: 0 !important;
         }
-    .eventosShow
-            {
-                a:visited {
-                    color: #f0f0f0 !important;
-                }
-            }
+        #logo-mobile {
+            border-bottom: 0;
+        }
     }
+    .eventosShow {
+        a:visited {
+            color: #f0f0f0 !important;
+        }
+    }
+}
 #main {
     padding: 0 !important;
 }

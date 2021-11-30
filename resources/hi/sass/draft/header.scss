@@ -89,6 +89,9 @@ header {
         .outline {
             outline: solid 2px #1b74af !important;
         }
+        li {
+            margin-right: 2px;
+        }
         li:hover,
         .navbar a:focus-visible {
             outline: solid 2px #004f71 !important;
