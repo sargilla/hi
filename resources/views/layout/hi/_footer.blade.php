@@ -125,7 +125,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-dark p-4 px-md-0 py-md-3 mb-4em" id="copyright">
+    <div class="p-4 px-md-0 py-md-3 mb-4em" id="copyright">
         <div class="d-md-flex flex-wrap justify-content-between">
             <div class="col-12 col-lg-6 border-md text-center py-4 py-md-2 py-lg-0">
                 <span>
