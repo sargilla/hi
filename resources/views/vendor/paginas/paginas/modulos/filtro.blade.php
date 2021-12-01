@@ -53,6 +53,7 @@
                             <option value="paraguay" {{request()->pais == 'paraguay' ? 'selected' :''}}>Paraguay
                             </option>
                             <option value="perú" {{request()->pais == 'perú' ? 'selected' :''}}>Perú</option>
+                            <option value="perú" {{request()->pais == 'ecuador' ? 'selected' :''}}>Ecuador</option>
                         </select>
                         <button class="mb-3 mb-md-0 btn btn-purple px-5 my-auto" type="submit">Filtrar</button>
                     </div>
