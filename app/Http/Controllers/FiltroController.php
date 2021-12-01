@@ -21,20 +21,26 @@ class FiltroController extends Controller
 
                 if(isset(request()->fecha))
                 {
-                    $busqueda = Evento::where('fecha_desde',request()->fecha);
+                    $inicio = Carbon::createFromFormat('Y', request()->fecha)->startOfYear();
+                    $fin =  Carbon::createFromFormat('Y', request()->fecha)->endOfYear();
+                    $busqueda = Evento::whereBetween('fecha_desde',[$inicio,$fin]);
                 }
                 if(isset(request()->pais))
                 {
                     if($busqueda != '')
                     {
-                        $busqueda->where('pais',request()->pais);
+                        $busqueda->where('pais','like','%'.request()->pais.'%');
                     } else
                     {
-                        $busqueda = Evento::where('pais',request()->pais);
+                        $busqueda = Evento::where('pais','like','%'.request()->pais.'%');
                     }
                 }
 
                 $busqueda = $busqueda->get();
+                $fecha = request()->fecha;
+                $pais = request()->pais;
+                return view('filtro_eventos', compact('busqueda','fecha','pais'));
+
          } else {
             if(!isset(request()->fecha) && !isset(request()->pais))
             {
@@ -45,27 +51,22 @@ class FiltroController extends Controller
                 $busqueda = Noticia::delTema(request()->busqueda);
                 if(isset(request()->fecha))
                 {
-
-                    $fin =  Carbon::createFromFormat('Y', request()->fecha)->endOfYear();
-
                     $inicio = Carbon::createFromFormat('Y', request()->fecha)->startOfYear();
-
+                    $fin =  Carbon::createFromFormat('Y', request()->fecha)->endOfYear();
                     $busqueda = $busqueda->whereBetween('created_at',[$inicio,$fin]);
-
                 }
                 if(isset(request()->pais))
                 {
                     $busqueda->where('pais',request()->pais);
-
                 }
                 $busqueda = $busqueda->get();
             }
+            $fecha = request()->fecha;
+            $tema = Tema::whereSlug(request()->busqueda)->first();
+            $pais = request()->pais;
+            return view('filtro', compact('busqueda','fecha','tema','pais'));
          }
 
-         $fecha = request()->fecha;
-         $tema = Tema::whereSlug(request()->busqueda)->first();
-         $pais = request()->pais;
-         return view('filtro', compact('busqueda','fecha','tema','pais'));
      }
 
 
