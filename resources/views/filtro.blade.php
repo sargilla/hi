@@ -31,7 +31,8 @@
                         <div class="col-6 col-md-4 col-lg-3">
                             <figure class="figure mb-0">
                                 <img src="/images/paginas-grande/{{$noticia->imagen_principal != 'no-imagen.jpg' ? $noticia->imagen_principal : 'familia.jpg' }}"
-                                    class="figure-img img-fluid w-100 rounded mb-0" alt="...">
+                                    class="figure-img img-fluid w-100 rounded mb-0"
+                                    alt="Foto pricipal de la noticia {{ $noticia->titulo }}">
                             </figure>
                         </div>
                         <div class="col-6 col-md-8 col-lg-9 py-3">
