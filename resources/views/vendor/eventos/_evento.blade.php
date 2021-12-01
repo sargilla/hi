@@ -19,67 +19,95 @@
         </nav>
     </div>
 </article>
-<article id="eventosCalendario" class="eventosShow">
-    <div class="container py-3 px-5 ">
-        <div class="d-flex flex-wrap justify-content-between mt-3">
-            <p class="text-uppercase">
-                dia 2 de febrero, 16:00 horas
-            </p>
-            <p>
-                <a href="" class="p-2 text-dark text-decoration-none">
-                    <i class="far fa-calendar "></i>
-                    Agregar al calendario
-                </a>
-            </p>
-        </div>
-    </div>
-</article>
-<article id="eventosDescripcion" class="eventosShow">
-    <div class="container py-3 px-5 ">
-        <div class="mt-5 mt-lg-0 col-md-8 col-lg-7 col-xl-6 p-0">
-            <h2>
-                Descripcion General
-            </h2>
-            <h3>
-                {!! $evento->contenido !!}
-            </h3>
-        </div>
-    </div>
-</article>
-<article id="eventosExpositores" class="eventosShow">
-    <div class="container py-3 px-5 mb-5">
-        <div id="expositores" class="mt-5 px-3 px-md-0">
-            <h2>
-                Expositores
-            </h2>
-            <div>
-                <div class="d-flex align-items-center">
-                    <div class="">
-                        <figure>
-                            <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="ml-3">
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <div class="">
-                        <figure>
-                            <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
-                        </figure>
 
+<article id="eventosDescripcion" class="eventosShow mb-5">
+    <div class="container py-3">
+        <div class="row">
+            <div class="mt-5 mt-lg-0 col-md-8 col-lg-7 col-xl-6 p-0">
+                <h2>
+                    Descripcion General
+                </h2>
+                <h3>
+                    {!! $evento->contenido !!}
+                </h3>
+                @if ($evento->expositores)
+
+                <h2 class="text-center mt-5">Expositores</h2>
+                <div class="row">
+
+                    @foreach ($evento->expositores as $expositor)
+                    <div class="col">
+                        <h3 class="text-center">
+                            {{ $expositor['nombre'] ?? ''}}
+                            <br><small>{{ $expositor['titulo'] ?? ''}}</small>
+                        </h3>
                     </div>
-                    <div class="ml-3">
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                    </div>
+                    @endforeach
                 </div>
+                @endif
             </div>
-            <a href="" class="btn btn-purple px-4 mt-4">Inscribirse</a>
+            <div class="col-md-4 col-lg-5 col-xl-6">
+                <h2 class="text-center">Detalles del Evento</h2>
+                <div class="col-8 mx-auto">
+
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Inicio:</strong> {{ $evento->fecha_desde->format('d-m-Y') }}
+                            {{
+                            $evento->fecha_desde->format('h:i') != '00:00' ?
+                            $evento->fecha_desde->format('h:i') . 'hs.' :''}}</li>
+                        @if ($evento->fecha_hasta)
+
+                        <li class="list-group-item"><strong>Fin:</strong> {{ $evento->fecha_hasta->format('d-m-Y') }} {{
+                            $evento->fecha_desde->format('h:i') != '00:00' ?
+                            $evento->fecha_desde->format('h:i') . 'hs.' :''}}</li>
+                        @endif
+                        <li class="list-group-item"><strong>Lugar:</strong> {{$evento->pais }}</li>
+                        <li class="list-group-item"><strong>Sector:</strong> {{ $evento->sector }}</li>
+                        <li class="list-group-item"><strong>Nivel:</strong> {{ $evento->nivel }}</li>
+                        <li class="list-group-item"><strong>Tipo:</strong> {{$evento->tipo->nombre}}</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <a href="{{$evento->links }}" target="_blank" class="btn btn-purple px-4 mt-4"
+                aria-label="Inscribirse a {{ $evento->titulo }}">Inscribirse</a>
         </div>
     </div>
 </article>
+
+
+{{-- <div id="expositores" class="mt-5 px-3 px-md-0">
+    <h2>
+        Expositores
+    </h2>
+    <div>
+        <div class="d-flex align-items-center">
+            <div class="">
+                <figure>
+                    <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
+                </figure>
+            </div>
+            <div class="ml-3">
+                <p>
+                    Lorem Ipsum
+                </p>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="">
+                <figure>
+                    <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
+                </figure>
+
+            </div>
+            <div class="ml-3">
+                <p>
+                    Lorem Ipsum
+                </p>
+            </div>
+        </div>
+    </div>
+    <a href="" class="btn btn-purple px-4 mt-4">Inscribirse</a>
+</div> --}}

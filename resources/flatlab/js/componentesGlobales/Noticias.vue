@@ -232,7 +232,7 @@ export default {
 
     methods: {
         agregarImagen() {
-            this.form.imagenes.push({ imagen: "" });
+            this.form.imagenes.push({ imagen: "", alt: "" });
         },
         borrarImagen(index) {
             this.form.imagenes.splice(index, 1);

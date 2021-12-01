@@ -60,6 +60,22 @@
                 ></p>
             </div>
         </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('links') }"
+        >
+            <label for="links" class="col-form-label col-lg-2"
+                >Link de inscripción</label
+            >
+            <div class="col-lg-10">
+                <input class="form-control" v-model="form.links" />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('links')"
+                    v-text="form.errors.get('links')"
+                ></p>
+            </div>
+        </div>
         <div class="form-group row">
             <label for="tipo" class="control-label col-lg-2">Tipo</label>
             <div class="col-lg-10">
@@ -164,7 +180,9 @@
                     :urlSubir="urlSubir"
                     :urlBorrar="urlBorrar"
                     :imagen.sync="item.imagen"
+                    :alt.sync="item.alt"
                     :puedoBorrar="puedoBorrarImagen"
+                    :activar_alt="true"
                     @borrar="borrarImagen(index)"
                     @update="guardarCambios"
                 />
@@ -289,12 +307,13 @@ export default {
                 titulo: "",
                 tipo_id: "",
                 contenido: "",
-                imagenes: [{ imagen: "" }],
+                imagenes: [{ imagen: "", alt: "" }],
                 publicado: false,
                 marcado: false,
                 pais: "",
                 nivel: "",
                 sector: "",
+                links: "",
                 expositores: [{ nombre: "", titulo: "" }],
                 fecha_desde: "",
                 fecha_hasta: ""
@@ -320,7 +339,7 @@ export default {
                 .catch(errors => console.log(errors));
         },
         agregarImagen() {
-            this.form.imagenes.push({ imagen: "" });
+            this.form.imagenes.push({ imagen: "", alt: "" });
         },
         borrarImagen(index) {
             this.form.imagenes.splice(index, 1);
@@ -366,6 +385,7 @@ export default {
             }
             this.form.publicado = this.evento.publicado;
             this.form.marcado = this.evento.marcado;
+            this.form.links = this.evento.links;
             this.form.pais = this.evento.pais;
             this.form.nivel = this.evento.nivel;
             this.form.sector = this.evento.sector;
@@ -384,9 +404,10 @@ export default {
             this.form.titulo = "";
             this.form.tipo_id = "";
             this.form.contenido = "";
-            this.form.imagenes = [{ imagen: "" }];
+            this.form.imagenes = [{ imagen: "", alt: "" }];
             this.form.publicado = false;
             this.form.marcado = false;
+            this.form.links = "";
             this.form.pais = "";
             this.form.nivel = "";
             this.form.sector = "";
