@@ -9,7 +9,7 @@
                         <figure class="figure m-0">
                             <img src="/images/paginas-grande/{{$evento->imagen_principal != 'no-imagen.jpg' ? $evento->imagen_principal : 'familia.jpg' }}"
                                 class="card-img-top"
-                                alt="{{ $evento->imagenes && $evento->imagenes[0] && $evento->imagenes[0]['alt'] ? $evento->imagenes[0]['alt'] : $evento->titulo }}">
+                                alt="{{ $evento->imagenes && isset($evento->imagenes[0]) && isset($evento->imagenes[0]['alt']) ? $evento->imagenes[0]['alt'] : $evento->titulo }}">
                         </figure>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
