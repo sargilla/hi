@@ -13,12 +13,15 @@
                                 alt="{{ $evento->imagenes && isset($evento->imagenes[0]) && isset($evento->imagenes[0]['alt']) ? $evento->imagenes[0]['alt'] : $evento->titulo }}">
                         </figure>
                         <div class="card-body">
+                            @if (isset($evento->fecha_desde))
+
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="card-text my-1 text-uppercase">{{ $evento->fecha_desde->format('l j \de F
                                     \de Y')
                                     }} {{ $evento->fecha_desde->format('h:i') != '00:00' ?
                                     'a las ' . $evento->fecha_desde->format('h:i') . ' horas' :''}}</small>
                             </div>
+                            @endif
                             <h2 class="mt-3 text-decoration-underline">
                                 {{$evento->titulo}}
                             </h2>
