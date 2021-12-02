@@ -1,8 +1,9 @@
 @inject('eventos', '\Sigma\Eventos\Evento')
 <article class="eventos">
     <div class="container py-5 px-lg-3">
+
         <div class="row row-cols-1 row-cols-md-2">
-            @forelse($eventos->publicados()->get() as $evento)
+            @forelse($eventos->whereTipoId($campos['tipo_id'])->publicados()->get() as $evento)
             <div class="col mb-4">
                 <a href="{{$evento->path}}" class="nav-link p-0">
                     <div class="card">

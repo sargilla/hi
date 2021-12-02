@@ -37,7 +37,8 @@
                     />
                 </div>
             </div>
-           <!--  <div class="form-group row">
+
+            <!--  <div class="form-group row">
                 <label for="columnas" class="control-label col-lg-3 my-auto"
                     >Columnas</label
                 >
@@ -110,7 +111,8 @@
                     </select>
                 </div>
             </div>
-            <div class="form-group row" v-if="campos.tipo == 'tipo'">
+            -->
+            <div class="form-group row">
                 <label for="tipo" class="control-label col-lg-3 my-auto"
                     >Eventos a mostrar</label
                 >
@@ -133,7 +135,7 @@
                         ></option>
                     </select>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 </template>
@@ -171,8 +173,8 @@ export default {
     },
     created() {
         this.user = Laravel.user;
-        if (!this.campos.columnas) {
-            this.cambiaCampo("columnas", 2);
+        if (!this.campos.tipo_id) {
+            this.cambiaCampo("tipo_id", 1);
         }
     },
     mounted() {
