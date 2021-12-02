@@ -66,9 +66,15 @@
                             $evento->fecha_desde->format('h:i') != '00:00' ?
                             $evento->fecha_desde->format('h:i') . 'hs.' :''}}</li>
                         @endif
+                        @if ($evento->pais)
                         <li class="list-group-item"><strong>Lugar:</strong> {{$evento->pais }}</li>
+                        @endif
+                        @if ($evento->sector)
                         <li class="list-group-item"><strong>Sector:</strong> {{ $evento->sector }}</li>
+                        @endif
+                        @if ($evento->nivel)
                         <li class="list-group-item"><strong>Nivel:</strong> {{ $evento->nivel }}</li>
+                        @endif
                         {{-- <li class="list-group-item"><strong>Tipo:</strong> {{$evento->tipo->nombre}}</li> --}}
                     </ul>
                 </div>
