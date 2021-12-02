@@ -27,16 +27,17 @@
                             </h2>
                             <div class="p-3 d-flex justify-content-between align-items-center">
                                 <p class="my-auto">
-                                    @if ($evento->tipo->nombre != 'General')
+                                    {{-- @if ($evento->tipo->nombre != 'General')
                                     {{$evento->tipo->nombre}}
-                                    @endif
-                                    @if ($evento->nivel && $evento->tipo->nombre != 'General')
-                                    - {{$evento->nivel }}
-                                    @else
+                                    @endif --}}
+                                    @if ($evento->nivel)
                                     {{$evento->nivel }}
                                     @endif
+                                    @if ($evento->nivel && $evento->sector)
+                                    &nbsp;-&nbsp;
+                                    @endif
                                     @if ($evento->sector)
-                                    - {{$evento->sector }}
+                                    {{$evento->sector }}
                                     @endif
                                 </p>
                                 <button class="btn btn-purple px-4"
