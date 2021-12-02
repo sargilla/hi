@@ -69,7 +69,7 @@
                         <li class="list-group-item"><strong>Lugar:</strong> {{$evento->pais }}</li>
                         <li class="list-group-item"><strong>Sector:</strong> {{ $evento->sector }}</li>
                         <li class="list-group-item"><strong>Nivel:</strong> {{ $evento->nivel }}</li>
-                        <li class="list-group-item"><strong>Tipo:</strong> {{$evento->tipo->nombre}}</li>
+                        {{-- <li class="list-group-item"><strong>Tipo:</strong> {{$evento->tipo->nombre}}</li> --}}
                     </ul>
                 </div>
 
