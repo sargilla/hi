@@ -13,7 +13,12 @@
         <nav aria-label="Usted esta en eventos lorem ipsum">
             <ol class="breadcrumb bg-unset p-0">
                 <li class="breadcrumb-item"><a href="/" class="p-2">Página Principal</a></li>
+                @if ($evento->tipo_id == 1)
                 <li class="breadcrumb-item"><a href="/eventos" class="p-2">Eventos</a></li>
+                @else
+                <li class="breadcrumb-item"><a href="/{{$evento->tipo->slug}}" class="p-2">{{
+                        $evento->tipo->nombre}}</a></li>
+                @endif
                 <li class="breadcrumb-item active" aria-current="page">{{$evento->titulo}}</li>
             </ol>
         </nav>
