@@ -31,7 +31,7 @@
                         <th>País</th>
                         <th>Nivel</th>
                         <th>Sector</th>
-                        <th>Marcado</th>
+                        {{-- <th>Marcado</th> --}}
                         <th>Publicado</th>
                         <th>Acciones</th>
                     </tr>
@@ -56,7 +56,7 @@ borrar este evento?'])
 	            {data: 'pais', name: 'pais', className: "text-center nowrap"},
 	            {data: 'nivel', name: 'eventos.nivel', className: "text-center nowrap"},
 	            {data: 'sector', name: 'eventos.sector', className: "text-center nowrap"},
-	            {data: 'marcado', name: 'eventos.marcado', className: "text-center"},
+	            // {data: 'marcado', name: 'eventos.marcado', className: "text-center"},
 	            {data: 'publicado', name: 'eventos.publicado', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}
 	        ]

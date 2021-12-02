@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="tipo" class="control-label col-lg-2">Tipo</label>
+            <label for="tipo" class="control-label col-lg-2">Sección</label>
             <div class="col-lg-10">
                 <multiselect
                     v-model="selectedTipo"
@@ -91,7 +91,21 @@
                     deselect-label="Enter para eliminar"
                     select-label="Enter para seleccionar"
                     @select="form.errors.clear()"
+                    v-if="user && user.can['tipos-agregar']"
                 ></multiselect>
+                <select
+                    name="tipo"
+                    class="form-control"
+                    v-model="selectedTipo"
+                    v-else
+                >
+                    <option
+                        v-for="(tipo, index) in tipos"
+                        :value="tipo"
+                        :key="index"
+                        v-text="tipo.nombre"
+                    ></option>
+                </select>
             </div>
         </div>
         <div class="form-group row">
@@ -324,7 +338,8 @@ export default {
             selectedTipo: "",
             textoBoton: "",
             urlSubir: route("uploadArchivoEvento"),
-            urlBorrar: route("borrarArchivoEvento")
+            urlBorrar: route("borrarArchivoEvento"),
+            user: Laravel.user
         };
     },
 

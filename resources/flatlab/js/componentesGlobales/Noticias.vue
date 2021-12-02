@@ -79,12 +79,12 @@
                 <select
                     name="tema"
                     class="form-control"
-                    v-model="form.tema_id"
+                    v-model="selectedTema"
                     v-else
                 >
                     <option
                         v-for="(tema, index) in temas"
-                        :value="tema.id"
+                        :value="tema"
                         :key="index"
                         v-text="tema.nombre"
                     ></option>
