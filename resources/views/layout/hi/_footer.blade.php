@@ -6,7 +6,7 @@
                     Este sitio web y sus contenidos son parte de un proyecto
                     regional que promueve una gestión del riesgo con enfoque de inclusión y protección, liderado por
                     <span lang="en">Humanity & inclusion </span> en consorcio con <abbr
-                        title="cooperazione internazionale">COOPI </abbr> y <span lang="en">Save the Children </span>
+                        title="cooperazione internazionale">COOPI en Paraguay</abbr> y <span lang="en">Save the Children </span>
                     Perú
                 </p>
                 <p>
@@ -31,7 +31,7 @@
                     <li class="mb-2">
 
                         <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline"
-                            target="_blank"> Facebook Peru</a>
+                            target="_blank"> Facebook Perú</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://www.facebook.com/Handicapinternationalcolombia"
@@ -41,7 +41,7 @@
                     <li class="mb-2">
                         <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/"
                             class="p-2 text-decoration-underline" target="_blank">
-                            Facebook America Latina</a>
+                            Facebook América Latina</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/"

@@ -39,8 +39,8 @@
 
                 <h2 class="text-center mt-5">Expositores</h2>
                 <div class="row">
-
-                    @foreach ($evento->expositores as $expositor)
+                   
+                    @foreach (json_decode($evento->expositores,true) as $expositor)
                     <div class="col">
                         <h3 class="text-center">
                             {{ $expositor['nombre'] ?? ''}}
@@ -83,7 +83,7 @@
         </div>
         <div class="row justify-content-center">
             <a href="{{$evento->links }}" target="_blank" class="btn btn-purple px-4 mt-4"
-                aria-label="Inscribirse a {{ $evento->titulo }}">Inscribirse</a>
+                aria-label="Más información a {{ $evento->titulo }}">Más información</a>
         </div>
     </div>
 </article>

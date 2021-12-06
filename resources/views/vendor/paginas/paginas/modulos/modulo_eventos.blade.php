@@ -40,8 +40,8 @@
                                     {{$evento->sector }}
                                     @endif
                                 </p>
-                                <button class="btn btn-purple px-4"
-                                    aria-label="Inscribirse a {{ $evento->titulo }}">Inscribirse</button>
+                                <a class="btn btn-purple px-4" href="{{$evento->links}}"
+                                    aria-label="Más información a {{ $evento->titulo }}">Más información</a>
                             </div>
                         </div>
                     </div>
