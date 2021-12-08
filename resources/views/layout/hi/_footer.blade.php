@@ -79,32 +79,32 @@
     <div class="bg-white" id="logos">
         <div class="container-fluid">
             <div class="row py-2 align-items-center">
-                <div class="col"><a
+                <div class="col-6 col-md"><a
                         href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
                         class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
                         <figure>
                             <img src="/images/logo_1.png" alt="USAID" width="100%">
                         </figure>
                     </a></div>
-                <div class="col"><a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
+                <div class="col-6 col-md"><a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
                         aria-label="Ir a la unión europea, abre en una nueva ventana" target="_blank">
                         <figure>
                             <img src="/images/logo_2.png" alt="unión europea" width="100%">
                         </figure>
                     </a></div>
-                <div class="col"><a href="https://hi.org/" class="nav-link p-0"
+                <div class="col-6 col-md"><a href="https://hi.org/" class="nav-link p-0"
                         aria-label="Ir a Humanity and Inclusion, abre en una nueva ventana" target="_blank">
                         <figure>
                             <img src="/images/logo-hi2.jpg" alt="Humanity and Inclusion" width="100%">
                         </figure>
                     </a></div>
-                <div class="col"><a href="https://coopi.org/en" class="nav-link p-0"
+                <div class="col-6 col-md"><a href="https://coopi.org/en" class="nav-link p-0"
                         aria-label="Ir a Cooperazione Internazionale, abre en una nueva ventana" target="_blank">
                         <figure>
                             <img src="/images/logo_5.png" alt="Cooperazione Internazionale" width="100%">
                         </figure>
                     </a></div>
-                <div class="col"><a href="https://www.savethechildren.org.pe/" class="nav-link p-0"
+                <div class="col-6-auto col-md"><a href="https://www.savethechildren.org.pe/" class="nav-link p-0"
                         aria-label="Ir a Save the children, abre en una nueva ventana" target="_blank">
                         <figure>
                             <img src="/images/logo_4.png" alt="Save the children" width="100%">
