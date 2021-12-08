@@ -110,7 +110,6 @@ export default {
             this.$emit("update:contenido", this.editorData);
         },
         updateContenido() {
-            console.log("hola " + this.contenido + " chau");
             this.editorData = this.contenido;
         }
     },
