@@ -34,7 +34,7 @@
                         <th>Titulo</th>
                         <th>Sección</th>
                         <th>País</th>
-                        <th>Marcada</th>
+                        {{-- <th>Marcada</th> --}}
                         <th>Publicada</th>
                         <th>Acciones</th>
                     </tr>
@@ -57,7 +57,7 @@ borrar esta noticia?'])
 	            {data: 'titulo', name: 'noticias.titulo'},
 	            {data: 'tema.nombre', name: 'tema.nombre', className: "text-center"},
 	            {data: 'pais', name: 'pais', className: "text-center"},
-	            {data: 'marcada', name: 'noticias.marcada', className: "text-center"},
+	            // {data: 'marcada', name: 'noticias.marcada', className: "text-center"},
 	            {data: 'publicada', name: 'noticias.publicada', className: "text-center"},
 	            {data: 'acciones', name: 'acciones', orderable: false, searchable: false, className: "text-center nowrap"}
 	        ],

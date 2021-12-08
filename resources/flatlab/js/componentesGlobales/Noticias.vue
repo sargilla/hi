@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-group row">
+        <!-- <div class="form-group row">
             <div class="offset-md-2 col-lg-10">
                 <input
                     id="marcada"
@@ -159,7 +159,7 @@
                     >
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="form-group row">
             <div class="offset-md-2 col-lg-10">
                 <input
