@@ -7,6 +7,7 @@ return stristr($modulo['pais'],request()->pais);
 @endif
 @if ($campos['columnas'] == 1)
 @if($campos['estilo'] == 2)
+
 <article class="noticias-3">
     <div class="container py-5  {{$modulo['nombre'] != " Documentos" ? 'expRes' : '' }}">
         <h2>

@@ -40,7 +40,7 @@
                 <h2 class="text-center mt-5">Expositores</h2>
                 <div class="row">
 
-                    @foreach ($evento->expositores as $expositor)
+                    @foreach (json_decode($evento->expositores,true) as $expositor)
                     <div class="col">
                         <h3 class="text-center">
                             {{ $expositor['nombre'] ?? ''}}
