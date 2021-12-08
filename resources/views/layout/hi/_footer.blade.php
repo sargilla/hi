@@ -77,7 +77,7 @@
         </div>
     </div>
     <div class="bg-white" id="logos">
-        <div class="container">
+        <div class="container mt-3">
             <div class="d-flex py-2 align-items-center justify-content-center justify-content-md-between flex-wrap">
                 <a href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
                     class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
