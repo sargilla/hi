@@ -27,7 +27,7 @@
                     allowfullscreen></iframe>
                 {{--   <iframe width="100%" height="auto"  src="https://www.youtube.com/watch?v=SzInP8LI-ss" allow="acceferometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-picture" allowfullscreen=""></iframe> --}}
                 <div class="text-center mt-md-2">
-                    <a href="" class="p-2">Transcripcion de video</a>
+                    <a href="" class="p-2">Transcripción de video</a>
                 </div>
             </div>
         </div>

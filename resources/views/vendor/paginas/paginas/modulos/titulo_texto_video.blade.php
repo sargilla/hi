@@ -24,7 +24,7 @@
                 </video>
                 @endif
                 <div class="text-center mt-md-2">
-                    <a href="{{ $campos['transcripcion_link'] ?? ''}}" class="p-2">Transcripcion de video</a>
+                    <a href="{{ $campos['transcripcion_link'] ?? ''}}" class="p-2">Transcripción de video</a>
                 </div>
             </div>
         </div>

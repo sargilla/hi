@@ -6,7 +6,8 @@
                     Este sitio web y sus contenidos son parte de un proyecto
                     regional que promueve una gestión del riesgo con enfoque de inclusión y protección, liderado por
                     <span lang="en">Humanity & inclusion </span> en consorcio con <abbr
-                        title="cooperazione internazionale">COOPI </abbr> y <span lang="en">Save the Children </span>
+                        title="cooperazione internazionale">COOPI en Paraguay</abbr> y <span lang="en">Save the Children
+                    </span>
                     Perú
                 </p>
                 <p>
@@ -31,7 +32,7 @@
                     <li class="mb-2">
 
                         <a href="https://www.facebook.com/HumanityInclusionPeru/" class="p-2 text-decoration-underline"
-                            target="_blank"> Facebook Peru</a>
+                            target="_blank"> Facebook Perú</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://www.facebook.com/Handicapinternationalcolombia"
@@ -41,7 +42,7 @@
                     <li class="mb-2">
                         <a href="https://www.facebook.com/HIBoliviaProgramaAmericaLatina/"
                             class="p-2 text-decoration-underline" target="_blank">
-                            Facebook America Latina</a>
+                            Facebook América Latina</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://www.facebook.com/HumanityAndInclusionEnCuba/"
@@ -76,9 +77,40 @@
         </div>
     </div>
     <div class="bg-white" id="logos">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col-12 col-md-6 d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row py-2 align-items-center">
+                <div class="col"><a
+                        href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
+                        class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
+                        <figure>
+                            <img src="/images/logo_1.png" alt="USAID" width="100%">
+                        </figure>
+                    </a></div>
+                <div class="col"><a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
+                        aria-label="Ir a la unión europea, abre en una nueva ventana" target="_blank">
+                        <figure>
+                            <img src="/images/logo_2.png" alt="unión europea" width="100%">
+                        </figure>
+                    </a></div>
+                <div class="col"><a href="https://hi.org/" class="nav-link p-0"
+                        aria-label="Ir a Humanity and Inclusion, abre en una nueva ventana" target="_blank">
+                        <figure>
+                            <img src="/images/logo-hi2.jpg" alt="Humanity and Inclusion" width="100%">
+                        </figure>
+                    </a></div>
+                <div class="col"><a href="https://coopi.org/en" class="nav-link p-0"
+                        aria-label="Ir a Cooperazione Internazionale, abre en una nueva ventana" target="_blank">
+                        <figure>
+                            <img src="/images/logo_5.png" alt="Cooperazione Internazionale" width="100%">
+                        </figure>
+                    </a></div>
+                <div class="col"><a href="https://www.savethechildren.org.pe/" class="nav-link p-0"
+                        aria-label="Ir a Save the children, abre en una nueva ventana" target="_blank">
+                        <figure>
+                            <img src="/images/logo_4.png" alt="Save the children" width="100%">
+                        </figure>
+                    </a></div>
+                {{-- <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="col-6">
                         <a href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
                             class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
@@ -121,7 +153,7 @@
                             </figure>
                         </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

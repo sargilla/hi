@@ -76,6 +76,25 @@
                 ></p>
             </div>
         </div>
+        <div
+            class="form-group row"
+            :class="{ 'is-invalid': form.errors.has('campos_extra') }"
+        >
+            <label for="links" class="col-form-label col-lg-2"
+                >Descripción del Link</label
+            >
+            <div class="col-lg-10">
+                <input
+                    class="form-control"
+                    v-model="form.campos_extra.link_description"
+                />
+                <p
+                    class="invalid-feedback"
+                    v-if="form.errors.has('campos_extra')"
+                    v-text="form.errors.get('campos_extra')"
+                ></p>
+            </div>
+        </div>
         <div class="form-group row">
             <label for="tipo" class="control-label col-lg-2">Sección</label>
             <div class="col-lg-10">
@@ -330,7 +349,8 @@ export default {
                 links: "",
                 expositores: [{ nombre: "", titulo: "" }],
                 fecha_desde: "",
-                fecha_hasta: ""
+                fecha_hasta: "",
+                campos_extra: {}
             }),
             fecha_desde: "",
             fecha_hasta: "",
@@ -413,6 +433,9 @@ export default {
             this.fecha_hasta = this.evento.fecha_hasta
                 ? new Date(this.evento.fecha_hasta)
                 : "";
+            this.form.campos_extra = this.evento.campos_extra ?? {
+                link_description: ""
+            };
         },
         borrarForm() {
             this.form.id = "";
@@ -427,6 +450,7 @@ export default {
             this.form.nivel = "";
             this.form.sector = "";
             this.form.expositores = [];
+            this.form.campos_extra = {};
         },
         cancelar() {
             window.location.href = route("eventos.index");

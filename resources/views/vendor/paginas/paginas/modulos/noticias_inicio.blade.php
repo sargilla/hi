@@ -35,7 +35,7 @@
 <article class="noticias-2">
     <div class="container py-5 px-lg-3">
         <div class="row row-cols-2 row-cols-md-2">
-            @forelse($noticias->delTema($campos['categoria'])->publicadas()->limit(5)->latest()->get() as $noticia)
+            @forelse($noticias->delTema($campos['categoria'])->publicadas()->latest()->get() as $noticia)
             <div class="col mb-4">
                 <div class="card">
                     <a href="/{{ $noticia->tema->slug }}/{{ $noticia->slug }}" class="nav-link p-0">

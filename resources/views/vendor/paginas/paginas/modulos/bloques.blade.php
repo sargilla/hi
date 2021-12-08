@@ -8,11 +8,12 @@ return stristr($modulo['pais'],request()->pais);
 @if ($campos['columnas'] == 1)
 @if($campos['estilo'] == 2)
 <article class="noticias-3">
-    <div class="container py-5 expRes">
+    <div class="container py-5  {{$modulo['nombre'] != " Documentos" ? 'expRes' : '' }}">
         <h2>
             {{$campos['titulo']??'Documentos'}}
         </h2>
         @foreach($campos['modulos'] as $modulo)
+        {{-- @dd($modulo) --}}
         <div class="row mb-3 border py-5">
             <div class="col-12 col-md-4 col-lg-3">
                 <figure class="figure mb-0">
@@ -31,7 +32,7 @@ return stristr($modulo['pais'],request()->pais);
                     <a href="{{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
                         aria-label="{{$modulo['link_description'] ?? ''}}" target="_blank">
                         <i class="fas fa-arrow-right mr-2"></i>
-                        Descargar el documento
+                        {{$modulo['link_texto'] ?? 'Descargar el documento'}}
                     </a>
                 </p>
             </div>

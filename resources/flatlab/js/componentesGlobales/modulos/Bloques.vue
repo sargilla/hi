@@ -208,6 +208,22 @@
                                 <div class="form-group m-0">
                                     <div class="col-lg-12 row">
                                         <label class="col-lg-2 my-auto"
+                                            >Texto del botón</label
+                                        >
+                                        <input
+                                            class="form-control col-lg-10 "
+                                            v-model="modulo.link_texto"
+                                            placeholder="Texto del botón"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-white text-dark">
+                            <div class="task-content">
+                                <div class="form-group m-0">
+                                    <div class="col-lg-12 row">
+                                        <label class="col-lg-2 my-auto"
                                             >País</label
                                         >
                                         <input
@@ -303,7 +319,15 @@ export default {
             this.$emit("borrar");
         },
         agregarModulo() {
-            this.modulos.push({ texto: "", imagen: "", link: "", titulo: "" });
+            this.modulos.push({
+                texto: "",
+                imagen: "",
+                link: "",
+                titulo: "",
+                link_description: "",
+                link_texto: "Descargar el documento",
+                pais: ""
+            });
         },
         toggle(event) {
             event.classList.toggle("fa-chevron-up");

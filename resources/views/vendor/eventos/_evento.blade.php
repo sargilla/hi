@@ -52,7 +52,11 @@
                 @endif
             </div>
             <div class="col-md-4 col-lg-5 col-xl-6">
+                @if($evento->tipo->slug == 'formacion')
+                <h2 class="text-center">Datos del curso</h2>
+                @else
                 <h2 class="text-center">Detalles del Evento</h2>
+                @endif
                 <div class="col-8 mx-auto">
 
                     <ul class="list-group">
@@ -75,50 +79,21 @@
                         @if ($evento->nivel)
                         <li class="list-group-item"><strong>Nivel:</strong> {{ $evento->nivel }}</li>
                         @endif
-                        {{-- <li class="list-group-item"><strong>Tipo:</strong> {{$evento->tipo->nombre}}</li> --}}
                     </ul>
                 </div>
 
             </div>
         </div>
         <div class="row justify-content-center">
+            {{-- @dd($evento->campos_extra) --}}
             <a href="{{$evento->links }}" target="_blank" class="btn btn-purple px-4 mt-4"
-                aria-label="Inscribirse a {{ $evento->titulo }}">Inscribirse</a>
+                @if(isset($evento->campos_extra['link_description']))
+                aria-label="{{ $evento->campos_extra['link_description']}}"
+                @else
+                aria-label="Más información de {{ $evento->titulo }}"
+                @endif
+                >
+                Más información</a>
         </div>
     </div>
 </article>
-
-
-{{-- <div id="expositores" class="mt-5 px-3 px-md-0">
-    <h2>
-        Expositores
-    </h2>
-    <div>
-        <div class="d-flex align-items-center">
-            <div class="">
-                <figure>
-                    <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
-                </figure>
-            </div>
-            <div class="ml-3">
-                <p>
-                    Lorem Ipsum
-                </p>
-            </div>
-        </div>
-        <div class="d-flex align-items-center">
-            <div class="">
-                <figure>
-                    <img width="150px" height="150px" class="rounded-circle" src="/images/familia.jpg" alt="">
-                </figure>
-
-            </div>
-            <div class="ml-3">
-                <p>
-                    Lorem Ipsum
-                </p>
-            </div>
-        </div>
-    </div>
-    <a href="" class="btn btn-purple px-4 mt-4">Inscribirse</a>
-</div> --}}
