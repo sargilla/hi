@@ -17,14 +17,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta name="google-site-verification" content="UesCTgi5PNtUtIgWtPKd1X2wuJrS98aWP3girBO1vFY" />
-    {{--
+
     <meta property="og:image:width" content="279">
     <meta property="og:image:height" content="279">
-    <meta property="og:title" content="Cablecord">
-    <meta property="og:description" content="Materiales El&eacute;ctricos">
-    <meta property="og:url" content="https://www.cablecordrosario.com.ar/">
-    <meta property="og:image" content="https://www.cablecordrosario.com.ar/og-image.jpg">
-    --}}
+    <meta property="og:title" content="Gesti&oacute;n inclusiva del riesgo de desastres">
+    <meta property="og:description"
+        content="Espacio que promueve una gesti&oacute;n del riesgo de desastres con enfoque de inclusi&oacute;n, poniendo a las personas en situaci&oacute;n de mayor vulnerabilidad en el centro de la gesti&oacute;n del riesgo, haci&eacute;ndole part&iacute;cipes como sujetos de derecho, en condiciones de igualdad, sin exclusiones ni discriminaci&oacute;n">
+    <meta property="og:url" content="https://girdamericalatina.org/">
+    <meta property="og:image" content="https://girdamericalatina.org/images/og-image.jpg">
 
     <title>@yield('header_title', 'Titulo de la Pagina') </title>
 
