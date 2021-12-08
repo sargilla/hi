@@ -16,6 +16,7 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="google-site-verification" content="UesCTgi5PNtUtIgWtPKd1X2wuJrS98aWP3girBO1vFY" />
     {{--
     <meta property="og:image:width" content="279">
     <meta property="og:image:height" content="279">
