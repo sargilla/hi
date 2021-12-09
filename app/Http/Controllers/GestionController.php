@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Analytics;
 use App\Http\Requests;
-use Sigma\Paginas\Mensaje;
 use Illuminate\Http\Request;
 use Spatie\Analytics\Period;
-use Spatie\Analytics\Analytics;
+use Sigma\Paginas\Mensaje;
 
 /**
  * Class HomeController
