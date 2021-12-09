@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Analytics;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Spatie\Analytics\Period;
