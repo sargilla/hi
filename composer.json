@@ -14,7 +14,8 @@
         "sigma/eventos": "dev-master",
         "sigma/flatlab": "dev-master",
         "sigma/noticias": "dev-master",
-        "sigma/paginas": "dev-master"
+        "sigma/paginas": "dev-master",
+        "spatie/laravel-analytics": "^3.11"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

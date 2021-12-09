@@ -5,9 +5,8 @@ use App\Http\Controllers\TemasController;
 Route::group(['middleware' => 'web', 'prefix' => config('flatlab.prefix')], function () {
     Route::auth();
     Route::group(['middleware' => 'auth'], function () {
-        Route::get('/', function(){
-            return view('flatlab::index');
-        })->name('gestion.index');
+        Route::get('/', 'GestionController@index')->name('gestion.index');
+        Route::get('api/visitas', 'GestionController@visitas')->name('getVisitas');
         Route::post('temas',[TemasController::class,'store'])->name('temas.store');
     });
 });
