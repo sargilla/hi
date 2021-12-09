@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-g
+
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Spatie\Analytics\Period;
