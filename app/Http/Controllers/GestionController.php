@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Analytics;
+g
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Spatie\Analytics\Period;
@@ -32,14 +31,14 @@ class GestionController extends Controller
     public function index()
     {
 
-        $visitasxmes = Analytics::performQuery(Period::days(30), 'ga:sessions')->totalsForAllResults['ga:sessions'];
-        // $visitasxmes = 150;
+        // $visitasxmes = Analytics::performQuery(Period::days(30), 'ga:sessions')->totalsForAllResults['ga:sessions'];
+        $visitasxmes = 150;
 
-        $mensajes = Mensaje::take(5)->latest()->get();
-        // $usuarios_activos = 1;
-        $usuarios_activos = Analytics::getAnalyticsService()->data_realtime->get('ga:' . env('ANALYTICS_VIEW_ID'), 'rt:activeVisitors')->totalsForAllResults['rt:activeVisitors'];
+        // $mensajes = Mensaje::take(5)->latest()->get();
+        $usuarios_activos = 1;
+        // $usuarios_activos = Analytics::getAnalyticsService()->data_realtime->get('ga:' . env('ANALYTICS_VIEW_ID'), 'rt:activeVisitors')->totalsForAllResults['rt:activeVisitors'];
 
-        return view('gestion.index', compact('mensajes', 'visitasxmes', 'usuarios_activos'));
+        return view('gestion.index', compact( 'visitasxmes', 'usuarios_activos'));
     }
 
     public function visitas()
