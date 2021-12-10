@@ -17,23 +17,17 @@ class FiltroController extends Controller
 
          if(request()->busqueda == "eventos")
          {
-                $busqueda = '';
+                $busqueda = Evento::filtro(['tipo_id'=> 1,'tipo' => 'tipo'])->publicados();
 
                 if(isset(request()->fecha))
                 {
                     $inicio = Carbon::createFromFormat('Y', request()->fecha)->startOfYear();
                     $fin =  Carbon::createFromFormat('Y', request()->fecha)->endOfYear();
-                    $busqueda = Evento::whereBetween('fecha_desde',[$inicio,$fin]);
+                    $busqueda = $busqueda->whereBetween('fecha_desde',[$inicio,$fin]);
                 }
                 if(isset(request()->pais))
                 {
-                    if($busqueda != '')
-                    {
-                        $busqueda->where('pais','like','%'.request()->pais.'%');
-                    } else
-                    {
-                        $busqueda = Evento::where('pais','like','%'.request()->pais.'%');
-                    }
+                    $busqueda->where('pais','like','%'.request()->pais.'%');
                 }
 
                 $busqueda = $busqueda->get();

@@ -26,7 +26,8 @@
         <ul>
             @foreach($busqueda as $evento)
             <li>
-                <a href="/eventos/{{$evento->slug}}" class="nav-link p-0" aria-label="Ir al evento {{$evento->titulo}}">
+                <a href="/eventos/general/{{$evento->slug}}" class="nav-link p-0"
+                    aria-label="Ir al evento {{$evento->titulo}}">
                     <div class="row mb-3 border py-5">
                         <div class="col-6 col-md-4 col-lg-3">
                             <figure class="figure mb-0">

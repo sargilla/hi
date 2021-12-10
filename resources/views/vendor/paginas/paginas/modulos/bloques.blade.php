@@ -23,9 +23,12 @@ return stristr($modulo['pais'],request()->pais);
                 </figure>
             </div>
             <div class="col-12 col-md-8 col-lg-9 py-3">
+                @if (isset($modulo['pais']))
+
                 <p class="col-md-6 p-0">
                     {{ $modulo['pais'] ?? ''}}
                 </p>
+                @endif
                 <h3 class="mt-4">
                     {{$modulo['texto']}}
                 </h3>
