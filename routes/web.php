@@ -81,7 +81,7 @@ Route::get('buscar', 'FrontendController@buscar')->name('buscar');
 
 Route::get('actualidad/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
 Route::get('historias-de-vida/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
-Route::get('evidencias-covid/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
+Route::get('experiencias-de-respuestas-inclusiva-a-la-pandemia-de-covid-19/{noticia}', 'FrontendController@showNoticia')->name('noticias.show');
 
 Route::post('/uploadVideo', 'FrontendController@uploadArchivo')->name('videos.upload');
 
