@@ -279,6 +279,7 @@ import call_to_action from "./modulos/CallToAction.vue";
 import carrousel_productos from "./modulos/CarrouselProductos.vue";
 import contacto from "./modulos/Contacto.vue";
 import documentos from "./modulos/Documentos.vue";
+import glosario from "./modulos/Glosario.vue";
 import listas from "./modulos/Listas.vue";
 import lista_con_imagen from "./modulos/ListaConImagen.vue";
 import slideshow from "./modulos/Slideshow.vue";
@@ -302,7 +303,7 @@ import imagen_texto_link from "./modulos/ImagenTextoLink.vue";
 import titulo_texto_link from "./modulos/TituloTextoLink.vue";
 import titulo_texto_links from "./modulos/TituloTextoLinks.vue";
 import lista_imagen_titulo_texto from "./modulos/ListaImagenTituloTexto.vue";
-import filtro from "./modulos/Filtro.vue"
+import filtro from "./modulos/Filtro.vue";
 export default {
     components: {
         draggable,
@@ -313,6 +314,7 @@ export default {
         contacto,
         cursos,
         listas,
+        glosario,
         lista_con_imagen,
         documentos,
         slideshow,
@@ -355,7 +357,10 @@ export default {
                 { nombre: "Agenda", value: "agenda" },
                 { nombre: "Bloques", value: "bloques" },
                 { nombre: "Bloques Banderas", value: "bloques_banderas" },
-                { nombre: "Bloques Experiencias", value: "bloques_experiencias" },
+                {
+                    nombre: "Bloques Experiencias",
+                    value: "bloques_experiencias"
+                },
                 { nombre: "Call To Action", value: "call_to_action" },
                 { nombre: "Carga Módulos", value: "carga_modulos" },
                 { nombre: "Clientes", value: "links_clientes" },
@@ -365,9 +370,16 @@ export default {
                 { nombre: "Documentos", value: "documentos" },
                 { nombre: "Eventos", value: "modulo_eventos" },
                 { nombre: "Filtro", value: "filtro" },
-                { nombre: "Imagen con Texto y Link", value: "imagen_texto_link" },
+                { nombre: "Glosario", value: "glosario" },
+                {
+                    nombre: "Imagen con Texto y Link",
+                    value: "imagen_texto_link"
+                },
                 { nombre: "Lista con Imagen", value: "lista_con_imagen" },
-                { nombre: "Lista con Imagen Titulo Texto", value: "lista_imagen_titulo_texto" },
+                {
+                    nombre: "Lista con Imagen Titulo Texto",
+                    value: "lista_imagen_titulo_texto"
+                },
                 { nombre: "Listas", value: "listas" },
                 { nombre: "Noticias", value: "modulo-noticias" },
                 { nombre: "Noticias en Inicio", value: "noticias_inicio" },
@@ -376,9 +388,12 @@ export default {
                 { nombre: "Servicios", value: "servicios" },
                 { nombre: "Slideshow", value: "slideshow" },
                 { nombre: "Tarjetas Rotativas", value: "rotate_cards" },
-                { nombre: "Texto", value: "texto" },                           
+                { nombre: "Texto", value: "texto" },
                 { nombre: "Titulo con Texto", value: "titulo_texto" },
-                { nombre: "Titulo con Texto y Links", value: "titulo_texto_links" },                              
+                {
+                    nombre: "Titulo con Texto y Links",
+                    value: "titulo_texto_links"
+                },
                 {
                     nombre: "Titulo con Texto e Imágen",
                     value: "titulo_texto_imagen"

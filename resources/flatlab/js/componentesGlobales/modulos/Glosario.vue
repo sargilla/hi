@@ -4,7 +4,7 @@
             <span v-if="user.can['paginas-dragmodulos']"
                 ><i class="fas fa-arrows-alt my-handle"></i>
             </span>
-            {{ nombre }} [Titulo, Texto y Links]
+            {{ nombre }} [Glosario]
             <span class="tools pull-right">
                 <a
                     class="fa fa-chevron-up accordion-toggle"
@@ -28,10 +28,10 @@
             :id="id_modulo"
         >
             <div class="form-group row">
-                <label for="nombre" class="control-label col-lg-3"
+                <label for="nombre" class="control-label col-lg-2"
                     >Nombre del Modulo</label
                 >
-                <div class="col-lg-9">
+                <div class="col-lg-10">
                     <input
                         name="nombre"
                         class="form-control"
@@ -41,7 +41,7 @@
                     />
                 </div>
             </div>
-            <div class="form-group row">
+            <!-- <div class="form-group row">
                 <label for="link" class="control-label col-lg-3"
                     >Link del Menu</label
                 >
@@ -55,8 +55,8 @@
                         "
                     />
                 </div>
-            </div>
-            <div class="form-group row">
+            </div> -->
+            <!-- <div class="form-group row">
                 <label for="estilo" class="control-label col-lg-3"
                     >Estilo</label
                 >
@@ -74,13 +74,13 @@
                         <option value="blanco">Fondo Blanco</option>
                     </select>
                 </div>
-            </div>
+            </div> -->
 
             <div class="form-group row">
-                <label for="titulo" class="col-md-3 col-form-label"
+                <label for="titulo" class="col-md-2 col-form-label"
                     >Titulo</label
                 >
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <input
                         name="titulo"
                         class="form-control"
@@ -93,10 +93,10 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="titulo" class="col-md-3 col-form-label"
+                <label for="titulo" class="col-md-2 col-form-label"
                     >Texto</label
                 >
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <input
                         name="texto"
                         class="form-control"
@@ -109,10 +109,10 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="modulos" class="control-label col-lg-3"
-                    >Modulos</label
+                <label for="modulos" class="control-label col-lg-2"
+                    >Definiciones</label
                 >
-                <div class="col-lg-9">
+                <div class="col-lg-10">
                     <div
                         class="card bg-primary tasks-widget border border-primary"
                         v-for="(modulo, index) in modulos"
@@ -130,48 +130,31 @@
                         </div>
                         <div class="card-body bg-white text-dark">
                             <div class="task-content">
-                                <div class="form-group m-0">
-                                    <div class="col-lg-12 row">
-                                        <label class="col-lg-2 my-auto"
-                                            >Texto</label
-                                        >
+                                <div class="form-group row">
+                                    <label
+                                        class="control-label col-lg-2 my-auto"
+                                        >Definición</label
+                                    >
+                                    <div class="col-lg-10">
                                         <input
-                                            class="form-control col-lg-10 "
-                                            v-model="modulo.texto"
-                                            placeholder="Texto del módulo"
+                                            class="form-control  "
+                                            v-model="modulo.titulo"
+                                            placeholder="Titulo de la definición"
                                         />
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card-body bg-white text-dark">
-                            <div class="task-content">
-                                <div class="form-group m-0">
-                                    <div class="col-lg-12 row">
-                                        <label class="col-lg-2 my-auto"
-                                            >Link</label
-                                        >
-                                        <input
-                                            class="form-control col-lg-10 "
-                                            v-model="modulo.link"
-                                            placeholder="Link del módulo"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body bg-white text-dark">
-                            <div class="task-content">
-                                <div class="form-group m-0">
-                                    <div class="col-lg-12 row">
-                                        <label class="col-lg-2 my-auto"
-                                            >Descripción Link</label
-                                        >
-                                        <input
-                                            class="form-control col-lg-10 "
-                                            v-model="modulo.link_description"
-                                            placeholder="Descripcion del Link"
-                                        />
+                                <div class="form-group row">
+                                    <label
+                                        for="texto"
+                                        class="control-label col-lg-2 my-auto"
+                                        >Texto</label
+                                    >
+                                    <div class="col-lg-10">
+                                        <!-- <wysiwyg :id="id" v-model="campos.texto" :contenido="campos.texto" nombre="texto"></wysiwyg> -->
+                                        <editor
+                                            name="texto"
+                                            :contenido.sync="modulo.texto"
+                                        ></editor>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +169,7 @@
                             class="btn btn-primary mb-3"
                             @click.prevent="agregarModulo"
                         >
-                            Agregar Link
+                            Agregar Definición
                         </button>
                     </div>
                 </div>
