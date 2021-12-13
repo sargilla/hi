@@ -7,11 +7,12 @@
             <div class="col mb-4">
                 <a href="{{$evento->path}}" class="nav-link p-0">
                     <div class="card">
-                        <figure class="figure m-0">
+                        {{-- <figure class="figure m-0"> --}}
                             <img src="/images/paginas-grande/{{$evento->imagen_principal != 'no-imagen.jpg' ? $evento->imagen_principal : 'familia.jpg' }}"
                                 class="card-img-top"
                                 alt="{{ $evento->imagenes && isset($evento->imagenes[0]) && isset($evento->imagenes[0]['alt']) ? $evento->imagenes[0]['alt'] : $evento->titulo }}">
-                        </figure>
+                            {{--
+                        </figure> --}}
                         <div class="card-body">
                             @if (isset($evento->fecha_desde))
 
