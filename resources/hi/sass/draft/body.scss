@@ -62,7 +62,12 @@ body.bg-dark {
         border: unset !important;
         border-bottom: solid 2px #f8e5bf !important;
     }
-    footer,
+    footer {
+        background-color: #292929;
+        a {
+            color: #00ffff !important;
+        }
+    }
     header {
         background-color: #292929;
         nav {
