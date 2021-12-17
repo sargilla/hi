@@ -3,7 +3,7 @@
     <div class="container py-5 px-lg-3">
 
         <div class="row row-cols-1 row-cols-md-2">
-            @forelse($eventos->whereTipoId($campos['tipo_id'])->publicados()->orderBy('fecha_desde','asc')->get() as
+            @forelse($eventos->whereTipoId($campos['tipo_id'])->publicados()->orderBy('fecha_desde','desc')->get() as
             $evento)
             <div class="col mb-4">
                 <a href="{{$evento->path}}" class="nav-link p-0 h-100">
