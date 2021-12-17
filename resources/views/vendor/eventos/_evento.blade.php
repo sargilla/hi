@@ -4,9 +4,9 @@
             <h1>
                 {{$evento->titulo}}
             </h1>
-            <span>
+            {{-- <span>
                 {{$evento->tipo->nombre}} {{$evento->nivel?? 'Nivel'}} {{$evento->sector?? 'Sector'}}
-            </span>
+            </span> --}}
         </div>
     </div>
     <div class="container py-3 px-5">

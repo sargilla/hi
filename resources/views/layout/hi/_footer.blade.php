@@ -5,7 +5,7 @@
                 <p>
                     Este sitio web y sus contenidos son parte de un proyecto
                     regional que promueve una gestión del riesgo con enfoque de inclusión y protección, liderado por
-                    <span lang="en">Humanity & inclusion</span> en consorcio con <abbr
+                    <span lang="en">Humanity & Inclusion</span> en consorcio con <abbr
                         title="cooperazione internazionale">COOPI en Paraguay</abbr> y <span lang="en">Save the Children
                     </span>
                     Perú
