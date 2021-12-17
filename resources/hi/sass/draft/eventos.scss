@@ -1,85 +1,70 @@
 .eventosIndex,
 .eventosShow,
-.eventosSearch
-{
-    h1,h2
-    {
+.eventosSearch {
+    h1,
+    h2 {
         font-weight: bold;
-
     }
-    h2
-    {
-        color: #004F71;
+    h2,
+    h2 {
         font-size: 1.2rem;
     }
-    a:focus, a:hover
-    {
-        outline: solid 2px #004F71 !important;
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: underline !important;
     }
-    .card
-    {
+    .card {
         background: unset !important;
         border: 0 !important;
-        figure
-        {
-            border: 10px solid #004F71 !important;
+        figure {
+            border: 10px solid #004f71 !important;
         }
-        .card-body
-        {
-            background-color: #EEEEEE;
+        .card-body {
+            background-color: #eeeeee;
         }
-        p
-        {
-            color: #1B74AF;
+        p {
+            color: #1b74af;
         }
     }
 }
-.eventosIndex{
-    h1{
-        color: #004F71;
-    }
-
-}
-.eventosShow
-{
-    #expositores p
-    {
-        color: #1B74AF;
-    }
-    h3{
-        font-size:1.1rem;
+.eventosIndex {
+    h1 {
+        color: #004f71;
     }
 }
-#eventosContenido,#eventosSearchContenido
-{
-    .card-body .btn-calendario
-    {
+.eventosShow {
+    #expositores p {
+        color: #1b74af;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+#eventosContenido,
+#eventosSearchContenido {
+    .card-body .btn-calendario {
         border: 0 !important;
         background: unset !important;
     }
-    .btn-calendario:focus, .btn-calendario:hover
-    {
-        outline: solid 2px #004F71 !important;
+    .btn-calendario:focus,
+    .btn-calendario:hover {
+        outline: solid 2px #004f71 !important;
     }
-    a:focus, a:hover
-    {
-        outline: solid 2px #004F71 !important;
+    a:focus,
+    a:hover {
+        outline: solid 2px #004f71 !important;
         text-decoration: none !important;
     }
-    figure
-    {
+    figure {
         border-radius: 10px !important;
     }
 }
-#eventosContenido
-{
-    h2
-    {
-        color: #004F71 !important;
+#eventosContenido {
+    h2 {
+        color: #004f71 !important;
     }
-    button
-    {
-    border-radius: 10px !important;
+    button {
+        border-radius: 10px !important;
     }
 }

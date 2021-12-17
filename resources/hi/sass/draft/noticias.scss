@@ -98,6 +98,11 @@
         font-size: 1.2rem;
         color: #004f71;
     }
+    a,
+    a:link,
+    a:visited {
+        color: #004f71;
+    }
     a:focus,
     a:hover {
         outline: solid 2px #004f71 !important;
@@ -128,6 +133,10 @@
     h2 {
         color: #004f71;
         font-size: 1.2rem;
+    }
+    small,
+    small:hover {
+        color: #004f71;
     }
     a:focus,
     a:hover {

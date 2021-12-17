@@ -60,13 +60,15 @@
                 <div class="col-8 mx-auto">
 
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>Inicio:</strong> {{ $evento->fecha_desde->format('d-m-Y') }}
+                        <li class="list-group-item"><strong>Inicio:</strong> {{ $evento->fecha_desde ?
+                            $evento->fecha_desde->format('d-m-Y') : ''}}
                             {{
-                            $evento->fecha_desde->format('h:i') != '00:00' ?
+                            $evento->fecha_desde && $evento->fecha_desde->format('h:i') != '00:00' ?
                             $evento->fecha_desde->format('h:i') . 'hs.' :''}}</li>
                         @if ($evento->fecha_hasta)
 
-                        <li class="list-group-item"><strong>Fin:</strong> {{ $evento->fecha_hasta->format('d-m-Y') }} {{
+                        <li class="list-group-item"><strong>Fin:</strong> {{ $evento->fecha_desde ?
+                            $evento->fecha_hasta->format('d-m-Y') : ''}} {{
                             $evento->fecha_desde->format('h:i') != '00:00' ?
                             $evento->fecha_desde->format('h:i') . 'hs.' :''}}</li>
                         @endif

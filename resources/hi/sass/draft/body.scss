@@ -18,20 +18,84 @@ html {
 .text-primary {
     color: #1b74af !important;
 }
-.bg-dark {
-    * {
+body.bg-dark {
+    background-color: #292929;
+    .bg-white,
+    .bg-primary,
+    .docRec,
+    .card-body {
         background-color: #292929 !important;
+    }
+    * {
+        background-color: #292929;
         color: #f0f0f0 !important;
+    }
+    .form-control:focus {
+        background-color: unset;
+    }
+    .nav-link:focus,
+    a:focus,
+    a:hover,
+    header #li-sm .skip-main,
+    button:focus,
+    img:focus,
+    .noticias-1 .div-focus a:focus,
+    .noticias-1 .div-focus a:hover,
+    #bienvenida #div-video a:focus,
+    #bienvenida #div-video a:hover,
+    footer #logos a:hover,
+    footer #logos a:focus-visible {
+        outline: solid 2px #f8e5bf !important;
+    }
+
+    #div-video {
+        border: solid 2px #f8e5bf !important;
+    }
+    #copyright,
+    header #li-sm .skip-main {
+        background-color: #292929;
+    }
+    .actualidadSearch p {
+        color: #50d0a0 !important;
+    }
+    .actualidadSearch .border {
+        border: unset !important;
+        border-bottom: solid 2px #f8e5bf !important;
     }
     footer,
     header {
+        background-color: #292929;
+        nav {
+            ul li:hover {
+                outline: solid 2px #f8e5bf !important;
+            }
+            .navbar-filtro {
+                background-color: #292929;
+            }
+        }
         a {
-            color: #5fe6e6 !important;
+            color: #00ffff !important;
         }
     }
-    .btn-purple {
-        color: #fff !important;
+    .estilo-1 p {
+        color: #f0f0f0;
     }
+    .btn.btn-purple {
+        color: #00b0ff !important;
+        border-color: #00b0ff;
+    }
+    .btn.btn-purple:hover {
+        background-color: #400000;
+        outline: none;
+        border-color: transparent;
+    }
+    .btn.btn-purple:visited {
+        background-color: #400000;
+        outline: none;
+        border-color: #00ffff;
+        color: #00ffff;
+    }
+
     a:visited {
         color: #78785a !important;
     }
@@ -73,17 +137,17 @@ html {
 #main {
     padding: 0 !important;
 }
-.btn-purple {
+.btn.btn-purple {
     color: #fff;
-    background-color: #6a2a5b !important;
+    background-color: #6a2a5b;
     border-color: #6a2a5b;
     font-weight: bold;
     text-decoration: none !important;
 }
-.btn-purple:hover {
+.btn.btn-purple:hover {
     color: #fff;
-    background-color: #9010bc !important;
-    border-color: #9010bc !important;
+    background-color: #9010bc;
+    border-color: #9010bc;
     text-decoration: none !important;
     outline: solid 2px #004f71 !important;
 }
@@ -218,5 +282,5 @@ figure.image img {
 }
 
 p {
-    font-size: 20px ;
+    font-size: 20px;
 }

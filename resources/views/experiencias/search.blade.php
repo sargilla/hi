@@ -35,7 +35,7 @@
                             </figure>
                         </div>
                         <div class="col-6 col-md-8 col-lg-9 py-3">
-                            <p class="col-md-6 p-0">{{$b->pais?? 'Pais'}}</p>
+                            <p class="col-md-6 p-0">{{$b->pais?? 'País'}}</p>
                             <h2>{{$b->titulo}}</h6>
                         </div>
                     </div>

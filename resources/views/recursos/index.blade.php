@@ -128,7 +128,7 @@
     <div class="bg-light">
         <div class="container py-5">
             <h2>
-                Tematicas
+                Temáticas
             </h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mt-4 text-center" id="tematicas">
                 @foreach($contenidos as $c)
@@ -152,7 +152,7 @@
 <article id="recursosPaises" class="recursosIndex">
     <div class="container py-5">
         <h2>
-            Recursos por paises
+            Recursos por países
         </h2>
         <div class="row justify-content-center col-lg-8 mx-auto">
             <div class="col-4">
@@ -168,8 +168,8 @@
             <div class="col-4">
                 <a href="" class="text-center nav-link p-0">
                     <figure class="figure">
-                        <img src="/images/peru.png" class="figure-img img-fluid " alt="bandera de peru">
-                        Peru
+                        <img src="/images/peru.png" class="figure-img img-fluid " alt="bandera de perú">
+                        Perú
                     </figure>
                 </a>
             </div>

@@ -108,7 +108,7 @@ return stristr($modulo['pais'],request()->pais);
                             <a href=" {{isset($modulo['link']) ? $modulo['link'] : '#'}}" class="text-white p-2"
                                 aria-label="{{$modulo['link_description'] ?? ''}}" target="_blank">
                                 <i class="fas fa-arrow-right mr-2"></i>
-                                Descargar el documento
+                                {{$modulo['link_texto'] ?? 'Descargar el documento'}}
                             </a>
                         </p>
                     </div>

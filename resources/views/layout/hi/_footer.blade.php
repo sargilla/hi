@@ -5,21 +5,20 @@
                 <p>
                     Este sitio web y sus contenidos son parte de un proyecto
                     regional que promueve una gestión del riesgo con enfoque de inclusión y protección, liderado por
-                    <span lang="en">Humanity & inclusion </span> en consorcio con <abbr
+                    <span lang="en">Humanity & inclusion</span> en consorcio con <abbr
                         title="cooperazione internazionale">COOPI en Paraguay</abbr> y <span lang="en">Save the Children
                     </span>
                     Perú
                 </p>
                 <p>
-                    La Realización de este sitio web y de sus contenidos fue posible gracias al apoyo
+                    La realización de este sitio web y de sus contenidos fue posible gracias al apoyo
                     del pueblo de los Estados Unidos de América, proporcionada mediante la Oficina
                     de Asistencia Humanitaria de la Agencia de los Estados Unidos para el
-                    Desarrollo Internacional (<abbr title="">USAID </abbr> / <abbr title="">BHA</abbr> ) y del Programa
-                    <abbr title=""> ECHO </abbr> la Unión
-                    Europea.
+                    Desarrollo Internacional (<abbr title="">USAID </abbr> / <abbr title="">BHA</abbr>) y del Programa
+                    <abbr title=""> ECHO </abbr> de la Unión Europea.
                     <br>
                     El contenido aquí expresado es responsabilidad de las instituciones
-                    imprementadoras y no necesariamente refleja las opiniones de <abbr title="">USAID </abbr>, del
+                    imprementadoras y no necesariamente refleja las opiniones de <abbr title="">USAID</abbr>, del
                     Gobierno de los Estados Unidos o de la Unión Europea.
                 </p>
             </div>
@@ -85,7 +84,7 @@
                         <img src="/images/logo_1.png" alt="USAID" width="100%">
                     </figure>
                 </a>
-                <a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
+                <a href="https://ec.europa.eu/echo/index_es" class="nav-link p-0"
                     aria-label="Ir a la unión europea, abre en una nueva ventana" target="_blank">
                     <figure>
                         <img src="/images/logo_2.png" alt="unión europea" width="100%">
@@ -109,51 +108,6 @@
                         <img src="/images/logo_4.png" alt="Save the children" width="100%">
                     </figure>
                 </a>
-
-                {{-- <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div class="col-6">
-                        <a href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance"
-                            class="nav-link p-0" aria-label="Ir a USAID, abre en una nueva ventana" target="_blank">
-                            <figure>
-                                <img src="/images/logo_1.png" alt="" width="100%">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="https://ec.europa.eu/echo/who/about-echo-es_en" class="nav-link p-0"
-                            aria-label="Ir a la unión europea, abre en una nueva ventana" target="_blank">
-                            <figure>
-                                <img src="/images/logo_2.png" alt="" width="100%">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-between">
-                    <div class="col-6 col-sm-4">
-                        <a href="https://hi.org/" class="nav-link p-0"
-                            aria-label="Ir a Humanity and Inclusion, abre en una nueva ventana" target="_blank">
-                            <figure>
-                                <img src="/images/logo_3.png" alt="" width="100%">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <a href="https://coopi.org/en" class="nav-link p-0"
-                            aria-label="Ir a Cooperazione Internazionale, abre en una nueva ventana" target="_blank">
-                            <figure>
-                                <img src="/images/logo_5.png" alt="" width="100%">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <a href="https://www.savethechildren.org.pe/" class="nav-link p-0"
-                            aria-label="Ir a Save the children, abre en una nueva ventana" target="_blank">
-                            <figure>
-                                <img src="/images/logo_4.png" alt="" width="100%">
-                            </figure>
-                        </a>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </div>
@@ -161,7 +115,7 @@
         <div class="d-md-flex flex-wrap justify-content-between">
             <div class="col-12 col-lg-6 border-md text-center py-4 py-md-2 py-lg-0">
                 <span>
-                    Humanity & inclusion © Copyright 2021
+                    Humanity & Inclusion © Copyright 2021
                 </span>
             </div>
             <div class="col-12 col-lg-6 text-center my-3 my-md-2 my-lg-0">

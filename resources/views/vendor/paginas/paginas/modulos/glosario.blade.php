@@ -30,7 +30,7 @@
                 @foreach($glosario as $letra => $definiciones)
                 <h3 class="text-center mt-5" id="{{$letra}}">{{ucfirst($letra)}}</h3>
                 @foreach ($definiciones->sortBy('titulo') as $definicion)
-                <h3 class="mt-5">{{isset($definicion['titulo']) ? $definicion['titulo'] : ''}}</h3>
+                <h4 class="mt-5">{{isset($definicion['titulo']) ? $definicion['titulo'] : ''}}</h4>
                 @if (isset($definicion['texto']))
                 {!! $definicion['texto'] !!}
                 @endif

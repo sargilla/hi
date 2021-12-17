@@ -20,7 +20,7 @@
     <div class="bg-primary">
         <div class="container py-5 px-5 px-sm-1">
             <p class="text-white">
-                Desde aqui podras filtrar notas por paises y por fecha
+                Desde aqui podras filtrar notas por países y por fecha
             </p>
             <form action="/actualidad/search" method="GET" class="form-inline mr-3 align-items-center">
                 @csrf
@@ -31,15 +31,15 @@
                     </select>
                 </div>
                 <div class="div-group  col-md-4 col-lg-3">
-                    <label for="fechas" class="text-white  justify-content-start ">Paises</label>
+                    <label for="fechas" class="text-white  justify-content-start ">Países</label>
                     <select name="paises" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
-                        <option value="paises">Todas los paises</option>
+                        <option value="paises">Todos los países</option>
                     </select>
                 </div>
                 <div class="div-group  col-md-4 col-lg-3">
-                    <label for="tematicas" class="text-white  justify-content-start ">Tematicas</label>
+                    <label for="tematicas" class="text-white  justify-content-start ">Temáicas</label>
                     <select name="tematicas" id="" class="form-control mb-3 mr-3 mb-md-0 w-100">
-                        <option value="">Tematicas</option>
+                        <option value="">Temáticas</option>
                     </select>
                 </div>
                 <div class="col-12 col-lg-3 mt-md-4">

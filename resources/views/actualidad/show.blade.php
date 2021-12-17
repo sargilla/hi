@@ -106,7 +106,7 @@
                             <img src="/images/familia.jpg" class="card-img-top rounded-10" alt="...">
                         </figure>
                         <div class="card-body">
-                            <p class="card-text my-1">Pais</p>
+                            <p class="card-text my-1">País</p>
                             <h3>Lorem ipsum</h3>
                         </div>
                     </div>

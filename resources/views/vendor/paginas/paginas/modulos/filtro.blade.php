@@ -18,10 +18,11 @@
                     </select>
                 </div>
                 <div class="div-group  col-md-4 col-lg-3">
-                    <label for="pais" class="text-white  justify-content-start ">Paises</label>
+                    <label for="pais" class="text-white  justify-content-start ">Países</label>
                     <select name="pais" id="pais" class="form-control mb-3 mr-3 mb-md-0 w-100">
-                        <option value="">Todas los paises</option>
+                        <option value="">Todos los países</option>
                         <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
                         <option value="paraguay">Paraguay</option>
                         <option value="perú">Perú</option>
                     </select>
@@ -47,7 +48,7 @@
                     <div class="div-group w-100">
                         {{-- <label for="pais" class="text-white  justify-content-start ">Paises</label> --}}
                         <select name="pais" id="pais" class="form-control mb-3 mr-3 mb-md-0 w-25">
-                            <option value="">Todos los paises</option>
+                            <option value="">Todos los países</option>
                             <option value="colombia" {{request()->pais == 'colombia' ? 'selected' :''}}>Colombia
                             </option>
                             <option value="paraguay" {{request()->pais == 'paraguay' ? 'selected' :''}}>Paraguay

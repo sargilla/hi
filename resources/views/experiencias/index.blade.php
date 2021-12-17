@@ -8,7 +8,7 @@
       'texto' => "Historias de vida",
       'link' => "/experiencias/historia_vida"],
     [
-      'texto' => "Diagnosticos comunitarios inclusivos por paises",
+      'texto' => "Diagnosticos comunitarios inclusivos por países",
       'link' => ""
     ],
     [
