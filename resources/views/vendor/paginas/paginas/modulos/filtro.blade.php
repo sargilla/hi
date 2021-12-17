@@ -43,7 +43,7 @@
                 <form action="{{ $campos['busqueda'] == 'bloques' ? url()->current() : route('filtro') }}" method="GET"
                     class="form-inline mr-3">
                     <p class="text-white">
-                        Busqueda por pais
+                        Busqueda por país
                     </p>
                     <div class="div-group w-100">
                         {{-- <label for="pais" class="text-white  justify-content-start ">Paises</label> --}}
