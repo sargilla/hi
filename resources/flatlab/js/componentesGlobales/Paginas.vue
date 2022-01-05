@@ -291,6 +291,7 @@ import titulo_texto from "./modulos/TituloTexto.vue";
 import titulo_texto_imagen from "./modulos/TituloTextoImagen.vue";
 import titulo_texto_video from "./modulos/TituloTextoVideo.vue";
 import modulo_eventos from "./modulos/ModuloEventos.vue";
+import mapa_sitio from "./modulos/MapaSitio.vue";
 import cursos from "./modulos/Cursos.vue";
 import links_clientes from "./modulos/LinksClientes.vue";
 import carga_modulos from "./modulos/CargaModulos.vue";
@@ -328,6 +329,7 @@ export default {
         pasos,
         servicios,
         productos_inicio,
+        mapa_sitio,
         noticias_inicio,
         titulo_texto_video,
         datos_impactos,
@@ -381,6 +383,10 @@ export default {
                     value: "lista_imagen_titulo_texto"
                 },
                 { nombre: "Listas", value: "listas" },
+                {
+                    nombre: "Mapa del sitio",
+                    value: "mapa_sitio"
+                },
                 { nombre: "Noticias", value: "modulo-noticias" },
                 { nombre: "Noticias en Inicio", value: "noticias_inicio" },
                 { nombre: "Pasos", value: "pasos" },
