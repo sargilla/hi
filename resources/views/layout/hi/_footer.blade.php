@@ -122,13 +122,13 @@
                 <nav>
                     <ul class="d-flex justify-content-center">
                         <li>
-                            <a href="/" class="p-2">Índice del sitio</a> -
+                            <a href="mapa-del-sitio" class="p-2">Índice del sitio</a> -
                         </li>
                         <li>
-                            <a href="/politicas-y-privacidad" class="p-2">Políticas y privacidad</a> -
+                            <a href="politicas-y-privacidad" class="p-2">Políticas y privacidad</a> -
                         </li>
                         <li>
-                            <a href="/accesibilidad" class="p-2">Accesibilidad</a>
+                            <a href="accesibilidad" class="p-2">Accesibilidad</a>
                         </li>
                         <li id="li-smu">
                             <a class="skip-main-up py-2 px-4" id="irAlMenuPrincipal" href="#header">Ir al menu
