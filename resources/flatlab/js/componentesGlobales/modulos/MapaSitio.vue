@@ -144,6 +144,8 @@
                                             class="form-control"
                                             v-model="link.nivel"
                                             type="number"
+                                            min="1"
+                                            max="3"
                                             placeholder="Nivel del link"
                                         />
                                     </div>

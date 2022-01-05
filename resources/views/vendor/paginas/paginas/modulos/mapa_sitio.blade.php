@@ -1,4 +1,4 @@
-<section class="container mapa-sitio">
+<section class="container mapa-sitio mb-5">
     @if (isset($campos['titulo']))
     <h2>
         {{$campos['titulo']}}
